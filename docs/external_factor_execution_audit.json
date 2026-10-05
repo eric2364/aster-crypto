@@ -82,5 +82,21 @@
       "jointstress_positive_after_indicative_reserve",
       "all_neighbors_positive_after_indicative_reserve"
     ]
-  }
+  },
+  "liquidation_events_by_family_phase": {
+    "taker_flow_drift/training/base": 3,
+    "qqq_risk_transmission/validation3/base": 1,
+    "qqq_risk_transmission/holdout/stress": 1,
+    "taker_flow_drift/validation1/base": 1,
+    "taker_flow_drift/validation3/base": 1,
+    "taker_flow_drift/holdout/base": 8,
+    "taker_flow_drift/holdout/stress": 10
+  },
+  "independently_recomputed_metrics": [
+    "recorded-clock drawdown",
+    "daily Sharpe",
+    "native funding cash flow and actual source marks",
+    "indicative native-position fee/slippage reserve",
+    "reserve-adjusted terminal returns"
+  ]
 }
