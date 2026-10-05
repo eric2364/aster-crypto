@@ -1,0 +1,37 @@
+# Bybit fixed-year collector
+
+The collector passed independent preparation review before acquisition. See the [51-case source audit](../../docs/cross_venue_collector_review.md). This collector performs no orders, fitting or profitability calculations. It adds a separate directory and never changes existing Binance data or earlier research sources.
+
+From the repository root:
+
+```sh
+.venv/bin/python examples/cross_venue/download_bybit.py --workers 2 --out data_cache/minute-bybit-1y
+.venv/bin/python examples/cross_venue/download_bybit.py --verify-only --out data_cache/minute-bybit-1y
+```
+
+The second command makes no network requests or writes. It checks the completed dataset seal, reopens and validates every raw page, reconstructs every normalized value and catalog entry, and compares the normalized data exactly. A completed cache automatically follows this verification path on a subsequent ordinary invocation. An incomplete download resumes only committed, validated raw-page envelopes; incomplete `.partial` files do not count as source pages. A missing/corrupt committed page fails rather than silently reacquiring it during verification.
+
+Only BTC, ETH, DOGE, PEPE, SOL, XRP, LINK and ADA USDT linear perpetuals are collected for **[2025-10-05 00:00 UTC, 2026-10-05 00:00 UTC)**. PEPE uses native `1000PEPEUSDT` on Bybit, with no price, volume or quantity rescaling. Normalized instrument IDs are `bybit:perpetual:<native-symbol>`; folder labels retain the research spot names, including `PEPEUSDT`.
+
+Public sources, with exact requested URLs retained per response:
+
+- [Trade candles](https://bybit-exchange.github.io/docs/v5/market/kline): `/v5/market/kline`, category linear, interval 1, closed bounded 1,000-minute windows.
+- [Independent observed mark candles](https://bybit-exchange.github.io/docs/v5/market/mark-kline): `/v5/market/mark-price-kline`, same exact minute windows.
+- [Actual settled funding](https://bybit-exchange.github.io/docs/v5/market/history-fund-rate): `/v5/market/funding/history`, a bounded whole-year scan backwards in at most 200-settlement pages. No eight-hour schedule is imposed.
+- [Current native rules](https://bybit-exchange.github.io/docs/v5/market/instrument): `/v5/market/instruments-info`, one native symbol per response. These are explicitly current approximations to historical trading rules; simulator fee/risk defaults are assumptions, not authenticated account tiers.
+
+Each raw response is stored in one atomically replaced JSON envelope containing base64 original bytes, SHA256, exact URL and UTC retrieval time. Normalized manifests additionally hash the envelope and retain its raw hash and byte count. The final dataset seal records the collector and instrument-model source SHA256 and Python/NumPy/pandas/PyArrow runtime versions (data provenance, not strategy preregistration), and hashes all eight bar files, eight funding files, eight source manifests and the catalog. REST responses have no publisher archive checksum; SHA proves preservation, not permanent publisher immutability.
+
+Each `SYMBOL/bars.parquet` has exactly 525,600 minute rows: `timestamp`, `end`, `duration_seconds=60`, `instrument_id`, trade `open/high/low/close/volume/turnover`, and observed `mark_open/mark_high/mark_low/mark_price` (last field is minute mark-close). Volume is native base units and turnover USDT; mark prices are not executable fills. Missing/extraneous minutes, duplicate timestamps, API errors, wrong identities, nonfinite values and corrupt OHLC are rejected. No interpolation or pre-year warmup is permitted.
+
+Each `SYMBOL/funding.parquet` contains `timestamp`, `instrument_id`, `funding_rate`, `mark_price`, `mark_price_source`, `boundary`. Actual rates/timestamps are source facts. Bybit does not provide settlement mark in this response: `mark_price` is explicitly a **settlement-minute mark-open proxy**. The collector separately requests an actual event exactly at END; if present, it is included with `boundary=true` and **END_last_completed_mark_close_proxy**, never an outside-year mark. If absent, no END event is invented. Published rate history does not establish historical delivery/receipt time or the next announced rate: no assumed predictor `available_at` is written as a fact.
+
+Funding interval diagnostics report actual consecutive elapsed times, without interpreting differences as proven missing events or reconstructing schedules. Full history gaps require independent corroboration before a strategy claims complete settlement accounting. No quotes, historical BBO, maker queues, exact settlement tick marks or historical dynamic risk tiers are reconstructed.
+
+Baseline acquisition is about 8,416 candle requests plus eight metadata requests. If actual funding is eight-hourly, approximately 48 history-page requests plus eight END-point requests are needed; hourly settlement would require approximately 352 plus eight. Actual cadence determines the count; no schedule is imposed. The candle total is 8,409,600 rows. Progress per instrument/stream is printed every 50 candle pages and every ten funding pages, with flushed output. At most two symbol jobs are retained at a time. Two workers share a global gate spaced at least 0.11 seconds apart (below ten requests/second), 30-second HTTP timeouts and bounded exponential retries. Endpoint first/last samples are not full-year coverage evidence; the exact grid checks occur only after a completed collection. Disk requirements remain unmeasured until actual pages arrive.
+
+Synthetic checks:
+
+```sh
+.venv/bin/python -m pytest tests/test_bybit_collector.py tests/test_bybit_collector_audit.py -q
+```

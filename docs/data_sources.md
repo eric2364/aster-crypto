@@ -171,3 +171,9 @@ were available at both ends of the fixed year. These boundary probes do not
 verify full-year completeness. The review describes request volume, native
 quantity grids, exact settlement-mark limitations and historical-quote gaps.
 It is a source assessment, not another completed backtest or winning strategy.
+
+The additive [Bybit collector](../examples/cross_venue/README.md) now preserves
+raw response bytes and reconstructs all normalized fields offline. Its
+[independent source audit](cross_venue_collector_review.md) passed 51 synthetic
+cases. That preparation audit does not certify a downloaded full year; run the
+collector and its separate `--verify-only` command to establish that evidence.

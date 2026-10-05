@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **367 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **429 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
