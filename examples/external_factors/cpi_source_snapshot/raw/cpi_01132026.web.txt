@@ -1,0 +1,122 @@
+Consumer Price Index News Release - 2025 M12 Results (https://www.bls.gov/news.release/archives/cpi_01132026.htm)
+citeturn45view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bls.gov/news.release/archives/cpi_01132026.htm","lineno":175}); Total lines: 1994
+L63:     * cite59†Job Openings & Labor Turnover Survey L64:     * cite60†Business Response Survey L65:     * cite41†Employment by Occupation L66:     * cite61†Work Experience Over Time L67:     * cite62†Business Employment Dynamics L77:     * cite71†International L78:     * cite72†International Technical Cooperation L79:     * cite35†Import/Export Price Indexes L80:     * cite73†Geographic Information L81:     * cite74†Northeast (Boston-New York) L82:     * cite75†Mid-Atlantic (Philadelphia) L83:     * cite76†Southeast (Atlanta) L84:     * cite77†Midwest (Chicago) L85:     * cite78†Southwest (Dallas) L86:     * cite79†Mountain-Plains (Kansas City) L87:     * cite80†West (San Francisco) L88:   * cite81†Data Tools L89:     * cite82†Data Retrieval Tools L90:     * cite83†BLS Popular Series†data.bls.gov L91:     * cite84†Series Report†data.bls.gov L92:     * cite85†Top Picks, One Screen, Multi-Screen, and Maps L93:     * cite86†Data Finder†data.bls.gov L94:     * cite87†Public Data API L95:     * cite88†Charts and Applications L96:     * cite89†Charts for Economic News Releases L97:     * cite90†CPI Inflation Calculator L98:     * cite91†Injury and Illness Calculator†data.bls.gov L99:     * cite92†Pay Measure Comparison†data.bls.gov L100:     * cite93†Demographic Data Sources†data.bls.gov L101:     * cite94†COVID-19 Economic Trends†data.bls.gov L102:     * cite95†Industry Productivity Viewer†data.bls.gov L103:     * cite96†Employment and Wages Data Viewer†data.bls.gov L104:     * cite97†Industry Finder from the Quarterly Census of Employment and Wages†data.bls.gov L105:     * cite98†Customized Tables L106:     * cite99†U.S. Economy at a Glance L107:     * cite100†Regions, States & Areas at a Glance L108:     * cite101†Industry at a Glance L109:     * cite102†Text Files†download.bls.gov L110:     * cite103†News Release Tables L111:     * cite104†More Sources of Data L112:     * cite105†Restricted Data Access L113:     * cite106†Discontinued Databases L114:     * cite107†Questions & Answers L115:     * cite108†Special Notices L116:   * cite109†Publications L117: 
+L118:     * cite109†Latest Publications L119:     * cite110†The Economics Daily L120:     * cite111†Monthly Labor Review L121:     * cite112†Beyond the Numbers L122:     * cite113†Spotlight on Statistics L123:     * cite114†Reports L124:     * cite115†Videos L125:     * cite116†Career Outlook L126:     * cite117†Occupational Outlook Handbook L127:     * cite118†Geographic Profile L128:     * cite119†Handbook of Methods L129:     * cite120†Research Papers L130:     * cite121†Copyright Information L131:     * cite122†Contact & Help L132:     * cite123†Weekly Update L133: 
+L134:   * cite124†Economic Releases L135:     * cite125†Latest Releases L136:     * cite126†Major Economic Indicators L137:     * cite127†Schedules for news Releases L138:     * cite128†By Month L139:     * cite129†By News Release L140:     * cite130†Current Year L141:     * cite131†Prior Years L142:     * cite132†Archived News Releases L143:     * cite133†Employment & Unemployment L144:     * cite133†Monthly L145:     * cite133†Quarterly, annual, and other L146:     * cite134†Inflation & Prices L147:     * cite135†Pay & Benefits & Workplace Injuries L148:     * cite136†Productivity & Technology L149:     * cite137†Employment Projections L150:     * cite138†Regional News Releases L151:   * cite139†Classroom L152: 
+L153:     * cite139†K-12 Student & Teacher Resources L154:     * cite140†Games & Quizzes L155:     * cite141†Student's Desk L156:     * cite142†Teacher's Desk L157:     * cite143†Questions & Answers L158: 
+L159: cite124†Economic News Release L160: 
+L161: cite144†PRINT:†data.bls.gov L162: 
+L163: cite145†CPI L164: 
+L165: Consumer Price Index
+L166: 
+L167:   * cite33†CPI Homepage L168:   * cite146†CPI Overview L169:   * cite147†CPI FAQs L170:   * cite148†Contact CPI L171: 
+L172: [Button: Close]
+L173: # Consumer Price Index News Release
+L174: 
+L175:     Transmission of material in this release is embargoed until
+L176:     8:30 a.m. (ET) Tuesday, January 13, 2026            USDL-26-0042
+L177: 
+L178:     Technical information: (202) 691-7000  *  cpi_info@bls.gov  *  www.bls.gov/cpi
+L179:     Media contact:         (202) 691-5902  *  PressOffice@bls.gov
+L180: 
+L181:     CONSUMER PRICE INDEX - DECEMBER 2025
+L182:     The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent on a seasonally adjusted basis in
+L183:     December, the U.S. Bureau of Labor Statistics reported today. Over the last 12 months, the all items index increased
+L184:     2.7 percent before seasonal adjustment.
+L185: 
+L186:     The index for shelter rose 0.4 percent in December and was the largest factor in the all items monthly increase. The
+L187:     food index increased 0.7 percent over the month as did the food at home index and the food away from home index. The
+L188:     index for energy rose 0.3 percent in December.
+L189: 
+L190:     The index for all items less food and energy rose 0.2 percent in December. Indexes that increased over the month
+L191:     include recreation, airline fares, medical care, apparel, personal care, and education. The indexes for communication,
+L192:     used cars and trucks, and household furnishings and operations were among the major indexes that decreased in December.
+L193: 
+L194:     The all items index rose 2.7 percent for the 12 months ending December, the same increase as over the 12 months ending
+L195:     November. The all items less food and energy index rose 2.6 percent over the last 12 months. The energy index increased
+L196:     2.3 percent for the 12 months ending December. The food index increased 3.1 percent over the last year.
+L197: Table A. Percent changes in CPI for All Urban Consumers (CPI-U): U.S. city average
+L198:  | Seasonally adjusted changes from preceding month  | Un-
+L199: adjusted
+L200: 12-mos.
+L201: ended
+L202: Dec. 2025
+L203: --- | --- | ---
+L204: Jun.
+L205: 2025  | Jul.
+L206: 2025  | Aug.
+L207: 2025  | Sep.
+L208: 2025  | Oct.
+L209: 2025  | Nov.
+L210: 2025  | Dec.
+L211: 2025
+L212: --- | --- | --- | --- | --- | --- | ---
+L213: All items  | 0.3  | 0.2  | 0.4  | 0.3  | -  | -  | 0.3  | 2.7
+L214: Food  | 0.3  | 0.0  | 0.5  | 0.2  | -  | -  | 0.7  | 3.1
+L215: Food at home  | 0.3  | -0.1  | 0.6  | 0.3  | -  | -  | 0.7  | 2.4
+L216: Food away from home(cite149†1 )  | 0.4  | 0.3  | 0.3  | 0.1  | -  | -  | 0.7  | 4.1
+L217: Energy  | 0.9  | -1.1  | 0.7  | 1.5  | -  | -  | 0.3  | 2.3
+L218: Energy commodities  | 1.0  | -1.9  | 1.7  | 3.8  | -  | -  | -0.4  | -3.0
+L219: Gasoline (all types)  | 1.0  | -2.2  | 1.9  | 4.1  | -2.1  | 3.0  | -0.5  | -3.4
+L220: Fuel oil  | 1.3  | 1.8  | -0.3  | 0.6  | -  | -  | -1.5  | 7.4
+L221: Energy services  | 0.9  | -0.3  | -0.2  | -0.7  | -  | -  | 1.0  | 7.7
+L222: Electricity  | 1.0  | -0.1  | 0.2  | -0.5  | -  | -  | -0.1  | 6.7
+L223: Utility (piped) gas service  | 0.5  | -0.9  | -1.6  | -1.2  | -  | -  | 4.4  | 10.8
+L224: All items less food and energy  | 0.2  | 0.3  | 0.3  | 0.2  | -  | -  | 0.2  | 2.6
+L225: Commodities less food and energy commodities  | 0.2  | 0.2  | 0.3  | 0.2  | -  | -  | 0.0  | 1.4
+L226: New vehicles  | -0.3  | 0.0  | 0.3  | 0.2  | 0.1  | 0.2  | 0.0  | 0.3
+L227: Used cars and trucks  | -0.7  | 0.5  | 1.0  | -0.4  | 0.7  | 0.3  | -1.1  | 1.6
+L228: Apparel  | 0.4  | 0.1  | 0.5  | 0.7  | -  | -  | 0.6  | 0.6
+L229: Medical care commodities(cite149†1 )  | 0.1  | 0.1  | -0.3  | -0.1  | -  | -  | 0.3  | 1.5
+L230: Services less energy services  | 0.3  | 0.4  | 0.3  | 0.2  | -  | -  | 0.3  | 3.0
+L231: Shelter  | 0.2  | 0.2  | 0.4  | 0.2  | -  | -  | 0.4  | 3.2
+L232: Transportation services  | 0.2  | 0.8  | 1.0  | 0.3  | -  | -  | 0.5  | 1.5
+L233: Medical care services  | 0.6  | 0.8  | -0.1  | 0.3  | -  | -  | 0.4  | 3.5
+L234: Footnotes
+L235: (1) Not seasonally adjusted.
+L236: NOTE: The Oct and Nov 2025 data values are not available due to the 2025 lapse in appropriations.
+L237: 
+L238: 
+L239:     Food
+L240: 
+L241:     The index for food rose 0.7 percent in December as did the index for food at home. Five of the six major grocery store
+L242:     food group indexes increased in December. The index for other food at home rose 1.6 percent over the month. The cereals
+L243:     and bakery products index increased 0.6 percent in December. The index for fruits and vegetables increased 0.5 percent
+L244:     and the index for nonalcoholic beverages increased 0.4 percent. The dairy and related products index rose 0.9 percent
+L245:     in December. In contrast, the index for meats, poultry, fish, and eggs decreased 0.2 percent in December, as the index
+L246:     for eggs fell 8.2 percent.
+L247: 
+L248:     The food away from home index also rose 0.7 percent in December. The index for full service meals rose 0.8 percent over
+L249:     the month and the index for limited service meals increased 0.6 percent.
+L250:     The index for food at home rose 2.4 percent over the 12 months ending in December. The meats, poultry, fish, and eggs
+L251:     index rose 3.9 percent over the last 12 months. The index for other food at home increased 2.7 percent over the same
+L252:     period and the index for nonalcoholic beverages rose 5.1 percent. The cereals and bakery products index increased 1.5
+L253:     percent over the 12 months ending in December. The index for fruits and vegetables rose 0.5 percent over the year. In
+L254:     contrast, the dairy and related products index decreased 0.9 percent over the same period.
+L255: 
+L256:     The food away from home index rose 4.1 percent over the last year. The index for full service meals rose 4.9 percent
+L257:     and the index for limited service meals rose 3.3 percent over the same period.
+L258: 
+L259:     Energy
+L260: 
+L261:     The index for energy increased 0.3 percent in December. The natural gas index increased 4.4 percent over the same
+L262:     period. The index for gasoline decreased 0.5 percent over the month. (Before seasonal adjustment, gasoline prices
+L263:     decreased 5.3 percent in December.) The electricity index declined 0.1 percent in December.
+L264: 
+L265:     The index for energy increased 2.3 percent over the past 12 months. The electricity index increased 6.7 percent over
+L266:     the last 12 months and the natural gas index rose 10.8 percent. In contrast, the index for gasoline fell 3.4 percent
+L267:     over this 12-month span.
+L268:     All items less food and energy
+L269: 
+L270:     The index for all items less food and energy rose 0.2 percent in December. The shelter index increased 0.4 percent over
+L271:     the month. The index for owners' equivalent rent rose 0.3 percent in December as did the index for rent. The lodging
+L272:     away from home index rose 2.9 percent over the month.
+L273: 
+L274:     The index for recreation increased 1.2 percent over the month, the largest 1-month increase ever reported for that
+L275:     index, which was first published in 1993. The airline fares index rose 5.2 percent in December and the apparel index
+L276:     rose 0.6 percent. The index for personal care rose 0.4 percent over the month and the index for education increased 0.2
+L277:     percent.
+L278: 
+L279:     The medical care index increased 0.4 percent in December. The index for hospital services increased 1.0 percent over
+L280:     the month, while the index for physicians' services rose 0.3 percent. The prescription drugs index increased 0.1
+

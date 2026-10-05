@@ -85,7 +85,7 @@ before the release. First-release CPI minus last month's CPI is a change, not
 an economist-consensus surprise. No verified consensus archive is supplied.
 No revised CPI data or invented availability times were imported here.
 
-## QQQ: a free public page exists, but usable history is not yet verified
+## QQQ: original Nasdaq access limit and subsequent vendor collection
 
 Nasdaq offers a QQQ historical page and download UI. The source retrieved for
 this review displayed that its data was unavailable; no historical daily table
@@ -118,3 +118,42 @@ and deletion handling, sampling coverage, and an API/archive license. Today’s
 search results or engagement totals contain selection and future-engagement
 bias. Missing historical posts/coverage must remain explicit; no social scores
 or point-in-time post counts were invented.
+
+## Subsequent exploratory factor collection
+
+After the nineteen-policy cohort finished with zero hurdle passes, the next
+research round collected additional inputs in this same fixed year. They were
+not inputs to the original nineteen models; those results remain unchanged.
+
+- **QQQ:** 250 actual daily observations from the [Yahoo Finance vendor chart](https://finance.yahoo.com/quote/QQQ/chart/).
+  The collector checks the exact expected session-date set against pinned
+  [Nasdaq holiday dates](https://nasdaqtrader.com/Trader.aspx?id=Calendar),
+  New York 09:30 vendor session labels, ETF/USD identity and positive finite
+  closes. It uses unadjusted `quote.close`, never the currently adjusted close.
+  Availability is conservatively **assumed at next UTC midnight**, rather than
+  attaching the day's closing price to its morning session label. Original
+  historical delivery timestamps and vendor correction vintages are unknown;
+  this does not establish an intraday QQQ lead. Splits cause rejection pending
+  separately dated unit handling. The [collector](../examples/external_factors/download_qqq.py)
+  preserves raw and normalized hashes and supports a read-only verification.
+- **CPI:** eleven actual original-release events, including exact published
+  headline/core YoY and available MoM values, actual Eastern release dates and
+  timezone conversion. The [coverage guide](cpi_factor_sources.md) records
+  provenance and the HTTP-access limitation. October 2025 stays absent;
+  November MoM remains missing. A consecutive-month acceleration cannot bridge
+  the missing October reference month. No economist consensus or inflation
+  surprise was imported, and no pre-year baseline was added.
+- **Aggressive trade flow:** authentic taker-buy base volume was recovered
+  from the already checksum-verified native perpetual trade-kline archives,
+  as defined in the [official Binance archive schema](https://github.com/binance/binance-public-data#klines-1).
+  The [extractor](../examples/external_factors/extract_flow.py) excludes mark
+  archives, checks exact minute grids, and reconciles raw total volume with
+  existing Engine bars for all eight assets. Availability is the completed
+  candle plus an extra minute. Aggregate taker flow is not book imbalance,
+  depth, liquidation identity, executable queue information or an established
+  predictive edge.
+
+Collectors retain data under ignored `data_cache/external-factors-1y/`.
+New hypotheses and timing tests are in `examples/external_factors/`; the
+reused historical year and adaptive design process remain explicit. Importing
+real inputs is preparation for an experiment, not a finding of profitability.

@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **177 tests passed at the minute-study launch audit.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **260 tests passed, including the independent external-factor and publication audits.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -129,13 +129,15 @@ The minute examples use only **5 October 2025–5 October 2026 UTC** across BTC,
 ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Official trade/mark archives and actual
 funding are verified; raw datasets stay outside Git. The first thirteen policies
 did not pass all historical hurdles. Six subsequent long/short perpetual
-hypotheses are explicitly exploratory because they reuse this evaluated year.
-Every candidate, cost stress and failed gate is retained; these are not proven
-non-overfit strategies or one-minute scalping claims.
+hypotheses and five external-factor hypotheses are explicitly exploratory because
+they reuse this evaluated year. The completed studies disclose **0/24 historical
+hurdle passes**. Every candidate, cost stress and failed gate is retained; no
+strategy is presented as proven non-overfit or as demonstrated one-minute scalping.
 
 [All results](docs/minute_strategy_results.md) ·
 [Minute data and reproduction](examples/minute_research/README.md) ·
 [Signed perpetual guide](examples/minute_directional/README.md) ·
+[External-factor guide](examples/external_factors/README.md) ·
 [Academic leading-factor research](docs/leading_factor_research.md) ·
 [QQQ, inflation and X data requirements](docs/leading_factor_sources.md).
 

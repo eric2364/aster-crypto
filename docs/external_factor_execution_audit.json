@@ -1,0 +1,86 @@
+{
+  "completed_sealed_trials": 400,
+  "expected_current_trials": 400,
+  "all400_complete": true,
+  "frozen_sources_checked": 37,
+  "frozen_inputs_checked": 79,
+  "checks": "Every sealed trial: output seals, exact identity and bounds, code/runtime/data, every-snapshot equity, fees, native funding/source marks, closed/open PnL, signed inventory, terminal returns and liquidation counts",
+  "trial_evidence_sha256": "76dd459be5817b729b8d038f7390de12618268c3eccbec90907d5981e58c449b",
+  "phase_counts": {
+    "holdout": 120,
+    "stress": 40,
+    "training": 120,
+    "validation1": 40,
+    "validation2": 40,
+    "validation3": 40
+  },
+  "liquidation_events_all_trials": 25,
+  "source_lock_sha256": "9a9033154ea11112d106f0f80abf3e1b443bc980601069e1688d1f90f5e0ec46",
+  "missing_trial_count": 0,
+  "summary_reconstruction_passed": true,
+  "training_selection_reconstruction_passed": true,
+  "pooled_equity_reconstruction_passed": true,
+  "combined_comparisons": 24,
+  "prior19_pooled_hashes_preserved": true,
+  "external_hurdle_pass_count": 0,
+  "summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92",
+  "all_trials_sha256": "6d1d3fb3556acd253730f62494abcc54771aa861dca7a0365eb3f83625ff9534",
+  "total_exploratory_candidates": 24,
+  "no_nonoverfit_claim": true,
+  "family_failed_gates": {
+    "qqq_risk_transmission": [
+      "validation_positive",
+      "evaluation_positive",
+      "jointstress_positive",
+      "sharpe_at_least_half",
+      "all_neighbors_positive",
+      "no_liquidations",
+      "broad_symbol_success",
+      "validation_positive_after_indicative_reserve",
+      "evaluation_positive_after_indicative_reserve",
+      "jointstress_positive_after_indicative_reserve",
+      "all_neighbors_positive_after_indicative_reserve"
+    ],
+    "cpi_acceleration_event": [
+      "validation_positive",
+      "jointstress_positive",
+      "two_positive_months",
+      "sharpe_at_least_half",
+      "all_neighbors_positive",
+      "validation_positive_after_indicative_reserve",
+      "jointstress_positive_after_indicative_reserve",
+      "all_neighbors_positive_after_indicative_reserve"
+    ],
+    "funding_crowding_fade": [
+      "broad_symbol_success"
+    ],
+    "perpetual_premium_fade": [
+      "validation_positive",
+      "evaluation_positive",
+      "jointstress_positive",
+      "two_positive_months",
+      "sharpe_at_least_half",
+      "all_neighbors_positive",
+      "broad_symbol_success",
+      "validation_positive_after_indicative_reserve",
+      "evaluation_positive_after_indicative_reserve",
+      "jointstress_positive_after_indicative_reserve",
+      "all_neighbors_positive_after_indicative_reserve"
+    ],
+    "taker_flow_drift": [
+      "validation_positive",
+      "evaluation_positive",
+      "jointstress_positive",
+      "two_positive_months",
+      "sharpe_at_least_half",
+      "minute_drawdown_within20pct",
+      "all_neighbors_positive",
+      "no_liquidations",
+      "broad_symbol_success",
+      "validation_positive_after_indicative_reserve",
+      "evaluation_positive_after_indicative_reserve",
+      "jointstress_positive_after_indicative_reserve",
+      "all_neighbors_positive_after_indicative_reserve"
+    ]
+  }
+}

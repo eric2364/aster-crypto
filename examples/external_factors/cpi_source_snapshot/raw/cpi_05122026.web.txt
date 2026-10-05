@@ -1,0 +1,120 @@
+Consumer Price Index News Release - 2026 M04 Results (https://www.bls.gov/news.release/archives/cpi_05122026.htm)
+citeturn51view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bls.gov/news.release/archives/cpi_05122026.htm","lineno":175}); Total lines: 1963
+L63:     * cite59†Job Openings & Labor Turnover Survey L64:     * cite60†Business Response Survey L65:     * cite41†Employment by Occupation L66:     * cite61†Work Experience Over Time L67:     * cite62†Business Employment Dynamics L77:     * cite71†International L78:     * cite72†International Technical Cooperation L79:     * cite35†Import/Export Price Indexes L80:     * cite73†Geographic Information L81:     * cite74†Northeast (Boston-New York) L82:     * cite75†Mid-Atlantic (Philadelphia) L83:     * cite76†Southeast (Atlanta) L84:     * cite77†Midwest (Chicago) L85:     * cite78†Southwest (Dallas) L86:     * cite79†Mountain-Plains (Kansas City) L87:     * cite80†West (San Francisco) L88:   * cite81†Data Tools L89:     * cite82†Data Retrieval Tools L90:     * cite83†BLS Popular Series†data.bls.gov L91:     * cite84†Series Report†data.bls.gov L92:     * cite85†Top Picks, One Screen, Multi-Screen, and Maps L93:     * cite86†Data Finder†data.bls.gov L94:     * cite87†Public Data API L95:     * cite88†Charts and Applications L96:     * cite89†Charts for Economic News Releases L97:     * cite90†CPI Inflation Calculator L98:     * cite91†Injury and Illness Calculator†data.bls.gov L99:     * cite92†Pay Measure Comparison†data.bls.gov L100:     * cite93†Demographic Data Sources†data.bls.gov L101:     * cite94†COVID-19 Economic Trends†data.bls.gov L102:     * cite95†Industry Productivity Viewer†data.bls.gov L103:     * cite96†Employment and Wages Data Viewer†data.bls.gov L104:     * cite97†Industry Finder from the Quarterly Census of Employment and Wages†data.bls.gov L105:     * cite98†Customized Tables L106:     * cite99†U.S. Economy at a Glance L107:     * cite100†Regions, States & Areas at a Glance L108:     * cite101†Industry at a Glance L109:     * cite102†Text Files†download.bls.gov L110:     * cite103†News Release Tables L111:     * cite104†More Sources of Data L112:     * cite105†Restricted Data Access L113:     * cite106†Discontinued Databases L114:     * cite107†Questions & Answers L115:     * cite108†Special Notices L116:   * cite109†Publications L117: 
+L118:     * cite109†Latest Publications L119:     * cite110†The Economics Daily L120:     * cite111†Monthly Labor Review L121:     * cite112†Beyond the Numbers L122:     * cite113†Spotlight on Statistics L123:     * cite114†Reports L124:     * cite115†Videos L125:     * cite116†Career Outlook L126:     * cite117†Occupational Outlook Handbook L127:     * cite118†Geographic Profile L128:     * cite119†Handbook of Methods L129:     * cite120†Research Papers L130:     * cite121†Copyright Information L131:     * cite122†Contact & Help L132:     * cite123†Weekly Update L133: 
+L134:   * cite124†Economic Releases L135:     * cite125†Latest Releases L136:     * cite126†Major Economic Indicators L137:     * cite127†Schedules for news Releases L138:     * cite128†By Month L139:     * cite129†By News Release L140:     * cite130†Current Year L141:     * cite131†Prior Years L142:     * cite132†Archived News Releases L143:     * cite133†Employment & Unemployment L144:     * cite133†Monthly L145:     * cite133†Quarterly, annual, and other L146:     * cite134†Inflation & Prices L147:     * cite135†Pay & Benefits & Workplace Injuries L148:     * cite136†Productivity & Technology L149:     * cite137†Employment Projections L150:     * cite138†Regional News Releases L151:   * cite139†Classroom L152: 
+L153:     * cite139†K-12 Student & Teacher Resources L154:     * cite140†Games & Quizzes L155:     * cite141†Student's Desk L156:     * cite142†Teacher's Desk L157:     * cite143†Questions & Answers L158: 
+L159: cite124†Economic News Release L160: 
+L161: cite144†PRINT:†data.bls.gov L162: 
+L163: cite145†CPI L164: 
+L165: Consumer Price Index
+L166: 
+L167:   * cite33†CPI Homepage L168:   * cite146†CPI Overview L169:   * cite147†CPI FAQs L170:   * cite148†Contact CPI L171: 
+L172: [Button: Close]
+L173: # Consumer Price Index News Release
+L174: 
+L175:     Transmission of material in this release is embargoed until
+L176:     8:30 a.m. (ET) Tuesday, May 12, 2026           USDL-26-0721
+L177: 
+L178:     Technical information: (202) 691-7000  *  cpi_info@bls.gov  *  www.bls.gov/cpi
+L179:     Media contact:         (202) 691-5902  *  PressOffice@bls.gov
+L180: 
+L181:     CONSUMER PRICE INDEX - APRIL 2026
+L182:     The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.6 percent on a seasonally adjusted basis in April,
+L183:     after rising 0.9 percent in March, the U.S. Bureau of Labor Statistics reported today. Over the last 12 months, the all
+L184:     items index increased 3.8 percent before seasonal adjustment.
+L185: 
+L186:     The index for energy rose 3.8 percent in April, accounting for over forty percent of the monthly all items increase. The
+L187:     shelter index also increased in April, rising 0.6 percent. The index for food increased 0.5 percent over the month as
+L188:     the index for food at home rose 0.7 percent and the index for food away from home increased 0.2 percent.
+L189: 
+L190:     The index for all items less food and energy rose 0.4 percent in April. Indexes that increased over the month include
+L191:     household furnishings and operations, airline fares, personal care, apparel, and education. Conversely, the indexes for
+L192:     new vehicles, communication, and medical care were among the major indexes that decreased in April.
+L193: 
+L194:     The all items index rose 3.8 percent for the 12 months ending April, after rising 3.3 percent for the 12 months ending
+L195:     March. The all items less food and energy index rose 2.8 percent over the year, following a 2.6 percent increase over
+L196:     the 12 months ending March. The energy index increased 17.9 percent for the 12 months ending April. The food index
+L197:     increased 3.2 percent over the last year.
+L198: Table A. Percent changes in CPI for All Urban Consumers (CPI-U): U.S. city average
+L199:  | Seasonally adjusted changes from preceding month  | Un-
+L200: adjusted
+L201: 12-mos.
+L202: ended
+L203: Apr. 2026
+L204: --- | --- | ---
+L205: Oct.
+L206: 2025  | Nov.
+L207: 2025  | Dec.
+L208: 2025  | Jan.
+L209: 2026  | Feb.
+L210: 2026  | Mar.
+L211: 2026  | Apr.
+L212: 2026
+L213: --- | --- | --- | --- | --- | --- | ---
+L214: All items  | -  | -  | 0.3  | 0.2  | 0.3  | 0.9  | 0.6  | 3.8
+L215: Food  | -  | -  | 0.7  | 0.2  | 0.4  | 0.0  | 0.5  | 3.2
+L216: Food at home  | -  | -  | 0.6  | 0.2  | 0.4  | -0.2  | 0.7  | 2.9
+L217: Food away from home(cite149†1 )  | -  | -  | 0.7  | 0.1  | 0.3  | 0.2  | 0.2  | 3.6
+L218: Energy  | -  | -  | 0.3  | -1.5  | 0.6  | 10.9  | 3.8  | 17.9
+L219: Energy commodities  | -  | -  | -0.3  | -3.3  | 1.1  | 21.3  | 5.6  | 29.2
+L220: Gasoline (all types)  | -1.3  | 2.7  | -0.3  | -3.2  | 0.8  | 21.2  | 5.4  | 28.4
+L221: Fuel oil  | -  | -  | -0.8  | -5.7  | 11.1  | 30.7  | 5.8  | 54.3
+L222: Energy services  | -  | -  | 1.0  | 0.2  | 0.2  | 0.4  | 1.6  | 5.4
+L223: Electricity  | -  | -  | 0.2  | -0.1  | -0.7  | 0.8  | 2.1  | 6.1
+L224: Utility (piped) gas service  | -  | -  | 3.7  | 1.0  | 3.1  | -0.9  | -0.1  | 3.0
+L225: All items less food and energy  | -  | -  | 0.2  | 0.3  | 0.2  | 0.2  | 0.4  | 2.8
+L226: Commodities less food and energy commodities  | -  | -  | 0.0  | 0.0  | 0.1  | 0.1  | 0.0  | 1.1
+L227: New vehicles  | 0.0  | 0.2  | 0.0  | 0.1  | 0.0  | 0.1  | -0.2  | 0.2
+L228: Used cars and trucks  | 0.7  | 0.1  | -0.9  | -1.8  | -0.4  | -0.4  | 0.0  | -2.7
+L229: Apparel  | -  | -  | 0.3  | 0.3  | 1.3  | 1.0  | 0.6  | 4.2
+L230: Medical care commodities(cite149†1 )  | -  | -  | 0.3  | -0.1  | 0.0  | -1.0  | -0.4  | -0.5
+L231: Services less energy services  | -  | -  | 0.3  | 0.4  | 0.3  | 0.2  | 0.5  | 3.3
+L232: Shelter  | -  | -  | 0.4  | 0.2  | 0.2  | 0.3  | 0.6  | 3.3
+L233: Transportation services  | -  | -  | 0.4  | 1.4  | 0.2  | 0.6  | 0.3  | 4.3
+L234: Medical care services  | -  | -  | 0.4  | 0.3  | 0.6  | 0.0  | 0.0  | 3.2
+L235: Footnotes
+L236: (1) Not seasonally adjusted.
+L237: NOTE: The Oct and Nov 2025 data values are not available due to the 2025 lapse in appropriations.
+L238: 
+L239:     Food
+L240: 
+L241:     The index for food rose 0.5 percent in April after being unchanged in March. The food at home index increased 0.7
+L242:     percent over the month. Five of the six major grocery store food group indexes increased in April. The index for meats,
+L243:     poultry, fish, and eggs increased 1.3 percent over the month as the index for beef rose 2.7 percent. The fruits and
+L244:     vegetables index increased 1.8 percent in April and the nonalcoholic beverages index rose 1.1 percent. The index for
+L245:     dairy and related products increased 0.8 percent over the month and the index for cereals and bakery products rose 0.1
+L246:     percent in April.
+L247: 
+L248:     In contrast, the index for other food at home fell 0.4 percent in April after being unchanged in March.
+L249: 
+L250:     The food away from home index rose 0.2 percent in April. The index for limited service meals rose 0.4 percent over the
+L251:     month and the index for full service meals rose 0.1 percent.
+L252: 
+L253:     The index for food at home rose 2.9 percent over the 12 months ending in April. The fruits and vegetables index rose 6.1
+L254:     percent over the last 12 months. The index for other food at home increased 2.5 percent over the same period and the
+L255:     index for nonalcoholic beverages rose 5.1 percent. The cereals and bakery products index increased 2.6 percent over the
+L256:     12 months ending in April and the meats, poultry, fish, and eggs index rose 1.5 percent over the same period. In
+L257:     contrast, the index for dairy and related products fell 0.6 percent over the year.
+L258: 
+L259:     The food away from home index rose 3.6 percent over the last year. The index for full service meals rose 3.8 percent and
+L260:     the index for limited service meals rose 3.2 percent over the same period.
+L261: 
+L262:     Energy
+L263:     The index for energy increased 3.8 percent in April, after rising 10.9 percent in March. The gasoline index increased
+L264:     5.4 percent over the month. (Before seasonal adjustment, gasoline prices increased 11.1 percent in April.) The index for
+L265:     electricity rose 2.1 percent in April. The fuel oil index increased 5.8 percent over the month. Conversely, the index
+L266:     for natural gas decreased 0.1 percent over the same period.
+L267:     The index for energy increased 17.9 percent over the past 12 months and the index for gasoline rose 28.4 percent. The
+L268:     electricity index increased 6.1 percent over the last 12 months ending in April and the natural gas index rose 3.0
+L269:     percent.
+L270: 
+L271:     All items less food and energy
+L272: 
+L273:     The index for all items less food and energy rose 0.4 percent in April, after rising 0.2 percent in each of the 2
+L274:     preceding months. The shelter index increased 0.6 percent over the month. The index for owners' equivalent rent and the
+L275:     index for rent both increased 0.5 percent in April. The lodging away from home index rose 2.4 percent over the month.
+L276: 
+L277:     The index for household furnishings and operations increased 0.7 percent over the month, after rising 0.2 percent in
+L278:     March. The airline fares index rose 2.8 percent in April and the personal care index rose 0.7 percent. The index for
+

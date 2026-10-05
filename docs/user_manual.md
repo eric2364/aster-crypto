@@ -306,3 +306,29 @@ simulations using `.venv/bin/python examples/minute_research/combined_report.py`
 Its nineteen-comparison conditional uncertainty intervals use full-resolution
 pooled equity and preserve the earlier cohort's results. They do not remove
 adaptive research bias or establish non-overfitting.
+
+## External-factor demonstration
+
+The [external-factor guide](../examples/external_factors/README.md) provides the
+commands to collect actual daily QQQ prices, reproduce eleven original BLS CPI
+release records, and extract authentic taker-buy volume from verified Binance
+perpetual archives. It then runs five fixed hypotheses over the same eight-asset
+last-year minute dataset. The [source notes](leading_factor_sources.md) explain
+where data can be obtained and which historical availability assumptions apply.
+The bundled CPI snapshot reproduces the observed official-page rendered source
+records offline; direct HTTP access was blocked in this environment.
+
+Run `examples/external_factors/run.py --workers 4` with the project Python,
+then `examples/external_factors/update_results.py` to update the combined report.
+Open `docs/external_factor_results/report.html` via the local HTTP server for
+all outcomes and activity counts. Preserve `source_lock.json`, `protocol.json`,
+`selection.json` and the execution receipts when comparing reruns. Source or
+input changes require a new output directory. The new combined report has
+twenty-four cumulative disclosed candidates; the older nineteen-comparison
+postprocessor alone does not include this extension.
+
+Funding rates, premiums, QQQ and CPI are candidate predictors, not automatic
+trading advantages. Sparse CPI announcements and correlated exposure across
+coins limit statistical evidence. Current X searches are not used as historical
+sentiment. Read each failed hurdle, joint cost stress and liquidation count
+before treating a positive headline return as useful evidence.

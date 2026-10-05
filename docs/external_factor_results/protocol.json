@@ -1,0 +1,212 @@
+{
+  "research_status": "EXPLORATORY: this historical year was already examined in nineteen prior policies/hypotheses; no untouched-test or non-overfit proof",
+  "families": {
+    "qqq_risk_transmission": "Next-UTC-day QQQ risk-appetite transmission",
+    "cpi_acceleration_event": "First-release CPI acceleration event drift, not surprise",
+    "funding_crowding_fade": "Past-settled perpetual funding crowding fade",
+    "perpetual_premium_fade": "Trade/spot premium convergence directional proxy",
+    "taker_flow_drift": "Lagged aggregate aggressive trade-flow continuation"
+  },
+  "scales": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "model_parameters": {
+    "qqq_risk_transmission": {
+      "0.8": {
+        "short_sessions": 4,
+        "long_sessions": 16,
+        "threshold": 0.01,
+        "stale_hours": 96,
+        "daily_decision": "00:01 UTC"
+      },
+      "1.0": {
+        "short_sessions": 5,
+        "long_sessions": 20,
+        "threshold": 0.01,
+        "stale_hours": 96,
+        "daily_decision": "00:01 UTC"
+      },
+      "1.2": {
+        "short_sessions": 6,
+        "long_sessions": 24,
+        "threshold": 0.01,
+        "stale_hours": 96,
+        "daily_decision": "00:01 UTC"
+      }
+    },
+    "cpi_acceleration_event": {
+      "0.8": {
+        "acceleration_percentage_points": 0.1,
+        "hold_minutes": 1152,
+        "availability_lag_minutes": 1,
+        "consensus_used": false
+      },
+      "1.0": {
+        "acceleration_percentage_points": 0.1,
+        "hold_minutes": 1440,
+        "availability_lag_minutes": 1,
+        "consensus_used": false
+      },
+      "1.2": {
+        "acceleration_percentage_points": 0.1,
+        "hold_minutes": 1728,
+        "availability_lag_minutes": 1,
+        "consensus_used": false
+      }
+    },
+    "funding_crowding_fade": {
+      "0.8": {
+        "last_settlements": 3,
+        "entry_rate": 0.0003,
+        "exit_rate": 0.00015,
+        "stale_hours": 12,
+        "maximum_hold_minutes": 1152,
+        "cooldown_minutes": 60
+      },
+      "1.0": {
+        "last_settlements": 3,
+        "entry_rate": 0.0003,
+        "exit_rate": 0.00015,
+        "stale_hours": 12,
+        "maximum_hold_minutes": 1440,
+        "cooldown_minutes": 60
+      },
+      "1.2": {
+        "last_settlements": 3,
+        "entry_rate": 0.0003,
+        "exit_rate": 0.00015,
+        "stale_hours": 12,
+        "maximum_hold_minutes": 1728,
+        "cooldown_minutes": 60
+      }
+    },
+    "perpetual_premium_fade": {
+      "0.8": {
+        "window_minutes": 48,
+        "entry_log_premium": 0.002995508979798479,
+        "exit_log_premium": 0.0009995003330835331,
+        "maximum_hold_minutes": 576,
+        "cooldown_minutes": 60,
+        "publication_lag_minutes": 1
+      },
+      "1.0": {
+        "window_minutes": 60,
+        "entry_log_premium": 0.002995508979798479,
+        "exit_log_premium": 0.0009995003330835331,
+        "maximum_hold_minutes": 720,
+        "cooldown_minutes": 60,
+        "publication_lag_minutes": 1
+      },
+      "1.2": {
+        "window_minutes": 72,
+        "entry_log_premium": 0.002995508979798479,
+        "exit_log_premium": 0.0009995003330835331,
+        "maximum_hold_minutes": 864,
+        "cooldown_minutes": 60,
+        "publication_lag_minutes": 1
+      }
+    },
+    "taker_flow_drift": {
+      "0.8": {
+        "window_minutes": 48,
+        "entry_imbalance": 0.05,
+        "exit_imbalance": 0.02,
+        "maximum_hold_minutes": 288,
+        "cooldown_minutes": 60,
+        "publication_lag_minutes": 1
+      },
+      "1.0": {
+        "window_minutes": 60,
+        "entry_imbalance": 0.05,
+        "exit_imbalance": 0.02,
+        "maximum_hold_minutes": 360,
+        "cooldown_minutes": 60,
+        "publication_lag_minutes": 1
+      },
+      "1.2": {
+        "window_minutes": 72,
+        "entry_imbalance": 0.05,
+        "exit_imbalance": 0.02,
+        "maximum_hold_minutes": 432,
+        "cooldown_minutes": 60,
+        "publication_lag_minutes": 1
+      }
+    }
+  },
+  "economic_proposal_sha256": "31b766842712d8a25017bb95528054d45fd0c0ce3b1fc1804972d3c1a97851f8",
+  "start": "2025-10-05 00:00:00+00:00",
+  "training_end": "2026-04-05 00:00:00+00:00",
+  "evaluation_start": "2026-07-05 00:00:00+00:00",
+  "end_exclusive": "2026-10-05 00:00:00+00:00",
+  "selection": "training pooled daily Sharpe; one common scale per family; ties prefer1 then larger scale; all undefined picks1 and reports undefined evidence",
+  "validation": "fresh-wallet April5-May5, May5-June5, June5-July5; no validation-based selection",
+  "trials": {
+    "training": 120,
+    "validation": 120,
+    "evaluation_all_scales": 120,
+    "selected_joint_stress": 40,
+    "total": 400
+  },
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "PEPEUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "ADAUSDT"
+  ],
+  "pooled_initial_capital": 100000,
+  "sleeve_initial_capital": 12500,
+  "entry_notional_fraction": 0.25,
+  "quantity_policy": "fixed native quantity at direction transitions, lot-rounded; no minute rebalance",
+  "native_pepe": "1000PEPEUSDT trade/funding quantity remains native; divide price by1000 only for synchronized spot premium",
+  "leverage": 1,
+  "margin_mode": "isolated",
+  "max_gross_leverage": 1,
+  "max_position_pct": 0.5,
+  "base_taker_bps": 5,
+  "slippage_bps": {
+    "BTCUSDT": 2,
+    "ETHUSDT": 2,
+    "DOGEUSDT": 8,
+    "PEPEUSDT": 8,
+    "other": 5
+  },
+  "participation": 0.05,
+  "stress": "double fees/slippage; add1minute order delay; halve participation",
+  "funding": "actual native settlement cash flows, including actual endpoint settlements if supplied; predictor available one minute after actual receipt when supplied, otherwise settlement plus one minute",
+  "phase_cutoffs": "bar start<stop; QQQ/CPI/flow available_at<=stop; all source histories begin within the fixed year; no older initialization",
+  "equity_sampling": "minute/funding-clock evaluation; approximately hourly training/validation; pooled union with prior-only carry-forward",
+  "terminal": "actual final open inventory marked; no fabricated terminal close orders",
+  "indicative_exit_reserve": "diagnostic final marked notional times assumed exit fee/adverse slippage; no executable-volume guarantee or ledger change",
+  "criteria": {
+    "validation_positive": true,
+    "evaluation_positive": true,
+    "jointstress_positive": true,
+    "positive_after_reserve": "validation/evaluation/stress/all3neighbors",
+    "positive_months_minimum": 2,
+    "evaluation_sharpe_minimum": 0.5,
+    "evaluation_minute_drawdown_maximum": 0.2,
+    "all3neighbor_returns_positive": true,
+    "profitable_evaluation_sleeves_minimum": 5,
+    "liquidations_across_validation_all_neighbors_stress": 0
+  },
+  "source_independence": "QQQ and CPI common directions are correlated sleeve exposures; 11 CPI announcements total, not88",
+  "multiple_testing": "24 cumulative economic candidates if this cohort executes; conditional7dayblockbootstrap tails .05/48 and1-.05/48; scales retained as trials",
+  "unchanged_prior_research": "all nineteen prior candidate source/results remain separate",
+  "limitations": [
+    "reused-data research adaptation",
+    "sparse CPI events",
+    "surviving eight-symbol universe",
+    "current rules approximate history",
+    "QQQ vendor correction/vintage unknown",
+    "CPI rendered-source transport disclosed",
+    "minute OHLCV/mark observations omit tick execution and intraminute liquidation paths",
+    "flow is aggregate taker volume, not book OFI",
+    "funding and premium fades overlap carry mechanisms"
+  ]
+}

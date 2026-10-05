@@ -1,0 +1,141 @@
+Consumer Price Index Archived News Releases : U.S. Bureau of Labor Statistics (https://www.bls.gov/bls/news-release/cpi.htm)
+citeturn43view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bls.gov/bls/news-release/cpi.htm","lineno":210}); Total lines: 678
+L89:     * cite82†Data Retrieval Tools L90:     * cite83†BLS Popular Series†data.bls.gov L91:     * cite84†Series Report†data.bls.gov L92:     * cite85†Top Picks, One Screen, Multi-Screen, and Maps L93:     * cite86†Data Finder†data.bls.gov L94:     * cite87†Public Data API L95:     * cite88†Charts and Applications L96:     * cite89†Charts for Economic News Releases L101:     * cite94†COVID-19 Economic Trends†data.bls.gov L102:     * cite95†Industry Productivity Viewer†data.bls.gov L103:     * cite96†Employment and Wages Data Viewer†data.bls.gov L104:     * cite97†Industry Finder from the Quarterly Census of Employment and Wages†data.bls.gov L105:     * cite98†Customized Tables L106:     * cite99†U.S. Economy at a Glance L107:     * cite100†Regions, States & Areas at a Glance L108:     * cite101†Industry at a Glance L109:     * cite102†Text Files†download.bls.gov L110:     * cite103†News Release Tables L111:     * cite104†More Sources of Data L112:     * cite105†Restricted Data Access L113:     * cite106†Discontinued Databases L114:     * cite107†Questions & Answers L115:     * cite108†Special Notices L116:   * cite109†Publications L117: 
+L118:     * cite109†Latest Publications L119:     * cite110†The Economics Daily L120:     * cite111†Monthly Labor Review L121:     * cite112†Beyond the Numbers L122:     * cite113†Spotlight on Statistics L123:     * cite114†Reports L124:     * cite115†Videos L125:     * cite116†Career Outlook L126:     * cite117†Occupational Outlook Handbook L127:     * cite118†Geographic Profile L128:     * cite119†Handbook of Methods L129:     * cite120†Research Papers L130:     * cite121†Copyright Information L131:     * cite122†Contact & Help L132:     * cite123†Weekly Update L133: 
+L134:   * cite124†Economic Releases L135:     * cite125†Latest Releases L136:     * cite126†Major Economic Indicators L137:     * cite127†Schedules for news Releases L138:     * cite128†By Month L139:     * cite129†By News Release L140:     * cite130†Current Year L141:     * cite131†Prior Years L142:     * cite132†Archived News Releases L143:     * cite133†Employment & Unemployment L144:     * cite133†Monthly L145:     * cite133†Quarterly, annual, and other L146:     * cite134†Inflation & Prices L147:     * cite135†Pay & Benefits & Workplace Injuries L148:     * cite136†Productivity & Technology L149:     * cite137†Employment Projections L150:     * cite138†Regional News Releases L151:   * cite139†Classroom L152: 
+L153:     * cite139†K-12 Student & Teacher Resources L154:     * cite140†Games & Quizzes L155:     * cite141†Student's Desk L156:     * cite142†Teacher's Desk L157:     * cite143†Questions & Answers L158: # Consumer Price Index Archived News Releases
+L159: 
+L160: ## cite144†Archived News Releases | Consumer Price Index
+L161: 
+L162: The Consumer Price Index (CPI) news release presents data from the cite33†Consumer Price Indexes program.
+L163: 
+L164: #### Caution
+L165: 
+L166: Data in archived news releases may have been revised in subsequent releases. The latest data, including any revisions, may be obtained from the databases accessible on the program homepage: cite145†Consumer Price Indexes: databases .
+L167: 
+L168: #### On This Page
+L169: ##### Links to archive copies of Consumer Price Index news releases
+L170: 
+L171:   * cite146†Current edition L172:   * cite147†2026 L173:   * cite148†2025 L174:   * cite149†2024 L175:   * cite150†2023 L176:   * cite151†2022 L177:   * cite152†2021 L178:   * cite153†2020 L179:  |    |
+L180: 
+L181:   * cite154†2019 L182:   * cite155†2018 L183:   * cite156†2017 L184:   * cite157†2016 L185:   * cite158†2015 L186:   * cite159†2014 L187:   * cite160†2013 L188:   * cite161†2012 L189:   * cite162†2011 L190:  |    |
+L191: 
+L192:   * cite163†2010 L193:   * cite164†2009 L194:   * cite165†2008 L195:   * cite166†2007 L196:   * cite167†2006 L197:   * cite168†2005 L198:   * cite169†2004 L199:   * cite170†2003 L200:  |    |
+L201:   * cite171†2002 L202:   * cite172†2001 L203:   * cite173†2000 L204:   * cite174†1999 L205:   * cite175†1998 L206:   * cite176†1997 L207:   * cite177†1996 L208:   * cite178†1995 L209:   * cite179†1994 L210: #### Current Edition of Consumer Price Index
+L211: 
+L212:   * The current edition of the Consumer Price Index news release is always posted at cite180†www.bls.gov/news.release/cpi.nr0.htm .
+L213: #### 2026 Consumer Price Index
+L214: 
+L215:   * cite181†August 2026 Consumer Price Index (cite182†PDF )
+L216:   * cite183†July 2026 Consumer Price Index (cite184†PDF )
+L217:   * cite185†June 2026 Consumer Price Index (cite186†PDF )
+L218:   * cite187†May 2026 Consumer Price Index (cite188†PDF )
+L219:   * cite189†April 2026 Consumer Price Index (cite190†PDF )
+L220:   * cite191†March 2026 Consumer Price Index (cite192†PDF )
+L221:   * cite193†February 2026 Consumer Price Index (cite194†PDF )
+L222:   * cite195†January 2026 Consumer Price Index (cite196†PDF )
+L223: #### 2025 Consumer Price Index
+L224:   * cite197†December 2025 Consumer Price Index (cite198†PDF )
+L225:   * cite199†November 2025 Consumer Price Index (cite200†PDF )
+L226:   * October 2025 Consumer Price Index – Not published because of 2025 lapse in federal government appropriations
+L227:   * cite201†September 2025 Consumer Price Index (cite202†PDF )
+L228:   * cite203†August 2025 Consumer Price Index (cite204†PDF )
+L229:   * cite205†July 2025 Consumer Price Index (cite206†PDF )
+L230:   * cite207†June 2025 Consumer Price Index (cite208†PDF )
+L231:   * cite209†May 2025 Consumer Price Index (cite210†PDF )
+L232:   * cite211†April 2025 Consumer Price Index (cite212†PDF )
+L233:   * cite213†March 2025 Consumer Price Index (cite214†PDF )
+L234:   * cite215†February 2025 Consumer Price Index (cite216†PDF )
+L235:   * cite217†January 2025 Consumer Price Index (cite218†PDF )
+L236: #### 2024 Consumer Price Index
+L237:   * cite219†December 2024 Consumer Price Index (cite220†PDF )
+L238:   * cite221†November 2024 Consumer Price Index (cite222†PDF )
+L239:   * cite223†October 2024 Consumer Price Index (cite224†PDF )
+L240:   * cite225†September 2024 Consumer Price Index (cite226†PDF )
+L241:   * cite227†August 2024 Consumer Price Index (cite228†PDF )
+L242:   * cite229†July 2024 Consumer Price Index (cite230†PDF )
+L243:   * cite231†June 2024 Consumer Price Index (cite232†PDF )
+L244:   * cite233†May 2024 Consumer Price Index (cite234†PDF )
+L245:   * cite235†April 2024 Consumer Price Index (cite236†PDF )
+L246:   * cite237†March 2024 Consumer Price Index (cite238†PDF )
+L247:   * cite239†February 2024 Consumer Price Index (cite240†PDF )
+L248:   * cite241†January 2024 Consumer Price Index (cite242†PDF )
+L249: #### 2023 Consumer Price Index
+L250:   * cite243†December 2023 Consumer Price Index (cite244†PDF )
+L251:   * cite245†November 2023 Consumer Price Index (cite246†PDF )
+L252:   * cite247†October 2023 Consumer Price Index (cite248†PDF )
+L253:   * cite249†September 2023 Consumer Price Index (cite250†PDF )
+L254:   * cite251†August 2023 Consumer Price Index (cite252†PDF )
+L255:   * cite253†July 2023 Consumer Price Index (cite254†PDF )
+L256:   * cite255†June 2023 Consumer Price Index (cite256†PDF )
+L257:   * cite257†May 2023 Consumer Price Index (cite258†PDF )
+L258:   * cite259†April 2023 Consumer Price Index (cite260†PDF )
+L259:   * cite261†March 2023 Consumer Price Index (cite262†PDF )
+L260:   * cite263†February 2023 Consumer Price Index (cite264†PDF )
+L261:   * cite265†January 2023 Consumer Price Index (cite266†PDF )
+L262: #### 2022 Consumer Price Index
+L263:   * cite267†December 2022 Consumer Price Index (cite268†PDF )
+L264:   * cite269†November 2022 Consumer Price Index (cite270†PDF )
+L265:   * cite271†October 2022 Consumer Price Index (cite272†PDF )
+L266:   * cite273†September 2022 Consumer Price Index (cite274†PDF )
+L267:   * cite275†August 2022 Consumer Price Index (cite276†PDF )
+L268:   * cite277†July 2022 Consumer Price Index (cite278†PDF )
+L269:   * cite279†June 2022 Consumer Price Index (cite280†PDF )
+L270:   * cite281†May 2022 Consumer Price Index (cite282†PDF )
+L271:   * cite283†April 2022 Consumer Price Index (cite284†PDF )
+L272:   * cite285†March 2022 Consumer Price Index (cite286†PDF )
+L273:   * cite287†February 2022 Consumer Price Index (cite288†PDF )
+L274:   * cite289†January 2022 Consumer Price Index (cite290†PDF )
+L275: #### 2021 Consumer Price Index
+L276:   * cite291†December 2021 Consumer Price Index (cite292†PDF )
+L277:   * cite293†November 2021 Consumer Price Index (cite294†PDF )
+L278:   * cite295†October 2021 Consumer Price Index (cite296†PDF )
+L279:   * cite297†September 2021 Consumer Price Index (cite298†PDF )
+L280:   * cite299†August 2021 Consumer Price Index (cite300†PDF )
+L281:   * cite301†July 2021 Consumer Price Index (cite302†PDF )
+L282:   * cite303†June 2021 Consumer Price Index (cite304†PDF )
+L283:   * cite305†May 2021 Consumer Price Index (cite306†PDF )
+L284:   * cite307†April 2021 Consumer Price Index (cite308†PDF )
+L285:   * cite309†March 2021 Consumer Price Index (cite310†PDF )
+L286:   * cite311†February 2021 Consumer Price Index (cite312†PDF )
+L287:   * cite313†January 2021 Consumer Price Index (cite314†PDF )
+L288: #### 2020 Consumer Price Index
+L289:   * cite315†December 2020 Consumer Price Index (cite316†PDF )
+L290:   * cite317†November 2020 Consumer Price Index (cite318†PDF )
+L291:   * cite319†October 2020 Consumer Price Index (cite320†PDF )
+L292:   * cite321†September 2020 Consumer Price Index (cite322†PDF )
+L293:   * cite323†August 2020 Consumer Price Index (cite324†PDF )
+L294:   * cite325†July 2020 Consumer Price Index (cite326†PDF )
+L295:   * cite327†June 2020 Consumer Price Index (cite328†PDF )
+L296:   * cite329†May 2020 Consumer Price Index (cite330†PDF )
+L297:   * cite331†April 2020 Consumer Price Index (cite332†PDF )
+L298:   * cite333†March 2020 Consumer Price Index (cite334†PDF )
+L299:   * cite335†February 2020 Consumer Price Index (cite336†PDF )
+L300:   * cite337†January 2020 Consumer Price Index (cite338†PDF )
+L301: #### 2019 Consumer Price Index
+L302:   * cite339†December 2019 Consumer Price Index (cite340†PDF )
+L303:   * cite341†November 2019 Consumer Price Index (cite342†PDF )
+L304:   * cite343†October 2019 Consumer Price Index (cite344†PDF )
+L305:   * cite345†September 2019 Consumer Price Index (cite346†PDF )
+L306:   * cite347†August 2019 Consumer Price Index (cite348†PDF )
+L307:   * cite349†July 2019 Consumer Price Index (cite350†PDF )
+L308:   * cite351†June 2019 Consumer Price Index (cite352†PDF )
+L309:   * cite353†May 2019 Consumer Price Index (cite354†PDF )
+L310:   * cite355†April 2019 Consumer Price Index (cite356†PDF )
+L311:   * cite357†March 2019 Consumer Price Index (cite358†PDF )
+L312:   * cite359†February 2019 Consumer Price Index (cite360†PDF )
+L313:   * cite361†January 2019 Consumer Price Index (cite362†PDF )
+L314: #### 2018 Consumer Price Index
+L315:   * cite363†December 2018 Consumer Price Index (cite364†PDF )
+L316:   * cite365†November 2018 Consumer Price Index (cite366†PDF )
+L317:   * cite367†October 2018 Consumer Price Index (cite368†PDF )
+L318:   * cite369†September 2018 Consumer Price Index (cite370†PDF )
+L319:   * cite371†August 2018 Consumer Price Index (cite372†PDF )
+L320:   * cite373†July 2018 Consumer Price Index (cite374†PDF )
+L321:   * cite375†June 2018 Consumer Price Index (cite376†PDF )
+L322:   * cite377†May 2018 Consumer Price Index (cite378†PDF )
+L323:   * cite379†April 2018 Consumer Price Index (cite380†PDF )
+L324:   * cite381†March 2018 Consumer Price Index (cite382†PDF )
+L325:   * cite383†February 2018 Consumer Price Index (cite384†PDF )
+L326:   * cite385†January 2018 Consumer Price Index (cite386†PDF )
+

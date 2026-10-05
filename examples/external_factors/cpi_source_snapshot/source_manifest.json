@@ -1,0 +1,104 @@
+{
+  "archive_index_url": "https://www.bls.gov/bls/news-release/cpi.htm",
+  "archive_index_file": "raw/archive_index.web.txt",
+  "archive_index_sha256": "00399b08e3c292c454ca2ff539d0b19e0fae40dcc2d383790c674050147d9678",
+  "retrieved_at": "2026-10-05T21:32:28.491956+00:00",
+  "requested_start": "2025-10-05T00:00:00Z",
+  "requested_end_exclusive": "2026-10-05T00:00:00Z",
+  "sources": [
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_01132026.htm",
+      "file": "raw/cpi_01132026.web.txt",
+      "sha256": "97923f0cccefec61c19db65d053e5db3b827976cee023fd64045677a1ab817bb",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_02132026.htm",
+      "file": "raw/cpi_02132026.web.txt",
+      "sha256": "b7ffc2acb9b0a2a5b3ac0c0c7343277a8de52aa2ce3d45c38774e19a8b71e545",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_03112026.htm",
+      "file": "raw/cpi_03112026.web.txt",
+      "sha256": "f110237ef8498f24c423a5a9785de45a71c8c654ce2b7cb96b91d8e6fa48e57c",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_04102026.htm",
+      "file": "raw/cpi_04102026.web.txt",
+      "sha256": "9549b2d6266bfe5feb20302e76cf641aaa18a99f699c38e519aad09fa3f3595c",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_05122026.htm",
+      "file": "raw/cpi_05122026.web.txt",
+      "sha256": "10ec17fa96e2b4d45bbb04bb9f417a9de131df564e113d91a6c7e031644f1361",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_06102026.htm",
+      "file": "raw/cpi_06102026.web.txt",
+      "sha256": "754e53a40d07ee0f781a618d51a2e666a392a2f475ec27bea72e41d03f92bb5a",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm",
+      "file": "raw/cpi_07142026.web.txt",
+      "sha256": "f5b9b733cb4306837f0f29b07fc259d8dcc09ad90adb1d6f3846c74c2fb89424",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+      "file": "raw/cpi_08122026.web.txt",
+      "sha256": "5cd9d0f4d8745396abd47373bafb7f4698610571f5bb619704f5578d60b3cc2f",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_09112026.htm",
+      "file": "raw/cpi_09112026.web.txt",
+      "sha256": "d299dd706d2e1d6dd0cf5908fd9a3a422484960c0c71eb2ae09c16d05abad89a",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_10242025.htm",
+      "file": "raw/cpi_10242025.web.txt",
+      "sha256": "794158802f8772616ac0e0bf2d266bc2c9677d7de98ce9c9c0a5c6367fb026c9",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_12182025.htm",
+      "file": "raw/cpi_12182025.web.txt",
+      "sha256": "2d504e6e9e1539735edbf361cfc0e3eb02a7a74f0435c669b3976da4a54813f8",
+      "transport": "web.run official-page rendered source response",
+      "publisher_original_html": false
+    }
+  ],
+  "discovery": "Observed BLS archive links followed through web.run; no release URL calendar grid was guessed. Direct requests/curl archive index and one release returned Akamai HTTP403. Cached transport is rendered source response text, not original publisher HTTP HTML bytes.",
+  "missing_reference_months": [
+    {
+      "reference_month": "2025-10",
+      "reason": "Not published because of 2025 lapse in federal government appropriations",
+      "source_url": "https://www.bls.gov/bls/news-release/cpi.htm"
+    }
+  ],
+  "observed_link_response": {
+    "file": "raw/observed_release_links.web.txt",
+    "sha256": "e96d59707c8b2e0e1d7bab091ae8e10843b4451c5b3cf5b740ebfe7ed893f06f",
+    "transport": "web.run original response text of followed official archive links"
+  },
+  "collector": {
+    "path": "examples/external_factors/download_cpi.py",
+    "sha256": "a8c1ab90ca3a082894d1459beed81d12478075a2d7c908ff0bbc39ee6bec4b4b"
+  }
+}

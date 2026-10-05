@@ -1,0 +1,242 @@
+{
+  "btc_lead_momentum": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.22685548165761227,
+      0.06543068173122715
+    ],
+    "source": "results/minute-study-1y/pooled/btc_lead_momentum/equity.parquet",
+    "source_sha256": "047c5a51f24f08a42d62889bf741e6f82afd08c22e0f162955709b5ec87be454"
+  },
+  "btc_lead_reversal": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.04208112374745561,
+      0.0
+    ],
+    "source": "results/minute-study-1y/pooled/btc_lead_reversal/equity.parquet",
+    "source_sha256": "d55f2ae1dd9a15adb18b5359ca3af4bac9f848777f9a4083a421fff5cfbeea2d"
+  },
+  "donchian": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.25761127763495517,
+      0.9846080689754078
+    ],
+    "source": "results/minute-study-1y/pooled/donchian/equity.parquet",
+    "source_sha256": "eaa03ad530c3004f9c83debfea062c4cff8538e1d0a694df0aff600802f136bc"
+  },
+  "funding_contrarian": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.10391577025969555,
+      0.001187429273669564
+    ],
+    "source": "results/minute-study-1y/pooled/funding_contrarian/equity.parquet",
+    "source_sha256": "5359a5899dd57c4becec22aa03c54ed89439c7f40c9964348cd92c4323cafe53"
+  },
+  "mean_reversion": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.15904015277035433,
+      -0.0031865790868918806
+    ],
+    "source": "results/minute-study-1y/pooled/mean_reversion/equity.parquet",
+    "source_sha256": "a77d8711d8bf03bcd359bd1c9a3325e7d63a61ec2c5043ac813ae1d25acf3cf6"
+  },
+  "trend": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.4295889604561968,
+      1.2882436302114542
+    ],
+    "source": "results/minute-study-1y/pooled/trend/equity.parquet",
+    "source_sha256": "7b23ec9f6ad5ca8cb4684d2c60c2a6a4b5ce8c93e96ff81e16a96f129ac9c113"
+  },
+  "trend_pullback": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.17813937962374257,
+      -0.01824885582253841
+    ],
+    "source": "results/minute-study-1y/pooled/trend_pullback/equity.parquet",
+    "source_sha256": "246efba797180d4204c925c35d7477db882da41baf65e8f1e8f173176a7df6f8"
+  },
+  "volatility_breakout": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.3689097842999827,
+      0.06115575974448708
+    ],
+    "source": "results/minute-study-1y/pooled/volatility_breakout/equity.parquet",
+    "source_sha256": "035578f832acf36fbc0ae738e8168070a4fb2d6368c3dda70ef72f0b7f6e72d5"
+  },
+  "always_hedged": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.010860692045050645,
+      0.004140297679629071
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/always_hedged/equity.parquet",
+    "source_sha256": "28e7861095db86af1cb411ceb53881b02943b141d4eda333b23c497040197d7c"
+  },
+  "funding_hysteresis": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.018616138736883926,
+      -0.0019494329393664874
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/funding_hysteresis/equity.parquet",
+    "source_sha256": "4be9ad93ba03fdd4b485759785efe73b70aa4661f3b3adc2dcea1a4ca8ba2991"
+  },
+  "funding_rotation": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.026293321464629708,
+      -0.016535264846013104
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/funding_rotation/equity.parquet",
+    "source_sha256": "de95d7729959dbc71c503a1bf0bc5996bc405e03d91fea420da1f1ef304ff97f"
+  },
+  "positive_trailing": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.022382337817262423,
+      -0.005777551779266357
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/positive_trailing/equity.parquet",
+    "source_sha256": "9d1ba26de2b85bf25a409bcceb1b0de6d046b13302bf94c48abbd97e7075ae5d"
+  },
+  "risk_controlled": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.021064875274180547,
+      -0.0054836799723825954
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/risk_controlled/equity.parquet",
+    "source_sha256": "8ef9df64cf3f7dcb9a580674bc72a899a197202e7203c4f0b8bcaece254cfdbf"
+  },
+  "btc_conditioned_alt_lag": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.012802291067921695,
+      0.03190643693783504
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/btc_conditioned_alt_lag/equity.parquet",
+    "source_sha256": "5fe9f31fa7ef7e44af9903a418cec5785ecfa2787173162c02124d2404c6cf98"
+  },
+  "cross_sectional_momentum": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.07308744009855381,
+      0.010991170636685909
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/cross_sectional_momentum/equity.parquet",
+    "source_sha256": "20242dc2dcf1dd0fa014ebceae6ba0008f6f9ded2f3236f55615660e5d008763"
+  },
+  "signed_mean_reversion": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.24673749781992796,
+      0.06920635153967508
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/signed_mean_reversion/equity.parquet",
+    "source_sha256": "100f7006e52ec15a2c343a204dd9b8f771baef129ddf710c4514309c066c71b3"
+  },
+  "slow_ema_trend": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.14498571984126724,
+      0.2246898996021564
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/slow_ema_trend/equity.parquet",
+    "source_sha256": "a860f3e85fbd33617905670ead14e2c3357a296c0b15051994b0c094b0cbb092"
+  },
+  "ts_momentum_agreement": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.16532924340149313,
+      0.2972440858875686
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/ts_momentum_agreement/equity.parquet",
+    "source_sha256": "3d6cfbc98557d6d48f64fefb1486194e437a998a7082993e33978d6836ef5467"
+  },
+  "weekly_donchian": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.06072639177502996,
+      0.056521949073463584
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/weekly_donchian/equity.parquet",
+    "source_sha256": "f07dabbcc3b755930da2d1d97a0c99253be84d3b6877c15242edd1f9bb4e30fb"
+  },
+  "cpi_acceleration_event": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.022161483534330256,
+      0.027916998569532333
+    ],
+    "source": "results/external-factor-1y/pooled/cpi_acceleration_event/equity.parquet",
+    "source_sha256": "30f6c56dd83745212da03db6a49e3f206c048e5d51bcf5fd25258e67a6c432bf"
+  },
+  "funding_crowding_fade": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.0006315659804443374,
+      0.0020736539396801206
+    ],
+    "source": "results/external-factor-1y/pooled/funding_crowding_fade/equity.parquet",
+    "source_sha256": "3c61ec5046a26b1a627877a5f524c4988a7e4ce7fcc37d9cb195c02a2b6bd85b"
+  },
+  "perpetual_premium_fade": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      0.0,
+      0.0
+    ],
+    "source": "results/external-factor-1y/pooled/perpetual_premium_fade/equity.parquet",
+    "source_sha256": "0418d7f55b5f3095a6ac466168dc8f98f65eb43ed92e3c6bb7dc98cf5f47a9dc"
+  },
+  "qqq_risk_transmission": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.0736354395216198,
+      0.06705870180679317
+    ],
+    "source": "results/external-factor-1y/pooled/qqq_risk_transmission/equity.parquet",
+    "source_sha256": "5cf094fb6815d38b68c17e4b88782f2624bf267cf06e87bdf6b9ac9e5e3d187f"
+  },
+  "taker_flow_drift": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;adaptive reused year",
+    "comparison_count": 24,
+    "return_interval_bonferroni24policies": [
+      -0.34836898114301784,
+      -0.2416306359022947
+    ],
+    "source": "results/external-factor-1y/pooled/taker_flow_drift/equity.parquet",
+    "source_sha256": "a3f4294487405b2a44e69997e4693e974c5cf374d5b5bbd926dbbe976461cf69"
+  }
+}

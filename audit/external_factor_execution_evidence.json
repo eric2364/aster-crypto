@@ -1,0 +1,20 @@
+{
+  "completed_sealed_trials": 400,
+  "expected_current_trials": 400,
+  "all400_complete": true,
+  "frozen_sources_checked": 37,
+  "frozen_inputs_checked": 79,
+  "checks": "Every sealed trial: output seals, exact identity and bounds, code/runtime/data, every-snapshot equity, fees, native funding/source marks, closed/open PnL, signed inventory, terminal returns and liquidation counts",
+  "trial_evidence_sha256": "76dd459be5817b729b8d038f7390de12618268c3eccbec90907d5981e58c449b",
+  "phase_counts": {
+    "holdout": 120,
+    "stress": 40,
+    "training": 120,
+    "validation1": 40,
+    "validation2": 40,
+    "validation3": 40
+  },
+  "liquidation_events_all_trials": 25,
+  "source_lock_sha256": "9a9033154ea11112d106f0f80abf3e1b443bc980601069e1688d1f90f5e0ec46",
+  "missing_trial_count": 0
+}

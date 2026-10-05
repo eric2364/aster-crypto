@@ -1,0 +1,120 @@
+Consumer Price Index News Release - 2025 M09 Results (https://www.bls.gov/news.release/archives/cpi_10242025.htm)
+citeturn46view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.bls.gov/news.release/archives/cpi_10242025.htm","lineno":175}); Total lines: 1982
+L77:     * cite71†International L78:     * cite72†International Technical Cooperation L79:     * cite35†Import/Export Price Indexes L80:     * cite73†Geographic Information L81:     * cite74†Northeast (Boston-New York) L82:     * cite75†Mid-Atlantic (Philadelphia) L83:     * cite76†Southeast (Atlanta) L84:     * cite77†Midwest (Chicago) L85:     * cite78†Southwest (Dallas) L86:     * cite79†Mountain-Plains (Kansas City) L87:     * cite80†West (San Francisco) L88:   * cite81†Data Tools L89:     * cite82†Data Retrieval Tools L90:     * cite83†BLS Popular Series†data.bls.gov L91:     * cite84†Series Report†data.bls.gov L92:     * cite85†Top Picks, One Screen, Multi-Screen, and Maps L93:     * cite86†Data Finder†data.bls.gov L94:     * cite87†Public Data API L95:     * cite88†Charts and Applications L96:     * cite89†Charts for Economic News Releases L97:     * cite90†CPI Inflation Calculator L98:     * cite91†Injury and Illness Calculator†data.bls.gov L99:     * cite92†Pay Measure Comparison†data.bls.gov L100:     * cite93†Demographic Data Sources†data.bls.gov L101:     * cite94†COVID-19 Economic Trends†data.bls.gov L102:     * cite95†Industry Productivity Viewer†data.bls.gov L103:     * cite96†Employment and Wages Data Viewer†data.bls.gov L104:     * cite97†Industry Finder from the Quarterly Census of Employment and Wages†data.bls.gov L105:     * cite98†Customized Tables L106:     * cite99†U.S. Economy at a Glance L107:     * cite100†Regions, States & Areas at a Glance L108:     * cite101†Industry at a Glance L109:     * cite102†Text Files†download.bls.gov L110:     * cite103†News Release Tables L111:     * cite104†More Sources of Data L112:     * cite105†Restricted Data Access L113:     * cite106†Discontinued Databases L114:     * cite107†Questions & Answers L115:     * cite108†Special Notices L116:   * cite109†Publications L117: 
+L118:     * cite109†Latest Publications L119:     * cite110†The Economics Daily L120:     * cite111†Monthly Labor Review L121:     * cite112†Beyond the Numbers L122:     * cite113†Spotlight on Statistics L123:     * cite114†Reports L124:     * cite115†Videos L125:     * cite116†Career Outlook L126:     * cite117†Occupational Outlook Handbook L127:     * cite118†Geographic Profile L128:     * cite119†Handbook of Methods L129:     * cite120†Research Papers L130:     * cite121†Copyright Information L131:     * cite122†Contact & Help L132:     * cite123†Weekly Update L133: 
+L134:   * cite124†Economic Releases L135:     * cite125†Latest Releases L136:     * cite126†Major Economic Indicators L137:     * cite127†Schedules for news Releases L138:     * cite128†By Month L139:     * cite129†By News Release L140:     * cite130†Current Year L141:     * cite131†Prior Years L142:     * cite132†Archived News Releases L143:     * cite133†Employment & Unemployment L144:     * cite133†Monthly L145:     * cite133†Quarterly, annual, and other L146:     * cite134†Inflation & Prices L147:     * cite135†Pay & Benefits & Workplace Injuries L148:     * cite136†Productivity & Technology L149:     * cite137†Employment Projections L150:     * cite138†Regional News Releases L151:   * cite139†Classroom L152: 
+L153:     * cite139†K-12 Student & Teacher Resources L154:     * cite140†Games & Quizzes L155:     * cite141†Student's Desk L156:     * cite142†Teacher's Desk L157:     * cite143†Questions & Answers L158: 
+L159: cite124†Economic News Release L160: 
+L161: cite144†PRINT:†data.bls.gov L162: 
+L163: cite145†CPI L164: 
+L165: Consumer Price Index
+L166: 
+L167:   * cite33†CPI Homepage L168:   * cite146†CPI Overview L169:   * cite147†CPI FAQs L170:   * cite148†Contact CPI L171: 
+L172: [Button: Close]
+L173: # Consumer Price Index News Release
+L174: 
+L175:     Transmission of material in this release is embargoed until
+L176:     8:30 a.m. (ET) Friday, October 24, 2025        USDL-25-1502
+L177: 
+L178:     Contact information: (202) 691-5902  *  PressOffice@bls.gov
+L179: 
+L180:     CONSUMER PRICE INDEX - SEPTEMBER 2025
+L181: 
+L182:     The Consumer Price Index for All Urban Consumers (CPI-U) increased 0.3 percent on a seasonally adjusted basis in
+L183:     September, after rising 0.4 percent in August, the U.S. Bureau of Labor Statistics reported today. Over the last 12
+L184:     months, the all items index increased 3.0 percent before seasonal adjustment. Note that September CPI data collection
+L185:     was completed before the lapse in appropriations.
+L186: 
+L187:     The index for gasoline rose 4.1 percent in September and was the largest factor in the all items monthly increase, as
+L188:     the index for energy rose 1.5 percent over the month. The food index increased 0.2 percent over the month as the food
+L189:     at home index rose 0.3 percent and the food away from home index increased 0.1 percent.
+L190: 
+L191:     The index for all items less food and energy rose 0.2 percent in September, after rising 0.3 percent in each of the 2
+L192:     preceding months. Indexes that increased over the month include shelter, airline fares, recreation, household
+L193:     furnishings and operations, and apparel. The indexes for motor vehicle insurance, used cars and trucks, and
+L194:     communication were among the few major indexes that decreased in September.
+L195: 
+L196:     The all items index rose 3.0 percent for the 12 months ending September, after rising 2.9 percent over the 12 months
+L197:     ending August. The all items less food and energy index also rose 3.0 percent over the last 12 months. The energy index
+L198:     increased 2.8 percent for the 12 months ending September. The food index increased 3.1 percent over the last year.
+L199: Table A. Percent changes in CPI for All Urban Consumers (CPI-U): U.S. city average
+L200:  | Seasonally adjusted changes from preceding month  | Un-
+L201: adjusted
+L202: 12-mos.
+L203: ended
+L204: Sep. 2025
+L205: --- | --- | ---
+L206: Mar.
+L207: 2025  | Apr.
+L208: 2025  | May
+L209: 2025  | Jun.
+L210: 2025  | Jul.
+L211: 2025  | Aug.
+L212: 2025  | Sep.
+L213: 2025
+L214: --- | --- | --- | --- | --- | --- | ---
+L215: All items  | -0.1  | 0.2  | 0.1  | 0.3  | 0.2  | 0.4  | 0.3  | 3.0
+L216: Food  | 0.4  | -0.1  | 0.3  | 0.3  | 0.0  | 0.5  | 0.2  | 3.1
+L217: Food at home  | 0.5  | -0.4  | 0.3  | 0.3  | -0.1  | 0.6  | 0.3  | 2.7
+L218: Food away from home(cite149†1 )  | 0.4  | 0.4  | 0.3  | 0.4  | 0.3  | 0.3  | 0.1  | 3.7
+L219: Energy  | -2.4  | 0.7  | -1.0  | 0.9  | -1.1  | 0.7  | 1.5  | 2.8
+L220: Energy commodities  | -6.1  | -0.2  | -2.4  | 1.0  | -1.9  | 1.7  | 3.8  | -0.4
+L221: Gasoline (all types)  | -6.3  | -0.1  | -2.6  | 1.0  | -2.2  | 1.9  | 4.1  | -0.5
+L222: Fuel oil  | -4.2  | -1.3  | 0.9  | 1.3  | 1.8  | -0.3  | 0.6  | 4.1
+L223: Energy services  | 1.6  | 1.5  | 0.4  | 0.9  | -0.3  | -0.2  | -0.7  | 6.4
+L224: Electricity  | 0.9  | 0.8  | 0.9  | 1.0  | -0.1  | 0.2  | -0.5  | 5.1
+L225: Utility (piped) gas service  | 3.6  | 3.7  | -1.0  | 0.5  | -0.9  | -1.6  | -1.2  | 11.7
+L226: All items less food and energy  | 0.1  | 0.2  | 0.1  | 0.2  | 0.3  | 0.3  | 0.2  | 3.0
+L227: Commodities less food and energy commodities  | -0.1  | 0.1  | 0.0  | 0.2  | 0.2  | 0.3  | 0.2  | 1.5
+L228: New vehicles  | 0.1  | 0.0  | -0.3  | -0.3  | 0.0  | 0.3  | 0.2  | 0.8
+L229: Used cars and trucks  | -0.7  | -0.5  | -0.5  | -0.7  | 0.5  | 1.0  | -0.4  | 5.1
+L230: Apparel  | 0.4  | -0.2  | -0.4  | 0.4  | 0.1  | 0.5  | 0.7  | -0.1
+L231: Medical care commodities(cite149†1 )  | -1.1  | 0.4  | 0.6  | 0.1  | 0.1  | -0.3  | -0.1  | 0.7
+L232: Services less energy services  | 0.1  | 0.3  | 0.2  | 0.3  | 0.4  | 0.3  | 0.2  | 3.5
+L233: Shelter  | 0.2  | 0.3  | 0.3  | 0.2  | 0.2  | 0.4  | 0.2  | 3.6
+L234: Transportation services  | -1.4  | 0.1  | -0.2  | 0.2  | 0.8  | 1.0  | 0.3  | 2.5
+L235: Medical care services  | 0.5  | 0.5  | 0.2  | 0.6  | 0.8  | -0.1  | 0.3  | 3.9
+L236: Footnotes
+L237: (1) Not seasonally adjusted.
+L238: 
+L239:     Food
+L240: 
+L241:     The index for food rose 0.2 percent in September, after rising 0.5 percent in August. The food at home index increased
+L242:     0.3 percent over the month. Four of the six major grocery store food group indexes increased in September. The index for
+L243:     other food at home rose 0.5 percent over the month after rising 0.1 percent in August. The cereals and bakery products
+L244:     index and the nonalcoholic beverages index both increased 0.7 percent in September. The index for meats, poultry, fish,
+L245:     and eggs rose 0.3 percent over the month following a 1.0-percent increase in August.
+L246: 
+L247:     The dairy and related products index declined 0.5 percent in September as the cheese and related products index
+L248:     decreased 0.7 percent. The index for fruits and vegetables was unchanged over the month.
+L249:     The food away from home index rose 0.1 percent in September. The index for limited service meals rose 0.2 percent over
+L250:     the month while the index for full service meals was unchanged.
+L251: 
+L252:     The index for food at home rose 2.7 percent over the 12 months ending in September, as it did over the 12 months ending
+L253:     in August. The meats, poultry, fish, and eggs index rose 5.2 percent over the last 12 months. The index for nonalcoholic
+L254:     beverages increased 5.3 percent over the same period and the index for other food at home rose 1.9 percent. The cereals
+L255:     and bakery products index increased 1.6 percent over the 12 months ending in September. The index for fruits and
+L256:     vegetables rose 1.3 percent and the index for dairy and related products increased 0.7 percent over the same period.
+L257: 
+L258:     The food away from home index rose 3.7 percent over the last year. The index for full service meals rose 4.2 percent and
+L259:     the index for limited service meals rose 3.2 percent over the same period.
+L260: 
+L261:     Energy
+L262: 
+L263:     The index for energy increased 1.5 percent in September, after rising 0.7 percent in August. The gasoline index
+L264:     increased 4.1 percent over the month. (Before seasonal adjustment, gasoline prices increased 1.1 percent in September.)
+L265:     The index for electricity decreased 0.5 percent over the month and the index for natural gas decreased 1.2 percent over
+L266:     the same period.
+L267:     The index for energy increased 2.8 percent over the past 12 months. The electricity index increased 5.1 percent over the
+L268:     12 months ending in September and the natural gas index rose 11.7 percent. In contrast, the index for gasoline fell 0.5
+L269:     percent over this 12-month span.
+L270: 
+L271:     All items less food and energy
+L272: 
+L273:     The index for all items less food and energy rose 0.2 percent in September, after rising 0.3 percent in each of the
+L274:     preceding 2 months. The shelter index increased 0.2 percent over the month. The index for owners' equivalent rent rose
+L275:     0.1 percent in September, the smallest 1-month increase in that index since January 2021. The rent index increased 0.2
+L276:     percent over the month. The index for lodging away from home rose 1.3 percent in September.
+L277: 
+L278:     The index for airline fares increased 2.7 percent over the month, after rising 5.9 percent in August. The recreation
+

@@ -73,3 +73,15 @@ No QQQ, CPI-consensus/vintage or X point-in-time dataset was verified in this ta
 6. Independent synthetic checks must alter future BTC/target/funding values and verify identical earlier outputs, cut at partial availability boundaries, delay publication, introduce source gaps, test explicit token mappings and reject a wrong leader. The engine still requires its separate event/accounting audit.
 
 A factor that fails these checks should remain a documented negative result. The one-year window alone cannot establish stable efficacy across changing listings, liquidity regimes and sentiment infrastructure. A prospective continuation after the experiment freeze has the highest value for distinguishing retrospective fit from a durable effect.
+
+## Subsequent external-factor experiment
+
+The dataset limitation above describes the original directional cohort. A later
+exploratory extension collected 250 actual QQQ sessions, eleven original CPI
+release records and authentic aggressive trade volume, with explicit timing and
+provenance limits. It does not introduce CPI consensus surprises or historical
+X sentiment. See the [five fixed definitions](../examples/external_factors/proposed_protocol.md)
+and [independent audit](external_factor_audit.md). QQQ daily risk transmission,
+CPI acceleration, funding crowding, trade/spot premium and taker-flow drift are
+candidate mechanisms; the papers motivate testing them and do not establish
+these exact rules as profitable on DOGE, PEPE or this historical year.

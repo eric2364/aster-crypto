@@ -1,0 +1,40 @@
+# External factor pre-outcome audit
+
+The QQQ collector and five external factor builders were audited with independent synthetic fixtures before numerical strategy outcomes. No previous strategy implementation or `aster` package was changed by this audit. These new hypotheses reuse previously examined historical evaluation data; passing a later evaluation would remain exploratory evidence, not proof against overfitting.
+
+## Resolved material findings
+
+- QQQ normalization previously accepted any weekday subset and holiday observations. It now requires the exact session date set derived from weekdays minus pinned applicable Nasdaq full-day closures, and verifies each vendor label is 09:30 America/New_York. The existing 250 observations satisfy this independently derived set. Early-close sessions remain present. [Nasdaq 2025 calendar](https://www.nasdaq.com/docs/2025/01/06/2025holidayandtradinghours.pdf) and [Nasdaq 2026 calendar](https://nasdaqtrader.com/Trader.aspx?id=Calendar) are recorded in the manifest, alongside the assumption of no unscheduled closures. This is a calendar for the fixed research window, not an extensible exchange calendar service.
+- Funding features initially discarded explicit historical receipt times in favor of settlement times. They now consider only rates actually received and processed at each decision, including delayed receipt of an older member of the three-settlement window. Receipt before settlement rejects. If receipt is absent, settlement plus one minute remains a disclosed availability assumption.
+- Infinite CPI inputs could previously create artificial acceleration signals. Nonfinite CPI values now reject, as do invalid target closes.
+- Flow extraction initially accepted any singleton Engine instrument identity. It now asserts requested native symbol, perpetual market and one-minute interval, official USD-M archive host/path/filename, and exact native Engine instrument identity. PEPE maps to 1000PEPEUSDT; native traded quantity remains bundled. Mark-price klines are excluded because they do not establish aggressive trade volume.
+
+## Independent regressions
+
+`tests/test_qqq_collector.py` contains 14 offline cases covering exact sessions, same-count holiday substitution, missing/extra observations, bad labels, timestamp-unit mistakes, DST, split/currency/nonfinite rejection, adjusted-price changes being unused, cached roundtrip and raw/normalized/calendar tampering.
+
+`tests/test_external_factor_signals.py` contains 13 cases covering all five families' prefix and future-perturbation invariance; exact CPI release-processing boundary; delayed oldest and newest funding receipts; invalid receipt order; PEPE matched price units; flow identity and volume bounds; premium and flow warmup after gaps; and QQQ next-midnight availability.
+
+`tests/test_flow_collector.py` contains 13 mocked ZIP cases covering authentic minute fields, native units, publication boundary, mark archive exclusion, exact grid, volume bounds, integer count/duration, source hash tampering, and symbol/market/interval/URL/Engine identity rejection. No automated test makes a network request.
+
+## Interpretation limits
+
+QQQ prices are vendor unadjusted closes, not verified historical receipt vintages. Next UTC midnight is a conservative availability assumption and cannot support an intraday QQQ leadership claim. CPI acceleration is a difference in first-release inflation rates, not a consensus surprise. Funding rates are settled observations, not predicted future payments. Trade/spot premium is a price proxy, not executable arbitrage. Taker-buy volume is aggregate aggressive trade flow, not book imbalance, quotes, depth or a causal proof of predictability. Exact calendar coverage does not prove that past vendor corrections never occurred.
+
+Signal causality signoff does not certify runner accounting, cache provenance, portfolio gates or economic results. Those require the separate frozen-runner audit before launch. No positive economic outcome is asserted by this document.
+
+## Runner audit before numerical dispatch
+
+The separate external runner uses the previously audited fixed-native-quantity derivative strategy, actual settlement funding, marked-open terminal convention, indicative exit reserve and prior-only union aggregation. Independent synthetic tests in `tests/test_external_factor_runner.py` cover exact 400 distinct scheduled trajectories; training-only common scale selection and undefined-evidence default; QQQ/CPI/flow publication cutoffs; explicit funding receipts; actual signed-fill exposure rather than intentions; endpoint cash funding distinct from predictor availability; native PEPE and stress configuration; pending delayed reversal at the last observation; source guards; macro event deduplication; unchanged five-profitable-sleeve, drawdown and reserve hurdles; and millisecond/microsecond/nanosecond terminal bootstrap behavior with 24 cumulative candidate tails.
+
+A material cache issue was reproduced: code/data fingerprints are shared across economic trial variants, so comparing fingerprints alone permits a misplaced cached trial to be relabeled as another family, scale, phase, stress scenario or interval. The resolved guard now compares exact cached family, symbol, scale, phase, stress and interval parameters. Sixteen execution files are sealed after metrics are finalized, and resume rejects missing, unsealed or changed files. Independently resealed wrong-trial metadata still rejects, establishing that the identity check adds protection beyond file integrity. This issue did not alter the economics of a fresh uncached execution.
+
+Final runner signoff: 28 independent runner cases pass. The exact 400-trial dispatch, actual native funding boundary and pending inventory, macro deduplication, scalar breadth and reserve gates, timestamp-unit bootstrap and both source and execution cache guards pass. No remaining high/medium runner blocker was identified before launch. This is mechanical launch readiness, not a claim of economic success or non-overfit performance.
+
+## Execution and publication verification
+
+The read-only independent verifier `audit/verify_external_outputs.py` checks the original frozen packet, all publisher-input fingerprints, archived executed implementations, exact trial identity and phase bounds, configuration, native quantities, every recorded equity conservation identity, fill fees, actual source funding rates and marks, closed/open PnL reconciliation, signed-fill residual inventory, metrics and liquidation counts. It reads only completed sealed trajectories and saves separate JSON evidence under `audit/`. Incremental verification passed the first 76 sealed trajectories; this is progress evidence, not final full-cohort verification.
+
+The mutable publication postprocessor now requires successful verification of all 400 expected trajectories before writing reports. It compares the full trial table with sealed metrics, recomputes the common selection from training only, and rebuilds all pooled summaries, event counts, gates and equity trajectories in a disposable directory. This reconstruction uses the hash-verified frozen aggregation/reporting functions and never invokes Engine or signal generation. The separate financial identities in the execution verifier provide an independent accounting check. Original execution files are never rewritten.
+
+The twenty-four-comparison diagnostic requires exact policy names from every cohort protocol, and the prior nineteen pooled source files must match hashes in their already published nineteen-source diagnostic. A new twenty-four-tail diagnostic is separate from earlier cohort diagnostics. Publication verification records the current source-lock, summary and full-trial hashes. Fourteen synthetic postprocessor regressions exercise refusal of incomplete or mislabeled cohorts, altered metrics/paths, changed training selection, inflated pass counts, changed earlier source files, and timestamp-unit bootstrap consistency.

@@ -82,3 +82,34 @@ Failed gates for every exploratory hypothesis:
 A separate conditional seven-day block-bootstrap diagnostic now uses Bonferroni adjustment across all nineteen comparisons. It uses full-resolution pooled ledgers and records their hashes. This adjustment does not correct the adaptive design process, regime change, survivors or execution uncertainty. The earlier thirteen-policy diagnostic is retained as cohort-specific evidence.
 
 [Exploratory report](minute_directional_results/report.html) · [All nineteen conditional intervals](minute_directional_results/combined_selection_diagnostic19.json) · [Reproduction guide](../examples/minute_directional/README.md) · [Independent audit](minute_directional_audit.md)
+
+
+## External-factor extension: five further exploratory hypotheses
+
+This new cohort follows the nineteen outcomes above and reuses the same evaluated year. It introduces actual QQQ daily closes, eleven original CPI releases and authentic aggressive trade flow. Funding-crowding and premium mechanisms overlap earlier carry research. There are **twenty-four cumulative disclosed policies and hypotheses**, not twenty-four independent demonstrated edges.
+
+| Hypothesis | Validation net | Evaluation net | Joint stress net | Daily Sharpe | Minute drawdown | Positive sleeves | Exploratory hurdles |
+|---|---:|---:|---:|---:|---:|---:|---|
+| qqq_risk_transmission | -8.19% | -0.08% | -0.67% | -0.02 | 2.83% | 4/8 | FAIL |
+| cpi_acceleration_event | -0.39% | 0.06% | -0.06% | 0.14 | 0.90% | 6/8 | FAIL |
+| funding_crowding_fade | 0.34% | 0.05% | 0.03% | 1.11 | 0.33% | 1/8 | FAIL |
+| perpetual_premium_fade | -0.02% | 0.00% | 0.00% | undefined | -0.00% | 0/8 | FAIL |
+| taker_flow_drift | -31.07% | -29.63% | -47.79% | -25.34 | 29.85% | 0/8 | FAIL |
+
+**0 of five passed the unchanged exploratory historical hurdles.** No pass can restore an untouched evaluation or establish absence of overfitting.
+
+QQQ unadjusted closes use conservative assumed next-UTC-day availability and calendar coverage checks. CPI uses actual first-release availability plus a minute, skips the unpublished October reference month and carries no consensus surprise. One announcement produces correlated exposure across eight sleeves, not eight independent events. Flow uses native trade-kline taker-buy volume, not mark volume or order-book depth. All signals and orders remain causal; no pre-year external initialization was added.
+
+Capital, native quantities, actual funding, fees, slippage, joint execution stress, marked terminal positions and diagnostic exit reserves follow the signed-perpetual experiment above. Every failure, zero-activity case and phase event count is retained in the full summary. No previous model or result was retuned.
+
+Failed gates:
+
+- `qqq_risk_transmission`: validation_positive, evaluation_positive, jointstress_positive, sharpe_at_least_half, all_neighbors_positive, no_liquidations, broad_symbol_success, validation_positive_after_indicative_reserve, evaluation_positive_after_indicative_reserve, jointstress_positive_after_indicative_reserve, all_neighbors_positive_after_indicative_reserve.
+- `cpi_acceleration_event`: validation_positive, jointstress_positive, two_positive_months, sharpe_at_least_half, all_neighbors_positive, validation_positive_after_indicative_reserve, jointstress_positive_after_indicative_reserve, all_neighbors_positive_after_indicative_reserve.
+- `funding_crowding_fade`: broad_symbol_success.
+- `perpetual_premium_fade`: validation_positive, evaluation_positive, jointstress_positive, two_positive_months, sharpe_at_least_half, all_neighbors_positive, broad_symbol_success, validation_positive_after_indicative_reserve, evaluation_positive_after_indicative_reserve, jointstress_positive_after_indicative_reserve, all_neighbors_positive_after_indicative_reserve.
+- `taker_flow_drift`: validation_positive, evaluation_positive, jointstress_positive, two_positive_months, sharpe_at_least_half, minute_drawdown_within20pct, all_neighbors_positive, no_liquidations, broad_symbol_success, validation_positive_after_indicative_reserve, evaluation_positive_after_indicative_reserve, jointstress_positive_after_indicative_reserve, all_neighbors_positive_after_indicative_reserve.
+
+The separate twenty-four-comparison conditional bootstrap retains source hashes and leaves earlier cohort diagnostics intact. It does not correct the full adaptive design process or uncertain historical execution. No confidence interval proves durable profitability.
+
+[External-factor report](external_factor_results/report.html) · [Data and reproduction](../examples/external_factors/README.md) · [Collector and signal audit](external_factor_audit.md) · [CPI source coverage](cpi_factor_sources.md)

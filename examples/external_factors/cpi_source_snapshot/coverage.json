@@ -1,0 +1,22 @@
+{
+  "events": 11,
+  "first_release": "2025-10-24T12:30:00+00:00",
+  "last_release": "2026-09-11T12:30:00+00:00",
+  "missing_reference_months": [
+    {
+      "reference_month": "2025-10",
+      "reason": "Not published because of 2025 lapse in federal government appropriations",
+      "source_url": "https://www.bls.gov/bls/news-release/cpi.htm"
+    }
+  ],
+  "missing_headline_mom_reference_months": [
+    "2025-11"
+  ],
+  "consensus_available": false,
+  "interpolation": false,
+  "values": "original-release current-reference-month Table A values",
+  "time_assumption": "actual stated 08:30 ET converted with DST; available one minute later",
+  "source_manifest_sha256": "ebb69c39a19b4a7b630c6ce8003045dda2487569c4eaa6f679980859c326e840",
+  "releases_parquet_sha256": "637b7bd7b017e273e6d3075d2f0e96fd532a9797cceef0d7e9bcf185e42a1bcb",
+  "releases_csv_sha256": "bd192e555faa615e644988aeb66816d6583d4ca809f96e4be056b4993582ac25"
+}
