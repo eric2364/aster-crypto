@@ -1,0 +1,15 @@
+{
+  "source_summary_sha256": {
+    "results/minute-study-1y/summary.json": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+    "results/minute-carry-1y-v2/summary.json": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263",
+    "results/minute-directional-1y-v2/summary.json": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+    "results/external-factor-1y/summary.json": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92"
+  },
+  "candidate_count": 24,
+  "fee_addback_definition": "net profit + actual trading and liquidation fees; executions, signed inventory and funding held fixed",
+  "not_a_counterfactual_backtest": true,
+  "slippage_is_not_subtracted_twice": true,
+  "historical_hurdle_pass_count": 0,
+  "negative_evaluation_net_count": 18,
+  "negative_after_same_fills_fee_addback_count": 16
+}

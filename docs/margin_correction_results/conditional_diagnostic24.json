@@ -1,0 +1,458 @@
+{
+  "trend": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.33082762862583037,
+      0.6643684728708008
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.4295889604561968,
+      1.2882436302114542
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/trend/equity.parquet",
+    "sha256": "7b23ec9f6ad5ca8cb4684d2c60c2a6a4b5ce8c93e96ff81e16a96f129ac9c113",
+    "cohort": "spot"
+  },
+  "donchian": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.17238087797325186,
+      0.523660224814604
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.25761127763495517,
+      0.9846080689754078
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/donchian/equity.parquet",
+    "sha256": "eaa03ad530c3004f9c83debfea062c4cff8538e1d0a694df0aff600802f136bc",
+    "cohort": "spot"
+  },
+  "mean_reversion": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.13402726755190442,
+      -0.03437631805040945
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.15904015277035433,
+      -0.0031865790868918806
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/mean_reversion/equity.parquet",
+    "sha256": "a77d8711d8bf03bcd359bd1c9a3325e7d63a61ec2c5043ac813ae1d25acf3cf6",
+    "cohort": "spot"
+  },
+  "volatility_breakout": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.32276946358157194,
+      -0.051268389203034455
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.3689097842999827,
+      0.06115575974448708
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/volatility_breakout/equity.parquet",
+    "sha256": "035578f832acf36fbc0ae738e8168070a4fb2d6368c3dda70ef72f0b7f6e72d5",
+    "cohort": "spot"
+  },
+  "trend_pullback": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.15390872516774268,
+      -0.05634234294570988
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.17813937962374257,
+      -0.01824885582253841
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/trend_pullback/equity.parquet",
+    "sha256": "246efba797180d4204c925c35d7477db882da41baf65e8f1e8f173176a7df6f8",
+    "cohort": "spot"
+  },
+  "btc_lead_momentum": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.19469669037130918,
+      -0.01754916475151731
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.22685548165761227,
+      0.06543068173122715
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/btc_lead_momentum/equity.parquet",
+    "sha256": "047c5a51f24f08a42d62889bf741e6f82afd08c22e0f162955709b5ec87be454",
+    "cohort": "spot"
+  },
+  "btc_lead_reversal": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.02646219675347213,
+      0.0
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.04208112374745561,
+      0.0
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/btc_lead_reversal/equity.parquet",
+    "sha256": "d55f2ae1dd9a15adb18b5359ca3af4bac9f848777f9a4083a421fff5cfbeea2d",
+    "cohort": "spot"
+  },
+  "funding_contrarian": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.07857673786145099,
+      -0.009884124665115032
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.10391577025969555,
+      0.001187429273669564
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-study-1y/pooled/funding_contrarian/equity.parquet",
+    "sha256": "5359a5899dd57c4becec22aa03c54ed89439c7f40c9964348cd92c4323cafe53",
+    "cohort": "spot"
+  },
+  "always_hedged": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.007224393271430871,
+      0.002287310740430402
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.010459395400973641,
+      0.004140297679629071
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-carry-margin-v3/pooled/always_hedged/equity.parquet",
+    "sha256": "7c75bf978a295f2b2b4dd0f152bbad59ad4f146591d04592962bad9543874dcd",
+    "cohort": "carry"
+  },
+  "positive_trailing": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.019253601918295588,
+      -0.008473956301213168
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.02218584185085629,
+      -0.005704485070013678
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-carry-margin-v3/pooled/positive_trailing/equity.parquet",
+    "sha256": "a48cd8151452166ea9fad012b0b7dc0232044a1fa6126eb3307c9a8f41339b06",
+    "cohort": "carry"
+  },
+  "funding_rotation": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.024379238633439843,
+      -0.018139229091567365
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.02619384422724078,
+      -0.016470844319500407
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-carry-margin-v3/pooled/funding_rotation/equity.parquet",
+    "sha256": "d5ca8b9b402f3a7ff071761c2cceb46d3e94f9f84a79aebb2f79389b798a6e55",
+    "cohort": "carry"
+  },
+  "funding_hysteresis": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.015134036718755526,
+      -0.004454589770329977
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.01834057365870284,
+      -0.0018773520291032405
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-carry-margin-v3/pooled/funding_hysteresis/equity.parquet",
+    "sha256": "689f88db1a6c8b250c92f07265bf3329a5f79303c90d5c45283156f9c547fd35",
+    "cohort": "carry"
+  },
+  "risk_controlled": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.0179528942177292,
+      -0.007823915104061527
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.020671285827373674,
+      -0.005475978059999598
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-carry-margin-v3/pooled/risk_controlled/equity.parquet",
+    "sha256": "0f461b270e126047cc839da3e84b5f0e89b74664b552cb53d7ec1d438b726643",
+    "cohort": "carry"
+  },
+  "slow_ema_trend": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.1124705186069235,
+      0.12108795851526893
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.14498571984126724,
+      0.2246898996021564
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-directional-margin-v3/pooled/slow_ema_trend/equity.parquet",
+    "sha256": "26c241d374dbb783fe00316abbe7b7655bd84573a20e419981346ccfbc22591a",
+    "cohort": "signed"
+  },
+  "weekly_donchian": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.04295052410179815,
+      0.028018919227436056
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.06072639177502996,
+      0.056521949073463584
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-directional-margin-v3/pooled/weekly_donchian/equity.parquet",
+    "sha256": "f07dabbcc3b755930da2d1d97a0c99253be84d3b6877c15242edd1f9bb4e30fb",
+    "cohort": "signed"
+  },
+  "ts_momentum_agreement": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.13311657544947883,
+      0.15421384294174492
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.16532829101681737,
+      0.2972481225571658
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-directional-margin-v3/pooled/ts_momentum_agreement/equity.parquet",
+    "sha256": "127c1845360f3885f8f603732dca17301cf8decea6d370abfb615bca10ac0107",
+    "cohort": "signed"
+  },
+  "signed_mean_reversion": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.1815106816244098,
+      0.02297359140544383
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.24673831891350778,
+      0.06920776008383905
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-directional-margin-v3/pooled/signed_mean_reversion/equity.parquet",
+    "sha256": "fa2fae83431ffa19ca26335f7cf8396e6eeb7fd2544b760ac847b2f5bff6faea",
+    "cohort": "signed"
+  },
+  "btc_conditioned_alt_lag": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.00904961054984279,
+      0.020354182016374223
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.012802291067921695,
+      0.03190643693783504
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-directional-margin-v3/pooled/btc_conditioned_alt_lag/equity.parquet",
+    "sha256": "c27b9ead4fb2c28a5e3c935b583909aa3728ecc3872ccffbc09bddc954a5adc7",
+    "cohort": "signed"
+  },
+  "cross_sectional_momentum": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.05814203518295908,
+      -0.0032670263887849466
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.07308744009855381,
+      0.010991170636685909
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/minute-directional-margin-v3/pooled/cross_sectional_momentum/equity.parquet",
+    "sha256": "3939309cdbd94435083ef7b146b04908838c61dae9eaa0c8c4d86a48d7a28dca",
+    "cohort": "signed"
+  },
+  "qqq_risk_transmission": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.04633893298759164,
+      0.0440162678506483
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.0736354395216198,
+      0.06705870180679317
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/external-factor-margin-v2/pooled/qqq_risk_transmission/equity.parquet",
+    "sha256": "b0d75bb4b31a22ef263d2eb3e946fabd9146cb4273191ea8e49111da1b7a74b0",
+    "cohort": "external"
+  },
+  "cpi_acceleration_event": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.015749840120965974,
+      0.01772016541153342
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.022161483534330256,
+      0.027916998569532333
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/external-factor-margin-v2/pooled/cpi_acceleration_event/equity.parquet",
+    "sha256": "30f6c56dd83745212da03db6a49e3f206c048e5d51bcf5fd25258e67a6c432bf",
+    "cohort": "external"
+  },
+  "funding_crowding_fade": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.00015169239407984394,
+      0.0014036502352653731
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.0006315659804443374,
+      0.0020736539396801206
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/external-factor-margin-v2/pooled/funding_crowding_fade/equity.parquet",
+    "sha256": "3c61ec5046a26b1a627877a5f524c4988a7e4ce7fcc37d9cb195c02a2b6bd85b",
+    "cohort": "external"
+  },
+  "perpetual_premium_fade": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      0.0,
+      0.0
+    ],
+    "conditional_bonferroni24_interval": [
+      0.0,
+      0.0
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/external-factor-margin-v2/pooled/perpetual_premium_fade/equity.parquet",
+    "sha256": "0418d7f55b5f3095a6ac466168dc8f98f65eb43ed92e3c6bb7dc98cf5f47a9dc",
+    "cohort": "external"
+  },
+  "taker_flow_drift": {
+    "daily_observations": 92,
+    "draws": 10000,
+    "block_days": 7,
+    "seed": 42,
+    "declared_comparisons": 24,
+    "interval95": [
+      -0.3289707850621788,
+      -0.26276369357862406
+    ],
+    "conditional_bonferroni24_interval": [
+      -0.348368937486831,
+      -0.24163060506350048
+    ],
+    "limitations": "Conditional resampling does not remove reused-year adaptation, dependence, survivors, or execution-model uncertainty.",
+    "source": "results/external-factor-margin-v2/pooled/taker_flow_drift/equity.parquet",
+    "sha256": "0b8bed986384aad2edf18dc1ff9d3dc3b610d7566aeca915f43ad24b14afd341",
+    "cohort": "external"
+  }
+}

@@ -1,5 +1,7 @@
 # External-factor and aggressive-flow experiments
 
+**Margin correction:** use the [correction workflow](../research_review/README.md) for current audited derivative comparisons. The original report paths below preserve the legacy margin convention at commit `8cd5f36`. Resuming their frozen outputs under the corrected engine rejects the changed source hash; use fresh output folders.
+
 This exploratory cohort introduces five hypotheses: QQQ transmission, actual
 CPI acceleration, funding crowding, spot/perpetual premium and aggressive trade
 flow. It follows nineteen unsuccessful policies on the same historical year.

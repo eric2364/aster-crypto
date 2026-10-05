@@ -160,9 +160,11 @@ class Portfolio:
             p.taker_fees -= entry_taker
             p.funding -= funding
             p.slippage -= entry_slip
+            # Release the closed quantity's share of the isolated reserve.
+            # Closed-leg P&L and execution fees have already changed cash above;
+            # assigning them again to the remaining reserve transfers the closed
+            # leg's result into a different, still-open risk allocation.
             p.collateral *= 1-close_fraction
-            if self.config.margin_mode == 'isolated' and abs(old)-closing > EPS:
-                p.collateral += pnl-close_fee
         if opening:
             if closing: p = Position(); self.positions[iid] = p
             if abs(p.quantity) < EPS or closing:

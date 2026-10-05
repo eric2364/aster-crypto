@@ -1,0 +1,33 @@
+{
+  "reviewed_utc_date": "2026-10-06",
+  "status": "PASS for completed600carry/signed arithmetic audit only",
+  "external400": "separate independent audit pending; excluded from this certificate",
+  "complete": true,
+  "sealed": true,
+  "errors": [],
+  "receipt_path": "results/margin-correction-rerun/independent_ledger_audit.json",
+  "receipt_sha256": "716f58087aa8c044707bf9da0d2c3ee00d299e5681442005b3e501b058b85759",
+  "auditor_path": "examples/research_review/audit_corrected_ledgers.py",
+  "auditor_sha256": "4f8c5e0dfdddac4777aa230e1ba34e64ab43b3a4e84dd1a7e7b0264d8098aef0",
+  "rerun_lock_sha256": "204ef1aa52927be695129b5279c15634be6ac17b085b2e13a11f0b95cf074604",
+  "cohorts": {
+    "carry": {
+      "passed_trials": 120,
+      "partial_exits": 6704,
+      "liquidation_fills": 23,
+      "terminal_inventory_trials": 63,
+      "sealed_execution_files": 1920,
+      "selected_scale_comparison_changes": 0
+    },
+    "signed": {
+      "passed_trials": 480,
+      "partial_exits": 2312,
+      "liquidation_fills": 0,
+      "terminal_inventory_trials": 203,
+      "sealed_execution_files": 7680,
+      "selected_scale_comparison_changes": 0
+    }
+  },
+  "scope": "event-ordered independent arithmetic replay of actual fills/funding; onlyportfolio.py core delta; fixed economic protocols/datasets and cost assumptions; no Engine imports or strategy execution",
+  "caveat": "Accounting pass is not a profitability, untouchedholdout or exchange-execution realism certificate; residual inventory and genuine carry liquidations remain actual outcomes."
+}

@@ -1,5 +1,7 @@
 # Exploratory signed perpetual strategies
 
+**Margin correction:** use the [correction workflow](../research_review/README.md) for current audited derivative comparisons. The original report paths below preserve the legacy margin convention at commit `8cd5f36`. Resuming their frozen outputs under the corrected engine rejects the changed source hash; use fresh output folders.
+
 This extension tests six hypotheses on actual one-minute BTC, ETH, DOGE,
 1000PEPE, SOL, XRP, LINK and ADA perpetual observations. It uses only
 **5 October 2025–5 October 2026 UTC**, end exclusive.

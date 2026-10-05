@@ -1,0 +1,131 @@
+{
+  "research_status": "EXPLORATORY: evaluation year was already examined in thirteen prior policies; not untouched, no non-overfit proof",
+  "motivation": "symmetric slower long/short price hypotheses motivated by training-regime direction and prior research limitations; original models remain unchanged",
+  "families": {
+    "slow_ema_trend": {
+      "description": "3d/14d EMA trend with symmetric hysteresis",
+      "parameters": {
+        "fast_minutes": 4320,
+        "slow_minutes": 20160,
+        "entry_buffer": 0.003,
+        "exit_buffer": 0.001,
+        "decision_minutes": 60,
+        "cooldown_minutes": 60
+      }
+    },
+    "weekly_donchian": {
+      "description": "Previous7d range breakout; previous3d exit channel",
+      "parameters": {
+        "entry_minutes": 10080,
+        "exit_minutes": 4320,
+        "decision_minutes": 60,
+        "cooldown_minutes": 120
+      }
+    },
+    "ts_momentum_agreement": {
+      "description": "3d and7d return signs agree beyond1% threshold",
+      "parameters": {
+        "fast_minutes": 4320,
+        "slow_minutes": 10080,
+        "entry_threshold": 0.01,
+        "decision_minutes": 60,
+        "cooldown_minutes": 60
+      }
+    },
+    "signed_mean_reversion": {
+      "description": "24h two-deviation overshoot; return-to-mean exit",
+      "parameters": {
+        "lookback_minutes": 1440,
+        "entry_z": 2.0,
+        "decision_minutes": 15,
+        "cooldown_minutes": 180,
+        "max_hold_minutes": 2880,
+        "close_stop_fraction": 0.12
+      }
+    },
+    "btc_conditioned_alt_lag": {
+      "description": "3h BTC move and3d trend; delayed altcoin response both directions",
+      "parameters": {
+        "return_minutes": 180,
+        "leader_trend_minutes": 4320,
+        "entry_return_threshold": 0.01,
+        "catchup_threshold": 0.01,
+        "decision_minutes": 30,
+        "cooldown_minutes": 120,
+        "max_hold_minutes": 1440,
+        "publication_lag_minutes": 1,
+        "leader_stale_minutes": 2
+      }
+    },
+    "cross_sectional_momentum": {
+      "description": "Daily7d momentum rank basket: top2 long, bottom2 short, middle cash",
+      "parameters": {
+        "lookback_minutes": 10080,
+        "expected_instruments": 8,
+        "long_count": 2,
+        "short_count": 2,
+        "decision_hour_utc": 0,
+        "decision_minute_utc": 1,
+        "tie_rule": "native instrument ID ascending; lowest IDs are lowest ranks on equal momentum"
+      }
+    }
+  },
+  "correlation_warning": "trend variants overlap; six hypotheses are not six independent economic edges",
+  "cross_sectional_portfolio": "daily7day ranktop2long/bottom2short/middlecash across all8nativeperpetual markets; balanced initial long/short entry notional, not beta-neutral or drift-rebalanced thereafter",
+  "scales": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "scale_definition": "duration/cooldown/holding windows only; decision schedules and entry thresholds fixed",
+  "selection": "one common scale per hypothesis across eight pooled sleeves maximizing training daily Sharpe; ties prefer1 then larger scale",
+  "start": "2025-10-05 00:00:00+00:00",
+  "training_end": "2026-04-05 00:00:00+00:00",
+  "evaluation_start": "2026-07-05 00:00:00+00:00",
+  "end_exclusive": "2026-10-05 00:00:00+00:00",
+  "validation": "three fresh-wallet monthly folds April5-May5,May5-June5,June5-July5; no selection on validation",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "PEPEUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "ADAUSDT"
+  ],
+  "pooled_initial_capital": 100000,
+  "segregated_sleeve_capital": 12500,
+  "entry_notional_fraction": 0.25,
+  "quantity": "fixed native perpetual base-unit quantity at entry; no minute rebalancing;1000PEPE remains its native1000PEPE units",
+  "leverage": 1,
+  "margin_mode": "isolated",
+  "max_gross_leverage": 1,
+  "base_taker_bps": 5,
+  "slippage_bps": {
+    "BTCUSDT": 2,
+    "ETHUSDT": 2,
+    "DOGEUSDT": 8,
+    "PEPEUSDT": 8,
+    "other": 5
+  },
+  "participation": 0.05,
+  "funding": "actual separate settlement cash flows from timestamped native-contract funding/mark history; includes boundary settlement if present",
+  "leader": "completed BTC perpetual observations plus one extra minute publication lag; backward-only as-of and two-minute stale tolerance",
+  "terminal": "open positions marked at the actual final observation, matching original spot research convention; no artificial terminal orders",
+  "indicative_exit_reserve": "diagnostic only: final open marked notional times assumed takerfee+configured adverse slippage; no fabricated trade/cashflow or guarantee of executable volume",
+  "equity_sampling": "minute/funding clocks for final evaluation; approximately hourly training/validation; pooledunion clock with prior-only sleeve carry-forward",
+  "stress": "double fee/slippage, add one minute order delay, halve volume participation",
+  "neighbors": "all three scales reported on final evaluation; never use neighbors to revise training selection",
+  "criteria": "positive compounded validation/final evaluation/jointstress and corresponding indicative-reserve returns; >=2/3positive anchored months; Sharpe>=.5; minute drawdown<=.2; all3neighborreturnspositive including indicative-reserve diagnostic; no liquidation in validation/chosen/neighbor/stress cases",
+  "breadth_criteria": "five scalar hypotheses require>=5of8profitable evaluation sleeves; rankedlong/shortbasket requires actualfills across>=4distinct assets because hedging legs may lose, while all8assetPnLs remain disclosed",
+  "multiple_testing": "19 policy/hypothesis comparisons cumulatively disclosed; conservative conditional bootstrap tails .05/38 and1-.05/38",
+  "limitations": [
+    "reused historical evaluation introduces research adaptation bias",
+    "selected surviving assets",
+    "current instrument rules approximate history",
+    "minute marks omit intraminute liquidation paths",
+    "OHLCV volume fills approximate market microstructure",
+    "historical hurdle pass is not durable future profitability"
+  ]
+}

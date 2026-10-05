@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **260 tests passed, including the independent external-factor and publication audits.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **295 tests passed, including independent partial-exit margin, execution and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -124,6 +124,14 @@ Downloaded BTCUSDT hourly observations for **5 October 2025–5 October 2026 UTC
 ## Strategies and experiments
 
 ### Last-year minute research
+
+**Audited margin correction complete:** all 1,000 unchanged derivative
+simulations were rerun in fresh folders and independently checked. The corrected
+study still has **0/24 historical hurdle passes**. Actual modeled liquidation
+fills across those derivative runs fell from 77 to 23, all in carry cases.
+[Original versus corrected results](docs/margin_correction_results/report.html) ·
+[Reproduction and audit workflow](examples/research_review/README.md).
+Original reports remain preserved as evidence of the legacy margin convention.
 
 The minute examples use only **5 October 2025–5 October 2026 UTC** across BTC,
 ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Official trade/mark archives and actual

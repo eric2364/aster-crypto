@@ -1,0 +1,18 @@
+{
+  "original_liquidation_events": 25,
+  "all_old_states_below_maintenance": true,
+  "same_recorded_fills_healthy_under_proportional_reserve_count": 25,
+  "immediately_after_same_timestamp_partial_exit_count": 25,
+  "minimum_preceding_closed_fraction": 0.9597184949887727,
+  "maximum_remaining_marked_notional": 112.40578598639983,
+  "counts_by_family_phase": {
+    "taker_flow_drift/training/base": 3,
+    "qqq_risk_transmission/validation3/base": 1,
+    "qqq_risk_transmission/holdout/stress": 1,
+    "taker_flow_drift/validation1/base": 1,
+    "taker_flow_drift/validation3/base": 1,
+    "taker_flow_drift/holdout/base": 8,
+    "taker_flow_drift/holdout/stress": 10
+  },
+  "limitation": "Conditional state replay of unchanged observed fills; not corrected strategy trajectories, outcomes or proof every future liquidation disappears"
+}

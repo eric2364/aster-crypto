@@ -1,5 +1,7 @@
 # Last-year minute strategy results
 
+> **Current corrected results: 0/24 historical hurdle passes.** All 1,000 derivative trials were rerun with proportional isolated reserve release and independently audited, with unchanged economic protocols and model sources. Actual liquidation fills across all derivative phases fell from 77 to 23: carry 35→23, signed 17→0, external 25→0. The eight spot outcomes are retained unchanged. Read the [complete original/corrected comparison](margin_correction_results/report.html), [audit provenance](margin_correction_results/publication_verification.json) and [reproduction workflow](../examples/research_review/README.md). The numerical tables below preserve the original engine's dated results; use the corrected comparison for current conclusions. These reused-year experiments do not establish freedom from overfitting.
+
 Actual source period: **5 October 2025–5 October 2026 UTC**, end exclusive. The final three months, **5 July–5 October 2026**, are the historical holdout. All trading, warmup and selection data is confined to this year.
 
 Eight underlyings: BTC, ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Exact coverage: 4,204,800 spot minute candles, 4,204,800 perpetual trade candles and matching mark candles, plus 8,760 settled funding observations. Official archives were checksum-verified; no candles or funding values were interpolated.

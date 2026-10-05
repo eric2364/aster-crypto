@@ -1,0 +1,70 @@
+{
+  "original_derivative_trials": 1000,
+  "original_liquidation_events": 77,
+  "conditional_same_fills_healthy_count": 54,
+  "cohorts": {
+    "minute-carry-1y-v2": {
+      "original_liquidation_events": 35,
+      "all_old_states_below_maintenance": true,
+      "same_recorded_fills_healthy_under_proportional_reserve_count": 12,
+      "immediately_after_same_timestamp_partial_exit_count": 12,
+      "minimum_preceding_closed_fraction": 0.0,
+      "maximum_remaining_marked_notional": 5657.5324200000005,
+      "counts_by_family_phase": {
+        "always_hedged/holdout/base": 6,
+        "always_hedged/holdout/stress": 5,
+        "funding_hysteresis/holdout/base": 9,
+        "funding_hysteresis/holdout/stress": 4,
+        "funding_rotation/holdout/base": 3,
+        "positive_trailing/holdout/base": 5,
+        "positive_trailing/holdout/stress": 1,
+        "risk_controlled/holdout/base": 1,
+        "funding_rotation/validation/base": 1
+      },
+      "limitation": "Conditional state replay of unchanged observed fills; not corrected strategy trajectories, outcomes or proof every future liquidation disappears",
+      "original_trial_count": 120
+    },
+    "minute-directional-1y-v2": {
+      "original_liquidation_events": 17,
+      "all_old_states_below_maintenance": true,
+      "same_recorded_fills_healthy_under_proportional_reserve_count": 17,
+      "immediately_after_same_timestamp_partial_exit_count": 17,
+      "minimum_preceding_closed_fraction": 0.9663085762759042,
+      "maximum_remaining_marked_notional": 95.6938,
+      "counts_by_family_phase": {
+        "ts_momentum_agreement/training/base": 1,
+        "signed_mean_reversion/training/base": 2,
+        "cross_sectional_momentum/training/base": 1,
+        "slow_ema_trend/holdout/base": 1,
+        "ts_momentum_agreement/validation3/base": 1,
+        "ts_momentum_agreement/holdout/base": 4,
+        "ts_momentum_agreement/holdout/stress": 2,
+        "signed_mean_reversion/holdout/base": 2,
+        "signed_mean_reversion/holdout/stress": 1,
+        "cross_sectional_momentum/holdout/stress": 2
+      },
+      "limitation": "Conditional state replay of unchanged observed fills; not corrected strategy trajectories, outcomes or proof every future liquidation disappears",
+      "original_trial_count": 480
+    },
+    "external-factor-1y": {
+      "original_liquidation_events": 25,
+      "all_old_states_below_maintenance": true,
+      "same_recorded_fills_healthy_under_proportional_reserve_count": 25,
+      "immediately_after_same_timestamp_partial_exit_count": 25,
+      "minimum_preceding_closed_fraction": 0.9597184949887727,
+      "maximum_remaining_marked_notional": 112.40578598639983,
+      "counts_by_family_phase": {
+        "taker_flow_drift/training/base": 3,
+        "qqq_risk_transmission/validation3/base": 1,
+        "qqq_risk_transmission/holdout/stress": 1,
+        "taker_flow_drift/validation1/base": 1,
+        "taker_flow_drift/validation3/base": 1,
+        "taker_flow_drift/holdout/base": 8,
+        "taker_flow_drift/holdout/stress": 10
+      },
+      "limitation": "Conditional state replay of unchanged observed fills; not corrected strategy trajectories, outcomes or proof every future liquidation disappears",
+      "original_trial_count": 400
+    }
+  },
+  "limitation": "Conditional same-recorded-fill state replay; corrected full strategy trajectories and final economics require independently frozen reruns."
+}

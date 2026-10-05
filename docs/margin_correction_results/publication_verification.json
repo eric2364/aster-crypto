@@ -1,0 +1,394 @@
+{
+  "complete": true,
+  "independently_sealed_trial_count": 1000,
+  "economic_candidate_count": 24,
+  "postprocessor_sha256": "fa9d83b302e8d954d1238b8c8bfd769776d24cb7762170d00ca06b7768b617ed",
+  "rerun_lock_sha256": "204ef1aa52927be695129b5279c15634be6ac17b085b2e13a11f0b95cf074604",
+  "rerun_lock": {
+    "package": {
+      "aster/__init__.py": "55fb11c5cdddf3cc237c3333872c757df18086702869319de084c333e1399ff5",
+      "aster/analytics/__init__.py": "1b8035c8986c7503a17c62501ba125abb11c470f4376d7e4039355bf022e9013",
+      "aster/analytics/benchmarks.py": "7e7f757c4952374ae3b53f4b418c64e3f9085a5fa740c87af384a2df36746f93",
+      "aster/analytics/metrics.py": "a68526dd0baa23259c2f55050498e4eec8ac778e0bf1cc0cdda5199cb620f532",
+      "aster/backtest/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aster/backtest/engine.py": "dfbade58ca9a8f4ee46ad0172111277adf96c0be97ed3fc095867732f6de8d08",
+      "aster/backtest/execution.py": "e2d87bfe7ff4228301924608d89c3eb4852bdeb35c3f13138a850b3d60123c4e",
+      "aster/backtest/models.py": "0b7a89a577e4e901b4eb5461eb761e55f70c525d08e6edea008fd4f973c6f167",
+      "aster/backtest/portfolio.py": "6324fc75bb21da9b08c99113dac407318187f0a9ad6c365d86883451c1bd3ed9",
+      "aster/cli.py": "a080397653db6545420511222b243904c76846b8ffdeca2112e6c9c08cc8776f",
+      "aster/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aster/data/binance_public.py": "82ec85965df04bce4ea45e5ec875534fa3a309feac80462eeffa7d5f68752b1f",
+      "aster/data/loader.py": "c2895fae7cea20151cf0d76f24724d38a6473782662c8b9403a13a7d67de39ae",
+      "aster/data/schemas.py": "9a80861c077410faa5414a316273e7003aa80578798a2156ec01d09728d4889b",
+      "aster/data/synthetic.py": "748220cd5585a6dc5cbbcf7b8620d494c0bde7cc91013399a06f9390c9296be7",
+      "aster/data/validation.py": "6d4592df8335202a6d720f2721e1c735132808ccad7e9f1f813b703fb2711651",
+      "aster/exchanges/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aster/exchanges/adapters.py": "d0aae567997b2bae5c024783b9c6836fcac503e377bcf7b343e5c5faa21f52c7",
+      "aster/optimization/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aster/optimization/search.py": "55a3113bd74f1ad2919a92a74c983a85036ba14f81257dfa020659dc6eefdbdf",
+      "aster/reports/__init__.py": "5c585d93171b686e8c4c566bc40124d98887890efb1325c91869a8e29d307a25",
+      "aster/reports/dashboard.py": "06332931152fad98b5b7f4c0d6be1c47af0ddbb19a90c486820b330b978e54d6",
+      "aster/reproducibility.py": "5f54f5ada6ef90846f2d93b727d91092e2dccbd5d745b322c917805e9eee67e3",
+      "aster/strategies/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "aster/strategies/base.py": "e6ef790a9e23bb39816ccd096f0a4f9c65b06cb22ee474953d808951980f68d1",
+      "aster/strategies/examples.py": "fecd265dcf40f4aceb5361e5b841933dc4c9f32e23a1d606cad44b30f14015c6",
+      "aster/strategies/leading_factors.py": "8a42a4ae5c7532d0639e9644f913b366024f27e93b84ab38bb4aa9a0936c8a4f",
+      "aster/strategies/minute_research.py": "b7b78a879a07a3b7f067116fea0e7ca253335331a171e67feca6360244b3eb25",
+      "aster/strategies/vectorized.py": "8903325afb42bb6a2b2d33b2a37de223c77f85bff6f1353f7c295fe946517b91"
+    },
+    "models": {
+      "examples/minute_carry/run.py": "8c88696b8af0e1db76009bd3362e51273725359438922b7aa91b4734fe168b2a",
+      "examples/minute_directional/run.py": "d49a353c9fe3ef1904d9c58da246cd1a0c8b58f55ae6b84dc5f183f014f0dd67",
+      "examples/minute_directional/signals.py": "abe90de6b1e7c1f6d1a3b8df619cc5b8dd73d711a17f9feed6ea175d7a35c9c2",
+      "examples/external_factors/run.py": "0ba55d970227e732280b564d43f8b7e1fe51b6ed27062f94aa0cb31657a6cc4e",
+      "examples/external_factors/signals.py": "cee5d2265f20dcacd6acc5b9e776aec2db4cd4a71af2158a2185352b725c00e1"
+    },
+    "originals": {
+      "results/minute-carry-1y-v2": {
+        "protocol_sha256": "d232e1aca0ead3068390a82d15710e6a1b2e4f236ec5f91e6e43f889f25ddf22",
+        "summary_sha256": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263"
+      },
+      "results/minute-directional-1y-v2": {
+        "protocol_sha256": "5cb1db0efa8989ba86a374a1052b31805fe1de2183514bca141342a999f9190b",
+        "summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c"
+      },
+      "results/external-factor-1y": {
+        "protocol_sha256": "74f526ba8a1d4aecaf3c6da9cf1acdd66670ad5815084a2dc58edcc6d554d889",
+        "summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92"
+      }
+    },
+    "planned_trials": 1000,
+    "candidate_count_unchanged": 24,
+    "reason": "proportional isolated reserve release; no closed-leg PnL/fee reassignment to residual",
+    "cohorts": [
+      [
+        "carry",
+        "examples/minute_carry/run.py",
+        "results/minute-carry-1y-v2",
+        "results/minute-carry-margin-v3",
+        "docs/minute_carry_margin_results",
+        120
+      ],
+      [
+        "signed",
+        "examples/minute_directional/run.py",
+        "results/minute-directional-1y-v2",
+        "results/minute-directional-margin-v3",
+        "docs/minute_directional_margin_results",
+        480
+      ],
+      [
+        "external",
+        "examples/external_factors/run.py",
+        "results/external-factor-1y",
+        "results/external-factor-margin-v2",
+        "docs/external_factor_margin_results",
+        400
+      ]
+    ]
+  },
+  "independent_receipt_sha256": {
+    "results/margin-correction-rerun/independent_ledger_audit.json": "716f58087aa8c044707bf9da0d2c3ee00d299e5681442005b3e501b058b85759",
+    "audit/corrected_external_evidence.json": "85a722cb563b8af240a3120d93d1806a20579437fe3c46f8106a0f8ba2044b4a"
+  },
+  "retained_spot8_source_anchor_verification": {
+    "summary_published_anchor": "examples/minute_research/evidence/summary.json",
+    "summary_published_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+    "prior19_diagnostic_sha256": "bcacea5d5d2d0bd7d6ee7ca45acd5998438d9f1abe9d54e2ee3a9056d4158da5",
+    "exact_spot_candidates": [
+      "btc_lead_momentum",
+      "btc_lead_reversal",
+      "donchian",
+      "funding_contrarian",
+      "mean_reversion",
+      "trend",
+      "trend_pullback",
+      "volatility_breakout"
+    ]
+  },
+  "summary_reconstruction_600": {
+    "carry": {
+      "summary_reconstructed": true,
+      "pooled_equity_reconstructed": true,
+      "exact_trials": 120,
+      "selection": "five fixed policies, no optimization"
+    },
+    "signed": {
+      "summary_reconstructed": true,
+      "training_selection_reconstructed": true,
+      "pooled_equity_reconstructed": true,
+      "exact_trials": 480
+    }
+  },
+  "external_summary_reconstruction_receipt": {
+    "completed_sealed_trials": 400,
+    "expected_current_trials": 400,
+    "all400_complete": true,
+    "frozen_sources_checked": 37,
+    "frozen_inputs_checked": 79,
+    "checks": "Every sealed trial: output seals, exact identity and bounds, code/runtime/data, every-snapshot equity, fees, native funding/source marks, closed/open PnL, signed inventory, terminal returns and liquidation counts",
+    "reserve_replay_trials": 400,
+    "partial_exits_replayed": 5742,
+    "corrected_liquidation_events": 0,
+    "economic_protocol_identical_to_original": true,
+    "source_lock_sha256": "2a0d1e5d5463261a3c0dcc1c3fde7e098b26fbc3a90a32d569dc7843935eaa9c",
+    "complete": true,
+    "errors": [],
+    "cohort": "external",
+    "expected_trials": 400,
+    "summary_reconstruction_passed": true,
+    "training_selection_reconstruction_passed": true,
+    "pooled_equity_reconstruction_passed": true,
+    "external_hurdle_pass_count": 0,
+    "rerun_lock_sha256": "204ef1aa52927be695129b5279c15634be6ac17b085b2e13a11f0b95cf074604",
+    "summary_sha256": "bbbc17f470a59e8ddfbd7027c90fca5c5d8d699ebf404b5e6d5bfaffb1392255",
+    "selection_sha256": "684fd145681aeeeaf23b324b48d64aa5a6ec0b43e119f0beea1606c4060d9675",
+    "all_trials_sha256": "2f28aecb6541a61ed38f8e7ef3c6f77676abe04935e6b2477048b21e22c80bdc",
+    "metadata_identity_digest": "175dc4c9781de8d5d916d9742449999b7c809ac341a1d9e12339c2315418f2ab",
+    "output_manifest_path": "/home/ericwu/Documents/Codex_Backtesting/results/margin-correction-rerun/external_output_seal_manifest.json",
+    "output_manifest_sha256": "b3a0576b3233fd6f0b583c043112e7625701a8a54f1b8b20488f3f25baf7c3c3",
+    "root": "/home/ericwu/Documents/Codex_Backtesting/results/external-factor-margin-v2"
+  },
+  "original_and_corrected_anchors": [
+    {
+      "candidate": "trend",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/trend/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/trend/equity.parquet"
+    },
+    {
+      "candidate": "donchian",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/donchian/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/donchian/equity.parquet"
+    },
+    {
+      "candidate": "mean_reversion",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/mean_reversion/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/mean_reversion/equity.parquet"
+    },
+    {
+      "candidate": "volatility_breakout",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/volatility_breakout/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/volatility_breakout/equity.parquet"
+    },
+    {
+      "candidate": "trend_pullback",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/trend_pullback/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/trend_pullback/equity.parquet"
+    },
+    {
+      "candidate": "btc_lead_momentum",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/btc_lead_momentum/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/btc_lead_momentum/equity.parquet"
+    },
+    {
+      "candidate": "btc_lead_reversal",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/btc_lead_reversal/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/btc_lead_reversal/equity.parquet"
+    },
+    {
+      "candidate": "funding_contrarian",
+      "cohort": "spot",
+      "old_root": "results/minute-study-1y",
+      "corrected_root": "results/minute-study-1y",
+      "original_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "corrected_summary_sha256": "da6e91208502775273b9f4f88f35d00a8f556412b73e26b62680c61bc8c00459",
+      "original_equity": "results/minute-study-1y/pooled/funding_contrarian/equity.parquet",
+      "corrected_equity": "results/minute-study-1y/pooled/funding_contrarian/equity.parquet"
+    },
+    {
+      "candidate": "always_hedged",
+      "cohort": "carry",
+      "old_root": "results/minute-carry-1y-v2",
+      "corrected_root": "results/minute-carry-margin-v3",
+      "original_summary_sha256": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263",
+      "corrected_summary_sha256": "5514dfbc10647263d838b68fb529a617e8af22217a1dd1de18c130da8a904973",
+      "original_equity": "results/minute-carry-1y-v2/pooled/always_hedged/equity.parquet",
+      "corrected_equity": "results/minute-carry-margin-v3/pooled/always_hedged/equity.parquet"
+    },
+    {
+      "candidate": "positive_trailing",
+      "cohort": "carry",
+      "old_root": "results/minute-carry-1y-v2",
+      "corrected_root": "results/minute-carry-margin-v3",
+      "original_summary_sha256": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263",
+      "corrected_summary_sha256": "5514dfbc10647263d838b68fb529a617e8af22217a1dd1de18c130da8a904973",
+      "original_equity": "results/minute-carry-1y-v2/pooled/positive_trailing/equity.parquet",
+      "corrected_equity": "results/minute-carry-margin-v3/pooled/positive_trailing/equity.parquet"
+    },
+    {
+      "candidate": "funding_rotation",
+      "cohort": "carry",
+      "old_root": "results/minute-carry-1y-v2",
+      "corrected_root": "results/minute-carry-margin-v3",
+      "original_summary_sha256": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263",
+      "corrected_summary_sha256": "5514dfbc10647263d838b68fb529a617e8af22217a1dd1de18c130da8a904973",
+      "original_equity": "results/minute-carry-1y-v2/pooled/funding_rotation/equity.parquet",
+      "corrected_equity": "results/minute-carry-margin-v3/pooled/funding_rotation/equity.parquet"
+    },
+    {
+      "candidate": "funding_hysteresis",
+      "cohort": "carry",
+      "old_root": "results/minute-carry-1y-v2",
+      "corrected_root": "results/minute-carry-margin-v3",
+      "original_summary_sha256": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263",
+      "corrected_summary_sha256": "5514dfbc10647263d838b68fb529a617e8af22217a1dd1de18c130da8a904973",
+      "original_equity": "results/minute-carry-1y-v2/pooled/funding_hysteresis/equity.parquet",
+      "corrected_equity": "results/minute-carry-margin-v3/pooled/funding_hysteresis/equity.parquet"
+    },
+    {
+      "candidate": "risk_controlled",
+      "cohort": "carry",
+      "old_root": "results/minute-carry-1y-v2",
+      "corrected_root": "results/minute-carry-margin-v3",
+      "original_summary_sha256": "46a7f61758d73e449b53aa2d9a07d1cc14916efa694d7c270b5321d6c765f263",
+      "corrected_summary_sha256": "5514dfbc10647263d838b68fb529a617e8af22217a1dd1de18c130da8a904973",
+      "original_equity": "results/minute-carry-1y-v2/pooled/risk_controlled/equity.parquet",
+      "corrected_equity": "results/minute-carry-margin-v3/pooled/risk_controlled/equity.parquet"
+    },
+    {
+      "candidate": "slow_ema_trend",
+      "cohort": "signed",
+      "old_root": "results/minute-directional-1y-v2",
+      "corrected_root": "results/minute-directional-margin-v3",
+      "original_summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+      "corrected_summary_sha256": "1f7b9089b321076064c21ad43587a5bc26a6893da089044e6b5a9a4dfc32a68c",
+      "original_equity": "results/minute-directional-1y-v2/pooled/slow_ema_trend/equity.parquet",
+      "corrected_equity": "results/minute-directional-margin-v3/pooled/slow_ema_trend/equity.parquet"
+    },
+    {
+      "candidate": "weekly_donchian",
+      "cohort": "signed",
+      "old_root": "results/minute-directional-1y-v2",
+      "corrected_root": "results/minute-directional-margin-v3",
+      "original_summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+      "corrected_summary_sha256": "1f7b9089b321076064c21ad43587a5bc26a6893da089044e6b5a9a4dfc32a68c",
+      "original_equity": "results/minute-directional-1y-v2/pooled/weekly_donchian/equity.parquet",
+      "corrected_equity": "results/minute-directional-margin-v3/pooled/weekly_donchian/equity.parquet"
+    },
+    {
+      "candidate": "ts_momentum_agreement",
+      "cohort": "signed",
+      "old_root": "results/minute-directional-1y-v2",
+      "corrected_root": "results/minute-directional-margin-v3",
+      "original_summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+      "corrected_summary_sha256": "1f7b9089b321076064c21ad43587a5bc26a6893da089044e6b5a9a4dfc32a68c",
+      "original_equity": "results/minute-directional-1y-v2/pooled/ts_momentum_agreement/equity.parquet",
+      "corrected_equity": "results/minute-directional-margin-v3/pooled/ts_momentum_agreement/equity.parquet"
+    },
+    {
+      "candidate": "signed_mean_reversion",
+      "cohort": "signed",
+      "old_root": "results/minute-directional-1y-v2",
+      "corrected_root": "results/minute-directional-margin-v3",
+      "original_summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+      "corrected_summary_sha256": "1f7b9089b321076064c21ad43587a5bc26a6893da089044e6b5a9a4dfc32a68c",
+      "original_equity": "results/minute-directional-1y-v2/pooled/signed_mean_reversion/equity.parquet",
+      "corrected_equity": "results/minute-directional-margin-v3/pooled/signed_mean_reversion/equity.parquet"
+    },
+    {
+      "candidate": "btc_conditioned_alt_lag",
+      "cohort": "signed",
+      "old_root": "results/minute-directional-1y-v2",
+      "corrected_root": "results/minute-directional-margin-v3",
+      "original_summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+      "corrected_summary_sha256": "1f7b9089b321076064c21ad43587a5bc26a6893da089044e6b5a9a4dfc32a68c",
+      "original_equity": "results/minute-directional-1y-v2/pooled/btc_conditioned_alt_lag/equity.parquet",
+      "corrected_equity": "results/minute-directional-margin-v3/pooled/btc_conditioned_alt_lag/equity.parquet"
+    },
+    {
+      "candidate": "cross_sectional_momentum",
+      "cohort": "signed",
+      "old_root": "results/minute-directional-1y-v2",
+      "corrected_root": "results/minute-directional-margin-v3",
+      "original_summary_sha256": "513a56996b66931d1e17ff4a199ddb6db8e5399c165a19f17d595daa5fc6468c",
+      "corrected_summary_sha256": "1f7b9089b321076064c21ad43587a5bc26a6893da089044e6b5a9a4dfc32a68c",
+      "original_equity": "results/minute-directional-1y-v2/pooled/cross_sectional_momentum/equity.parquet",
+      "corrected_equity": "results/minute-directional-margin-v3/pooled/cross_sectional_momentum/equity.parquet"
+    },
+    {
+      "candidate": "qqq_risk_transmission",
+      "cohort": "external",
+      "old_root": "results/external-factor-1y",
+      "corrected_root": "results/external-factor-margin-v2",
+      "original_summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92",
+      "corrected_summary_sha256": "bbbc17f470a59e8ddfbd7027c90fca5c5d8d699ebf404b5e6d5bfaffb1392255",
+      "original_equity": "results/external-factor-1y/pooled/qqq_risk_transmission/equity.parquet",
+      "corrected_equity": "results/external-factor-margin-v2/pooled/qqq_risk_transmission/equity.parquet"
+    },
+    {
+      "candidate": "cpi_acceleration_event",
+      "cohort": "external",
+      "old_root": "results/external-factor-1y",
+      "corrected_root": "results/external-factor-margin-v2",
+      "original_summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92",
+      "corrected_summary_sha256": "bbbc17f470a59e8ddfbd7027c90fca5c5d8d699ebf404b5e6d5bfaffb1392255",
+      "original_equity": "results/external-factor-1y/pooled/cpi_acceleration_event/equity.parquet",
+      "corrected_equity": "results/external-factor-margin-v2/pooled/cpi_acceleration_event/equity.parquet"
+    },
+    {
+      "candidate": "funding_crowding_fade",
+      "cohort": "external",
+      "old_root": "results/external-factor-1y",
+      "corrected_root": "results/external-factor-margin-v2",
+      "original_summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92",
+      "corrected_summary_sha256": "bbbc17f470a59e8ddfbd7027c90fca5c5d8d699ebf404b5e6d5bfaffb1392255",
+      "original_equity": "results/external-factor-1y/pooled/funding_crowding_fade/equity.parquet",
+      "corrected_equity": "results/external-factor-margin-v2/pooled/funding_crowding_fade/equity.parquet"
+    },
+    {
+      "candidate": "perpetual_premium_fade",
+      "cohort": "external",
+      "old_root": "results/external-factor-1y",
+      "corrected_root": "results/external-factor-margin-v2",
+      "original_summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92",
+      "corrected_summary_sha256": "bbbc17f470a59e8ddfbd7027c90fca5c5d8d699ebf404b5e6d5bfaffb1392255",
+      "original_equity": "results/external-factor-1y/pooled/perpetual_premium_fade/equity.parquet",
+      "corrected_equity": "results/external-factor-margin-v2/pooled/perpetual_premium_fade/equity.parquet"
+    },
+    {
+      "candidate": "taker_flow_drift",
+      "cohort": "external",
+      "old_root": "results/external-factor-1y",
+      "corrected_root": "results/external-factor-margin-v2",
+      "original_summary_sha256": "cfa414e7ea6adeb74b423b4fa044165330bd39afdb9826c3fbba2bf1c72bcb92",
+      "corrected_summary_sha256": "bbbc17f470a59e8ddfbd7027c90fca5c5d8d699ebf404b5e6d5bfaffb1392255",
+      "original_equity": "results/external-factor-1y/pooled/taker_flow_drift/equity.parquet",
+      "corrected_equity": "results/external-factor-margin-v2/pooled/taker_flow_drift/equity.parquet"
+    }
+  ]
+}

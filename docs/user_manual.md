@@ -332,3 +332,34 @@ trading advantages. Sparse CPI announcements and correlated exposure across
 coins limit statistical evidence. Current X searches are not used as historical
 sentiment. Read each failed hurdle, joint cost stress and liquidation count
 before treating a positive headline return as useful evidence.
+
+
+## Partial-exit margin correction and historical reports
+
+The original derivative studies used a margin-retention convention that could
+force-liquidate a tiny remaining position after a losing partial close despite
+healthy proportional collateral. Cash ledgers still reconciled; that alone did
+not establish correct margin allocation. The corrected engine releases the
+closed portion’s reserve and settles its P&L/fees in wallet cash. The remaining
+reserve retains only its proportional collateral and accrued funding.
+
+The original reports are preserved as dated evidence. All 1,000 identical
+accounting-correction reruns are complete and independently audited. The
+[corrected comparison](margin_correction_results/report.html) retains all 24
+candidates and still reports zero complete hurdle passes. Actual derivative
+liquidation fills across all phases fell from 77 to 23, all in carry cases. Use a fresh
+folder with the corrected engine; attempting to resume an original frozen run
+correctly rejects the changed engine hash. Original engine reports can be
+reproduced from Git commit `8cd5f36`, with their legacy convention explicit.
+Run `.venv/bin/python examples/research_review/rerun_margin_correction.py` to
+reproduce the corrected 120 carry, 480 signed and 400 external-factor cases.
+No thresholds, costs, selection rules, years, assets or hurdle definitions change.
+This rerun does not add a new economic hypothesis to the count.
+
+See the [correction workflow](../examples/research_review/README.md) for the
+independent audit and guarded publication commands. Each trial has sixteen
+sealed output files. Audits independently rebuild quantities, cash, funding,
+reserves, marked equity, summary gates and training-only scale selection.
+A new clone needs preserved original results or a separate legacy checkout to
+reconstruct them; the workflow explains this requirement. Source-hash mismatch
+is a reason to stop a cached resume, not to overwrite its original evidence.
