@@ -1,0 +1,17 @@
+{
+  "source_url": "https://data-api.binance.vision/api/v3/exchangeInfo?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%2C%22DOGEUSDT%22%2C%22PEPEUSDT%22%2C%22SOLUSDT%22%2C%22XRPUSDT%22%2C%22LINKUSDT%22%2C%22ADAUSDT%22%5D",
+  "retrieved_at": "2026-10-05T20:14:26.335860+00:00",
+  "sha256": "f4a798fa1984ef08898c1f392865901b1296be2c89f782c0c47e018d4af11e1d",
+  "historical_rules": false,
+  "note": "Current official instrument rules approximate the full historical period; maker/taker fee defaults are configurable simulator assumptions, not verified account fee tier. LOT_SIZE imported; MARKET_LOT_SIZE and dynamic exchange price-band filters retained in raw response but not exhaustively reproduced by simulator.",
+  "universe": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "PEPEUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "ADAUSDT"
+  ]
+}

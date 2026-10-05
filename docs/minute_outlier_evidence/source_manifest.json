@@ -1,0 +1,102 @@
+{
+  "retrieved_at": "2026-10-05T21:01:53.464270+00:00",
+  "archives": [
+    {
+      "symbol": "LINKUSDT",
+      "url": "https://public.bybit.com/trading/LINKUSDT/LINKUSDT2026-08-22.csv.gz",
+      "path": "data_cache/outlier-validation/LINKUSDT2026-08-22.csv.gz",
+      "bytes": 29326656,
+      "sha256": "577df99422e5ca8530511022f14a41ffbdcce2ad35855647c3990c8346b4afc5",
+      "http_headers": {
+        "Content-Type": "text/csv",
+        "Content-Length": "29326656",
+        "Last-Modified": "Sun, 23 Aug 2026 01:16:30 GMT",
+        "ETag": "\"6e39c375e84b23edc09c8794e1732b1f-4\""
+      },
+      "sample": [
+        "timestamp,symbol,side,size,price,tickDirection,trdMatchID,grossValue,homeNotional,foreignNotional,RPI",
+        "1787356800.0344,LINKUSDT,Buy,11.9,11.990,PlusTick,5a27f5d0-53c9-56b3-8fb9-455abc4b5caf,1.4268100000000002e+10,11.9,142.681,0",
+        "1787356800.0344,LINKUSDT,Buy,0.5,11.990,ZeroPlusTick,6abbc0e2-f63d-5933-961e-1da421ed17e1,5.995e+08,0.5,5.995,0"
+      ],
+      "instrument_response_sha256": "ce04f7e74bfcad8f8a39ec39dc488fa04be3907896536ee298fc22cc8514926c",
+      "instrument_metadata_file": "LINKUSDT_current_instrument.json"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "url": "https://public.bybit.com/trading/SOLUSDT/SOLUSDT2026-08-22.csv.gz",
+      "path": "data_cache/outlier-validation/SOLUSDT2026-08-22.csv.gz",
+      "bytes": 54154991,
+      "sha256": "a7e2a6fe2abde6a65b0fd305d915d55de45a7cafc405653a4b0c35437aaf4bcb",
+      "http_headers": {
+        "Content-Type": "text/csv",
+        "Content-Length": "54154991",
+        "Last-Modified": "Sun, 23 Aug 2026 01:17:38 GMT",
+        "ETag": "\"9ba5d737efd695be0ffa5edbee98cf49-7\""
+      },
+      "sample": [
+        "timestamp,symbol,side,size,price,tickDirection,trdMatchID,grossValue,homeNotional,foreignNotional,RPI",
+        "1787356800.1222,SOLUSDT,Buy,0.1,93.720,ZeroPlusTick,67ca632f-466f-56d1-b34b-e06bd1bd82f1,9.372e+08,0.1,9.372,0",
+        "1787356800.1806,SOLUSDT,Buy,0.2,93.720,ZeroPlusTick,8bc93d69-3508-53a9-8481-7e356327d74f,1.8744e+09,0.2,18.744,0"
+      ],
+      "instrument_response_sha256": "767cf05023c9dcc340a7846ffb9caabda5d09088118d96efed15ff155a7dad26",
+      "instrument_metadata_file": "SOLUSDT_current_instrument.json"
+    }
+  ],
+  "documentation": {
+    "archive_docs": "https://bybit-exchange.github.io/docs/v5/market/recent-trade",
+    "instrument_docs": "https://bybit-exchange.github.io/docs/v5/market/instrument",
+    "directory_root": "https://public.bybit.com/trading/"
+  },
+  "listing_provenance": [
+    {
+      "symbol": "LINKUSDT",
+      "url": "https://public.bybit.com/trading/LINKUSDT/",
+      "sha256": "413f1b9b28cc8ce9ba5f6edeedb5ec2d6f87c47cf0169bde9602e1e906c75427",
+      "exact_listed_filename": "LINKUSDT2026-08-22.csv.gz"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "url": "https://public.bybit.com/trading/SOLUSDT/",
+      "sha256": "8a01eb89649c6b51e94fec6593a584123226e709927d50e08874a2aa1dd7b2ae",
+      "exact_listed_filename": "SOLUSDT2026-08-22.csv.gz"
+    }
+  ],
+  "instrument_api": {
+    "LINKUSDT": "https://api.bybit.com/v5/market/instruments-info?category=linear&symbol=LINKUSDT",
+    "SOLUSDT": "https://api.bybit.com/v5/market/instruments-info?category=linear&symbol=SOLUSDT"
+  },
+  "derived_files_sha256": {
+    "focus_comparison.csv": "030ad0490ef4b1361b5b18a79fea4e7a74609992cfd5dab0d4ace575aeb1d261",
+    "validation_summary.json": "d55506a41afbd06dd953f520a245d86ee1ba3094701065a91413627a21b2be69",
+    "SOLUSDT_2026-08-22_1m.parquet": "a510a5dc7509bb29fce0d23f10eb14c0397928e0532eca646bed2ffe9bcaf800",
+    "LINKUSDT_2026-08-22_1m.parquet": "1d8eb398cef3d210a7f986cabadf99bf87765fe26ef63594f13ef04739dcd47c"
+  },
+  "checksum_note": "No publisher SHA256 CHECKSUM file was asserted for Bybit. SHA256 records the exact HTTP-downloaded bytes locally; multipart ETag is not treated as a checksum.",
+  "versioned_evidence_note": "Compact evidence copy. Raw daily gzip files and saved HTML listings remain ignored under data_cache/outlier-validation; their recorded hashes and official URLs are retained. Current instrument API responses are versioned separately.",
+  "binance_reference_inputs": [
+    {
+      "path": "data_cache/minute-1y/LINKUSDT/bars.parquet",
+      "sha256": "6e3f3c843d93bd3d2bd30634ceda4c7d07191aa42c5756e733d75ee9eff7e9ed",
+      "source_manifest_sha256": "1a7ea3a6f5f83319859ad486a0cef5d2f4b730236bae64e70fdcc35a73a8db30"
+    },
+    {
+      "path": "data_cache/minute-perpetual-1y/LINKUSDT/bars.parquet",
+      "sha256": "c49bd16c9e750d828160b7ef201abacb8bfc5b969bb10092db2b43eaccc0c666",
+      "source_manifest_sha256": "f93932b774c82c7be23f49b7a4bff5c6d6d7199e7171afefaa86d1c099863678"
+    },
+    {
+      "path": "data_cache/minute-1y/SOLUSDT/bars.parquet",
+      "sha256": "2403e1aaf6dc418a0fcd8e8f958f5f6ef157f7eade69b796a17ebf790a85ec09",
+      "source_manifest_sha256": "c6ce18c939f65b1a5483f3fb098248a46ce014e61ddbec189f336acc8ecce08c"
+    },
+    {
+      "path": "data_cache/minute-perpetual-1y/SOLUSDT/bars.parquet",
+      "sha256": "285df3146b390ed67bf393e4d7109adac9de222bb8ed8f3d3a59f298a3ed9e33",
+      "source_manifest_sha256": "06d43e51d5364efa5a4450513b773c857f9bb576341ba24e6e837d436c00659b"
+    }
+  ],
+  "reconstruction_script": {
+    "path": "examples/minute_research/validate_outlier.py",
+    "sha256": "83033c2506dce33a8452ea13363b1bc6c2424d357222ca7d18cc4965eead2ec5"
+  }
+}

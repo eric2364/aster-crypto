@@ -1,0 +1,2 @@
+research_symbol,instrument_id,exchange,symbol,quantity,average_price,mark_price,unrealized_pnl,funding_pnl,entry_fees,collateral,liquidation_price,maintenance_margin
+PEPEUSDT,binance:spot:PEPEUSDT,binance,PEPEUSDT,2296829449.0,4.303458704608416e-06,4.41e-06,244.70718478999885,0.0,9.8843106853,0.0,,0.0

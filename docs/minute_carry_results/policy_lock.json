@@ -1,0 +1,8 @@
+{
+  "runner_sha256": "b7ed468bd3803aef96a34a046aa99cd39b0d6a482ccc95b76b080e5b80190c3f",
+  "protocol_sha256": "d232e1aca0ead3068390a82d15710e6a1b2e4f236ec5f91e6e43f889f25ddf22",
+  "selection": "none; fixed before numerical outcomes",
+  "earlier_pre_outcome_implementation_hashes": [
+    "30dc79a99a5976a2d69e7df2135419a6fe2133df67119897e7b78e6be961b827"
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "btc_lead_momentum": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.19469669037130918,
+      -0.01754916475151731
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.22586195404333173,
+      0.056241040489189584
+    ],
+    "source": "results/minute-study-1y/pooled/btc_lead_momentum/equity.parquet",
+    "sha256": "047c5a51f24f08a42d62889bf741e6f82afd08c22e0f162955709b5ec87be454"
+  },
+  "btc_lead_reversal": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.02646219675347213,
+      0.0
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.04183921207759247,
+      0.0
+    ],
+    "source": "results/minute-study-1y/pooled/btc_lead_reversal/equity.parquet",
+    "sha256": "d55f2ae1dd9a15adb18b5359ca3af4bac9f848777f9a4083a421fff5cfbeea2d"
+  },
+  "donchian": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.17238087797325186,
+      0.523660224814604
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.2537103469727183,
+      0.962823139491688
+    ],
+    "source": "results/minute-study-1y/pooled/donchian/equity.parquet",
+    "sha256": "eaa03ad530c3004f9c83debfea062c4cff8538e1d0a694df0aff600802f136bc"
+  },
+  "funding_contrarian": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.07857673786145099,
+      -0.009884124665115032
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.10236907138362135,
+      0.0010376412472329608
+    ],
+    "source": "results/minute-study-1y/pooled/funding_contrarian/equity.parquet",
+    "sha256": "5359a5899dd57c4becec22aa03c54ed89439c7f40c9964348cd92c4323cafe53"
+  },
+  "mean_reversion": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.13402726755190442,
+      -0.03437631805040945
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.1579982603739404,
+      -0.006284190911498897
+    ],
+    "source": "results/minute-study-1y/pooled/mean_reversion/equity.parquet",
+    "sha256": "a77d8711d8bf03bcd359bd1c9a3325e7d63a61ec2c5043ac813ae1d25acf3cf6"
+  },
+  "trend": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.33082762862583037,
+      0.6643684728708008
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.4261478575410104,
+      1.2563312331782954
+    ],
+    "source": "results/minute-study-1y/pooled/trend/equity.parquet",
+    "sha256": "7b23ec9f6ad5ca8cb4684d2c60c2a6a4b5ce8c93e96ff81e16a96f129ac9c113"
+  },
+  "trend_pullback": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.15390872516774268,
+      -0.05634234294570988
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.17488446143367667,
+      -0.020242000895058856
+    ],
+    "source": "results/minute-study-1y/pooled/trend_pullback/equity.parquet",
+    "sha256": "246efba797180d4204c925c35d7477db882da41baf65e8f1e8f173176a7df6f8"
+  },
+  "volatility_breakout": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.32276946358157194,
+      -0.051268389203034455
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.36631767994846937,
+      0.052648063066205036
+    ],
+    "source": "results/minute-study-1y/pooled/volatility_breakout/equity.parquet",
+    "sha256": "035578f832acf36fbc0ae738e8168070a4fb2d6368c3dda70ef72f0b7f6e72d5"
+  },
+  "always_hedged": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.0075954409944216685,
+      0.002273374535593522
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.010825358881986817,
+      0.004082155044812785
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/always_hedged/equity.parquet",
+    "sha256": "28e7861095db86af1cb411ceb53881b02943b141d4eda333b23c497040197d7c"
+  },
+  "funding_hysteresis": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.015372793512782274,
+      -0.00452630292623293
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.018355963598377458,
+      -0.00208372558463227
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/funding_hysteresis/equity.parquet",
+    "sha256": "4be9ad93ba03fdd4b485759785efe73b70aa4661f3b3adc2dcea1a4ca8ba2991"
+  },
+  "funding_rotation": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.0244537839309339,
+      -0.018206456291922142
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.026167314857384365,
+      -0.016623517141093756
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/funding_rotation/equity.parquet",
+    "sha256": "de95d7729959dbc71c503a1bf0bc5996bc405e03d91fea420da1f1ef304ff97f"
+  },
+  "positive_trailing": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.019487661319007952,
+      -0.008529736453996248
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.022111972847787355,
+      -0.005874624115744548
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/positive_trailing/equity.parquet",
+    "sha256": "9d1ba26de2b85bf25a409bcceb1b0de6d046b13302bf94c48abbd97e7075ae5d"
+  },
+  "risk_controlled": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.018143713138334308,
+      -0.0079075359190751
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.020777665611037784,
+      -0.005529636931537306
+    ],
+    "source": "results/minute-carry-1y-v2/pooled/risk_controlled/equity.parquet",
+    "sha256": "8ef9df64cf3f7dcb9a580674bc72a899a197202e7203c4f0b8bcaece254cfdbf"
+  },
+  "btc_conditioned_alt_lag": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.00904961054984279,
+      0.020354182016374223
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.01268846702521149,
+      0.031434986362632436
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/btc_conditioned_alt_lag/equity.parquet",
+    "sha256": "5fe9f31fa7ef7e44af9903a418cec5785ecfa2787173162c02124d2404c6cf98"
+  },
+  "cross_sectional_momentum": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.05814203518295908,
+      -0.0032670263887849466
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.07266719907043209,
+      0.009932013266845658
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/cross_sectional_momentum/equity.parquet",
+    "sha256": "20242dc2dcf1dd0fa014ebceae6ba0008f6f9ded2f3236f55615660e5d008763"
+  },
+  "signed_mean_reversion": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.1815141413408989,
+      0.022970018737175323
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.2455363637084756,
+      0.06498996669890082
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/signed_mean_reversion/equity.parquet",
+    "sha256": "100f7006e52ec15a2c343a204dd9b8f771baef129ddf710c4514309c066c71b3"
+  },
+  "slow_ema_trend": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.1124705186069235,
+      0.12108795851526893
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.14347347730556498,
+      0.21748670257966168
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/slow_ema_trend/equity.parquet",
+    "sha256": "a860f3e85fbd33617905670ead14e2c3357a296c0b15051994b0c094b0cbb092"
+  },
+  "ts_momentum_agreement": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.133118816336662,
+      0.15421108201719105
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.16373485476475513,
+      0.29210157656594316
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/ts_momentum_agreement/equity.parquet",
+    "sha256": "3d6cfbc98557d6d48f64fefb1486194e437a998a7082993e33978d6836ef5467"
+  },
+  "weekly_donchian": {
+    "method": "conditional circular7dayblockbootstrap;10000draws;seed42;exploratory reused evaluation",
+    "return_interval95": [
+      -0.04295052410179815,
+      0.028018919227436056
+    ],
+    "return_interval_bonferroni19policies": [
+      -0.058290324526411884,
+      0.056187977961606274
+    ],
+    "source": "results/minute-directional-1y-v2/pooled/weekly_donchian/equity.parquet",
+    "sha256": "f07dabbcc3b755930da2d1d97a0c99253be84d3b6877c15242edd1f9bb4e30fb"
+  }
+}

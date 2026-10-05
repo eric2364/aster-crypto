@@ -1,0 +1,2 @@
+research_symbol,instrument_id,exchange,symbol,quantity,average_price,mark_price,unrealized_pnl,funding_pnl,entry_fees,collateral,liquidation_price,maintenance_margin
+SOLUSDT,binance:spot:SOLUSDT,binance,SOLUSDT,85.08200000000001,121.18,121.6,35.73443999999894,0.0,10.31023676,0.0,,0.0

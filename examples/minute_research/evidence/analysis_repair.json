@@ -1,0 +1,8 @@
+{
+  "reason": "postprocessing timestamp dtype was millisecond; cast to ns before retaining final midnight mark",
+  "executed_runner_sha256": "9796f8433570497d95ee9e178eb88b3d1c46c10fe2fe5e2cfd512c79cb83dd80",
+  "repaired_runner_sha256": "e4559e3033aaaa28d02c2475e15669f735acfa704183fa73024915323dcd5a5c",
+  "analysis_script_sha256": "f7de14153e2a2949820b22e458bf6504039de2daee237db8effce3afda9a8abc",
+  "simulation_trials_unchanged": 640,
+  "signal_parameters_and_execution_unchanged": true
+}

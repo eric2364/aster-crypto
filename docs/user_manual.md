@@ -285,3 +285,24 @@ These are maintenance instructions, not evidence that a remote or upload succeed
 - Float grid tolerances are tested but do not replace an exact decimal matching engine.
 - Repeated parameter trials are serial and fresh-state; full multi-year active multi-symbol simulation is memory-intensive.
 - Local tests and synthetic reconciliations demonstrate software behavior. Only appropriately sourced historical data, dated venue rules, realistic cost sensitivity and out-of-sample evidence can support a strategy assessment.
+
+## Last-year minute and leading-factor study
+
+For the eight-asset one-minute study, follow [the reproducible example guide](../examples/minute_research/README.md). It downloads only the fixed latest-complete-day year, including DOGE and PEPE, and uses training-only parameter selection followed by validation and a locked historical holdout. The guide explains costs, source hashes, all failure gates, bootstrap uncertainty and where to find each ledger. The [primary-paper review](leading_factor_research.md) distinguishes BTC lead–lag/funding hypotheses from demonstrated results; the [factor-source guide](leading_factor_sources.md) covers QQQ, inflation release vintages and historical X access.
+
+A positive historical result is an example to investigate, not a promise of future profits. Treat the chosen survivor universe, current instrument rules, simulated execution and short holdout as practical limits on the evidence. Do not tune an unsuccessful strategy against this holdout and then describe the same period as untouched.
+
+The [signed perpetual extension](../examples/minute_directional/README.md) tests
+six slower long/short hypotheses on the same year, including a daily ranked
+two-long/two-short basket. It is explicitly exploratory on reused historical
+evaluation data. Native 1000PEPE bundle units, actual funding and isolated margin
+are preserved. Open terminal positions remain marked; an indicative exit-cost
+reserve is a diagnostic rather than a fabricated fill. See [combined results](minute_strategy_results.md)
+for every failed gate and [the independent audit](minute_directional_audit.md)
+for the tested timing, unit and source-integrity checks.
+
+After all three studies finish, regenerate the combined results without changing
+simulations using `.venv/bin/python examples/minute_research/combined_report.py`.
+Its nineteen-comparison conditional uncertainty intervals use full-resolution
+pooled equity and preserve the earlier cohort's results. They do not remove
+adaptive research bias or establish non-overfitting.

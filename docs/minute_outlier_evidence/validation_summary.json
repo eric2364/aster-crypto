@@ -1,0 +1,36 @@
+[
+  {
+    "symbol": "LINKUSDT",
+    "product": "Bybit LinearPerpetual USDT-settled",
+    "base_coin": "LINK",
+    "quote_coin": "USDT",
+    "rows": 818497,
+    "minutes": 1440,
+    "first_trade": "2026-08-22 00:00:00.034400+00:00",
+    "last_trade": "2026-08-22 23:59:56.882700+00:00",
+    "out_of_order": 0,
+    "duplicate_id_hashes": 0,
+    "notional_unit_mismatches": 0,
+    "RPI_counts": {
+      "0": 818497
+    },
+    "source_sha256": "577df99422e5ca8530511022f14a41ffbdcce2ad35855647c3990c8346b4afc5"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "product": "Bybit LinearPerpetual USDT-settled",
+    "base_coin": "SOL",
+    "quote_coin": "USDT",
+    "rows": 1608427,
+    "minutes": 1440,
+    "first_trade": "2026-08-22 00:00:00.122200+00:00",
+    "last_trade": "2026-08-22 23:59:58.617000+00:00",
+    "out_of_order": 0,
+    "duplicate_id_hashes": 0,
+    "notional_unit_mismatches": 0,
+    "RPI_counts": {
+      "0": 1608427
+    },
+    "source_sha256": "a7e2a6fe2abde6a65b0fd305d915d55de45a7cafc405653a4b0c35437aaf4bcb"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "audit": "independent read-only source, tuple and exported accounting verification",
+  "timestamp_utc": "2026-10-05T21:25:31.752014+00:00",
+  "exact_unique_expected_cases": 480,
+  "phase_counts": {
+    "training": 144,
+    "validation1": 48,
+    "validation2": 48,
+    "validation3": 48,
+    "holdout": 192
+  },
+  "current_source_hash_comparisons": 16630,
+  "unique_current_files_hashed": 70,
+  "source_lock_runner_signals_package_protocol_and_preserved_executed_copies_match": true,
+  "all_cross_matrix_and_manifest_digests_match": true,
+  "ledger_reconciled_cases": 480,
+  "cases_with_actual_terminal_inventory": 203,
+  "maximum_closed_plus_open_identity_error": 3.774403012357652e-11,
+  "identities_checked": [
+    "initial plus realized plus unrealized plus funding minus trading and liquidation fees equals final equity",
+    "fills fee sum equals accumulated trading fees",
+    "funding payments sum equals funding PnL",
+    "closed trade net PnL plus open position unrealized and funding PnL minus open entry fees equals total equity change"
+  ],
+  "research_status": "exploratory reused historical evaluation; original models unchanged",
+  "historical_hurdles_passed": 0,
+  "families": 6
+}

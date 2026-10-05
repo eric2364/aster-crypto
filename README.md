@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **100 tests pass.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. All bundled market series are **synthetic demonstrations**. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **177 tests passed at the minute-study launch audit.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -122,6 +122,31 @@ Downloaded BTCUSDT hourly observations for **5 October 2025–5 October 2026 UTC
 ```
 
 ## Strategies and experiments
+
+### Last-year minute research
+
+The minute examples use only **5 October 2025–5 October 2026 UTC** across BTC,
+ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Official trade/mark archives and actual
+funding are verified; raw datasets stay outside Git. The first thirteen policies
+did not pass all historical hurdles. Six subsequent long/short perpetual
+hypotheses are explicitly exploratory because they reuse this evaluated year.
+Every candidate, cost stress and failed gate is retained; these are not proven
+non-overfit strategies or one-minute scalping claims.
+
+[All results](docs/minute_strategy_results.md) ·
+[Minute data and reproduction](examples/minute_research/README.md) ·
+[Signed perpetual guide](examples/minute_directional/README.md) ·
+[Academic leading-factor research](docs/leading_factor_research.md) ·
+[QQQ, inflation and X data requirements](docs/leading_factor_sources.md).
+
+```bash
+.venv/bin/python examples/minute_research/download.py --workers 2
+.venv/bin/python examples/minute_research/downloadcarry.py --workers 2
+.venv/bin/python examples/minute_research/run.py --workers 4 --out results/minute-study-reproduction
+.venv/bin/python examples/minute_carry/run.py --phase validation --workers 4 --out results/minute-carry-reproduction
+.venv/bin/python examples/minute_carry/run.py --phase holdout --workers 4 --out results/minute-carry-reproduction --review-out results/minute-carry-reproduction/compact
+.venv/bin/python examples/minute_directional/run.py --workers 4
+```
 
 Available examples: `buy_hold`, `ma`, `rsi`, `momentum`, `cross_momentum`, `breakout`, `funding`, `neutral`, `relative_value`. Long/short neutral examples require perpetuals. A funding example reacts to published settlements for subsequent exposure, never retroactively earns that same payment. These demonstrate APIs, not investment advice.
 

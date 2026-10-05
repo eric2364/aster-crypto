@@ -1,0 +1,5 @@
+instrument_id,exchange,symbol,quantity,average_price,mark_price,unrealized_pnl,funding_pnl,entry_fees,collateral,liquidation_price,maintenance_margin,research_symbol
+binance:spot:BTCUSDT,binance,BTCUSDT,0.13078,85123.04000000001,86530.0,184.00222879999893,0.0,11.1323911712,0.0,,0.0,BTCUSDT
+binance:spot:ETHUSDT,binance,ETHUSDT,4.5814,2719.78,2726.94,32.80282399999933,0.0,12.460400092000002,0.0,,0.0,ETHUSDT
+binance:spot:DOGEUSDT,binance,DOGEUSDT,118746.0,0.09612000000000001,0.09591,-24.93666000000187,0.0,11.413865520000002,0.0,,0.0,DOGEUSDT
+binance:spot:XRPUSDT,binance,XRPUSDT,9161.6,1.5256,1.5206,-45.80800000000106,0.0,13.97693696,0.0,,0.0,XRPUSDT

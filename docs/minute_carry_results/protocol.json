@@ -1,0 +1,59 @@
+{
+  "economic_families": 1,
+  "candidate_policies": {
+    "always_hedged": "Long spot/short matching perpetual base units continuously; negative funding is paid.",
+    "positive_trailing": "Enter while the trailing three published settlement rates have positive mean; otherwise flat.",
+    "funding_rotation": "Hold the top two positive trailing-three-rate assets ranked across the fixed eight-asset universe; idle sleeve cash remains idle.",
+    "funding_hysteresis": "Enter after a positive latest published rate; exit after three consecutive nonpositive rates; never short unlevered spot.",
+    "risk_controlled": "Positive trailing-three mean plus previous 24h realized volatility below10%, absolute observed spot/perp basis below1%, and isolated risk ratio exit at50%."
+  },
+  "selection": "five fixed defaults; no parameter search or numerical training selection",
+  "start": "2025-10-05 00:00:00+00:00",
+  "training_end": "2026-04-05 00:00:00+00:00",
+  "holdout_start": "2026-07-05 00:00:00+00:00",
+  "end_exclusive": "2026-10-05 00:00:00+00:00",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "PEPEUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "ADAUSDT"
+  ],
+  "initial_pooled_capital": 100000,
+  "segregated_sleeve_capital": 12500,
+  "allocation_each_leg": 0.3,
+  "perpetual_leverage": 2,
+  "margin_mode": "isolated",
+  "max_gross_leverage": 1,
+  "decision_clock": "00:01UTC daily plus first completed minute in each fresh-wallet phase",
+  "funding_predictor": "only already settled rates, published settlement timestamp+1minute; three observations required for trailing means",
+  "quantity": "fixed entry units until exit; explicit1000spotPEPE per1unit1000PEPE perpetual; common lot-size grid",
+  "base_fees_bps": {
+    "spot": 10,
+    "perpetual": 5
+  },
+  "slippage_bps": {
+    "BTCUSDT": 2,
+    "ETHUSDT": 2,
+    "DOGEUSDT": 8,
+    "PEPEUSDT": 8,
+    "other": 5
+  },
+  "participation": 0.05,
+  "stress": "double all fees and slippage, one additional minute delay, half volume participation",
+  "terminal": "predeclared close orders2minutes before end; partial residuals disclosed, not fabricated fills",
+  "execution_validity_gate": "all base/stress sleeve terminal positions fully closed; otherwise historical hurdle pass is prohibited",
+  "pair_risk": "flatten on >1% matched-base-unit imbalance persisting5minutes, or either leg liquidation; risk policy additionally exits maintenance+close-reserve/local-equity>=.5",
+  "criteria": "validation return>0; holdout>0; jointstress>0; at least2of3positive anchored holdout months; Sharpe>=.5; minute maxdrawdown<=.2; >=5of8positive symbols",
+  "multiple_testing": "five correlated variants of one carry family plus eight price/factor policies; conservative13-policy Bonferroni bootstrap tails",
+  "limitations": [
+    "current fee/lot/risk metadata approximates historical rules",
+    "surviving fixed universe",
+    "minute marks miss intraminute liquidation",
+    "legs fill independently with volume/latency, no atomic exchange hedge",
+    "historical hurdle pass is not prospective edge proof"
+  ]
+}

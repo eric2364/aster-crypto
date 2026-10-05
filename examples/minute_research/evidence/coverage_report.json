@@ -1,0 +1,111 @@
+{
+  "range_start": "2025-10-05T00:00:00Z",
+  "range_end_exclusive": "2026-10-05T00:00:00Z",
+  "total_rows": 4204800,
+  "instruments": [
+    {
+      "symbol": "BTCUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 0,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 27223662
+    },
+    {
+      "symbol": "ETHUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 0,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 23915294
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 12,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 19411787
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 2427,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 17465493
+    },
+    {
+      "symbol": "SOLUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 0,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 19393806
+    },
+    {
+      "symbol": "XRPUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 0,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 19562927
+    },
+    {
+      "symbol": "LINKUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 2806,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 17547209
+    },
+    {
+      "symbol": "ADAUSDT",
+      "rows": 525600,
+      "first_bar_start": "2025-10-05 00:00:00+00:00",
+      "last_bar_start": "2026-10-04 23:59:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "minute_grid_exact": true,
+      "zero_volume_rows": 793,
+      "archived_files": 16,
+      "official_checksums_verified": true,
+      "parquet_sha256_verified": true,
+      "bars_bytes": 18675967
+    }
+  ]
+}

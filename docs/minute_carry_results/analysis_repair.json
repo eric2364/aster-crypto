@@ -1,0 +1,20 @@
+{
+  "type": "postprocessing-only dtype repair after all120 simulations completed",
+  "executed_runner_sha256": "b7ed468bd3803aef96a34a046aa99cd39b0d6a482ccc95b76b080e5b80190c3f",
+  "analysis_runner_sha256": "8c88696b8af0e1db76009bd3362e51273725359438922b7aa91b4734fe168b2a",
+  "change": "cast copied equity timestamps to nanoseconds before subtracting1microsecond at terminal UTC midnight in conditional bootstrap",
+  "unchanged": [
+    "five economic policies",
+    "parameters",
+    "orders",
+    "fills",
+    "fees",
+    "funding",
+    "portfolio equity",
+    "raw metrics",
+    "source/data/model fingerprints"
+  ],
+  "models_rerun": 0,
+  "preliminary_execution": "old results/minute-carry-1y preserved8validation artifacts; interrupted for terminal-delay mechanical bug before anyholdout; no metrics inspected or policy retuning",
+  "original_failure": "Pandas3 rejected microsecond endpoint assignment into actual datetime64[ms,UTC] Parquet timestamps"
+}

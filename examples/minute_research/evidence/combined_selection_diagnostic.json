@@ -1,0 +1,66 @@
+{
+  "trend": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.4109657757370099,
+      1.1719769403418454
+    ]
+  },
+  "donchian": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.250593405674141,
+      0.8925681922604303
+    ]
+  },
+  "mean_reversion": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.15744542355706959,
+      -0.010524157846969853
+    ]
+  },
+  "volatility_breakout": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.36377370283829596,
+      0.04500891339943217
+    ]
+  },
+  "trend_pullback": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.1732111758733692,
+      -0.02847749800075091
+    ]
+  },
+  "btc_lead_momentum": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.22196388336377756,
+      0.048857021880019016
+    ]
+  },
+  "btc_lead_reversal": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.04125880685015314,
+      0.0
+    ]
+  },
+  "funding_contrarian": {
+    "total_policy_tests": 13,
+    "method": "circular7dayblocks;10000samples;seed42;conditional retrospective diagnostic",
+    "bonferroni_13_interval": [
+      -0.0982029839105517,
+      1.7502132091450668e-05
+    ]
+  }
+}

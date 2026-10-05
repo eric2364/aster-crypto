@@ -1,0 +1,142 @@
+{
+  "start": "2025-10-05 00:00:00+00:00",
+  "train_end": "2026-04-05 00:00:00+00:00",
+  "holdout_start": "2026-07-05 00:00:00+00:00",
+  "end_exclusive": "2026-10-05 00:00:00+00:00",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "PEPEUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "ADAUSDT"
+  ],
+  "families": {
+    "trend": {
+      "description": "Slow trend with 6h/24h averages and hysteresis",
+      "parameters": {
+        "fast_minutes": 360,
+        "slow_minutes": 1440,
+        "entry_buffer": 0.003,
+        "exit_buffer": 0.001,
+        "entry_interval_minutes": 60
+      }
+    },
+    "donchian": {
+      "description": "Previous 24h high breakout, previous 6h low exit",
+      "parameters": {
+        "entry_minutes": 1440,
+        "exit_minutes": 360,
+        "atr_minutes": 240,
+        "atr_buffer": 0.25,
+        "entry_interval_minutes": 15,
+        "cooldown_minutes": 60
+      }
+    },
+    "mean_reversion": {
+      "description": "6h downside deviation plus 4h RSI, bounded hold",
+      "parameters": {
+        "lookback_minutes": 360,
+        "rsi_minutes": 240,
+        "entry_z": -2.0,
+        "entry_rsi": 30.0,
+        "exit_z": -0.25,
+        "exit_rsi": 50.0,
+        "max_hold_minutes": 720,
+        "entry_interval_minutes": 30,
+        "cooldown_minutes": 120
+      }
+    },
+    "volatility_breakout": {
+      "description": "Low-width 6h volatility channel breakout",
+      "parameters": {
+        "channel_minutes": 360,
+        "width_history_minutes": 10080,
+        "width_quantile": 0.35,
+        "channel_deviations": 2.0,
+        "max_hold_minutes": 1440,
+        "entry_interval_minutes": 15,
+        "cooldown_minutes": 120
+      }
+    },
+    "trend_pullback": {
+      "description": "Buy 4h RSI pullback while above 24h trend",
+      "parameters": {
+        "trend_minutes": 1440,
+        "rsi_minutes": 240,
+        "entry_rsi": 40.0,
+        "exit_rsi": 65.0,
+        "max_hold_minutes": 1440,
+        "entry_interval_minutes": 30,
+        "cooldown_minutes": 120
+      }
+    },
+    "btc_lead_momentum": {
+      "description": "Completed BTC momentum with lagging target and trend confirmation",
+      "parameters": {
+        "return_minutes": 60,
+        "leader_trend_minutes": 1440,
+        "target_exit_minutes": 360,
+        "leader_threshold": 0.002,
+        "catchup_threshold": 0.002,
+        "entry_interval_minutes": 30,
+        "max_hold_minutes": 360,
+        "cooldown_minutes": 60,
+        "observation_lag_minutes": 1,
+        "stale_minutes": 2
+      }
+    },
+    "btc_lead_reversal": {
+      "description": "Target overshoot after BTC selloff and observed BTC rebound",
+      "parameters": {
+        "return_minutes": 60,
+        "rebound_minutes": 15,
+        "leader_selloff_threshold": -0.015,
+        "target_selloff_threshold": -0.02,
+        "rebound_exit_threshold": -0.005,
+        "entry_interval_minutes": 15,
+        "max_hold_minutes": 240,
+        "cooldown_minutes": 120,
+        "observation_lag_minutes": 1,
+        "stale_minutes": 2
+      }
+    },
+    "funding_contrarian": {
+      "description": "Published negative settlement funding with local rebound filter",
+      "parameters": {
+        "return_minutes": 360,
+        "rebound_minutes": 60,
+        "negative_funding_threshold": -0.0001,
+        "exit_funding_threshold": 0.0,
+        "entry_return_floor": -0.03,
+        "exit_return_floor": -0.05,
+        "entry_interval_minutes": 60,
+        "max_hold_minutes": 1440,
+        "cooldown_minutes": 120,
+        "observation_lag_minutes": 1,
+        "funding_stale_minutes": 720
+      }
+    }
+  },
+  "scales": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "fee_bps": 10,
+  "stress_fee_bps": 20,
+  "selection": "one scale per family across all8symbols by training daily Sharpe; no holdout selection",
+  "validation": "three fresh-wallet calendar-offset1month folds April5-May5,May5-June5,June5-July5",
+  "publication_lag": "BTC complete bar/funding available_at plus1minute; no macro/sentiment input",
+  "criteria": "positive pooled validation and holdout; >=2/3 positive holdout anchored months; Sharpe>=.5; minute drawdown<=.2; jointstresspositive; both holdoutneighborreturnspositive; >=5/8 symbolspositive",
+  "limitations": [
+    "selected surviving universe is not survivorship-free",
+    "one year insufficient to establish durable edge",
+    "OHLCV execution approximation",
+    "training and validation drawdown sampled hourly",
+    "all families and trials disclosed",
+    "no repeated holdout tuning"
+  ]
+}

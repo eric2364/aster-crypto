@@ -1,0 +1,1562 @@
+[
+  {
+    "path": "holdout/always_hedged/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "a48cff6e897ec6466619ab27b130c1564169b73725e28dc6994d5dd213715702",
+      "metrics.json": "31a9ef90e596edbc7ae6e462f05215ac75e3530aa40edb64c628cbf6373a88a9",
+      "equity.parquet": "d6151b15a3740ab45bb192d43414baca13814c8f8ccbccff3c7dcf9c8e66efab",
+      "fills.parquet": "8b522b1e4fd4a35649daea470ff3cd590f77cbf4ea33a33d4ed7db0b77a5cf58",
+      "trades.parquet": "d0c2ee4708e07c12712c881dfd5795fabf60ece3c5896dd477669e012f9c281a",
+      "funding.parquet": "4a41be78427c91e01db63d9a15c904b81847d80f6ff5d71d7c35a7fc2f296862",
+      "events.parquet": "4e17823a49e5fc5c89d14f2c82722db1a5f640ad69230aa99dfdabaeded3226c",
+      "positions.parquet": "db5e89989f47b24f28ad21d8d71712c7ae673efea5c4ab85c8a4b35ba1b8e8ce"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "f80dbafb76520c071ca1bcf02d566eb54c26261d94d9854ebc754b188c3de2f2",
+      "metrics.json": "7d5ab749340247a3916dfc0464b6389a5d6e72d9972f1e36446106617b0da2be",
+      "equity.parquet": "69870a0dad6feb5f15de71dd6c9f431f7dc7e03993603c295aea1fe85b40e0fb",
+      "fills.parquet": "d01881537c7cd2dee6073246c88a849f1011dc382c968c0a0c344ae5f65c3e36",
+      "trades.parquet": "6cac3fd87c0bb61d9f07f02281557cc3e0f983b223c192a0bb0b0083b05bf637",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "231d66d3c1b5df520ca6187b7ab2ff3e67b496b0fc6d243cfd737ace6818c7fa",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "b22f73dc0b534c7e61bbf5fc8fbce2611fb6bd1d861fdfeeb73096d9d9845caa",
+      "metrics.json": "eab3634839352a7cbac61b8ba6dcd0ee549b8ca16afa38df104b66ed674634cc",
+      "equity.parquet": "5f75b4930a9be1dda2cc31874fb7bc004836d8d068b5d4ade5009362df6d83f7",
+      "fills.parquet": "a103fa1ea437a11953c4e518d950dcbbf6b770624f452ab22fe2d91993003ddb",
+      "trades.parquet": "046cbf6a7d8899787f405b6ba84e8792ccf4ed530c4323c99f704b88199d88c1",
+      "funding.parquet": "5e1ec710689e4f3eabe28d3b97d46a711c29f11c5f84ce356428f7eb63adae50",
+      "events.parquet": "37c905303cc7800bcf34a5cfef33292bedf235c603015ec23c8fcda979ec7ec6",
+      "positions.parquet": "3057339b3f790685ab8faeb077c1e0b0b86ff41de27719bc8cffec37447842e9"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "f77b1224d064450a7cdea13988c9a5f04ee0ff39bdeac6eb990f85c097c9ef3f",
+      "metrics.json": "27941ed0804af246d524d933fd425d5f1860b60dba928c8ca1203e3b8b456e57",
+      "equity.parquet": "630e1d32cd446a5d4d44050249b5e7597eb3f797d996af09af788170c978c425",
+      "fills.parquet": "ad0408f1fdfb4da51b02b829361a4764081069a20ab1ec70a480fb5c7bbb14f6",
+      "trades.parquet": "42f5f5ab7886027660023c641c63efa32729772435d68cf8ef2a42b0eb54593f",
+      "funding.parquet": "c663076b022c3804a391cd22eb14906292b0fb67411164ff9d08dd607f112e62",
+      "events.parquet": "c958e90c812c3b5f1d5b856c84b9abccbb59b676f195d65c98a1be6b415717e9",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "627325001ec2d28adadbe0bb607c98366dd75ae469c0597f34bfcdddf526d335",
+      "metrics.json": "de22055561c2d928c825cf51e163b4bcf34d3c44e56c269f772b8ac3b3eead18",
+      "equity.parquet": "acec3d605db2d43852d78b354357e5d5a091fcccaa0b766a043210fdc8929b10",
+      "fills.parquet": "b762dedb74c63cc8cd5fc6a44ab7898f8bdab22a01237e39327f3dae2257a73c",
+      "trades.parquet": "e269c8497fe301e9ef0a18872a36f284f6ce7502ca16c830a1db07b1c274dd3e",
+      "funding.parquet": "f5de8da23ecfb9f4fbd3f0f76b07382ebecc63d57ad4d6273ff94ceea2480815",
+      "events.parquet": "f068a6c330c4706fe75e48a07033eeb836dcd196f7d6f0a9ce05a9cb6cf1ab68",
+      "positions.parquet": "05101e8421ddf5198e867cfe320aa0b3318188a658e5b667131f578d36937ad9"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "f41e8687a724f3640f1a584f2c763b25bdb2d18a304593a98cf852a4edbebb78",
+      "metrics.json": "b993d1e7638c3bea54369c381272ed4987f0a04592e3dc21fbc8495cd8ab1a4d",
+      "equity.parquet": "9c358dfc5200da7e90dea92efaf78b6cbcfd48512d45d598d9aa7407dbebfe30",
+      "fills.parquet": "ec377845805f5679c1a45560b392f61167b071d98cc82918f13ca197fa70c0a7",
+      "trades.parquet": "dbe119a51bc6efbb8955e1982fb70698dbceff70dfbeb5f96fe308738ff71c4c",
+      "funding.parquet": "8a4db6a586ddbf19b4e84d3082822f9f9ff93ecf11ff3731a80674f43a424b50",
+      "events.parquet": "9457fe548f4109c3aed4fe0b2d35047d0e6610bd46fa1521564e3400e2df8c95",
+      "positions.parquet": "56e635c6c2e7e23a2df42fc77ca3bf0b1385615c08e9b9a7057ae7f0c2c3e872"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "0244a097c6ce7ee2258fd509445d903456b0b3f5c60578bddfb619de4f6b898f",
+      "metrics.json": "e292f0e5866f666e732243143f143d6ca5b07d0286bd8e750f77205b87e19dd4",
+      "equity.parquet": "4eb5d574ac39f0ac084613ff2f23a696c34a6cd254f82c6ae7e8b7b96d340ca8",
+      "fills.parquet": "c692c901d3c282df643676a63cf1d4940635c33f953e41166015988641a92c32",
+      "trades.parquet": "2b6c77dc7c3d60c161394a9b6f334f275aaf6d9bbe5ed3f03de32e8d9f05969d",
+      "funding.parquet": "8e2d195756b2a297ff099dc7cea3fbebb0c37c0780976fcb50f328eeb77122a7",
+      "events.parquet": "733371c3051855ab81dc2c2713d619fc612cf7e6b46aa134b933ad700897012f",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "3cbf19e009ac175af9229e7f0edced92ff233e3ac2b14f9bfed5ffb90d3847d2",
+      "metrics.json": "d80a514d17e273fd091f47ed5b5cdc583079ff379902fd434e0b8493994b9d8b",
+      "equity.parquet": "00fc97bc0abb1f6268043612901705463a2793ae22bdc81c681c4641f3a922b3",
+      "fills.parquet": "9aecc6055f2e868186cf97278d84bb631bd05579cae0d0c45eb40531e2abf640",
+      "trades.parquet": "8282f838c48ec031ae4a9822ab1e7f8850d5be8f668425ed819878964dd4167c",
+      "funding.parquet": "068ec31f9e5fa48b7302f9eae75565fb035c5537b06e7888fd1193c994d5563a",
+      "events.parquet": "6fe00080659434dcca3403a711fe4229c2791657b06fe09a96f11f6309cf7db3",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/ADAUSDT",
+    "sha256": {
+      "metadata.json": "ef28e2cafbcf23bab7e3ac73870701ab48aac2db105444502a97a1172f755e36",
+      "metrics.json": "83f7c8c45a263d9f71cf805a60023f98e24c0e0ac3ae68f3d7cee98a20384ffc",
+      "equity.parquet": "9185f40bab974216d3016a5dda11c8f8e12a77e107cfe5d94cc03ff3c5cf544e",
+      "fills.parquet": "f63779a1d8253fb7f14f784950dd1c9be6bca3d108415e27ac16f3f0bd3e49fc",
+      "trades.parquet": "bed808d0d419a6788f550f663dd4848609c815b42670eae06abcb10d3234d053",
+      "funding.parquet": "c6b11348adf2f590256dfd93a18d01a66303efc03e2b1f3aceca7b6ce713e35c",
+      "events.parquet": "2ef77ee4bc75fa58a93f94a67d6a8aaf69688a38190c2c852621ddeb9838558d",
+      "positions.parquet": "c606d63e9caa842c69191f0317a0886a937bcbdcb008bb7a030eabf805e997ae"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/BTCUSDT",
+    "sha256": {
+      "metadata.json": "ea15bf995bf297edf5080db86e29736875975ab3acb996886d5bd961742de2f4",
+      "metrics.json": "404241361aa1becf1705fda2d21b4ca74f0d20edc86e7c689d335c95d535ea91",
+      "equity.parquet": "0f68504ae0ea4edbe62fdea9ce7a151ae7ae43d953f01ecb4238ab8d9591c779",
+      "fills.parquet": "10cec14b8908ab0d90ae238893accda8ca2cf48ea8f4965c28da972d1a71c7ba",
+      "trades.parquet": "3073afe9427571a3e014d7a71c850affe8a1afbb385e23b0efb5b1f99771364e",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "b31b0cdefb6a851e239b0056920ecc6dbc15e8f36506e36bb5041fc5385fed22",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "83f9346f1cb5cdef415470cb9a5ba580964984b82bb0944d41794b5c497528cc",
+      "metrics.json": "eedfb89c0ec99bca8fbd71779c4536e4aef15aa568aed8158e38752e461cef67",
+      "equity.parquet": "178d9b0ff353a46e2ca7fbe56b90ddad0c1ce4fd79f60a739ced11295480b681",
+      "fills.parquet": "b81e0a5090616be76dd8bf4add253f0834a1ea6d91599f7df63cd77b89e1918d",
+      "trades.parquet": "d9ba1f7ad30a1fbf2e8e396ef854a0662f3416b10e6210a42243b7d45699e794",
+      "funding.parquet": "5e1ec710689e4f3eabe28d3b97d46a711c29f11c5f84ce356428f7eb63adae50",
+      "events.parquet": "02feb526bf554dde5e1e603143db94d59802395d0c564a8bba68731fd19c4dfa",
+      "positions.parquet": "fe80983df5bab04101323bf0587a0b18e1bb90f69b3e15facbf356c90bdf1ecb"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/ETHUSDT",
+    "sha256": {
+      "metadata.json": "1cebd7e87c0dd8138b3daecc54c7739166b03e0f8f8aabe85b5059ee9762b0d5",
+      "metrics.json": "bb1a46c96b6dd29dfb5dfec788803796469703060eeeb26149826cd9c1a4ae5e",
+      "equity.parquet": "727a038cc7e4d8b7c7cae0c06a655238cf833c8c7c418d911c76b3985f17b8fe",
+      "fills.parquet": "8772f56656d78e455d4594542184c11714543cc64d102b8d444cd985b083c829",
+      "trades.parquet": "0f44ca0ea069ff48ef7988fa2343e6ae98fcff44bb54fcbf879e85b51b602189",
+      "funding.parquet": "7c325440c681200bca5bfabfb575b9b2f1306c68f5ef8ed218d625d193bb9ccf",
+      "events.parquet": "8a495fa0aade070c1c4568b88cf9ca2ff0394578d8adae619c2c556719860ee8",
+      "positions.parquet": "edf13bccfea578344c9c2db73be8e83b604fd235ab870150eebf3e1c7178b8b0"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/LINKUSDT",
+    "sha256": {
+      "metadata.json": "0998b4f1b0b2bef6ea8be8b70468694b7e3d663903fd86ac6f08d61e5ee88b1e",
+      "metrics.json": "8a1c9a6b996e2a4dee529bb1835545d2259e88d37590f77cc765d309605d69ce",
+      "equity.parquet": "6b102370a02e4bfd88af4963af9cf3f3330661d97129bafee661a3f2661b8dde",
+      "fills.parquet": "3b571210c69e056fad90f33958b96b63976179e911566140591268c9e301c8b4",
+      "trades.parquet": "dcb6df794a58950028c1cb0c7f013c5e626d6021898556a4fa23633cc788dac7",
+      "funding.parquet": "70593a077cdc668e40e26fa05642172da167e54e5051fa1e82e2dff757a9e142",
+      "events.parquet": "a5c05ce28866b4c8371872693cd652e400b4067ae731b45cfaa49e2a63c96d8f",
+      "positions.parquet": "1169578d8223fc7d10d1f734af77aaa453635e38fe6dbad65f5c0e107d966285"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "9ff84209d50f62552a6eac90d058a5e03106396d9d85746bd8203a72852ce449",
+      "metrics.json": "2101b86de76a8f92c9d19d6e8163e37f2a3c0cecaabbeb54f98236b686027156",
+      "equity.parquet": "8f31f37b51c30632d158678e3fc4aad272f21490023c3f99936810f9738f0c28",
+      "fills.parquet": "6e6121ccb4d1b03f245d8db86eca1b9d323ab7e7ea0c9a93ff6685d2fbe4b21c",
+      "trades.parquet": "302b0fb7207e85f7d73abd6199105c3294508e6f2b2f559359672e43c0d70412",
+      "funding.parquet": "f634967b5a4df54bc5bc8cd8b0a0df6c28afadecf94cc25c0074300589568e33",
+      "events.parquet": "4808b315fb0cacaee22fdbb343da98ff9c40cb50c744af43a7de4dcdb16a67d3",
+      "positions.parquet": "f124db5d19813251621182df7cee5f1863d56a1e5df4ac3cc3c898460cb7f2df"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/SOLUSDT",
+    "sha256": {
+      "metadata.json": "8c4cf23dff3d119da51b36feb3a73f93270eb13f02cdfa35bdf61884fecb2302",
+      "metrics.json": "f798e51bab66b98a6b22357b9d7c03c74cba5061b9998e82bc26c1de6df0194b",
+      "equity.parquet": "998cf71de2b7a5cc0e73bc0f32f760a9b6c5802588fcee066e235fa6013b665f",
+      "fills.parquet": "8e0c26b0aa1ce1dd46725e713bd872e880d7c538abf0fe9b482c97e9532a84b6",
+      "trades.parquet": "87ce290a41fdbfb8f8facca1f618179926b2175f9830915429568be40f8307d4",
+      "funding.parquet": "8e2d195756b2a297ff099dc7cea3fbebb0c37c0780976fcb50f328eeb77122a7",
+      "events.parquet": "701760063d8296971c53c6f0b1624469f2d47baa31a85d8f04cd54e9bcc8a832",
+      "positions.parquet": "85b3596ad5bbc72c65838eed92593be36a359e62c205935fa7b5e744542f2df9"
+    }
+  },
+  {
+    "path": "holdout/always_hedged/stress/XRPUSDT",
+    "sha256": {
+      "metadata.json": "71be41fd4b667aaaa38ed313ffd800c4b20469dade6b2c2bfe1c0b8f0b70101e",
+      "metrics.json": "d368543b9f50d4838d8c2a2c326099dec438a860d0609abd082e796dfdfbfb24",
+      "equity.parquet": "44723dfe6bf87bb87afe364feb6dab0f68323bbe1d4117fbe9451d581581bf33",
+      "fills.parquet": "64919e4abfeed78bd3dfbb475304a3453b82807b3f881cc75674fca28db601ab",
+      "trades.parquet": "ee91500e1cf88af0723a73111ec449770cd624083ca0672c02cdb1b0844862db",
+      "funding.parquet": "068ec31f9e5fa48b7302f9eae75565fb035c5537b06e7888fd1193c994d5563a",
+      "events.parquet": "39205a176d78795f555b743c8fbf8433bdcbe2810db5f3e3a172e0f945ce66d4",
+      "positions.parquet": "3da29e285b67424e5924f6368b3d619a316ecfbe623fcc743b24ca86abbe9955"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "953197bb1d3b4893a8e236ed0041d2c4a40a8caf4060b8ccbdd321b59b49d959",
+      "metrics.json": "e6405249036225894e86c3475305b563816c348fd5190bfcef4f3df8f1035cdd",
+      "equity.parquet": "10fd3a5c38ff34ba6993ac8243f7aa4412ca520344c4f44cbab001df505021b6",
+      "fills.parquet": "eb54d88f9b6552250154e1bb02af0437dcccc7b54ebee48fcff0f9b64b65f080",
+      "trades.parquet": "c2f2f6341913c8678e0e0d0b86a9c38b8852889dba6d4a5a011adb968ea57c00",
+      "funding.parquet": "8c96fa6c2faf501ab6d08f28b2084a9a3fbc71f91c6e548d00c9fd590b4a8de9",
+      "events.parquet": "e97a4056f135e6078c3b44dd570a53c5dd0f870f13df5a3afb9ac2feebea2a47",
+      "positions.parquet": "a73781824de84f2d881cf1575a483d58027af5b9027e68971e80b84790944447"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "61c26c5a1573c5968541138e6b19321d27b6f75e8e93bf281338b2eec5158a10",
+      "metrics.json": "7d5ab749340247a3916dfc0464b6389a5d6e72d9972f1e36446106617b0da2be",
+      "equity.parquet": "69870a0dad6feb5f15de71dd6c9f431f7dc7e03993603c295aea1fe85b40e0fb",
+      "fills.parquet": "d01881537c7cd2dee6073246c88a849f1011dc382c968c0a0c344ae5f65c3e36",
+      "trades.parquet": "6cac3fd87c0bb61d9f07f02281557cc3e0f983b223c192a0bb0b0083b05bf637",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "231d66d3c1b5df520ca6187b7ab2ff3e67b496b0fc6d243cfd737ace6818c7fa",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "f857fb2b315d789c35723159caaaf5559d4a9d1edd88281179867e446e251bd0",
+      "metrics.json": "eb0cc0766a01f3b197432064fbb7f4a40b93b0b1a7e8c21a746893e79773f6a0",
+      "equity.parquet": "72d8d25f818a3e7997b665b399ccb9b5824fddaa40a85eb81cd6053438d98d10",
+      "fills.parquet": "16e6574a2fe55cfce4a59c9a70fbeba0872620332c46f6f388d49437ec5ac541",
+      "trades.parquet": "952b4419dd45fcf1b91666198f4bc12c85c2bfdd28c46f1f9cab0b1d86c06ba2",
+      "funding.parquet": "646e8b3a66fc0a1b31cadadb938ae8d90c3bb4ed7abdd236bbd4516e3025fa3c",
+      "events.parquet": "cd4fb15a36dcacbd3bf007461a3d11a3d8e64ceaec75d9747e671e4d24b973a1",
+      "positions.parquet": "fad919b5d2b521b98830517c5a32fbf0d96d0cf450fce339ac8a9250d87b4864"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "760c1e49d13311d239c871ac99bb42981a75c3cb326fb3896241f525076d191a",
+      "metrics.json": "c03b442177b5cd2176ba4deee87c031261ea9720dd12702b498f8ac22bfa88f1",
+      "equity.parquet": "1509f0a4bbc78bfab3468a55cb60a8151ec3283f4708ae2f089ccf97d1bc6f6e",
+      "fills.parquet": "df3e4d3ae98bb1d8823a32676f751768390f097bb902ce7ce3bf4e7cac740089",
+      "trades.parquet": "64bff968fee4536472d221a8a207a04fc1abd28f2ed8dcf57a1ce37af44388e2",
+      "funding.parquet": "e22ebdd69a17f4d620ced7ac43b8547034bc5979c09e49a77b719c6c6db5540a",
+      "events.parquet": "5cf7cf7f8e3a18f21653b09463f97fbbd308f9d83046cef60a8a5b4d725814e7",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "ff7860bcb41c500769eca7cf50560c4726434831e1330916f00a6657f595c84a",
+      "metrics.json": "de22055561c2d928c825cf51e163b4bcf34d3c44e56c269f772b8ac3b3eead18",
+      "equity.parquet": "acec3d605db2d43852d78b354357e5d5a091fcccaa0b766a043210fdc8929b10",
+      "fills.parquet": "b762dedb74c63cc8cd5fc6a44ab7898f8bdab22a01237e39327f3dae2257a73c",
+      "trades.parquet": "e269c8497fe301e9ef0a18872a36f284f6ce7502ca16c830a1db07b1c274dd3e",
+      "funding.parquet": "f5de8da23ecfb9f4fbd3f0f76b07382ebecc63d57ad4d6273ff94ceea2480815",
+      "events.parquet": "f068a6c330c4706fe75e48a07033eeb836dcd196f7d6f0a9ce05a9cb6cf1ab68",
+      "positions.parquet": "05101e8421ddf5198e867cfe320aa0b3318188a658e5b667131f578d36937ad9"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "e8ed7ee6df56f903f02956a51ec71b7fc3370d8fca83ea6310d47cd8cf3200ac",
+      "metrics.json": "68256f7279b7f76a1ecad16ebb491ddb12e2071837844463954a4ca8cc67da99",
+      "equity.parquet": "4b40b8823c6762fa28e1d349a8fc1ae389b9cd5415277e603ad66ec890d36cbf",
+      "fills.parquet": "d23f27897feee9f49caa77c0038b528ab3e7756c39cb38755a6bf041fb9b2811",
+      "trades.parquet": "91f75ec531cf8d90a1b80d2919244d9471544b91ee21b03c2f4760514317a868",
+      "funding.parquet": "12ff21b43dc4f387f4572c1f5810573b82caad3549b934cac6ed1bc16dbd8524",
+      "events.parquet": "23905c032385bf14aae926e7c25fbbdc73c4c72b4752cfba9d7c5ec09eeab372",
+      "positions.parquet": "e0ba4d905764f9b86d5071e208671576ad68ae7923c91531de652c34ea50c638"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "4ffe8e2e84d4ddf12c605c259fc87938191eaafaa00d34e1413e7d37af6c2d56",
+      "metrics.json": "39c59451e63857a40fc5d7e93401d921fada12cc86bd41035a17f90ac0e9d3ea",
+      "equity.parquet": "cbe6d640e268e65af4a7732bcd21c0d440a659c586ef45400e568a0cee3b74db",
+      "fills.parquet": "1bc5d47aa8bb662799e3bec29cc753c824d64c57afa1681496520d028c564ab5",
+      "trades.parquet": "eeb983b551e588bf21f175e98d11125603c3a9901b4643123808b18005c89e4f",
+      "funding.parquet": "13c13287c4996f409c936f1c6ba90439848869d43b30a2e7d1f0e799d1241e38",
+      "events.parquet": "2cb7747de036d58247d5df3418fd817b369dbca29b3cc68798eaf14914185e8a",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "2c2fd866502041f71cc754aaca7734935179f0de45b442592ab39b5f85c5a15e",
+      "metrics.json": "86babd299b00d7cb00635c4a23a747ccaea9e8f74ae6127047a6780ba5b8312a",
+      "equity.parquet": "5d5de874e3d1c5340a84b621fec0030669a10665edfa10e160443899dd767d76",
+      "fills.parquet": "be70868e2f6f0e5692a69e92b254d7ee780cf21ad33121d786d31358e863f8e7",
+      "trades.parquet": "20dec577ae3bc174201f4d1abbd585685925663d182e0810c2e5bebed6ea1449",
+      "funding.parquet": "48f910cf7c7f8abd372687ae2cdc2330735207a6d9d940bec176415c20f21760",
+      "events.parquet": "0b0774b7269c1fff6b2d42a3568f26bb170434554d538ee117f67362413d94f8",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/ADAUSDT",
+    "sha256": {
+      "metadata.json": "52a994fcaccfcf390f19a82393352043f2b8594c454e520bd6addfa206785d08",
+      "metrics.json": "f612a67d2b5b95a0be838f16c84689e74a084e430af38011b5fca7290527f220",
+      "equity.parquet": "f1bae18b162a3b11a98dd8230474e549009a74b41d8b4c2ecf9de0a2c2919c5b",
+      "fills.parquet": "2e38c3313d9947565a27de2a77cd51fa93e5a9c7c51f7352f9176329875d331a",
+      "trades.parquet": "1f3ef634b0f9756f09df54925446d488ff4ea23085f3c3e27b2420fe7cc9554e",
+      "funding.parquet": "71dc354147557f1d8b381dae7ab0244563a31be311d68f44003ac9c5f24c2286",
+      "events.parquet": "cd9b0b89a183c72133adc701e09a49fb13027d44318b3f8cb9e89a53f0c36d8c",
+      "positions.parquet": "ad8d402c882ba9d86f4d006bb968855f8880856ad24028292045a912f1a77601"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/BTCUSDT",
+    "sha256": {
+      "metadata.json": "68280c475d0a7173b1771dffc163c88a0a4dbfa4506dc337395316797ab1a341",
+      "metrics.json": "404241361aa1becf1705fda2d21b4ca74f0d20edc86e7c689d335c95d535ea91",
+      "equity.parquet": "0f68504ae0ea4edbe62fdea9ce7a151ae7ae43d953f01ecb4238ab8d9591c779",
+      "fills.parquet": "10cec14b8908ab0d90ae238893accda8ca2cf48ea8f4965c28da972d1a71c7ba",
+      "trades.parquet": "3073afe9427571a3e014d7a71c850affe8a1afbb385e23b0efb5b1f99771364e",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "b31b0cdefb6a851e239b0056920ecc6dbc15e8f36506e36bb5041fc5385fed22",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "8f5f10fd5d68ed2e7e56e392bd9f232fa6bd6d6c7c00964fb6a6f055cd63528c",
+      "metrics.json": "0e16849e43404607e69ef4882f96719a7e2f14e57b40810705be965fa7cf2bd1",
+      "equity.parquet": "f03f3adf7949b52cb2dbfdf00b787ea2b6972766a9b46291fade82dc363f00b2",
+      "fills.parquet": "aa10f8e87a82882cd19da1c1f34dfde5d2607a73ea3c190de90ff6403e28df22",
+      "trades.parquet": "78a87e7ada4a7b23b09632ac83efada658a697738ff82992685793a57731569e",
+      "funding.parquet": "2d8b7a8c0c61a132a40e95a0ae01e5f7aa20b4d2c7840e30b5fcabe448fdc7cd",
+      "events.parquet": "8d20ba8aee77588c796c7d79bfb001a00dfe12d91f970af300fc742044d30654",
+      "positions.parquet": "114b43eefb0fb23390a1cbbec2865ab2420baf7ad51ca1d5df194bba8b8fdb40"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/ETHUSDT",
+    "sha256": {
+      "metadata.json": "dbbd43fbd648c4f20c0895e268c7f15274741aa58d1a78638f9f1201d700d600",
+      "metrics.json": "663dc9e4b7927c97726f1ee4f63f530f0d3705e6def07735e24817682fa65883",
+      "equity.parquet": "c6788465b767a76306db1f56224e8681e093fac04f48c6aea298d9b1a135f86f",
+      "fills.parquet": "d124b3525b57b9bf2511b2eea5c70e9c31fd0b9242fb3a3b17e4ea02edfb7113",
+      "trades.parquet": "a29a259c0f570f326e1f64a6675ade0b4d12333d4ac28d1b3ea20d116b267e16",
+      "funding.parquet": "e22ebdd69a17f4d620ced7ac43b8547034bc5979c09e49a77b719c6c6db5540a",
+      "events.parquet": "acf2c7a00f4629052912db3c9d55a2bb514a6d2f2fac2067a212dd00da4d6c63",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/LINKUSDT",
+    "sha256": {
+      "metadata.json": "88aa52c76a32a89586db55d6708c445f2c97e12599b8c92aa210c12bfdc07873",
+      "metrics.json": "8a1c9a6b996e2a4dee529bb1835545d2259e88d37590f77cc765d309605d69ce",
+      "equity.parquet": "6b102370a02e4bfd88af4963af9cf3f3330661d97129bafee661a3f2661b8dde",
+      "fills.parquet": "3b571210c69e056fad90f33958b96b63976179e911566140591268c9e301c8b4",
+      "trades.parquet": "dcb6df794a58950028c1cb0c7f013c5e626d6021898556a4fa23633cc788dac7",
+      "funding.parquet": "70593a077cdc668e40e26fa05642172da167e54e5051fa1e82e2dff757a9e142",
+      "events.parquet": "a5c05ce28866b4c8371872693cd652e400b4067ae731b45cfaa49e2a63c96d8f",
+      "positions.parquet": "1169578d8223fc7d10d1f734af77aaa453635e38fe6dbad65f5c0e107d966285"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "2c3869ea38ae8def730af6b3960842d216ac6290b77e0505b81d240253b74ec2",
+      "metrics.json": "0d50a5811ec593e28afb70c871396cbb64b206d8daa275229990ac457b43a13b",
+      "equity.parquet": "8a6d0e43a95938368db494b1c41050b6f81ba966f9f133d8e22e7c6d4914dce8",
+      "fills.parquet": "2a9f8810bcefa040c2de381f69f4cb776c377803874f66a08c1ae63b1ace21bd",
+      "trades.parquet": "6f23da9276812e0c9d0836f50eaf591ce93a871a2c846ce1f07c9179046be917",
+      "funding.parquet": "206e6241e910fc8ca928f515a73e8535198261fb62bc9f4882996e71ede58157",
+      "events.parquet": "0092719954d7bbd4c590f82623b721852d954b3181e04b7f027729e551b653e1",
+      "positions.parquet": "d1adca46c0de798204de2e97abbf23c271a85e296d2e4cacf83d0f2fac489b14"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/SOLUSDT",
+    "sha256": {
+      "metadata.json": "f6794bcaff9351ce63cc17333774a0a481141deae4b79ead367448ac82036da5",
+      "metrics.json": "00e77944d2d09627ca0a33865da1da8592f55243f07e32756ac8f497dfc4d9e1",
+      "equity.parquet": "1e9e334b95775413bb256936c1f1360e13c39a94708a6ba41e806d4eae06a525",
+      "fills.parquet": "fae94c2faffde6cae23f1d19fe4738f79563caac2e3c2fb0ab6f6e3cbc5cfa8d",
+      "trades.parquet": "3b0461814ccf461bc94d125dfb472e9e9888492549fe25fe15727d7d6cabf8e1",
+      "funding.parquet": "c7888dd881be490aa02077c21c4b890f2096483168a3614c8032dd058c0b670e",
+      "events.parquet": "73ea818333511042d95daa4f9d124458bd7b29ca8d5f23624f5f2184b38d2f45",
+      "positions.parquet": "d24665fae437020b649b4e46322013887856cf6d26c123a53f98e04706561bb4"
+    }
+  },
+  {
+    "path": "holdout/funding_hysteresis/stress/XRPUSDT",
+    "sha256": {
+      "metadata.json": "fd50585e92e00a85f2bf361e602230250f1666ed4721381595fc9c9db4781d3e",
+      "metrics.json": "0d7667a2e0e1de3257396ef9bbc703cf7a2f3a541d0ced980c83f226e8bed3a8",
+      "equity.parquet": "a2244eeba215ec9a8a1b6cf79c89cd16a02f1a6a1916b28e33b578375dd80491",
+      "fills.parquet": "07074b10ed6405a6a8645f3a53ad7b2a93d7daf3120cbccaac1788661a74cc3c",
+      "trades.parquet": "aa158dec7649c97bd37ba81a1d3ece99f47aa03afc8bead717b5cb6a2c6d920b",
+      "funding.parquet": "8c8d0449d34ab577d231e8e2ef7623d4cd3e3b5bc7bbc9d6dd061054436240d2",
+      "events.parquet": "91f170446ef9f84fdf4f78d86edc1d2410f830df49434fae568803089f820b2d",
+      "positions.parquet": "fa6c099476a7a7f0db18656c030912c96c23dd1c6bb8b6e1bc91444fafd9cd21"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "db26e7946ff3dde02ce3a20683bae01c70f0e61b0cc6965992271d7d8f443b6d",
+      "metrics.json": "9084d011f49f5dfb9b4fbe6dc25cabef1db943add599fb037cfb59b8ae8e1ad1",
+      "equity.parquet": "b0639cd956fef49d1f31724478cab8a41d133735e12b66bace215ed861f30991",
+      "fills.parquet": "01dc66c282faddbdb372610fb3cac83733aa9dd4c808be718259c2929b3007ed",
+      "trades.parquet": "7d0959a3a7c9b1b42e448faf242b7d543fde8f5fa8928da85f9704c226f911fa",
+      "funding.parquet": "0e77ebbd0f30d63a9849f3cb01f1aaa1e32c390f1d4528b868f314fcd6fabe97",
+      "events.parquet": "3645e52f5d633fe99955364bfbea729bdf19dda2161c4b2ae06392fe21330f03",
+      "positions.parquet": "e08f4ccb8fb19c254ff3bfa86562e569f13a2065096392ca3a262747021cbcc1"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "4fe73aecc7aa0c240b73fc37a5fb7eeb73fcad51f21964f1044946261714cf77",
+      "metrics.json": "946282a99a4b5ec0687e043860e3bfe4ff047b0cb0c6b3c544abe37ca880e754",
+      "equity.parquet": "b3cfc72e823aa29d23a386a25cf91a8e1100e8d4f60c79b4a8daf5474d5ac233",
+      "fills.parquet": "ebbe641e3b536ffd09f13436a91d8780e4b266441527246a8b65c548fd1a0bd8",
+      "trades.parquet": "17ed10ef8b9cb7ad24792b16a19e4fa502ddc930e1aef2682025da235c9d5276",
+      "funding.parquet": "6cb2e8c0fb363f6e69b97cb5255fd70a842bb72f6c7f9739558be4f2835e6afd",
+      "events.parquet": "7ba1d0b52a3f27b89dbf8a0f2073c2f1df32e41728e859b28f45e698e9cbbf62",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "ae80aa9cc9e9b687324ce9003fe3552912cb9f15dd4490c8a7b79aef919163cf",
+      "metrics.json": "f3fda2fd50093f413929c4e4ef085f049f16282d24500a589d1a2a3a80191152",
+      "equity.parquet": "a9fca1159e820de2e113ff5e4edc4612c5235ebd3e08c0183c424fb0a6b26311",
+      "fills.parquet": "046d3a56d469a3ae88e9bb53f1e22e67ec83d85e87f69085ee0604af626e4483",
+      "trades.parquet": "ca7724fa370a0bcf759b93f8ee7210e77e92f0bafa213c9b9e37b18dc4bfbef7",
+      "funding.parquet": "f4d5df0d54c55f3f9557d4d2a0173e67fc4c8d4877d40a6b03df4d01a6510160",
+      "events.parquet": "b470a6c2c13afd0fd2c3dabf14dafa4029dd2ca06d3139469d764404b6865224",
+      "positions.parquet": "3d448a189d7720ce4e38e3bc1959e2e0fce2fb552f45112ca235f93b70422c84"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "e6597ee922ddb4c382ea77b335003be85668c9e7739f64b59bda92f48d8c11b4",
+      "metrics.json": "9f250c29f5dd614f215c4a87f2426e22fc223832f816ab6e7299832385752640",
+      "equity.parquet": "484fa10d87756e0bd0636b9b8a2194bfec335207b509155df02f159cebb926fa",
+      "fills.parquet": "fb5642315bd4de57deae78dceb08180050247cfd5405ad079577755ed040ff82",
+      "trades.parquet": "82a82bce57d54209ce952be747388175378d36379003ad4beff5f0f379e2275f",
+      "funding.parquet": "8c5a577cc7a03141afd7dc6a91fb138f9047287b9974dd72ad6640d33b8bfbdf",
+      "events.parquet": "1ec2e3ed7083eaf9c7717e1ff8ef33b48832c0ca037722fe9977184579bfe306",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "a86faa4e6961afc01e38110935d63dfa3e07128500877de3843b97b9c160f667",
+      "metrics.json": "84149f9d4145b3a0678eeaaf867c2b6f502f57e3c5939458164fee1e78f7892b",
+      "equity.parquet": "1a215223facb3d31a1d30f617e2fdff08214e8a0a38c47a4869157e4a65d6c63",
+      "fills.parquet": "aa54087e23f0fcaa93e57ccbbc34420426586dbb2699b26a1c273a4d68d59e25",
+      "trades.parquet": "ab6b64454d643e5a110b702cf8c1e85ae2a3f707febac768497e3aadaf187eaa",
+      "funding.parquet": "603d2b0828e1b558e974911219ef2c0ba64e9bd2a710652bc40f696f074dfc09",
+      "events.parquet": "caeb002a232ec2e4e9d01b5b6e1b62f48e251da63378991db12dd37fde1e0632",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "e9e37cd2b9dd072785ee991a52e30f7986044b4e188ff3f1383a6d3ffef6035f",
+      "metrics.json": "1c89fc6d38388deea00358a99e2695e41460118432e47fb8ad487ed1aac23499",
+      "equity.parquet": "6ece236d9553cb4bb1dd3122821ce1b99c199d37791abd59af0df17d78dd23c1",
+      "fills.parquet": "0baf37249113d43b5814e11815bd54dd22faf09c6a6d60911aadd451f180808b",
+      "trades.parquet": "222a628bd64e347062ac2eb475b9a0a172791b1cb74722d1d7321b1fe0067182",
+      "funding.parquet": "28318360d7c083910486883cfdc5f252f535c361eb081421593e1ced9f3150e0",
+      "events.parquet": "47a305904604bd8e9348f8d9e9d9220c478e5147ed901515405cb48f37c94bc2",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "98bc9d74a562ecc375f32dfe69886f23bbd36b92431008e256994d4818dac021",
+      "metrics.json": "eabae37a3d2fc50c4516bbe60086cb61d67aa21d7de1b11fa86006bafd9268b2",
+      "equity.parquet": "ee2f5297467fd05c40d3c3e5e4d9ae0eed4fe3e0f01a8a6053dd2a91ae451011",
+      "fills.parquet": "6eb02b98947af3d0e41f2a7cc3b0013bbcb9d6248dfd3b551b37638e8f4348d3",
+      "trades.parquet": "f87b8a1eb70a1f55e8243bb2654f56dc823f9108195c7fbcbd09869ef9755c51",
+      "funding.parquet": "e16f69dd13cbe1986b2b4f93623c0272dbb01280cd3c596f7ad3f9786ec2387f",
+      "events.parquet": "34703260e880bd3cb47c3f301392fde3a246da063452a6568cb4dc38525192f1",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "65eac5c8e17b0fcc2b67b58d08c04e63fb9070ce8f7fd709fd92b2844a80fc54",
+      "metrics.json": "7271a98c5309e46064a2ed45ea6cf2d5ee10ccf6bf8b6f939521dfce846725b1",
+      "equity.parquet": "930d6dd1b7c58d8fb6800e5961c3f0e1f445e115d32caa2e1348e71aa27ff648",
+      "fills.parquet": "c9cd4693ed2b4836c07d40fb356ad27b6103e365d9af913d2247afd1bfef6010",
+      "trades.parquet": "7d66dc1e84b9b0740817124d6a0b8f2f282f6d240796b3d06e57ae51bf8e50bc",
+      "funding.parquet": "134b119733405cc4201de9f136a5dce7a6027603e2a8927b4f7a81645a261395",
+      "events.parquet": "1a9f132e6521fc21e789069c7064e262af94f08df683d4ef286eac17eaf50722",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/ADAUSDT",
+    "sha256": {
+      "metadata.json": "0dbe61197e03dbd132ee1fb9492f77b4b471f5e41e69e66dd79f78d71a6a7b4c",
+      "metrics.json": "f910249aca8dc30abb015b0954077bf59b4f161af9922d8596817d3d0abd779b",
+      "equity.parquet": "38649e82237ff45bca07e1b483801095d88e5b0cbc0a3c047121ea717b01d5df",
+      "fills.parquet": "f16fdd9593d786e13485c28d5614dc8aa84642605e0c581d9f1c3cc2bb05b6cb",
+      "trades.parquet": "99acacaff480533ab747e3964ac0307fed2b7387555f87639ffa316cbaf36a0d",
+      "funding.parquet": "bed8b84517ab5755723946b6b858ec9692db0defb41c10daf05a8c4cc786507a",
+      "events.parquet": "aa607a4f25f52dfd747a676c38c17f4aed94673fafa11febae6ad1d255aad9a3",
+      "positions.parquet": "ad8d402c882ba9d86f4d006bb968855f8880856ad24028292045a912f1a77601"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/BTCUSDT",
+    "sha256": {
+      "metadata.json": "063b63e4cfa06119d876fec6f82b46f4206c3a01557ebd76375ab36d0a89cb09",
+      "metrics.json": "f737eff20d38873141415f4256902b106cb91635a9e7ec1b8732242325147b16",
+      "equity.parquet": "667c224aa2b4faf1a147119215cd20772c2d4896d1e089df9efd235ce4648575",
+      "fills.parquet": "6f6305836b82c2a9a76ad29159d4c64b9433b5a2f2d310e1120a71904851fc73",
+      "trades.parquet": "a33a73b39767fadc2ee5a6d6e0dade5f8e5472174853d2f26b4bd217e7ffa95b",
+      "funding.parquet": "6cb2e8c0fb363f6e69b97cb5255fd70a842bb72f6c7f9739558be4f2835e6afd",
+      "events.parquet": "ca28dbcd97523c96f94f98737ee65cb52e7799445f143436b83c5cb405d7aa21",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "d67b10c1964315f4869eb49330a3fb5de199402a44406add1a5ccc359c777226",
+      "metrics.json": "adde212f22225ff4c6fd1c425d6a9e995750b6655a08499976beac5ff50488c8",
+      "equity.parquet": "f466353fe3469edc2f913ce1f09dcf1796179f6ecc4e562bf19789fd7be794b7",
+      "fills.parquet": "70b875cc16eace74d704acbeaec13b0482f6b7de157e5504a417c332233d1f75",
+      "trades.parquet": "bc9093a027d48c5cbb7ea684b91300687d3fa484b3032957c6edcddad00bb648",
+      "funding.parquet": "c6d02b7fe8198149fbac470ca935d8a0985145027c11450cc77aa777917025d3",
+      "events.parquet": "73c5ae50bb35025be1a84ccce6418f3c7377fc97f5efbeb52a5ca0c2c0491087",
+      "positions.parquet": "500838f44885a11a04a809e8ffa0484bfffdc8c2b0fa1deef3b1e4e9a2e33aa9"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/ETHUSDT",
+    "sha256": {
+      "metadata.json": "93b11a6a02678a397bf8c9f3f55c33ff4ba077fa5e02271211b3d7dcfcb1fe3e",
+      "metrics.json": "854e0f7ef7bb8e141c0722bdac42e258a2ebf0f0abba164131f78bb399af04f9",
+      "equity.parquet": "953c87b01c8da66afebfc582ee3c09eae22166c0bace6e4d1b5b234a8c8f9eb4",
+      "fills.parquet": "d6c3286b35fe2a70dc3e966a6938fe652872bc91130faa43c5dca19f48e1c18c",
+      "trades.parquet": "cf5db732ecb6dbbeea45bb67d0e429632c11f66daad5f11277795923d0acb973",
+      "funding.parquet": "8c5a577cc7a03141afd7dc6a91fb138f9047287b9974dd72ad6640d33b8bfbdf",
+      "events.parquet": "447feb7466f50b2e5a7f43cd37748fc3818b4b43838909b1d0841245e091fd75",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/LINKUSDT",
+    "sha256": {
+      "metadata.json": "bbc0853aa30b6dab8c5e0c549a758f0d03612dcba7ef2668db7d684e693af654",
+      "metrics.json": "62477370e6d3585da58fdea31ac693eaa942445ff0b3b52da9a771cdbbc67e85",
+      "equity.parquet": "4d4588b2f6e3c0e213243f299c839fb1a6084cd0197be27866d251af3131a8d6",
+      "fills.parquet": "9f0399a664b3983f450ec46fbc1506fbe276d56ce0549d92b0e78feb4fb90907",
+      "trades.parquet": "56e2d1a30a6a182e58b79ea67f1f8dcf746bc850b47e52cc0fc864d0b8cd5d7b",
+      "funding.parquet": "cfe9dcc14daa8bb50602c63e6dd4ac8a8c029285b44931e20608cf18514ca21b",
+      "events.parquet": "9c48ef78132d13209d61231d3d4ec41f38b301b1aabc4fc1f5f74b990462d637",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "7482a3d24b2271f1fc9fd08b7f3a5109355e0a8207819358b6321fbeda42004c",
+      "metrics.json": "2c128502b21387e4ae2e75f794589a2fbe694be2c6ec7e673ae5f5c6f4e01922",
+      "equity.parquet": "0e086299beade851dd7f55d47299dc675c8db403f3c10fca0e7df56660aff96a",
+      "fills.parquet": "f99e84691513a2777593d1e357233398941176fd626c4e1e31a1d10cd38e7fbf",
+      "trades.parquet": "dfbb506fe759517d6e047229a94cb51ecfbb3a20c0092d662b4360a04cd70bfe",
+      "funding.parquet": "b93dfcbb4a52b4b8cc879ae0ccfc00d9620d2639782860ca6175ad2f085d524f",
+      "events.parquet": "2ebdfd6df48b5fcfda2eb40467151fc583c39b98d4e759a0691f5bbc2471669f",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/SOLUSDT",
+    "sha256": {
+      "metadata.json": "64496d93798668cc59541a3ea60de15f0b1af0d4a7c7dcfac8aa1a6f3cdded5d",
+      "metrics.json": "1ed964549a6bcd609ea0cb82c3e1d152bc8a4e308bf89f1b60f483c0eca93d64",
+      "equity.parquet": "e6b9c2e4590017b3f24bb42dbc9a84c6bd4be6992a5534894839b8e98ef03b1b",
+      "fills.parquet": "513c768d630d99f4721297f54526b6675836a1acb8fb39cc7e571a7e300c52c7",
+      "trades.parquet": "e99630766a162bf9d2b3e219c71512439dd831f326f449736cbf156801e786c9",
+      "funding.parquet": "df19797cf7a143e3750a13de189ac619f7cf8d02fd687e5cb7bc91c921a1dd98",
+      "events.parquet": "3eb8baf29daa95c743f1e9fb66ff8612d2869d1ffc4c0f706187f0c0ac547ade",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/funding_rotation/stress/XRPUSDT",
+    "sha256": {
+      "metadata.json": "dc7880169a5474f3149a5398e5765d2f668630c0184bb79c3b048f7b4afbe470",
+      "metrics.json": "af4ad827df82a29be8b10010cf6d11fe3d5b790d473521d0d69cff5e0f738323",
+      "equity.parquet": "97f62caf6bef48e190e4c344bbbd9f7c7485ad5074f5271340a64dffe79066ab",
+      "fills.parquet": "cf0fe6d0715a5d9b3cb52393b755031534b7fe6152e65eb1e2704fee18627097",
+      "trades.parquet": "d1fee2e4427192dae7c96dada808d15d48076a74a9f13072fd396c9bf53a3ddb",
+      "funding.parquet": "134b119733405cc4201de9f136a5dce7a6027603e2a8927b4f7a81645a261395",
+      "events.parquet": "d381fbbe1566d5b9a7bf75b36a0b2b23a1757ef7971d132e9260050aeeaec511",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "05c9e538ffcfc4cf104a04f46a7d03bbb40214f119a3c63a844ac787be05c982",
+      "metrics.json": "1b5ae1cc48a5510424f8088bc865cfedd6813ffc0566e878ae032ba3818fdcb4",
+      "equity.parquet": "707a539a63b471a58803858dde278c677d8359b0fbd730451c3a2fdef3f20fdf",
+      "fills.parquet": "27b6ac91016dc309aac47e7d3e8d44b78a899d29f9544c3daf5d28767e8108c6",
+      "trades.parquet": "7e69fcd2cfe54020876521c533f994e00a2d63684b1e8679a6335ba42a6b0e64",
+      "funding.parquet": "eca365cf321ccc9c8750827dd01722055761b2c6a74c8efbb81b88bbd14585b6",
+      "events.parquet": "cb9f63e9ab5110f7aec70562bed653225bee763051e1aa3f4b789478adf66b5a",
+      "positions.parquet": "fe41171ed2c49cfaba1ca0a85e6cb0411c6e5f922cc2adf4a7c077d398a49224"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "7c35414c32c913b3edafc1647556767e74dd2c47673b325285e6ec6102519d78",
+      "metrics.json": "7d5ab749340247a3916dfc0464b6389a5d6e72d9972f1e36446106617b0da2be",
+      "equity.parquet": "69870a0dad6feb5f15de71dd6c9f431f7dc7e03993603c295aea1fe85b40e0fb",
+      "fills.parquet": "d01881537c7cd2dee6073246c88a849f1011dc382c968c0a0c344ae5f65c3e36",
+      "trades.parquet": "6cac3fd87c0bb61d9f07f02281557cc3e0f983b223c192a0bb0b0083b05bf637",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "231d66d3c1b5df520ca6187b7ab2ff3e67b496b0fc6d243cfd737ace6818c7fa",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "c6e8bb4a74868d7e2630c781976124a9fd018bd3941743a4b6fb67e443ef5014",
+      "metrics.json": "91400ccc6972d685a77ab2dd30235253ac6f8cdc946a8353ae0e132291ea1446",
+      "equity.parquet": "979330f12f5c49b7b909b688e0e75e2c7c68d3453c55dbc89d8c49063d7c344a",
+      "fills.parquet": "e32fb9aa2d2714a0887a837bbe01713bd8459b64616bac10924c627843cf62a9",
+      "trades.parquet": "06f93971410267354416edd6a784c1e347a3a603fb90086e50349838af01367c",
+      "funding.parquet": "8750051a10e5e7a8c3ddab14bfddb72746d5e471cac04213ac99d16e72e5a0a0",
+      "events.parquet": "1d949897986f8034d5194399033b57eabb98b1ef587a63fb1b665ffdcf359da0",
+      "positions.parquet": "74eb5f348355b6f868df89232aadb7667f9b8105fe40eeb2ebe95cb996cbb6ad"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "a187f52145199916fe3bd46b46eb519d9dccea9e586fc591a25e6035a5272b9c",
+      "metrics.json": "17dc2ec2138e411d4aacb3e5b94ae26592ab869ea4303386c52f802cccb2355b",
+      "equity.parquet": "03603f2bc36739c935d307538a662e5abefbb40671c5dd5b88b8e1ab2e439e60",
+      "fills.parquet": "18a46e8325b4ab40ce5fa717f8dbb4ce479ebba452bd2f5a18b81e656fd1d3d8",
+      "trades.parquet": "0972aa955e10c541e3735c3e3907b501f1645ad602dc588ebbb3769c7a3a9ead",
+      "funding.parquet": "55b1a1e40ee0b649412b46dca6401438a3c2c2ebc55bd35d809c586aa571d9ec",
+      "events.parquet": "e6b5196db6ec07a576e7bccb11f64e6d5d2c36d2dcc96a86c706effdfce612d0",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "96b08ed5202b234833a102a26c31f3d06e58c14ff7ac5c93b2b60b0686b193a9",
+      "metrics.json": "140a7603ee515b67a0c0eb76887f6be3144bc764d74f532256946106f0fd76f1",
+      "equity.parquet": "d942e7aa8103341ca7423878022bd8d5c1d7e436be3a2b35460d4e0b734a094d",
+      "fills.parquet": "552f45c7ef85bcec62c0fdc430be8d51502ca30026fb1af278b50c0f8e2e61e9",
+      "trades.parquet": "eeff05f0ea170576ccf096a4261847b1008e9d67b22f1565035daaad26095f7f",
+      "funding.parquet": "a7763cc2829cf3db9a3236612d2713b2ac0a2c43c69015301a1cff7acd61f7bb",
+      "events.parquet": "4a69906bcd6549c77629b1ebb8f06cc35ee5a5a739ca5ff2de8e0de2bcf83d81",
+      "positions.parquet": "f8f5597dcf20cbae57d132e04c172c0ae3a6e1bf18fe3dada293b2a13938bd9f"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "a68f636af5c3b8e1d9a135d74aa334340a673943f33ac288ade2f955128d066c",
+      "metrics.json": "72b743bb162f1b488333cc1a044d57c34b27038c43452844bfd2c8f687254494",
+      "equity.parquet": "831ed7714d2a6d593ec302041fd3dce251f8709f901480b7336a3d52b31ee842",
+      "fills.parquet": "bbe96f739c76a0f44ec8c9f8bb2906bd0f1e9840d5146b88f8d817e7a0d48d3d",
+      "trades.parquet": "61d0c126993cb15029be553386704651926fee9364f26a613a41005c71b1935d",
+      "funding.parquet": "5b059396feb428af34bb985f1272d5c959473be368bcd2f194b64330823c5d98",
+      "events.parquet": "e76d47d60308268fc69844aac06c35e86f7958515fcc5cd36235f71ae74edd05",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "4396faaf7936588ef2a02198bb835aa519d8b0785e4c9cbe3b8a5e4f19586856",
+      "metrics.json": "dddbf121b8284863200257177a93afe323b6b99cc64fcd47f537fff400e6f660",
+      "equity.parquet": "132785af7ac197e537a28039d0e20fa750e80bdb2c63376ce1c8e0f134783e00",
+      "fills.parquet": "3cbb691f88f5673c24eaaf4afde9041a4848392b8adeebfdf38c270f74e8d0cd",
+      "trades.parquet": "8f496dbb72451353bfc491d2b2b6c640695a90d9672b630feaaf562ce851471f",
+      "funding.parquet": "23b37ddf838e267496d15a8f3a1275b31747f17c3d79b41ce5b6f116d96edd71",
+      "events.parquet": "b3aab75609b84746ae33adf82229a27b5f6189c0b75c113c9fc35a3d4f49bea3",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "d8e20c0b144e220f5536bb0e1d691badb303198e8f8feee2932ddbf48bff3ef0",
+      "metrics.json": "98169af03c43257880536bfa59fab1fa4bcda482a3cfa4f0f6d1f3b765bd7018",
+      "equity.parquet": "3602d94ff6c7c05fda462af8547872e12887b45d8bde32e3c71b4a08dd0ab531",
+      "fills.parquet": "347f6c67bbc9ff5a91f95a0c7cc66c4dc13d601ac1091fd05d7fa78330b6bb0e",
+      "trades.parquet": "484c191afddab5f76a7e171cec6a512dc07328374cc50c0509aa70faa9142c37",
+      "funding.parquet": "985ab12e723ff9a1b73700df67388cf947573788308ce47e40122af97f28acf1",
+      "events.parquet": "d4e0ccaada3423f69e1d66859082c8a3a17a2356967ef6ca4499da62dc6ad207",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/ADAUSDT",
+    "sha256": {
+      "metadata.json": "6829fc2b01be1db916c8c4dad323b7b19da136d528a3fccf5786dadae1619567",
+      "metrics.json": "4a3c09bc06520ed7681d014b732f949b9f6022ce01cbb8e674e43d2e53c052cd",
+      "equity.parquet": "881a9c0b2ba1ea669800e32cd96d301c4efe3df5e8c26aa8be8f7c9855092324",
+      "fills.parquet": "6d1a76a80d3b07e08a1a7759d8d0aa2b8e3f1ec567ca49369bfbddefb9184e1e",
+      "trades.parquet": "b875c9512b4c4c693c4ba0a56abd7f894c90609b07d56394e7f1362b8d0987ba",
+      "funding.parquet": "19345a61d7f02250a94f85fd187b718c5d947c281b163cf21dff9fe0e09b3c45",
+      "events.parquet": "865b2676d3e5223ced90a6658449e90b5191b9d58542662c5c8c178de45b8338",
+      "positions.parquet": "ad8d402c882ba9d86f4d006bb968855f8880856ad24028292045a912f1a77601"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/BTCUSDT",
+    "sha256": {
+      "metadata.json": "6fa321fb1ea55ed268a87d027185bfd6a33fa394f6d14dba201ff8519baf6b0f",
+      "metrics.json": "404241361aa1becf1705fda2d21b4ca74f0d20edc86e7c689d335c95d535ea91",
+      "equity.parquet": "0f68504ae0ea4edbe62fdea9ce7a151ae7ae43d953f01ecb4238ab8d9591c779",
+      "fills.parquet": "10cec14b8908ab0d90ae238893accda8ca2cf48ea8f4965c28da972d1a71c7ba",
+      "trades.parquet": "3073afe9427571a3e014d7a71c850affe8a1afbb385e23b0efb5b1f99771364e",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "b31b0cdefb6a851e239b0056920ecc6dbc15e8f36506e36bb5041fc5385fed22",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "42e445151568ec8f754ef25ce893f934a831ef937d1ce27f84816927787d59d9",
+      "metrics.json": "fa9303a9fcaae44761a422cb93bbbe5687172cb06243b7c5ec9de09d77f004c8",
+      "equity.parquet": "3291a2ac638ef06567e698ffbe92b8cc8cf0d37ff7ee59652cfd55122c621ce0",
+      "fills.parquet": "2aea9577308ccf9eb97fb4dedb2f11d738d2a6f3454d01847ebf8f45bb0c4166",
+      "trades.parquet": "73581896335e81deb1c7e99b64e05386931bccae29e390fd4369e13442062847",
+      "funding.parquet": "a376e0021fe84806507fb53d3cc650dca0a789a6c59e638183c3f24840b2a17f",
+      "events.parquet": "73742338c7ef648e3d1654258dd59defe75b4dfa4261f1c6ec44e6a1d8c0b0ec",
+      "positions.parquet": "8da494efd953082f3bf2661ed06475c16795bf0ea0a7e18308e03e73f0ebbddd"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/ETHUSDT",
+    "sha256": {
+      "metadata.json": "7cd9bbbe2fbc3249da9799ec17d4f2d5f310b5e8d2d3068d3a8c7ef2f99d8815",
+      "metrics.json": "74bcdb882c49e1952d54910aeabb64172fbbf94bb057f4c6d74f5c8dccf4a945",
+      "equity.parquet": "6efdfbcf2c20abd158b491e585b07a6a71c76a682390637a9657f51ac476cfd9",
+      "fills.parquet": "4d84bc74066645e6e618923d1f7f03b8761e7689100bd4ab0d868bc6523d0e69",
+      "trades.parquet": "75157215e4f42c614c983950a3ac746aa919f194d38661efc3fd6c523c86e3e4",
+      "funding.parquet": "55b1a1e40ee0b649412b46dca6401438a3c2c2ebc55bd35d809c586aa571d9ec",
+      "events.parquet": "77fe289113ab4c68c7e5e084c132c2a07a4188cfcccffddabc21f6dc9f1e2521",
+      "positions.parquet": "d74129dab0d9294839c261dbf5229c8a0ee153659023dd458055851d8290c4fd"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/LINKUSDT",
+    "sha256": {
+      "metadata.json": "4bfd5d5b7f20b3b4977a0943326ef353a9a7472a4f6f98c272394197ab807304",
+      "metrics.json": "6bf0392a4d9ac019d0a7b4f50f7d3848647f77474eb73ff813a5c5683261e78f",
+      "equity.parquet": "a3d048f472ef76fc06d8680fdb558de7ed2ea4ac57bf8529ffdcdc986317c8e6",
+      "fills.parquet": "a99d9552205c5d28e6f673ef6d5d2ae8ef9fa3cf9634ecdf247f98832354b602",
+      "trades.parquet": "17c64a6a9f1bd3f91a9acc90e97262e15c08e8e4a4740e339c8f14bf07beada5",
+      "funding.parquet": "f0043cfac6faadb683ff406d9017f8050eb357b1779eda814fe9644082897ba0",
+      "events.parquet": "b27b3a5674f05ae22d593fc9acf22143cc34d0d37a51d6e30449b0243131a8a6",
+      "positions.parquet": "82fae9846bfede5afe93d46aec8ee61458c23943354516d5c849f6464d61e7f5"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "ef85a45f0c182dc530f36c486a3fcd727fd6ff69436cda62bde65d621045c2bd",
+      "metrics.json": "294221409a39d8a835aeb0d2564fbb30b6bd267336afbc86c8f44251f3dfa2c6",
+      "equity.parquet": "5e07dfcb5310cd748bc363f463395f7c799321bc8c04d128c3a45458e9d2417f",
+      "fills.parquet": "9f425277b4215fa629083c814de2de0207f333197c79e06673bd8dd973025aca",
+      "trades.parquet": "67d9d1a67ab6291fab87eeafec9728a826945eb13b0aec253abc3ef5e462e66e",
+      "funding.parquet": "e7957196c780471f2bc5ec1a9794046c913e86aede0a6663f7aa30034f8b9351",
+      "events.parquet": "95bd8dabe8ff2426231796bd052d373536db38e14cf64f615ba02137e0dd1baa",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/SOLUSDT",
+    "sha256": {
+      "metadata.json": "a3a4b42a59649acf6d2dc6b2f447922e2efde9cff53289380380fab92d3f98be",
+      "metrics.json": "40622224ab69d3c81187e8bc7645f6f157d499dfe77707feeca28eaba13f10d1",
+      "equity.parquet": "3d485b9bba2e387035b7023abc0e328bc53cdac4b01efb5df55aeca2d20ec0b9",
+      "fills.parquet": "11a7c05129bf1bfbe8b679cf4dfa68ad36e36da1df2162d4f53a2ff7a422f7d8",
+      "trades.parquet": "8c42a50aa1cd65a1770723280e6b8014f01d7e5c3ab6599a2c2af922eb4939db",
+      "funding.parquet": "f317621742e4da6069cc85c38dcce4ac028af4cb61b457a51457a58b798abb31",
+      "events.parquet": "6970bb553d9c2434b5a34b4c43447693d4073bee8e1f43880c5df25dd6dded19",
+      "positions.parquet": "368a7d9f83f89e69d0888b91c73964f2ad755f5a6e22b8f11660c5b3fce63bf5"
+    }
+  },
+  {
+    "path": "holdout/positive_trailing/stress/XRPUSDT",
+    "sha256": {
+      "metadata.json": "c3950b033dc7f879cc72c6e129293def06da3ddd3a9d71e65c4a573d39bb365a",
+      "metrics.json": "fe17c23519426b16761af010ed56ca7a77116083b42739a2f4b1a80a18e7beea",
+      "equity.parquet": "adfb91dd5371aac347c829ee0305a5f910c24afdc5823edfc0950354f7747afa",
+      "fills.parquet": "52bb3741ec86f8cf882a6e234f437a18008183a3e104ff86faaac8b611ad2621",
+      "trades.parquet": "a2e15e992df8aa713c62df9fea15dd71afa55c6fd68e1af30676a2f9458112cd",
+      "funding.parquet": "4e3aa7d38fda3d80f951dfb422ace6032c45968f0fd2492aae76ebcccbd3438d",
+      "events.parquet": "fafc3c0714175445e86d34a79b2b85b86dd205f7cad4383069b75b3ac34303b4",
+      "positions.parquet": "96f3a7c02a48a910c8207ca05241e7199b02b61fd28d49414f54c76252b6cf88"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "505f8facf427427809f234549e6038f4260acfc64a580c4c449671403faeb14a",
+      "metrics.json": "1b5ae1cc48a5510424f8088bc865cfedd6813ffc0566e878ae032ba3818fdcb4",
+      "equity.parquet": "707a539a63b471a58803858dde278c677d8359b0fbd730451c3a2fdef3f20fdf",
+      "fills.parquet": "27b6ac91016dc309aac47e7d3e8d44b78a899d29f9544c3daf5d28767e8108c6",
+      "trades.parquet": "7e69fcd2cfe54020876521c533f994e00a2d63684b1e8679a6335ba42a6b0e64",
+      "funding.parquet": "eca365cf321ccc9c8750827dd01722055761b2c6a74c8efbb81b88bbd14585b6",
+      "events.parquet": "cb9f63e9ab5110f7aec70562bed653225bee763051e1aa3f4b789478adf66b5a",
+      "positions.parquet": "fe41171ed2c49cfaba1ca0a85e6cb0411c6e5f922cc2adf4a7c077d398a49224"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "5250e1385e4177ab94fb51a86a63c3253697c4ab13a4e93e5d946e6fbb7f00b7",
+      "metrics.json": "7d5ab749340247a3916dfc0464b6389a5d6e72d9972f1e36446106617b0da2be",
+      "equity.parquet": "69870a0dad6feb5f15de71dd6c9f431f7dc7e03993603c295aea1fe85b40e0fb",
+      "fills.parquet": "d01881537c7cd2dee6073246c88a849f1011dc382c968c0a0c344ae5f65c3e36",
+      "trades.parquet": "6cac3fd87c0bb61d9f07f02281557cc3e0f983b223c192a0bb0b0083b05bf637",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "231d66d3c1b5df520ca6187b7ab2ff3e67b496b0fc6d243cfd737ace6818c7fa",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "39287067263a065208a4363037dd46391dc01f5b2f838b70b0f6cfc438dda27b",
+      "metrics.json": "8cfdcab4678e1ddeece1af3dce1da49065035ac645fea19bb4493d55149e0559",
+      "equity.parquet": "8c2c965d8c89c2f32b9ab5109b34b53bf7e1a3ae895583d4590fb3d633de95a5",
+      "fills.parquet": "adcac58f0f738f4e7a9987f1b2f55617591c9b18013e75cf08db708326036145",
+      "trades.parquet": "a767757fa3c8c9afd352c32941437febf3f8d116a4e3cf2185ae2b4220329c9e",
+      "funding.parquet": "35842e0c1ea3a20ac124d53b769f9d3e212137c9e63dd3acd7e3339c59e57a73",
+      "events.parquet": "982335b6ab2dba2e041276a8f1ca032b1080577617fa751402b6845e7d5bcad1",
+      "positions.parquet": "74eb5f348355b6f868df89232aadb7667f9b8105fe40eeb2ebe95cb996cbb6ad"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "492f4165a86babfae5349350ddbb21ad8076fad289b0fab228e2d6f7ed8d3d3f",
+      "metrics.json": "17dc2ec2138e411d4aacb3e5b94ae26592ab869ea4303386c52f802cccb2355b",
+      "equity.parquet": "03603f2bc36739c935d307538a662e5abefbb40671c5dd5b88b8e1ab2e439e60",
+      "fills.parquet": "18a46e8325b4ab40ce5fa717f8dbb4ce479ebba452bd2f5a18b81e656fd1d3d8",
+      "trades.parquet": "0972aa955e10c541e3735c3e3907b501f1645ad602dc588ebbb3769c7a3a9ead",
+      "funding.parquet": "55b1a1e40ee0b649412b46dca6401438a3c2c2ebc55bd35d809c586aa571d9ec",
+      "events.parquet": "e6b5196db6ec07a576e7bccb11f64e6d5d2c36d2dcc96a86c706effdfce612d0",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "06ca9d19bb5a3aaa385228862a29f93e548a6ca7497d2a44bb22646fd40d3aa6",
+      "metrics.json": "d248cd8493423184798f9c4d6bb5f782c804c7d3fb650263f6bdbf15400ea12a",
+      "equity.parquet": "b1b0acdf754046521ce5f84ecb6b3c52a013acf2252e3e2a5fe198bc3557c39a",
+      "fills.parquet": "1490aab4cb189e5d1f17470c91b35ab335168a3d58c743ea008a0f0a5603a8b7",
+      "trades.parquet": "847ee447070bb8f80d03124d60fc0e6395da924fef9e94e78b3e8e61040080d8",
+      "funding.parquet": "4f3e4080fbbcfde0527e2d7b181ae07065878732df21f410a18b8e8b3b5b51e8",
+      "events.parquet": "6a207041be6926e22b58747bf737ce2cf60e8c840e778d1e6c7652d550e86dd2",
+      "positions.parquet": "f8f5597dcf20cbae57d132e04c172c0ae3a6e1bf18fe3dada293b2a13938bd9f"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "95148a298bd7b2cf998903cddbbc3523b421eb20f9c50f113fb224c530187e60",
+      "metrics.json": "056e30cba8826291e9118d7f24763757296118cc4a8a3c8ba6a935706b4f3f66",
+      "equity.parquet": "28875165630a4bf580c65ef061b0c6bfc6ebcdd5ed9c0510f3591bdf5b68f327",
+      "fills.parquet": "6bb5e4fc644dfc79e2a8eaa49170da14367f7bdb32aa5f3eea54de10d3582c61",
+      "trades.parquet": "d1a7ce68c82df79cd86c3e3c93d4897973743f8519f5a1709f39e03abe1b4f74",
+      "funding.parquet": "71b4f8a10523cd8b1213797555557a81f1f038c65fb85523471cec6468203c9e",
+      "events.parquet": "b0230cfceecb3b701824bf3986214c8976abcb175dcdead49038d211dd795c6d",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "802fc9f6de7565bd054f40cc2b7fc2c6a54221528178632493c3ff0e2eeddc63",
+      "metrics.json": "dddbf121b8284863200257177a93afe323b6b99cc64fcd47f537fff400e6f660",
+      "equity.parquet": "132785af7ac197e537a28039d0e20fa750e80bdb2c63376ce1c8e0f134783e00",
+      "fills.parquet": "3cbb691f88f5673c24eaaf4afde9041a4848392b8adeebfdf38c270f74e8d0cd",
+      "trades.parquet": "8f496dbb72451353bfc491d2b2b6c640695a90d9672b630feaaf562ce851471f",
+      "funding.parquet": "23b37ddf838e267496d15a8f3a1275b31747f17c3d79b41ce5b6f116d96edd71",
+      "events.parquet": "b3aab75609b84746ae33adf82229a27b5f6189c0b75c113c9fc35a3d4f49bea3",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "5d05642095b0ab243b81bd23be142a74810bc11dda777f9b6f79d343a812f04e",
+      "metrics.json": "b4b42f6cccd8108aaf7bdeb4f19687268d35c889a3783de741353f3c8243ff89",
+      "equity.parquet": "3b08473b6c2d9867963194d378579b33035513954c47fcc23a14988fca55bf0d",
+      "fills.parquet": "bdbe99f982b6908bcdb1b3d31b64c50e9274edebfc65e258faa8cbcef590cd5e",
+      "trades.parquet": "2063d407ec66079abccf363417aebbd064b0323d2f3d6ddb695a8f5c476b8c91",
+      "funding.parquet": "f814d57669e4721343641089244db45530e53eac06c8163c6a9ce689c167ea1a",
+      "events.parquet": "b07b249a933847ed401d5bf3765dd5ff72fb5768d5ec50720c87ec1a44110584",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/ADAUSDT",
+    "sha256": {
+      "metadata.json": "906965dbcb9f7aaf0ebd22d0ad802a491ef6f685b24cd5011e9412a10f42c0ec",
+      "metrics.json": "4a3c09bc06520ed7681d014b732f949b9f6022ce01cbb8e674e43d2e53c052cd",
+      "equity.parquet": "881a9c0b2ba1ea669800e32cd96d301c4efe3df5e8c26aa8be8f7c9855092324",
+      "fills.parquet": "6d1a76a80d3b07e08a1a7759d8d0aa2b8e3f1ec567ca49369bfbddefb9184e1e",
+      "trades.parquet": "b875c9512b4c4c693c4ba0a56abd7f894c90609b07d56394e7f1362b8d0987ba",
+      "funding.parquet": "19345a61d7f02250a94f85fd187b718c5d947c281b163cf21dff9fe0e09b3c45",
+      "events.parquet": "865b2676d3e5223ced90a6658449e90b5191b9d58542662c5c8c178de45b8338",
+      "positions.parquet": "ad8d402c882ba9d86f4d006bb968855f8880856ad24028292045a912f1a77601"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/BTCUSDT",
+    "sha256": {
+      "metadata.json": "d8469b69b2592fc1ba9028dbf6cd1865099ebb0496dad0abbb3f3eaf07f7ed14",
+      "metrics.json": "404241361aa1becf1705fda2d21b4ca74f0d20edc86e7c689d335c95d535ea91",
+      "equity.parquet": "0f68504ae0ea4edbe62fdea9ce7a151ae7ae43d953f01ecb4238ab8d9591c779",
+      "fills.parquet": "10cec14b8908ab0d90ae238893accda8ca2cf48ea8f4965c28da972d1a71c7ba",
+      "trades.parquet": "3073afe9427571a3e014d7a71c850affe8a1afbb385e23b0efb5b1f99771364e",
+      "funding.parquet": "2fe0f899369dd7aa540e67577f9ab7699bb4c1908814beeba08a58c084cdad7e",
+      "events.parquet": "b31b0cdefb6a851e239b0056920ecc6dbc15e8f36506e36bb5041fc5385fed22",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "04a644569f68dcae9657fc84f9899eb06df1f1179be1ad030551133733ddd7c3",
+      "metrics.json": "8a461b2a64e87521362763fffbc59535ea172957a0c157a9f6cc04d68e4dac2c",
+      "equity.parquet": "a635751af6d2ba25954c5b2a7536e98ef1bf67ce4064e832e67514cce21c2ece",
+      "fills.parquet": "6b41e116a2ef84d2ea3a86a546cdd070fc21d37b790c4cc1d1c3b5ff88f8ed40",
+      "trades.parquet": "6818c8642a9090091f4173c6cdf3cb59ed954ba75b2f0f7221d0392a02ed9544",
+      "funding.parquet": "a6652d63a7d1312151dbdd3dffb3f47ab8cf4ac99c02071c19c39e336b57724a",
+      "events.parquet": "cd9f3d37036393879aa180ee5dc764441d0bab364de3e66959c3f9272ccd5aaf",
+      "positions.parquet": "8da494efd953082f3bf2661ed06475c16795bf0ea0a7e18308e03e73f0ebbddd"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/ETHUSDT",
+    "sha256": {
+      "metadata.json": "da1628be4ecf22d0114cdec733d2cecf965f60b4f437728ccdf9d05860483d35",
+      "metrics.json": "74bcdb882c49e1952d54910aeabb64172fbbf94bb057f4c6d74f5c8dccf4a945",
+      "equity.parquet": "6efdfbcf2c20abd158b491e585b07a6a71c76a682390637a9657f51ac476cfd9",
+      "fills.parquet": "4d84bc74066645e6e618923d1f7f03b8761e7689100bd4ab0d868bc6523d0e69",
+      "trades.parquet": "75157215e4f42c614c983950a3ac746aa919f194d38661efc3fd6c523c86e3e4",
+      "funding.parquet": "55b1a1e40ee0b649412b46dca6401438a3c2c2ebc55bd35d809c586aa571d9ec",
+      "events.parquet": "77fe289113ab4c68c7e5e084c132c2a07a4188cfcccffddabc21f6dc9f1e2521",
+      "positions.parquet": "d74129dab0d9294839c261dbf5229c8a0ee153659023dd458055851d8290c4fd"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/LINKUSDT",
+    "sha256": {
+      "metadata.json": "a1ca010b19dd8a6b6c4a4808e9eb5ef6e2edc63a3c28ea5bf6c7f28324a0e336",
+      "metrics.json": "8765b28372e89fae260d79ee222b20062cc15818db71916e3af3af3e4617ef6f",
+      "equity.parquet": "00ea5117589c6ca818881c580df3a55faba80232d6442afea571e1e60a026f09",
+      "fills.parquet": "a9430c5759d56e087fd94fb01d2b5407a8a7bed6d7c08dfbcd0aaa0ff06cb993",
+      "trades.parquet": "9088fd220053a1923fcf6888f924dc60ced6f835ac62f3b4ede2ab3696338ae6",
+      "funding.parquet": "471b27b572fe6a76cc7eaea9f361b6bf1a2a25857d68305cfb30ec0b5e70d33b",
+      "events.parquet": "f655c0a6767f629d30e103d2cba8fe6c0439378d36e7080d31ee35a1976fe6f3",
+      "positions.parquet": "82fae9846bfede5afe93d46aec8ee61458c23943354516d5c849f6464d61e7f5"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "306b1b7f701ac10d43df779a08fe5c4a23828a70be44dc9b48fe16ce8608362a",
+      "metrics.json": "8d128902bc2d1bbae65e117097dc3d2e0ebee9ea699ea59f6b8932b2bb984805",
+      "equity.parquet": "f3bd7daa155bb9222284fd91e688f2510d1810f31c9ee3c796921e706e01cafb",
+      "fills.parquet": "27078fb65e2f063a0b12aaf6d04fd72451f2373f4072521c787d5258de53e59a",
+      "trades.parquet": "c4c0c3457ac0efbf0b1308ee93541bb1e2021e8d60993de0da4fcd52f6dd7b8d",
+      "funding.parquet": "66ffb4954880095b5e960d8b11387a282785bc73b927dfac3f9ff78114a5f9f0",
+      "events.parquet": "c5a39432296fd309f53a60c161cfae1775c9b4a23ef99b01a75e8b7bf2633db9",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/SOLUSDT",
+    "sha256": {
+      "metadata.json": "4ed1346f052bba3ab82d646dbf510d03741fbcd7ec7c5c6d3a5acf3de8915231",
+      "metrics.json": "40622224ab69d3c81187e8bc7645f6f157d499dfe77707feeca28eaba13f10d1",
+      "equity.parquet": "3d485b9bba2e387035b7023abc0e328bc53cdac4b01efb5df55aeca2d20ec0b9",
+      "fills.parquet": "11a7c05129bf1bfbe8b679cf4dfa68ad36e36da1df2162d4f53a2ff7a422f7d8",
+      "trades.parquet": "8c42a50aa1cd65a1770723280e6b8014f01d7e5c3ab6599a2c2af922eb4939db",
+      "funding.parquet": "f317621742e4da6069cc85c38dcce4ac028af4cb61b457a51457a58b798abb31",
+      "events.parquet": "6970bb553d9c2434b5a34b4c43447693d4073bee8e1f43880c5df25dd6dded19",
+      "positions.parquet": "368a7d9f83f89e69d0888b91c73964f2ad755f5a6e22b8f11660c5b3fce63bf5"
+    }
+  },
+  {
+    "path": "holdout/risk_controlled/stress/XRPUSDT",
+    "sha256": {
+      "metadata.json": "196af65b141c2e2252c1e93f0d9857fb45abf3c5f4d913321afef4c28253899d",
+      "metrics.json": "d5d1e6d88bee6f43b152bc6a9f735761b477c6675b53ac4ed801dbfcf0a36c54",
+      "equity.parquet": "b2f457d95504d138ac55c77af0e59c34a8141f623c62cb3592b80d8409c25b6c",
+      "fills.parquet": "71cb671228799102215b35493819e43eea8e20ad79b11cf5d94304670d9c73cb",
+      "trades.parquet": "d396e755abb4149323cee6e4314e2e743c64d412a677041a28595a88165e6426",
+      "funding.parquet": "96c35c095ffcfaf1a84fc4aa3d8d09d19441c81ea548f2df176e81548c53c23a",
+      "events.parquet": "870bbeef36b4dcb70a4a7191b4d5c6b3caaef250f9c60f24ff973a89a7bad38b",
+      "positions.parquet": "96f3a7c02a48a910c8207ca05241e7199b02b61fd28d49414f54c76252b6cf88"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "c0132e2f729c9b1f246feb3132b8a25a632922cdd28f9dfeffb24ead5721be35",
+      "metrics.json": "c0451c0b1c5dd3c7d7b2b0e2101d0666c3b49af44bb72b9ad756af6d3a8ca000",
+      "equity.parquet": "0edde64605ec9650a271c62cb21567979ec341db56b5422358363add53305f33",
+      "fills.parquet": "85477b3f4845c6f70a7f0220b42a130f572b86895e13c432776df05dce1ecf31",
+      "trades.parquet": "f5f082689e1e287fc731a4ef79ddac0f29daee336bb50120d3d275c39793f6fc",
+      "funding.parquet": "dc84f389e48cfbdffe06bd5b3a66c133b9208f5124984179ef191e986cf50d2e",
+      "events.parquet": "e913028200e55c88d1defd0da111e050ac762c5c5b8eb5216b2a76a496361a52",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "a4520771e3b790d07c766156af8605d1e379d02681eda9598004dd9e45a80ede",
+      "metrics.json": "167c33b8072e2f481021ed554c99ebda43979e651fb739fb2ef9554d4039ad45",
+      "equity.parquet": "3eaa6d6336430fa673752605beadffcb72e12665a6e90ed42744d201c17f9cc3",
+      "fills.parquet": "50c484ad480ff76b750df254faa9fdb8a4c2f885e168e5a5e35a0c111487c473",
+      "trades.parquet": "341f64c1d693358ed9a3d2d55142b0290668377e79340c7d008dee025670a59a",
+      "funding.parquet": "74077cbfde6641cb3da6ff073d17dbdf8e908eefa8f6cb3d152bc5860a32e8f3",
+      "events.parquet": "0ec3ae930b1c9b4a85a404bbe13469aca24eff76e8f9fdbf1ec763d812897fe0",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "574c744c0a5c0acc7822c120a9d9a43ebbb8cbd749c612b3516a1f48e0c990dd",
+      "metrics.json": "d3de31f8b0c56ab8fc1f08cef6176d3971f6f0c55abf504c11c4817ae27a7f35",
+      "equity.parquet": "bd1dda1ff47ebe391a81fe96edc4731ceead4040790f5bc822cf9c833faad0f8",
+      "fills.parquet": "6af15fe29177d9c90009d43f507f8606fed258874e2302fd49c52af7dd4d752a",
+      "trades.parquet": "99323bbcbadab49aed588832b280b2e6e8bb5c8a75d94067a13edfc6ebd90d52",
+      "funding.parquet": "d34b5515ee09d9b7b37c9b3d441d1b1b6c4205d838c980d00ef66787802b224a",
+      "events.parquet": "1f365ae6e23509453ca012f646ef7adde161ff3458ca6031a12a7a3b7de5332b",
+      "positions.parquet": "08abfeae6bb820e114ad8de3f37fe65a8c547b6cf3b588854998818043824603"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "c2dc10e2a7f5f95cc34748fb94f63a5990099e6d3a6a233a24a3551be6bc340d",
+      "metrics.json": "e9b915f026ea24bf562b264074a9f73034f7528bd4d679dc3bdd25c4b9b997be",
+      "equity.parquet": "c5bb7f2383a4d5b5f888f09870783dc237cfd209e8443065147975970ceb0990",
+      "fills.parquet": "7a34c0ddfb7b1715e4c8903bce04fc388931a41b054a21f8e9b293597250b3f7",
+      "trades.parquet": "77662cd8c8220debabdb5be7420d4ecb10bfbb48759690b1ef78324a4e4c5834",
+      "funding.parquet": "498f99c111469392ef622615bfa0c68e371714b85254988e2f96b76dbd1941d0",
+      "events.parquet": "bfa47a30c983effe66f5ff1c8c393527a1f8b433588546760cae3cf5d76a080e",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "256c1ba411568f7c958f8822bd121a952d0a63d1d047d70aba12ac9c3092f801",
+      "metrics.json": "797db9df07fb24f170e056ce487c6916b713663836281d30dcde38f8f8aaa2b9",
+      "equity.parquet": "f340e5264dcfb89b261c0dd9087f8fdd46a0f3e5752e50a8ea9f0a783ebfc23d",
+      "fills.parquet": "969d9336a07cb326d9b4a6b64752242fc62994b0dfd38a8482cf3dfa88afeee9",
+      "trades.parquet": "ce5fa8ee2b732cb61f8f5c361b004527cad2ed3cfd29b4c33da7d85da26fd5d6",
+      "funding.parquet": "36f1eae0bfbe465c01db06ab15e8d745ad5facc2efc919cd6d71e3e798b79008",
+      "events.parquet": "f8c4b3063ef12e72a33a5fff50e93ce290a632e1d998b039ee2f30d47c7b8611",
+      "positions.parquet": "ff8316c15e87ee590af361c68a05ca3a91ef26cac7983f072751a93d671eca68"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "1ec1c8fe4bb34c2203330034d23ddea1f44c8051782405ecc24f4417335b8120",
+      "metrics.json": "2e074b30d2a624becebafaed42f60e069ff1b3f19361300bd740b525a814690e",
+      "equity.parquet": "50e53cbd9a83bf6f2ae6d3dfec298aa8a262a07412fbecb986035d90c8197c5d",
+      "fills.parquet": "bacc35eb598533e04d5996c6b2038eeab0a0935f93daa5ff323d61cbc900e664",
+      "trades.parquet": "c0b7f1d6e9f4f87c810203506cb1eaec05c0ce4ca26b07b80eab983dce550d65",
+      "funding.parquet": "f46d26e4267f60cbd42f48afb6fb437e206b1671d49109da34a17d5ca6c49399",
+      "events.parquet": "5bb72a84f33a1d3f6c89f1559da086b3e73499eca97517b6eb22aeb8bdc5a542",
+      "positions.parquet": "b25879cbb769ac174f26e135a74041767ff034ae8ed016565214f42e3b35d59a"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "2046d5128ff15001c05dad4282d625e2dc9b5d05e50efc08e6bc5fb40c284a0b",
+      "metrics.json": "1d389139eaa3aaa5d9c3b0014c26ad03704d8d8a7368c11bbc9dfbbfb04879fa",
+      "equity.parquet": "9cc03e7eecb2d4d95d39330e2277051bd9cedae76cca1ba2ef04d144b77dfeb3",
+      "fills.parquet": "10d6d9a268d7f9e4ff9f04d664e282edec478299142f30a6a776f1119e76f385",
+      "trades.parquet": "3c5b136925328ad92ae3cccace261f90c0b9ba7e94fb821e66427fda6d751d72",
+      "funding.parquet": "9ece4a0502b465784c86ba602fe0caa3fb131782e7f4cb0c32b9e474ef69e2cf",
+      "events.parquet": "3d6554891a8ac6cbea2892124ea284bd3b771d62d729a16e80c07bf2dfa7cf34",
+      "positions.parquet": "86230077d6f3877ad9b8f04f27fb5fc8f74e9bf1191340612337312056b4b53f"
+    }
+  },
+  {
+    "path": "validation/always_hedged/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "4cb73eb77f4ef58c450eb1d7633bcc81f6131a094f6fdd8933227847a2a890b5",
+      "metrics.json": "0798c4972aed2531f9218c2822ce062c41266ba71c0922cf93f66aac0b507ccf",
+      "equity.parquet": "f42ac47ed2a811b2e55ca8adb354a526fdef9853361427a27505e009d1473f7d",
+      "fills.parquet": "199a114f3061afaef4644898217b9be28ab28c216dc7c01aecadfefd08c04270",
+      "trades.parquet": "b44abc554e69c3a106799cabc3ef316b6fda8c07d7aa1717603ab576d625746b",
+      "funding.parquet": "84c28973fb2f1d11258f9886e6ac62fd528a5045782c9ad34aece7525a55f670",
+      "events.parquet": "e8414f76177568cb21c1ecde12ccc2fa2c7cc749780e262f64157f88959b53d3",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "250e8f258d5bc8fb343f2fca0a52e373243cf4ff40ce29e7f9e5d9c04de3d9c4",
+      "metrics.json": "52ad00c81ad248f9bcc221acc338224f1a23724ca706b70f5d2439eada67c02d",
+      "equity.parquet": "9248a808a1e8bbba4d84e3ced421eea1b55f1648c5cbd5575f8e1344685606a3",
+      "fills.parquet": "f08f4eefa368f87c0fe23b8a05ef639878889524578e6075ded7a5e0d30ac81d",
+      "trades.parquet": "9cc0b0a3c3fc222fd784d17dfa34bb0da95407002f3856395e193b9d9e1ae102",
+      "funding.parquet": "8b03afb1bd1dfd28f5c92fd16ba76ed5bef97bb32408d1d156c75c7df6db653a",
+      "events.parquet": "ae28a77a8c5798ff70e9c5d94c7f55ead81b7e22aa6a713f89f773e56cd6f81f",
+      "positions.parquet": "b21416d7c0ad2a55c4bf4ac3cb7d70a40698f9ecee4a0df321d69e492ca2d8c4"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "2d74c6cebdbbd53d90b8bf47a91b3eae487d228453f2050b0cdb88f765d18363",
+      "metrics.json": "190b919a63403a8e97f41e06f9663a22e02e05a6f440f724818f34eedab5f489",
+      "equity.parquet": "c0432fd717cdf419d0593884bf3f4e14baa8814a48f3c10b79baae5ac9423758",
+      "fills.parquet": "67b9f9d94d81353e6628484a51ff534da0be1685e9cfd6e948eda5baa0dcb039",
+      "trades.parquet": "65c42ee266fb2fea77be5463a369dbdf23aa9a87af26b503a1c9368e2e84b05c",
+      "funding.parquet": "82bfacdbff5a329ef5e704d815933c52b098e96edef48242e43cb3010b8eb0aa",
+      "events.parquet": "aa8d4e0f219cdce4a7806810c68cd9a4ac23fb2217fdca68d401bbee77d2c84e",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "b44459fdbdd9f3c5774190230fac47315039b681cb318e9bf8bd3d190f5eb385",
+      "metrics.json": "1c279cd6fea95cd88524741c87b948ef6f464ee57cf222cb1bbf30a46ea89338",
+      "equity.parquet": "15f3de01662e5ed49351910eb75ac89975d6f2b11439109b2c2f3f91b4e40ebf",
+      "fills.parquet": "8f3128f47e98905783c827039a3b2f5d19ef1a74a4dfcdf3ecdac03948412f5f",
+      "trades.parquet": "48260e9e3e0dd196a981299d63900fe273367bb03c43366fadccce4a91a1d5b1",
+      "funding.parquet": "604e0af58f927c8c5c9def56c4c84a7233178152a1cf902fcdeabf19af93d198",
+      "events.parquet": "348aa46619befdcf9604812996534aa5a8ec564743734760a3b29dafdde89fa5",
+      "positions.parquet": "4017fdd75079b48e0e5683019af177a76a41e7069055163f77ff2ed8254b91eb"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "218a3828750ae9ed1e5c18773c0d7540568fa249e59e32d2bafa76b5cc6aaf22",
+      "metrics.json": "bb5060139db311c5ca105c484c1446c5534492dc5201cad24822bbb8e41c8554",
+      "equity.parquet": "a26d3775502b7a5f4439e95a238c568d52074ebb9a7bd8cd7795cc50bdf9ca3e",
+      "fills.parquet": "e47a0f567f534138a608a4cc84451df254b1fd1a1012f6ed53c9ad05ec95834d",
+      "trades.parquet": "dc83e47b73b849219a8e2f279445e65fa88431615e95a5df94bff911db7b463e",
+      "funding.parquet": "cb20dfccbe8c63f249d5bc4f5e89efa16cee9a7d8852bd1cde71d16fe203529f",
+      "events.parquet": "b3620a77bd0733b8c4a3c274f13be75389dd8221823923311e33a4cad2f55431",
+      "positions.parquet": "ceec55c8ed2151970fdaef95cad6891d65838055abf2539899d97dcdd0e4cc1a"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "b17e94f97828d973a84d5322b15e8cedcaed7b74eaf3eb60fd25d0892c9b4a52",
+      "metrics.json": "70cec0adb2c45173c4b62d38d44b4fc1362711214b1b2c921c70a8e656f5f9bf",
+      "equity.parquet": "e62e754af0f12dc43d3748d6876159aaf64d7027371571c695c3b57e62024a4e",
+      "fills.parquet": "367de2b4306488c1be8b773b74b71d2d03b23048aad863743bd30a20bc70e05a",
+      "trades.parquet": "468d27d30cada5e87c679d62a15b28e9dd9cb135569caaac4fbdca10dbfc7f08",
+      "funding.parquet": "d9042c647799d5674f00e377ad2d24a6325c7848af7a3134dccd3bc151eb16ce",
+      "events.parquet": "65b06f37b848eb468fcaa67a3db1469c433ded8cd9c0d24e00d66b9f71cbc35b",
+      "positions.parquet": "dac6c179cfd54dd0c7ebf04f023bf9dc79d94edc867a6598afbb27ab6e3be2ee"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "c9b5ac2c5240cf2dcdbea69ee06a0359309805cc28517643731fb9710886c668",
+      "metrics.json": "81bd8c6b818af69369215b2b0be789272b2d2ea131944822590acca7d88c16e1",
+      "equity.parquet": "1453c10da7d8501aeea23420e6e23849f83275f9b70136a055e88528c429844a",
+      "fills.parquet": "1e9d820d55a537087769174c6110c70d6fc13c13c63277c5fd6708550a9f0e72",
+      "trades.parquet": "01c59ad146a5c27f2dd4d9ff21d655e8e15ac4643b8f1379ef24ad9373fce1cb",
+      "funding.parquet": "c52c18652fbc6bfc0b9e502c196e34b979070f8a7fcec678206a2240794c8520",
+      "events.parquet": "29ae74b399fb73d734316347b55fe7e2227638aab56ad2509d62cde1309afee3",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "df982c6684a9670b14530f41d51951eea47a37638ad210d660700345ca622382",
+      "metrics.json": "107ebd99ef7fc5c8da1b193856ff19722a12141eebdf2afa00a91bfb6b72fc45",
+      "equity.parquet": "1a0cf41f36316ef4be9b4067199e61a86530a40dfb162f28cff09d79e54576c5",
+      "fills.parquet": "bdccef210e15681c455d131f9e038ce250856c8c0e477159d76da1abdd4ce36f",
+      "trades.parquet": "17285d4663d499c1589e005306136b4bfa98ff881dbec693a215fbd576957ce0",
+      "funding.parquet": "76d46f9419935b07e5176c4a17dc1bba59e379fa0e27336a299981f47926bf54",
+      "events.parquet": "cda4d3cbfe5f2492c8a97f697a1089be4c1638704e4b2f8832c75388cf64092c",
+      "positions.parquet": "c64c1e753f3222a48e99fdf671321c92682fd6e62227add8b66134defee87c4e"
+    }
+  },
+  {
+    "path": "validation/funding_hysteresis/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "3872e05f39b538d49d83d607e870b62031183d10413e75b0927c23d41e0b6be0",
+      "metrics.json": "25b799ebb4580df01422867ea45c45002920a74a1a0e26b3e5292d3bd45dd05e",
+      "equity.parquet": "d3f2e06407d016b452f8496765e8499a7457a203f0ca45b65ba3ca195009b558",
+      "fills.parquet": "9c4a60677487e1e05693dca46d468be2b2ad3a17f114151e74369baa8b93b68a",
+      "trades.parquet": "49457018c119bae61c947da508a1c8dd2e6b262ac5a86a0d0f0677002a8e4e66",
+      "funding.parquet": "b1b69731b07babf7f6185d6a94df9015b8d8701318caeb8c2ca90e6e417bba98",
+      "events.parquet": "d6f5a6469d96b334a72ef8c0df2ec82ac8b5743a0fefc64ecc6b2b383fa09d37",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "0cdb1ca4ecbee9c69b028b5d975916ed331ae0a449e971579c1cd4fa867faac7",
+      "metrics.json": "1879c35f0506981eef3254f388c308b1118394c41a1c67e765075dbcb37a4147",
+      "equity.parquet": "41d6e01df3aac008c3bf7d3ec798ff807c2db4b5bd70a55d5c1afc3f0dd0cc72",
+      "fills.parquet": "87247e7608851aeab897138f2b7ab90400f30b6a88b6fd16dcb470acc3fde385",
+      "trades.parquet": "8587765d4ac3714460fd23374feee791a89084439261f95cc437b2381646c0cb",
+      "funding.parquet": "f9b14dbb7cbdef017b3766f84e6cd7a30e8df7b615c336a9ff0ffb601133a47d",
+      "events.parquet": "f66d9deccc531fd8c5cec69d8dda9e22c81f5bb421978692fae5c8e0e7664231",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "68a5f0ace00817a8cbd8e2ea7600636831e0ffd66bfa2e8fadb1e090db834f14",
+      "metrics.json": "fa495e15c02d87e021f6e9d6643490cabb35bc0a755296082fa9543cf76f9eaa",
+      "equity.parquet": "016646e653ba98cf0c53bdff846aff59cc42d70f3a3af6a4b10428f06300d7d5",
+      "fills.parquet": "1f4c73276442fb71efea492c4b5c2c59a1a82e53b4028d5a56352578b5718aec",
+      "trades.parquet": "b2daf7e86b28e7f3585d6bc5b7e6fd881062aff2260b317d267f926eab14b3d1",
+      "funding.parquet": "9dbad86797ce5129fbfd9ef5ed0494f83732d9526a186d9a08337537e54dac00",
+      "events.parquet": "dc73e68c7704c7631f376f806e4a1087ac069a386732d66c844cc4601eb1bfaa",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "d5dcae5b8cb5ea2e8f7b8b11c638aa677bfdfcd6495b9df9b9b072a73a8ddd3a",
+      "metrics.json": "8bd2e35252d9a5a24084b0e347c98c10130f127fcb4623f7154c396e9cf9bcfd",
+      "equity.parquet": "bc4e24524311c10fc0f90895e5f8853f7b57b99c4030084a53a6055c51588275",
+      "fills.parquet": "c185e6c53649a040771bd9ae51ecfd4d7b7518d3056a84b71f811ef62a9f920b",
+      "trades.parquet": "311ea9cf4bd3477459e042aa5f25ad7ca70cc5a0ecd8db1d130bb2d9178f8129",
+      "funding.parquet": "0fc1af4444a79bc0c583bc2ac6bc713491b54ab06fd9a65d2e42ece059d29e7e",
+      "events.parquet": "adb6a85728e1f9c7bcf6e111f87d766c3a0c44fa8bda5a639401720d9537aec1",
+      "positions.parquet": "ec2bf5365c479e1cb98a688fb1d1ad42407dad7c88b18d91f0b24b9b94b4293a"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "3651fccd0aec5af8c288446b3e66a22bad412ab68f060b98cd095681feb143ea",
+      "metrics.json": "46642e270a3c3efd50128c9b4402788049a8712398b430bb1f74d2ec42c21551",
+      "equity.parquet": "bf323f300cc15bc2849038866b4b2678b5de7a141c1a560246572f2c6441c14d",
+      "fills.parquet": "dc4fe8d0ddd905e894ec74920d45398bfd030bf2db5581214d1ea4bff7190937",
+      "trades.parquet": "df5c6b40de90f608a2ba1e7992a9bbda578487e18c74a3d617741db5e5cb71e3",
+      "funding.parquet": "95f56f609ebd391419073cf2aa6233b273a5c08f0d0b5f0947c58bf5b569a15a",
+      "events.parquet": "68f1be7af959f21ec9d1da343a67989f230516ab729ec6e9b70a71b26b145010",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "361fb4f28340f2d01ec30909e4939e278de184bcb79bc1f9fb9683370e8d363b",
+      "metrics.json": "31c68ca7b4633f92814bbf51540ab4a33c78407d161cbb5af72714dd6abe4490",
+      "equity.parquet": "2b9882499183ee90040048c2950e746639afb17e57a61c681d95ecfb73ed9304",
+      "fills.parquet": "4fc13931e26b5332cdce7f480dbb6fa1195b5f8de6b47c33cdb3507d572c3fd3",
+      "trades.parquet": "394a56a42ddcfde9114ad5777c265d9f485e0d3cb9b27a6c4809ec18b67ec1e7",
+      "funding.parquet": "6bd0603a8395e3e569a01357f32493250d375252d740026e3d0f0a39d03bd104",
+      "events.parquet": "274698b4839a9b90592fc9ecb16a0e00fc9a006a764f7ad06e6e29714341d3c9",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "1a255c97d62202ec3958902b31482427174d9a895064512c6741850f6acdfebb",
+      "metrics.json": "8c41d16db7a40c5cb5ffc1e87285dba1f291ec64eaa4a75e28f08b8b64bf4241",
+      "equity.parquet": "c1510c2c00ea5492823512f330c991537bea3de96163eb04926f3f884752c3a6",
+      "fills.parquet": "14e42cbb67606eecbdd41c72dbd73987d812842cc7e3b7c078001029f7adea85",
+      "trades.parquet": "2d9d7cc80a424b92aa98bb5a045d15a45fb3f08c43bb2ea062f0a57d2e74689c",
+      "funding.parquet": "5e59fb94c9f0a324a798f9f77f3576f5b9a304193de701b18d9f0c5c3b70f735",
+      "events.parquet": "dfd5f0cff1601d1d438f14800b99725d3b530c036dc159b297dd066273d22436",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "9dd02223bd1799aca7ea2fa310d44f14ed6fcc746a1502079b67641b7246f8a5",
+      "metrics.json": "56ff3b13ab60185b542e414ff176c992cb960c2949385589db049eb76dd2d99a",
+      "equity.parquet": "1093f12df10d6a82886d35044b9a77fea269b510129d5599c082c2858f75915c",
+      "fills.parquet": "cdfaa8ae507ac1f087038e05ebe1efd1406ff582556784ec04ae3b864ece4a7c",
+      "trades.parquet": "77693c5d4c85c7e6d3a27ef2c34121e32ea126601d175a2d65de1843a152988a",
+      "funding.parquet": "17f5976834ebecb6d862dc4d6760f8b49c6a5d0e5c7ec8bf676bc8a46c1b9e48",
+      "events.parquet": "c46f926666f85329530915d6875b2c36d315e1112c0c99afdecbf56abfff06d7",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/funding_rotation/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "0542de28986a2114005c1773501815d03562c171ae336fa8c17607f2c8afd9eb",
+      "metrics.json": "44e9cd78ece3687124242d9af0e39c285647334b09e3d92b6d4d24f5890d7b5f",
+      "equity.parquet": "4426b76a8209f71a763617167d251eee2736189b7b9c4a990a63bdbc8e8cb6f4",
+      "fills.parquet": "b1356daf035855fe336e90c5dd609cf8f783de1fefc6c2abd3f617f1f4ae230d",
+      "trades.parquet": "5a7b281db7d7300fe207572bb6f837772f52022f08d8650a6937d8732df1afc4",
+      "funding.parquet": "a163ca539532f40dd13ea30a8ac579f304fd277f57519466ef06d1b6a1d290ff",
+      "events.parquet": "478f2bea7e0f3d2342f47b2ce8fef7e46cd0a3b7727c310cd10ac0317e9ffa89",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "8f82fc0cd12cdf159aa20f58b26dd7219d8846d13778b12cc58aef02abd49b4d",
+      "metrics.json": "50e5c60b91e1ebff068353e6eef3839a450b0987bb15f8579a191c942869dd00",
+      "equity.parquet": "13e19ce32091a3052e19222e174826949219b0dd1f99c9b402ff10a277c65fb8",
+      "fills.parquet": "be391818a922d9b458d01d4eddad012a421b224ecc9c3320b0037be7fa8026c9",
+      "trades.parquet": "fdedbe53fc63e008758e307ec0305fa2ed108ad90d6cc57b5a5a4d7a2ab23a13",
+      "funding.parquet": "c54d5703761c87beb04ba6b0942d16932ec692907acaa86f39e1ef49b32ab048",
+      "events.parquet": "efea9cdfa296398bda4391fd5aa527db275703c4f1561aaa9206172b0c77ec7e",
+      "positions.parquet": "b21416d7c0ad2a55c4bf4ac3cb7d70a40698f9ecee4a0df321d69e492ca2d8c4"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "b66474da88f77f023ae952393612dad193e5423b6d10f9eb980f973b11478698",
+      "metrics.json": "f4a4b89710cfcad81a5c9f99a259621ab4b7a08b62bc638cd8d81238bc91fff8",
+      "equity.parquet": "77e4099621e8c433a6987d622dfbc3d5ee8c1f257d06e4342b38d0865a8186bd",
+      "fills.parquet": "80dd2bbbb42a085d1597701b96bd2985f2b9d9fef5f39daa78d9a2838f8e3973",
+      "trades.parquet": "37dd5a15403f69697c72de6728ab5a745af1b02dc138719cd11e42dc5869b0e2",
+      "funding.parquet": "8412e70ab363ebc0c11b74188244aa6e3b3cec15ae3428a8eb492c4bbf7a0a45",
+      "events.parquet": "f6c16b94a3d24c0d358059cad1bbe6e2e0588fe0951895e5e5145b7f5fdf774d",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "fc289ae3c73e973342f099f82b06015983b8ff54d9b20d0b605788e2b04a5916",
+      "metrics.json": "ada22cefc7eb2b98f19314a1d68dfcb932c8cdaa93eb5421650ee198572e4bb7",
+      "equity.parquet": "103ba15d6c0bb2e41b167adde11243fe68b9f92ef9688d4c8cf7683b1292e60c",
+      "fills.parquet": "5376b0e196064207344b6f5a156f21d7755e06f1e3899265c80ddaa57b878a0c",
+      "trades.parquet": "dc4a8276b6550fb768198ad0832bfb35e249e1e1d6c4c9f61fc9e2bd734850ae",
+      "funding.parquet": "d8b38e2bf7a1db536ae3e4ebb3de2ef325866bd41fb45537f99ae1efbd679886",
+      "events.parquet": "243daabfb78b5d8e72c1f70d90fd626d9e763d3e997c2df30a308bc52b07372b",
+      "positions.parquet": "4017fdd75079b48e0e5683019af177a76a41e7069055163f77ff2ed8254b91eb"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "c85a2a45a10bab0ddab83d5074ce9981e82cd7a6e71bb4dd72066abf2a5198d5",
+      "metrics.json": "e2934dc21fde388064bcb399ea73d93c5b0f6c45f84310790a4d078ef5c45f92",
+      "equity.parquet": "ca1de9fe1825ec4fa5c6bee6fd0236cf6bde032d48e2ae2630ee4a92918f1145",
+      "fills.parquet": "28c1b6dd89f4a2479a1c2ce2da15472f311997b7a8e1e2c80fc20e58f5e12f81",
+      "trades.parquet": "0d980d32e6ac70397ff43bc075ccdb8a69f27555c6efc361e1fb79416621f78b",
+      "funding.parquet": "70f7f16a66c37f300ab9811777c3780c754fe8a5947c15d0db4f6916e2317289",
+      "events.parquet": "3e1728a2a76e83c9f7279952ed3449a447e7f2030fe713a4445b7e358ba2aa00",
+      "positions.parquet": "93c7378fdc133b26be1f66a0958d08f26fc4a91c7a287caf91e8052d8ee518f4"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "117f93a4df4b0250fbed66e302525ecda2b7034a2d353d4c4cf44641af1fda0a",
+      "metrics.json": "6cc30fc297978ff7c8421ad48964b4c65c9dc29899b69dc83746318ca0f3784c",
+      "equity.parquet": "d34b4f25440bc6f0092835129c3bf0898e6b56fa95963ca17e9795eec7d59584",
+      "fills.parquet": "0a5dfa39e104db0b5ef8d865ffbe4bbdc18cb2ca8ae05a28ff36ae25e0622bb6",
+      "trades.parquet": "22ee1777816025da3403169febcd523cc5c1241df2764ac826c0110b121f242b",
+      "funding.parquet": "9fb468949f30df7e08067a374c1a509289d0037358b42a9571c02b0a13177b84",
+      "events.parquet": "01fd9cc85a04bf08bebc08e82ec12ce5e9d7f3a22b3a1e2062fb708fcb7cdb01",
+      "positions.parquet": "dac6c179cfd54dd0c7ebf04f023bf9dc79d94edc867a6598afbb27ab6e3be2ee"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "cc1f03f3e5b80802b0ecff522c24ea241070e961c3cec6bbc6c6e2ac0ace8e0d",
+      "metrics.json": "1e94dd8fbab1238dfce063f5d1fb4b9e20da87cbecfd807fe78c3b53c53cf63f",
+      "equity.parquet": "502d17795fe91240593977b90c937d04a221a6389486fed182999dcb28c8ee6a",
+      "fills.parquet": "8d790c94a8b447b1be32d569da4377e4e7b8fa3df8523626d5299da086c905f6",
+      "trades.parquet": "ccb3b5ebe22d45c75e2014c7e4eb7f5691b6329d89e169d7fa6caed813fa42fa",
+      "funding.parquet": "604a9210c4a1448f9a2ee40a3f7898557f164301ee0468195b5220039efd6638",
+      "events.parquet": "fb700ebcdc14ceefb1f0cbcaa88d381f283075223c985913c766d81ebb55bbd3",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "66d49c13992c56019cd87759e4e9ba1a07aa792d42d55272b710b0104cfb9386",
+      "metrics.json": "066dc77d38de9f0cf0c8213da0f90b3361bdb881ac554dc84fc5de28ff64f5c9",
+      "equity.parquet": "8cc0152bd3d698f2f883842063a7ade8ff891ac84e7d16808c877bb80fede987",
+      "fills.parquet": "a3185ab5ed12ca37c4a1c304c71f7e4676c8f1dcb3d81415ef90dc5bb2093df8",
+      "trades.parquet": "c11f8ecf14d0783f9e5cb9c33d3a8d26574ba68f2eed394509b4ce82dbe41fe3",
+      "funding.parquet": "c60c0fb1f879a5f3e0dc1f8bb937aac3b4bf9b33ad6584789d59a2c6f707a27d",
+      "events.parquet": "7c78b7ed60fab83a6a8854ad245ec41cc31ff1525078dc4daefb2035477b7c26",
+      "positions.parquet": "c64c1e753f3222a48e99fdf671321c92682fd6e62227add8b66134defee87c4e"
+    }
+  },
+  {
+    "path": "validation/positive_trailing/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "7aa8965f105336b3c71c410eeed8a54290b28e2b48210305c0c05212e325c9bd",
+      "metrics.json": "cc8bafb518fac63bce733a8914e2a9570c4fb7b066fd01188286c56370b26c1c",
+      "equity.parquet": "24722788c96cd18bcf21953bbc9e8c00ff2bb35a719b3718a71cad6261462ff8",
+      "fills.parquet": "46b5be021b84216db5d428c60b1416a849db97570cecbff08b76542bf91c1e40",
+      "trades.parquet": "2e7e865e4bc116716e30f3d77ea0f602f87e87179136c2d83ea714b3aa951fe1",
+      "funding.parquet": "73844663a08508464af0c6575b6094e594661e5602ef2ec49255cc2d6c5e001a",
+      "events.parquet": "7568ff87de8f8637c96871d51811074b8e2e183910a7f248f95d5c381ca99f11",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/ADAUSDT",
+    "sha256": {
+      "metadata.json": "1616e2f2d4212862235e27b3bfb8222bebaab4d62785080984bed28068ac4f74",
+      "metrics.json": "50e5c60b91e1ebff068353e6eef3839a450b0987bb15f8579a191c942869dd00",
+      "equity.parquet": "13e19ce32091a3052e19222e174826949219b0dd1f99c9b402ff10a277c65fb8",
+      "fills.parquet": "be391818a922d9b458d01d4eddad012a421b224ecc9c3320b0037be7fa8026c9",
+      "trades.parquet": "fdedbe53fc63e008758e307ec0305fa2ed108ad90d6cc57b5a5a4d7a2ab23a13",
+      "funding.parquet": "c54d5703761c87beb04ba6b0942d16932ec692907acaa86f39e1ef49b32ab048",
+      "events.parquet": "efea9cdfa296398bda4391fd5aa527db275703c4f1561aaa9206172b0c77ec7e",
+      "positions.parquet": "b21416d7c0ad2a55c4bf4ac3cb7d70a40698f9ecee4a0df321d69e492ca2d8c4"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/BTCUSDT",
+    "sha256": {
+      "metadata.json": "059e01576243ddfbee55e64587957eabcf2a518bef1886c6f56327260d310124",
+      "metrics.json": "f4a4b89710cfcad81a5c9f99a259621ab4b7a08b62bc638cd8d81238bc91fff8",
+      "equity.parquet": "77e4099621e8c433a6987d622dfbc3d5ee8c1f257d06e4342b38d0865a8186bd",
+      "fills.parquet": "80dd2bbbb42a085d1597701b96bd2985f2b9d9fef5f39daa78d9a2838f8e3973",
+      "trades.parquet": "37dd5a15403f69697c72de6728ab5a745af1b02dc138719cd11e42dc5869b0e2",
+      "funding.parquet": "8412e70ab363ebc0c11b74188244aa6e3b3cec15ae3428a8eb492c4bbf7a0a45",
+      "events.parquet": "f6c16b94a3d24c0d358059cad1bbe6e2e0588fe0951895e5e5145b7f5fdf774d",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/DOGEUSDT",
+    "sha256": {
+      "metadata.json": "28b5ae23c7cf4126fc7b57492ecd4f349f7bb953201d6605ba64eb3efdff3fe9",
+      "metrics.json": "ada22cefc7eb2b98f19314a1d68dfcb932c8cdaa93eb5421650ee198572e4bb7",
+      "equity.parquet": "103ba15d6c0bb2e41b167adde11243fe68b9f92ef9688d4c8cf7683b1292e60c",
+      "fills.parquet": "5376b0e196064207344b6f5a156f21d7755e06f1e3899265c80ddaa57b878a0c",
+      "trades.parquet": "dc4a8276b6550fb768198ad0832bfb35e249e1e1d6c4c9f61fc9e2bd734850ae",
+      "funding.parquet": "d8b38e2bf7a1db536ae3e4ebb3de2ef325866bd41fb45537f99ae1efbd679886",
+      "events.parquet": "243daabfb78b5d8e72c1f70d90fd626d9e763d3e997c2df30a308bc52b07372b",
+      "positions.parquet": "4017fdd75079b48e0e5683019af177a76a41e7069055163f77ff2ed8254b91eb"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/ETHUSDT",
+    "sha256": {
+      "metadata.json": "d7b29596fbc98f705d4ef61ecc1248571411f8fee07365e8b1b30823fc28f94a",
+      "metrics.json": "e2934dc21fde388064bcb399ea73d93c5b0f6c45f84310790a4d078ef5c45f92",
+      "equity.parquet": "ca1de9fe1825ec4fa5c6bee6fd0236cf6bde032d48e2ae2630ee4a92918f1145",
+      "fills.parquet": "28c1b6dd89f4a2479a1c2ce2da15472f311997b7a8e1e2c80fc20e58f5e12f81",
+      "trades.parquet": "0d980d32e6ac70397ff43bc075ccdb8a69f27555c6efc361e1fb79416621f78b",
+      "funding.parquet": "70f7f16a66c37f300ab9811777c3780c754fe8a5947c15d0db4f6916e2317289",
+      "events.parquet": "3e1728a2a76e83c9f7279952ed3449a447e7f2030fe713a4445b7e358ba2aa00",
+      "positions.parquet": "93c7378fdc133b26be1f66a0958d08f26fc4a91c7a287caf91e8052d8ee518f4"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/LINKUSDT",
+    "sha256": {
+      "metadata.json": "2b760ec4dc40cd61c83d72f1eff9dd1e9716922eab7b322493a801610488595c",
+      "metrics.json": "6cc30fc297978ff7c8421ad48964b4c65c9dc29899b69dc83746318ca0f3784c",
+      "equity.parquet": "d34b4f25440bc6f0092835129c3bf0898e6b56fa95963ca17e9795eec7d59584",
+      "fills.parquet": "0a5dfa39e104db0b5ef8d865ffbe4bbdc18cb2ca8ae05a28ff36ae25e0622bb6",
+      "trades.parquet": "22ee1777816025da3403169febcd523cc5c1241df2764ac826c0110b121f242b",
+      "funding.parquet": "9fb468949f30df7e08067a374c1a509289d0037358b42a9571c02b0a13177b84",
+      "events.parquet": "01fd9cc85a04bf08bebc08e82ec12ce5e9d7f3a22b3a1e2062fb708fcb7cdb01",
+      "positions.parquet": "dac6c179cfd54dd0c7ebf04f023bf9dc79d94edc867a6598afbb27ab6e3be2ee"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/PEPEUSDT",
+    "sha256": {
+      "metadata.json": "0637a251873623f30f9efd7d8975f8450e03095f1db424e75b8db623bb1fdc2a",
+      "metrics.json": "d3c34239894103b0a2c303e1915618977f72e3ca588d89949f9ff742a21680d6",
+      "equity.parquet": "2de1685b2747ec92e883f6acb761e1fe16ed577d0b8d60ce6ee1212478bf5be6",
+      "fills.parquet": "f8b3518dd8ef2db651875e1b4554e5ecc4242d31ad6955d8640ada7656c87241",
+      "trades.parquet": "4c9c77de961a2cc2768694786600b3ba23c9733dede6576895d01deb23a5b510",
+      "funding.parquet": "173c2d4dfa7100623b3d4bfd3c437efa12b157db4f8bcc383020b2a8db2fc0c1",
+      "events.parquet": "52e998d7c997d451075159cb30ac65cbb9b6d14610a2dfa259dbef939a1b8e8d",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/SOLUSDT",
+    "sha256": {
+      "metadata.json": "2e892f0f5033200a32dfafbf50736b785df4e0b2ccf15d81c6c597af359b5841",
+      "metrics.json": "066dc77d38de9f0cf0c8213da0f90b3361bdb881ac554dc84fc5de28ff64f5c9",
+      "equity.parquet": "8cc0152bd3d698f2f883842063a7ade8ff891ac84e7d16808c877bb80fede987",
+      "fills.parquet": "a3185ab5ed12ca37c4a1c304c71f7e4676c8f1dcb3d81415ef90dc5bb2093df8",
+      "trades.parquet": "c11f8ecf14d0783f9e5cb9c33d3a8d26574ba68f2eed394509b4ce82dbe41fe3",
+      "funding.parquet": "c60c0fb1f879a5f3e0dc1f8bb937aac3b4bf9b33ad6584789d59a2c6f707a27d",
+      "events.parquet": "7c78b7ed60fab83a6a8854ad245ec41cc31ff1525078dc4daefb2035477b7c26",
+      "positions.parquet": "c64c1e753f3222a48e99fdf671321c92682fd6e62227add8b66134defee87c4e"
+    }
+  },
+  {
+    "path": "validation/risk_controlled/base/XRPUSDT",
+    "sha256": {
+      "metadata.json": "116520cd3ca76d3ec502d1b1e5390d5baa89d9043ffd0af6b3674d32c5ee4f0d",
+      "metrics.json": "cc8bafb518fac63bce733a8914e2a9570c4fb7b066fd01188286c56370b26c1c",
+      "equity.parquet": "24722788c96cd18bcf21953bbc9e8c00ff2bb35a719b3718a71cad6261462ff8",
+      "fills.parquet": "46b5be021b84216db5d428c60b1416a849db97570cecbff08b76542bf91c1e40",
+      "trades.parquet": "2e7e865e4bc116716e30f3d77ea0f602f87e87179136c2d83ea714b3aa951fe1",
+      "funding.parquet": "73844663a08508464af0c6575b6094e594661e5602ef2ec49255cc2d6c5e001a",
+      "events.parquet": "7568ff87de8f8637c96871d51811074b8e2e183910a7f248f95d5c381ca99f11",
+      "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24"
+    }
+  }
+]
