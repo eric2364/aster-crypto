@@ -1,0 +1,39 @@
+strategy:
+  name: ma
+  parameters:
+    allocation: 0.5
+    fast: 24
+    slow: 168
+    lookback: 168
+instruments:
+- id: binance:spot:BTCUSDT
+  exchange: binance
+  symbol: BTCUSDT
+  market_type: spot
+  base: BTC
+  quote: USDT
+  tick_size: 0.01
+  lot_size: 0.001
+  min_notional: 5
+  maker_bps: 2
+  taker_bps: 5
+  maintenance_rate: 0.005
+  liquidation_bps: 50
+engine:
+  initial_balances:
+    binance: 100000
+  leverage: 3
+  margin_mode: isolated
+  max_gross_leverage: 3
+  max_position_pct: 0.5
+  fill_model: conservative
+  participation: 0.1
+  slippage_model: fixed
+  slippage_bps: 2
+  latency_ms: 0
+  funding_enabled: true
+  seed: 42
+data:
+  bars: data_cache/btc-spot-1y/bars.parquet
+  manifest: data_cache/btc-spot-1y/source_manifest.json
+output: results/real-btc-1y

@@ -1,0 +1,26 @@
+name: Accounting and research verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install locked environment
+        run: |
+          python -m pip install uv
+          uv sync --locked --extra dev
+      - name: Independent regression suite
+        run: uv run pytest -q
+      - name: Spot and funding-perpetual smoke runs
+        run: |
+          uv run python main.py demo --market spot --strategy buy_hold --periods 100 --out results/ci-spot
+          uv run python main.py demo --market perpetual --strategy funding --periods 100 --out results/ci-funding
