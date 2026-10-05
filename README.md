@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **295 tests passed, including independent partial-exit margin, execution and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **357 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -14,7 +14,7 @@ Python 3.12+ and `uv`:
 
 ```bash
 cd /home/ericwu/Documents/Codex_Backtesting
-uv sync --extra dev
+uv sync --extra dev --extra research
 .venv/bin/python -m pytest -q
 .venv/bin/python main.py demo --market spot --strategy buy_hold --out results/spot
 .venv/bin/python main.py demo --market perpetual --strategy ma --out results/perpetual
@@ -22,7 +22,7 @@ uv sync --extra dev
 .venv/bin/streamlit run dashboard.py --server.address 127.0.0.1 --browser.gatherUsageStats false
 ```
 
-Alternative setup: `python3 -m venv .venv` then `.venv/bin/pip install -e '.[dev]'`. `uv.lock` records the resolved dependency environment. The `aster` console command mirrors `main.py` after installation. Launch the dashboard at http://localhost:8501 or open any generated `results/<run>/dashboard.html` offline; HTML includes Plotly without a CDN.
+Alternative setup: `python3 -m venv .venv` then `.venv/bin/pip install -e '.[dev,research]'`. `uv.lock` records the resolved dependency environment. The `aster` console command mirrors `main.py` after installation. Launch the dashboard at http://localhost:8501 or open any generated `results/<run>/dashboard.html` offline; HTML includes Plotly without a CDN.
 
 ## What is implemented
 
@@ -148,6 +148,12 @@ strategy is presented as proven non-overfit or as demonstrated one-minute scalpi
 [External-factor guide](examples/external_factors/README.md) ·
 [Academic leading-factor research](docs/leading_factor_research.md) ·
 [QQQ, inflation and X data requirements](docs/leading_factor_sources.md).
+
+A [fixed residual-convergence experiment](examples/residual_convergence/README.md)
+is being independently reviewed before historical fitting. It adds one family
+with actual shared BTC/ETH hedge legs, disjoint training blocks and deterministic
+no-trade/failed-leg policies. Its previously examined evaluation remains
+exploratory; no profitable result is claimed at this stage.
 
 ```bash
 .venv/bin/python examples/minute_research/download.py --workers 2

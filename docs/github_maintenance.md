@@ -9,7 +9,7 @@ GitHub Actions verifies pushes and pull requests using the locked environment, t
 ```bash
 git status
 git switch -c research/my-change
-uv sync --locked --extra dev
+uv sync --locked --extra dev --extra research
 .venv/bin/python -m pytest -q
 .venv/bin/python main.py demo --market spot --strategy buy_hold --periods 100 --out results/check-spot
 .venv/bin/python main.py demo --market perpetual --strategy funding --periods 100 --out results/check-funding

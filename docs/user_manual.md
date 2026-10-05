@@ -11,7 +11,7 @@ Use Python 3.12 or newer. From the repository root:
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install --upgrade pip
-.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/python -m pip install -e '.[dev,research]'
 .venv/bin/python -m pytest -q
 ```
 
@@ -363,3 +363,17 @@ reserves, marked equity, summary gates and training-only scale selection.
 A new clone needs preserved original results or a separate legacy checkout to
 reconstruct them; the workflow explains this requirement. Source-hash mismatch
 is a reason to stop a cached resume, not to overwrite its original evidence.
+
+## Fixed residual-convergence experiment
+
+The [prospective protocol](../examples/residual_convergence/proposed_protocol.md)
+defines one additional BTC/ETH-hedged altcoin family. Six altcoins share one
+actual eight-instrument account. Return betas use the first three months and
+residual calibration uses the next three; minute trading begins only after
+calibration. Models stay frozen, pending hedge targets do not imply atomic fills,
+and failed admission leaves cash. This is exploratory on the already examined
+year and supplies no current profitability claim.
+
+Install the pinned statistical research extra with `uv sync --locked --extra dev --extra research`, or install `.[dev,research]` using pip. Read the
+[example guide](../examples/residual_convergence/README.md) for source freezing,
+execution and independent audit requirements. Original24 results stay preserved.

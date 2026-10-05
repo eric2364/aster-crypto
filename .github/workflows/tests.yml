@@ -17,7 +17,7 @@ jobs:
       - name: Install locked environment
         run: |
           python -m pip install uv
-          uv sync --locked --extra dev
+          uv sync --locked --extra dev --extra research
       - name: Independent regression suite
         run: uv run pytest -q
       - name: Spot and funding-perpetual smoke runs
