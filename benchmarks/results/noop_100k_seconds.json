@@ -1,0 +1,28 @@
+{
+  "mode": "noop",
+  "bars": 100000,
+  "symbols": 1,
+  "duration_seconds": 1,
+  "record_every": 100,
+  "seconds": 1.7030640140292235,
+  "build_seconds": 0.010942487977445126,
+  "peak_rss_mib": 345.7421875,
+  "peak_rss_source": "proc_vm_hwm",
+  "bars_per_second": 58717.69890986849,
+  "market_observations_per_second": 117435.39781973699,
+  "clock_timestamps": 100001,
+  "clock_timestamps_per_second": 58718.286086857595,
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "pandas": "3.0.6",
+  "numpy": "2.5.3",
+  "seed": 42,
+  "fills": 0,
+  "trades": 0,
+  "ledger_events": 0,
+  "snapshots": 1001,
+  "source_sha256": {
+    "aster/backtest/engine.py": "67a7f8f2b7d497abb5b57e2a719b17efd866e58d000293c7760cd4c3b8264553",
+    "aster/backtest/portfolio.py": "a2dc79b97e975a75164e14459312d025d827c2fe9e066034cc889e543e55cdaa"
+  }
+}
