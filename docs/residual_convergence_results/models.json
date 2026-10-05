@@ -1,0 +1,453 @@
+{
+  "family": "btc_eth_hedged_residual_convergence",
+  "candidate_count_cumulative": 25,
+  "beta_fit_end_exclusive": "2026-01-05 00:00:00+00:00",
+  "calibration_end_exclusive": "2026-04-05 00:00:00+00:00",
+  "research_status": "exploratory reused year; conditional model diagnostics only",
+  "assets": {
+    "DOGEUSDT": {
+      "eligible": false,
+      "alpha": -4.617455015638105e-05,
+      "beta_btc": 0.7940303418224043,
+      "beta_eth": 0.515478502057449,
+      "origin_available_at": "2026-01-05 00:01:00+00:00",
+      "origin_price_time": "2026-01-05 00:00:00+00:00",
+      "origin_prices": {
+        "BTCUSDT": 91497.1,
+        "ETHUSDT": 3143.32,
+        "DOGEUSDT": 0.14944,
+        "PEPEUSDT": 0.0071717,
+        "SOLUSDT": 134.04,
+        "XRPUSDT": 2.0896,
+        "LINKUSDT": 13.415,
+        "ADAUSDT": 0.4004
+      },
+      "phi": 0.9983819643925941,
+      "mu": 0.03543443029975228,
+      "sigma": 0.08251758192848871,
+      "diagnostics": {
+        "beta_sample_count": 2206,
+        "calibration_sample_count": 2160,
+        "standardized_factor_condition": 3.779241242438483,
+        "beta_rank": 3,
+        "beta_last_available_at": "2026-01-04 23:01:00+00:00",
+        "calibration_first_available_at": "2026-01-05 00:01:00+00:00",
+        "calibration_last_available_at": "2026-04-04 23:01:00+00:00",
+        "ou": {
+          "valid": true,
+          "intercept": 5.733416995314245e-05,
+          "phi": 0.9983819643925941,
+          "innovation_variance": 2.2017071982377266e-05,
+          "mu": 0.03543443029975228,
+          "sigma": 0.08251758192848871,
+          "half_life_hours": 428.0414211120576
+        },
+        "adf": {
+          "statistic": -1.2171132948157923,
+          "pvalue": 0.6661910224745431,
+          "used_lag": 24,
+          "nobs": 2135,
+          "critical_values": {
+            "1%": -3.4334165947172752,
+            "5%": -2.8628947034764844,
+            "10%": -2.5674911783095395
+          }
+        },
+        "half_means": [
+          -0.0307587973746827,
+          0.059429921834019746
+        ],
+        "half_variances": [
+          0.007216096250941335,
+          0.0013732991063849288
+        ],
+        "variance_ratio": 0.19031053060105493,
+        "calibration_terminal_residual": 0.07380171442871579,
+        "checks": {
+          "identified_beta": true,
+          "bounded_beta": true,
+          "valid_ou": true,
+          "intraday_half_life": false,
+          "conditional_adf": false,
+          "stable_half_means": true,
+          "stable_half_variances": false
+        },
+        "failed_checks": [
+          "intraday_half_life",
+          "conditional_adf",
+          "stable_half_variances"
+        ]
+      }
+    },
+    "PEPEUSDT": {
+      "eligible": false,
+      "alpha": 6.71716914414435e-05,
+      "beta_btc": 0.7098225961076705,
+      "beta_eth": 0.7069094999271048,
+      "origin_available_at": "2026-01-05 00:01:00+00:00",
+      "origin_price_time": "2026-01-05 00:00:00+00:00",
+      "origin_prices": {
+        "BTCUSDT": 91497.1,
+        "ETHUSDT": 3143.32,
+        "DOGEUSDT": 0.14944,
+        "PEPEUSDT": 0.0071717,
+        "SOLUSDT": 134.04,
+        "XRPUSDT": 2.0896,
+        "LINKUSDT": 13.415,
+        "ADAUSDT": 0.4004
+      },
+      "phi": 0.9975097724668642,
+      "mu": -0.33287404778314705,
+      "sigma": 0.09756084364514483,
+      "diagnostics": {
+        "beta_sample_count": 2206,
+        "calibration_sample_count": 2160,
+        "standardized_factor_condition": 3.779241242438483,
+        "beta_rank": 3,
+        "beta_last_available_at": "2026-01-04 23:01:00+00:00",
+        "calibration_first_available_at": "2026-01-05 00:01:00+00:00",
+        "calibration_last_available_at": "2026-04-04 23:01:00+00:00",
+        "ou": {
+          "valid": true,
+          "intercept": -0.0008289321188559445,
+          "phi": 0.9975097724668642,
+          "innovation_variance": 4.734553600372813e-05,
+          "mu": -0.33287404778314705,
+          "sigma": 0.09756084364514483,
+          "half_life_hours": 278.00020906019506
+        },
+        "adf": {
+          "statistic": -1.7916247759427137,
+          "pvalue": 0.3846276161945412,
+          "used_lag": 24,
+          "nobs": 2135,
+          "critical_values": {
+            "1%": -3.4334165947172752,
+            "5%": -2.8628947034764844,
+            "10%": -2.5674911783095395
+          }
+        },
+        "half_means": [
+          -0.21753723502477346,
+          -0.30776418665228544
+        ],
+        "half_variances": [
+          0.010648149391180426,
+          0.014703284574848265
+        ],
+        "variance_ratio": 1.3808300423570876,
+        "calibration_terminal_residual": -0.3778356728732313,
+        "checks": {
+          "identified_beta": true,
+          "bounded_beta": true,
+          "valid_ou": true,
+          "intraday_half_life": false,
+          "conditional_adf": false,
+          "stable_half_means": false,
+          "stable_half_variances": true
+        },
+        "failed_checks": [
+          "intraday_half_life",
+          "conditional_adf",
+          "stable_half_means"
+        ]
+      }
+    },
+    "SOLUSDT": {
+      "eligible": false,
+      "alpha": -5.940213279612809e-05,
+      "beta_btc": 0.5409802879341772,
+      "beta_eth": 0.6671958643396566,
+      "origin_available_at": "2026-01-05 00:01:00+00:00",
+      "origin_price_time": "2026-01-05 00:00:00+00:00",
+      "origin_prices": {
+        "BTCUSDT": 91497.1,
+        "ETHUSDT": 3143.32,
+        "DOGEUSDT": 0.14944,
+        "PEPEUSDT": 0.0071717,
+        "SOLUSDT": 134.04,
+        "XRPUSDT": 2.0896,
+        "LINKUSDT": 13.415,
+        "ADAUSDT": 0.4004
+      },
+      "phi": 0.9926066572798213,
+      "mu": 0.06727621076579722,
+      "sigma": 0.030621756998056932,
+      "diagnostics": {
+        "beta_sample_count": 2206,
+        "calibration_sample_count": 2160,
+        "standardized_factor_condition": 3.779241242438483,
+        "beta_rank": 3,
+        "beta_last_available_at": "2026-01-04 23:01:00+00:00",
+        "calibration_first_available_at": "2026-01-05 00:01:00+00:00",
+        "calibration_last_available_at": "2026-04-04 23:01:00+00:00",
+        "ou": {
+          "valid": true,
+          "intercept": 0.0004973960831065123,
+          "phi": 0.9926066572798213,
+          "innovation_variance": 1.3814101001415512e-05,
+          "mu": 0.06727621076579722,
+          "sigma": 0.030621756998056932,
+          "half_life_hours": 93.405878811044
+        },
+        "adf": {
+          "statistic": -2.6219625042816737,
+          "pvalue": 0.08854248686904198,
+          "used_lag": 24,
+          "nobs": 2135,
+          "critical_values": {
+            "1%": -3.4334165947172752,
+            "5%": -2.8628947034764844,
+            "10%": -2.5674911783095395
+          }
+        },
+        "half_means": [
+          0.03713090487712253,
+          0.08878002778023375
+        ],
+        "half_variances": [
+          0.0004781333119926949,
+          0.0003085041091011943
+        ],
+        "variance_ratio": 0.645226135396121,
+        "calibration_terminal_residual": 0.06901349228629339,
+        "checks": {
+          "identified_beta": true,
+          "bounded_beta": true,
+          "valid_ou": true,
+          "intraday_half_life": false,
+          "conditional_adf": false,
+          "stable_half_means": true,
+          "stable_half_variances": true
+        },
+        "failed_checks": [
+          "intraday_half_life",
+          "conditional_adf"
+        ]
+      }
+    },
+    "XRPUSDT": {
+      "eligible": false,
+      "alpha": -2.1775760738144074e-06,
+      "beta_btc": 0.6080344768851026,
+      "beta_eth": 0.47080773721159236,
+      "origin_available_at": "2026-01-05 00:01:00+00:00",
+      "origin_price_time": "2026-01-05 00:00:00+00:00",
+      "origin_prices": {
+        "BTCUSDT": 91497.1,
+        "ETHUSDT": 3143.32,
+        "DOGEUSDT": 0.14944,
+        "PEPEUSDT": 0.0071717,
+        "SOLUSDT": 134.04,
+        "XRPUSDT": 2.0896,
+        "LINKUSDT": 13.415,
+        "ADAUSDT": 0.4004
+      },
+      "phi": 0.9926585367975903,
+      "mu": -0.026646153778318495,
+      "sigma": 0.03689502273878632,
+      "diagnostics": {
+        "beta_sample_count": 2206,
+        "calibration_sample_count": 2160,
+        "standardized_factor_condition": 3.779241242438483,
+        "beta_rank": 3,
+        "beta_last_available_at": "2026-01-04 23:01:00+00:00",
+        "calibration_first_available_at": "2026-01-05 00:01:00+00:00",
+        "calibration_last_available_at": "2026-04-04 23:01:00+00:00",
+        "ou": {
+          "valid": true,
+          "intercept": -0.00019562175744927522,
+          "phi": 0.9926585367975903,
+          "innovation_variance": 1.9913659416197916e-05,
+          "mu": -0.026646153778318495,
+          "sigma": 0.03689502273878632,
+          "half_life_hours": 94.06840020318698
+        },
+        "adf": {
+          "statistic": -2.82761698145269,
+          "pvalue": 0.05443587881611451,
+          "used_lag": 24,
+          "nobs": 2135,
+          "critical_values": {
+            "1%": -3.4334165947172752,
+            "5%": -2.8628947034764844,
+            "10%": -2.5674911783095395
+          }
+        },
+        "half_means": [
+          -0.014756425534530541,
+          -0.029193600528159287
+        ],
+        "half_variances": [
+          0.0016159344516348516,
+          0.0008597802445134538
+        ],
+        "variance_ratio": 0.532063812145108,
+        "calibration_terminal_residual": -0.07442365383815198,
+        "checks": {
+          "identified_beta": true,
+          "bounded_beta": true,
+          "valid_ou": true,
+          "intraday_half_life": false,
+          "conditional_adf": false,
+          "stable_half_means": true,
+          "stable_half_variances": true
+        },
+        "failed_checks": [
+          "intraday_half_life",
+          "conditional_adf"
+        ]
+      }
+    },
+    "LINKUSDT": {
+      "eligible": false,
+      "alpha": -2.686702978414595e-05,
+      "beta_btc": 0.6349566949820196,
+      "beta_eth": 0.7011978547627302,
+      "origin_available_at": "2026-01-05 00:01:00+00:00",
+      "origin_price_time": "2026-01-05 00:00:00+00:00",
+      "origin_prices": {
+        "BTCUSDT": 91497.1,
+        "ETHUSDT": 3143.32,
+        "DOGEUSDT": 0.14944,
+        "PEPEUSDT": 0.0071717,
+        "SOLUSDT": 134.04,
+        "XRPUSDT": 2.0896,
+        "LINKUSDT": 13.415,
+        "ADAUSDT": 0.4004
+      },
+      "phi": 0.9986640668067885,
+      "mu": 0.10513773002896194,
+      "sigma": 0.062022891172872636,
+      "diagnostics": {
+        "beta_sample_count": 2206,
+        "calibration_sample_count": 2160,
+        "standardized_factor_condition": 3.779241242438483,
+        "beta_rank": 3,
+        "beta_last_available_at": "2026-01-04 23:01:00+00:00",
+        "calibration_first_available_at": "2026-01-05 00:01:00+00:00",
+        "calibration_last_available_at": "2026-04-04 23:01:00+00:00",
+        "ou": {
+          "valid": true,
+          "intercept": 0.00014045698340459534,
+          "phi": 0.9986640668067885,
+          "innovation_variance": 1.0271374375823093e-05,
+          "mu": 0.10513773002896194,
+          "sigma": 0.062022891172872636,
+          "half_life_hours": 518.5020342023306
+        },
+        "adf": {
+          "statistic": -1.0825771686070267,
+          "pvalue": 0.7219696848353985,
+          "used_lag": 24,
+          "nobs": 2135,
+          "critical_values": {
+            "1%": -3.4334165947172752,
+            "5%": -2.8628947034764844,
+            "10%": -2.5674911783095395
+          }
+        },
+        "half_means": [
+          0.015074554021429131,
+          0.11639628014444671
+        ],
+        "half_variances": [
+          0.0028834218272181023,
+          0.000372297160725108
+        ],
+        "variance_ratio": 0.12911643978373316,
+        "calibration_terminal_residual": 0.11371138658087081,
+        "checks": {
+          "identified_beta": true,
+          "bounded_beta": true,
+          "valid_ou": true,
+          "intraday_half_life": false,
+          "conditional_adf": false,
+          "stable_half_means": false,
+          "stable_half_variances": false
+        },
+        "failed_checks": [
+          "intraday_half_life",
+          "conditional_adf",
+          "stable_half_means",
+          "stable_half_variances"
+        ]
+      }
+    },
+    "ADAUSDT": {
+      "eligible": false,
+      "alpha": -0.0001423770831160445,
+      "beta_btc": 0.7997519658885934,
+      "beta_eth": 0.5446694491057871,
+      "origin_available_at": "2026-01-05 00:01:00+00:00",
+      "origin_price_time": "2026-01-05 00:00:00+00:00",
+      "origin_prices": {
+        "BTCUSDT": 91497.1,
+        "ETHUSDT": 3143.32,
+        "DOGEUSDT": 0.14944,
+        "PEPEUSDT": 0.0071717,
+        "SOLUSDT": 134.04,
+        "XRPUSDT": 2.0896,
+        "LINKUSDT": 13.415,
+        "ADAUSDT": 0.4004
+      },
+      "phi": 0.9991156220526842,
+      "mu": 0.3340004869137257,
+      "sigma": 0.1090153309898131,
+      "diagnostics": {
+        "beta_sample_count": 2206,
+        "calibration_sample_count": 2160,
+        "standardized_factor_condition": 3.779241242438483,
+        "beta_rank": 3,
+        "beta_last_available_at": "2026-01-04 23:01:00+00:00",
+        "calibration_first_available_at": "2026-01-05 00:01:00+00:00",
+        "calibration_last_available_at": "2026-04-04 23:01:00+00:00",
+        "ou": {
+          "valid": true,
+          "intercept": 0.0002953826650192295,
+          "phi": 0.9991156220526842,
+          "innovation_variance": 2.101120562396791e-05,
+          "mu": 0.3340004869137257,
+          "sigma": 0.1090153309898131,
+          "half_life_hours": 783.4214268064894
+        },
+        "adf": {
+          "statistic": -0.9698944496894653,
+          "pvalue": 0.7640856649513982,
+          "used_lag": 24,
+          "nobs": 2135,
+          "critical_values": {
+            "1%": -3.4334165947172752,
+            "5%": -2.8628947034764844,
+            "10%": -2.5674911783095395
+          }
+        },
+        "half_means": [
+          0.07620623962305846,
+          0.27723579127301623
+        ],
+        "half_variances": [
+          0.010912791859443136,
+          0.0009885188799545852
+        ],
+        "variance_ratio": 0.09058349986756073,
+        "calibration_terminal_residual": 0.3004144088534597,
+        "checks": {
+          "identified_beta": true,
+          "bounded_beta": true,
+          "valid_ou": true,
+          "intraday_half_life": false,
+          "conditional_adf": false,
+          "stable_half_means": false,
+          "stable_half_variances": false
+        },
+        "failed_checks": [
+          "intraday_half_life",
+          "conditional_adf",
+          "stable_half_means",
+          "stable_half_variances"
+        ]
+      }
+    }
+  }
+}

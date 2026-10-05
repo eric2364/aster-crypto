@@ -1,6 +1,6 @@
 # Last-year minute strategy results
 
-> **Current corrected results: 0/24 historical hurdle passes.** All 1,000 derivative trials were rerun with proportional isolated reserve release and independently audited, with unchanged economic protocols and model sources. Actual liquidation fills across all derivative phases fell from 77 to 23: carry 35→23, signed 17→0, external 25→0. The eight spot outcomes are retained unchanged. Read the [complete original/corrected comparison](margin_correction_results/report.html), [audit provenance](margin_correction_results/publication_verification.json) and [reproduction workflow](../examples/research_review/README.md). The numerical tables below preserve the original engine's dated results; use the corrected comparison for current conclusions. These reused-year experiments do not establish freedom from overfitting.
+> **Current cumulative results: 0/25 historical hurdle passes.** The 25th fixed residual-convergence family failed admission for every target; all five actual runs stayed in cash. See its [audited results](residual_convergence_results/report.html) and [independent certificate](residual_execution_audit.md). The corrected earlier 24 candidates also had zero passes. All 1,000 derivative trials were rerun with proportional isolated reserve release and independently audited, with unchanged economic protocols and model sources. Actual liquidation fills across all derivative phases fell from 77 to 23: carry 35→23, signed 17→0, external 25→0. The eight spot outcomes are retained unchanged. Read the [complete original/corrected comparison](margin_correction_results/report.html), [audit provenance](margin_correction_results/publication_verification.json) and [reproduction workflow](../examples/research_review/README.md). The numerical tables below preserve the original engine's dated results; use the corrected comparison for current conclusions. These reused-year experiments do not establish freedom from overfitting.
 
 Actual source period: **5 October 2025–5 October 2026 UTC**, end exclusive. The final three months, **5 July–5 October 2026**, are the historical holdout. All trading, warmup and selection data is confined to this year.
 
@@ -115,3 +115,33 @@ Failed gates:
 The separate twenty-four-comparison conditional bootstrap retains source hashes and leaves earlier cohort diagnostics intact. It does not correct the full adaptive design process or uncertain historical execution. No confidence interval proves durable profitability.
 
 [External-factor report](external_factor_results/report.html) · [Data and reproduction](../examples/external_factors/README.md) · [Collector and signal audit](external_factor_audit.md) · [CPI source coverage](cpi_factor_sources.md)
+
+
+## Exploratory extension: fixed BTC/ETH residual convergence
+
+One additional economic family was frozen at Git commit `ae9fbd4` before any
+fit. October–January hourly returns estimate fixed factor betas; disjoint
+January–April residuals calibrate mean reversion. Three monthly validation
+accounts and baseline/stress final-quarter accounts use actual minute prices,
+independent marks and actual funding clocks. No parameter grid was searched.
+
+| Target | Residual half-life (hours) | Conditional ADF p-value | Admission |
+|---|---:|---:|---|
+| DOGE | 428.04 | 0.66619 | FAIL |
+| PEPE | 278.00 | 0.38463 | FAIL |
+| SOL | 93.41 | 0.08854 | FAIL |
+| XRP | 94.07 | 0.05444 | FAIL |
+| LINK | 518.50 | 0.72197 | FAIL |
+| ADA | 783.42 | 0.76409 | FAIL |
+
+Every target exceeded the fixed 1–24 hour half-life limit and failed the
+conditional p≤0.01 stationarity check. All five runs held $100,000 cash, with
+zero orders, fills, returns, fees, funding payments and liquidation fills.
+Zero drawdown and a zero-width cash return interval are not profitable evidence.
+Nine economic gates failed. The outcome rejects this fixed candidate; it does
+not establish that all relative-value strategies fail. This reused year remains
+exploratory and does not establish absence of overfitting.
+
+[Report and complete diagnostics](residual_convergence_results/report.html) ·
+[Reproduction](../examples/residual_convergence/README.md) ·
+[Independent audit](residual_execution_audit.md).

@@ -1,0 +1,9 @@
+symbol,instrument_id,net_pnl,fill_count,open_quantity,funding_cash
+BTCUSDT,binance:perpetual:BTCUSDT,0.0,0,0.0,0.0
+ETHUSDT,binance:perpetual:ETHUSDT,0.0,0,0.0,0.0
+DOGEUSDT,binance:perpetual:DOGEUSDT,0.0,0,0.0,0.0
+PEPEUSDT,binance:perpetual:1000PEPEUSDT,0.0,0,0.0,0.0
+SOLUSDT,binance:perpetual:SOLUSDT,0.0,0,0.0,0.0
+XRPUSDT,binance:perpetual:XRPUSDT,0.0,0,0.0,0.0
+LINKUSDT,binance:perpetual:LINKUSDT,0.0,0,0.0,0.0
+ADAUSDT,binance:perpetual:ADAUSDT,0.0,0,0.0,0.0

@@ -2,7 +2,13 @@
 
 One exploratory economic family, the 25th disclosed candidate on an already
 examined year. A successful historical case would not establish four independent
-edges or a fresh holdout. Zero admissible assets and zero trades are valid results.
+edges or a fresh holdout. The audited actual result is zero admissible assets and zero trades across all
+five runs. All six targets exceeded the fixed half-life limit and failed the
+conditional ADF check. This is a failed candidate, bringing the cumulative
+result to **0/25 historical hurdle passes**.
+
+[Results](../../docs/residual_convergence_results/report.html) ·
+[Independent certificate](../../docs/residual_execution_audit.md).
 
 The authoritative [prospective protocol](proposed_protocol.md) fits hourly return
 betas during October–January, then calibrates cumulative residual mean reversion
@@ -47,11 +53,15 @@ equity. These intervals cannot remove adaptive reuse of this year. Publication
 requires an independent financial/source/summary audit; this runner emits no
 unaudited public result or strategy recommendation.
 
-After the final independent audit supplies a complete, source-pinned receipt:
+Install `.[dev,research]` (or `uv sync --locked --extra dev --extra research`).
+After execution, independently reconstruct the models and cash-only trajectories,
+then publish against the complete source-pinned receipt:
 
 ```bash
+.venv/bin/python audit/verify_residual_outputs.py --final \
+  --receipt audit/residual_independent_audit.json
 .venv/bin/python examples/residual_convergence/publish.py \
-  --audit-receipt results/residual-convergence-1y-v1/independent_audit.json
+  --audit-receipt audit/residual_independent_audit.json
 ```
 
 This separate presentation helper verifies the model, summary and all 20 files
@@ -59,3 +69,7 @@ per trial against that receipt before producing a self-contained HTML report,
 comparison CSV and compact audited JSON. It never fits a model or runs Engine.
 Its display plots sample observations; all reported risk and interval calculations
 use the complete recorded ledgers.
+
+The cohort auditor deliberately requires the observed no-admission outcome; it
+does not certify unseen trading trajectories. Later documentation commits may
+replicate this cohort only when every executed source matches `ae9fbd4` exactly.

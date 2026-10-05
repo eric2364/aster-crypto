@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **357 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **367 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -138,7 +138,7 @@ ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Official trade/mark archives and actual
 funding are verified; raw datasets stay outside Git. The first thirteen policies
 did not pass all historical hurdles. Six subsequent long/short perpetual
 hypotheses and five external-factor hypotheses are explicitly exploratory because
-they reuse this evaluated year. The completed studies disclose **0/24 historical
+they reuse this evaluated year. The completed studies disclose **0/25 historical
 hurdle passes**. Every candidate, cost stress and failed gate is retained; no
 strategy is presented as proven non-overfit or as demonstrated one-minute scalping.
 
@@ -150,10 +150,12 @@ strategy is presented as proven non-overfit or as demonstrated one-minute scalpi
 [QQQ, inflation and X data requirements](docs/leading_factor_sources.md).
 
 A [fixed residual-convergence experiment](examples/residual_convergence/README.md)
-is being independently reviewed before historical fitting. It adds one family
-with actual shared BTC/ETH hedge legs, disjoint training blocks and deterministic
-no-trade/failed-leg policies. Its previously examined evaluation remains
-exploratory; no profitable result is claimed at this stage.
+was frozen at commit `ae9fbd4` before fitting, then independently audited. All six
+altcoins failed its fixed mean-reversion admission checks; all five actual runs
+stayed in cash with zero trades and zero returns. It adds one failed exploratory
+family, bringing the disclosed total to **0/25 historical hurdle passes**.
+[Audited residual results](docs/residual_convergence_results/report.html) ·
+[Independent certificate](docs/residual_execution_audit.md).
 
 ```bash
 .venv/bin/python examples/minute_research/download.py --workers 2

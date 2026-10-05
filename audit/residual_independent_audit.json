@@ -1,0 +1,225 @@
+{
+  "complete": true,
+  "errors": [],
+  "expected_trials": 5,
+  "completed_trials": 5,
+  "trials": {
+    "validation1": {
+      "outputs_sha256": {
+        "equity.csv": "222d19f79280b240bd1fba08d52af1d5d8fa31eef2c6ee21d150882208f14abb",
+        "equity.parquet": "84f73e209365130bb277b191b144b7bac7f885221fc1e2d93117cb90a8ab1345",
+        "fills.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "fills.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "trades.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "trades.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "funding.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "funding.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "events.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "events.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "positions.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "metadata.json": "eb79da79e4d896610e410f54546a3bff6ec95dbed25812644f0256256a59a6ba",
+        "metrics.json": "436f19f7bdd35c94fca9377b55a794a934593220eb74490ed557856d5c473600",
+        "source_manifest.json": "10fc6cdb8bc8d0a83d544b37c33d80622295a0d0ea5a14736dc47d840a93a0f8",
+        "quality.json": "c2670c35c8629dee2b3bc50fd2344304febde58330152067bee23f82cd062557",
+        "exposure.parquet": "903d3c63711825cf52569a077e1bf32927900aed88711ff3d06dc2f851f06274",
+        "exposure.csv": "03057c745fa47e3a19120f8e70d6085140fb2e6c957b5fbda7b415e525864559",
+        "leg_contributions.csv": "f0df5883d185a9ab2b629c5d284d8b08717a69aa80688aa303b44eaffe657007",
+        "strategy_diagnostics.json": "fac2ebcffc8995f77e83d3f87e4214fdf3cdb91559cbe170c69d22a5766d3234"
+      },
+      "equity_snapshots": 43250,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0
+    },
+    "validation2": {
+      "outputs_sha256": {
+        "equity.csv": "89d50b8da94d7be5ae5cccecb9a9ba18d56e6bf260b30840021487d03903de22",
+        "equity.parquet": "a149ff8c913830402385e33aa7a1adbc69a888b0862db14a5a87735729dbc69e",
+        "fills.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "fills.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "trades.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "trades.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "funding.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "funding.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "events.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "events.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "positions.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "metadata.json": "10e5d2fb8949d5e9db730f86f5540335b257e742a93dc5f46a9967d75798a2e5",
+        "metrics.json": "f89a783d7a0ed8014601354e8b821567268553aff4ce62c3206999744018cbf3",
+        "source_manifest.json": "10fc6cdb8bc8d0a83d544b37c33d80622295a0d0ea5a14736dc47d840a93a0f8",
+        "quality.json": "d614f7339143438f819418642ae3212d3e1e0e6c670a12e7063411306c91aaea",
+        "exposure.parquet": "d3281db0703cad4eeb6dd02981be84be47d3524064ba84a93c55fbf5b03a7e9c",
+        "exposure.csv": "94651b744b2ce97d703e0e4b7265b322f2146e3abc173ce72f8784e1cd46b9de",
+        "leg_contributions.csv": "f0df5883d185a9ab2b629c5d284d8b08717a69aa80688aa303b44eaffe657007",
+        "strategy_diagnostics.json": "fac2ebcffc8995f77e83d3f87e4214fdf3cdb91559cbe170c69d22a5766d3234"
+      },
+      "equity_snapshots": 44697,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0
+    },
+    "validation3": {
+      "outputs_sha256": {
+        "equity.csv": "3daf8f6e83761bc2ccbf96d25261ee4bea59207d4df2431d139d1727acaf8320",
+        "equity.parquet": "e48743c1398ed5a421a3d3f1355efda6253039b082484b0c0979f395228e684a",
+        "fills.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "fills.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "trades.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "trades.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "funding.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "funding.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "events.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "events.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "positions.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "metadata.json": "3f4e3f4a7ba202aa19cf18186f244f970d86a74148e962917accb127ba652d4c",
+        "metrics.json": "7160b347a9de98a764cc42b9130a69e78e56369e4ab1e25f77914dc6a0bc12c1",
+        "source_manifest.json": "10fc6cdb8bc8d0a83d544b37c33d80622295a0d0ea5a14736dc47d840a93a0f8",
+        "quality.json": "c2670c35c8629dee2b3bc50fd2344304febde58330152067bee23f82cd062557",
+        "exposure.parquet": "664d9015dfaaeba93620d105b96245b6d4febe6bee7a1bcd7304851c63228b4d",
+        "exposure.csv": "603de3385c74bdbf46fd189be15e560afb8dd6ab7d730ae357f4c669be7ea15f",
+        "leg_contributions.csv": "f0df5883d185a9ab2b629c5d284d8b08717a69aa80688aa303b44eaffe657007",
+        "strategy_diagnostics.json": "fac2ebcffc8995f77e83d3f87e4214fdf3cdb91559cbe170c69d22a5766d3234"
+      },
+      "equity_snapshots": 43244,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0
+    },
+    "evaluation": {
+      "outputs_sha256": {
+        "equity.csv": "31f7debae119f994b594fddb9b63021be51e156f3daf178998380cf633d640a1",
+        "equity.parquet": "a876d418eec8d5dfda583a2bd7818c894490a0ec5244b42c728807c5fe54be99",
+        "fills.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "fills.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "trades.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "trades.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "funding.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "funding.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "events.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "events.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "positions.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "metadata.json": "bba0b5414d40e644a2c10109b0767590dc235f2b2900680612b15d84f30523ad",
+        "metrics.json": "2ab43921f6b3159f8d6620540d0ce492a160c3ad196410a4fe31d7451f041580",
+        "source_manifest.json": "10fc6cdb8bc8d0a83d544b37c33d80622295a0d0ea5a14736dc47d840a93a0f8",
+        "quality.json": "73294d30c80728ec524456fd48b60d28fe2e54ea5294517cb3252b875118c1c8",
+        "exposure.parquet": "7f5a9abd6b7f1a71d9600aff98a495f5f8797729a61cb58be321daa3b3b7a3a7",
+        "exposure.csv": "7764f9fd11203af437b38cc6c7dd3e42dcfccc73fb90298e2ff5894758dde2bf",
+        "leg_contributions.csv": "f0df5883d185a9ab2b629c5d284d8b08717a69aa80688aa303b44eaffe657007",
+        "strategy_diagnostics.json": "fac2ebcffc8995f77e83d3f87e4214fdf3cdb91559cbe170c69d22a5766d3234"
+      },
+      "equity_snapshots": 132609,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0
+    },
+    "evaluation_stress": {
+      "outputs_sha256": {
+        "equity.csv": "31f7debae119f994b594fddb9b63021be51e156f3daf178998380cf633d640a1",
+        "equity.parquet": "a876d418eec8d5dfda583a2bd7818c894490a0ec5244b42c728807c5fe54be99",
+        "fills.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "fills.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "trades.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "trades.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "funding.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "funding.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "events.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "events.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "positions.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "positions.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "metadata.json": "a423ea54cb966d658578e6663912847e92c0cb3b64c0083c3aad286eb4aa6426",
+        "metrics.json": "28229d3888d38ff24e0153c95697d604f6b96666d01d7186ee62468a62170cce",
+        "source_manifest.json": "10fc6cdb8bc8d0a83d544b37c33d80622295a0d0ea5a14736dc47d840a93a0f8",
+        "quality.json": "73294d30c80728ec524456fd48b60d28fe2e54ea5294517cb3252b875118c1c8",
+        "exposure.parquet": "7f5a9abd6b7f1a71d9600aff98a495f5f8797729a61cb58be321daa3b3b7a3a7",
+        "exposure.csv": "7764f9fd11203af437b38cc6c7dd3e42dcfccc73fb90298e2ff5894758dde2bf",
+        "leg_contributions.csv": "f0df5883d185a9ab2b629c5d284d8b08717a69aa80688aa303b44eaffe657007",
+        "strategy_diagnostics.json": "fac2ebcffc8995f77e83d3f87e4214fdf3cdb91559cbe170c69d22a5766d3234"
+      },
+      "equity_snapshots": 132609,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0
+    }
+  },
+  "source_lock_sha256": "91047c372be6d0970c68e8decf88fc649c2fd21e4d5f9a17fa56a309eca7b1f3",
+  "models_sha256": "a268562d6cc86de4fb4c84c2962f136bed3fbafa00ab394b96f35cbeba6647f0",
+  "preregistration_commit": "ae9fbd4ca48fac2b56c9c3ad0bdffc76fbf8ea44",
+  "executed_sources_match_preregistration": true,
+  "source_files_checked": 34,
+  "input_files_checked": 307,
+  "training_model_reconstruction_passed": true,
+  "eligible_assets": [],
+  "asset_diagnostics": {
+    "DOGEUSDT": {
+      "half_life_hours": 428.0414211120576,
+      "adf_pvalue": 0.6661910224745431,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_variances"
+      ]
+    },
+    "PEPEUSDT": {
+      "half_life_hours": 278.00020906019506,
+      "adf_pvalue": 0.3846276161945412,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_means"
+      ]
+    },
+    "SOLUSDT": {
+      "half_life_hours": 93.405878811044,
+      "adf_pvalue": 0.08854248686904198,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf"
+      ]
+    },
+    "XRPUSDT": {
+      "half_life_hours": 94.06840020318698,
+      "adf_pvalue": 0.05443587881611451,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf"
+      ]
+    },
+    "LINKUSDT": {
+      "half_life_hours": 518.5020342023306,
+      "adf_pvalue": 0.7219696848353985,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_means",
+        "stable_half_variances"
+      ]
+    },
+    "ADAUSDT": {
+      "half_life_hours": 783.4214268064894,
+      "adf_pvalue": 0.7640856649513982,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_means",
+        "stable_half_variances"
+      ]
+    }
+  },
+  "limitations": "One fixed no-admissible exploratory family; no trading evidence or new successful strategy.",
+  "auditor_sha256": "00032c8312a9704aa3c685ea2eb7a3351eb770f30cf4027a586f9c48cca45faf",
+  "summary_sha256": "bf14342c459272b6c7dc4b31bca1c295824f412c32ab8f22e993d150e8816e94",
+  "trajectory_reconstruction_passed": true,
+  "summary_reconstruction_passed": true,
+  "independent_gates_reconstruction_passed": true,
+  "passes_hurdles": false,
+  "zero_width_interval_is_cash_only": true
+}

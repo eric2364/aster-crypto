@@ -372,7 +372,13 @@ actual eight-instrument account. Return betas use the first three months and
 residual calibration uses the next three; minute trading begins only after
 calibration. Models stay frozen, pending hedge targets do not imply atomic fills,
 and failed admission leaves cash. This is exploratory on the already examined
-year and supplies no current profitability claim.
+year. The protocol was committed at `ae9fbd4` before fitting. All six altcoins
+failed its fixed admission rules: residual half-lives were 93–783 hours, above
+the declared 1–24 hours, and all conditional ADF p-values exceeded 0.01.
+All five actual simulations stayed in cash: zero trades and zero returns.
+The cumulative research result is **0/25 historical hurdle passes**.
+Read the [audited report](residual_convergence_results/report.html) and
+[independent certificate](residual_execution_audit.md).
 
 Install the pinned statistical research extra with `uv sync --locked --extra dev --extra research`, or install `.[dev,research]` using pip. Read the
 [example guide](../examples/residual_convergence/README.md) for source freezing,

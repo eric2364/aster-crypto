@@ -1,0 +1,122 @@
+{
+  "complete": true,
+  "errors": [],
+  "expected_trials": 5,
+  "completed_trials": 5,
+  "source_lock_sha256": "91047c372be6d0970c68e8decf88fc649c2fd21e4d5f9a17fa56a309eca7b1f3",
+  "models_sha256": "a268562d6cc86de4fb4c84c2962f136bed3fbafa00ab394b96f35cbeba6647f0",
+  "preregistration_commit": "ae9fbd4ca48fac2b56c9c3ad0bdffc76fbf8ea44",
+  "executed_sources_match_preregistration": true,
+  "source_files_checked": 34,
+  "input_files_checked": 307,
+  "training_model_reconstruction_passed": true,
+  "eligible_assets": [],
+  "asset_diagnostics": {
+    "DOGEUSDT": {
+      "half_life_hours": 428.0414211120576,
+      "adf_pvalue": 0.6661910224745431,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_variances"
+      ]
+    },
+    "PEPEUSDT": {
+      "half_life_hours": 278.00020906019506,
+      "adf_pvalue": 0.3846276161945412,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_means"
+      ]
+    },
+    "SOLUSDT": {
+      "half_life_hours": 93.405878811044,
+      "adf_pvalue": 0.08854248686904198,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf"
+      ]
+    },
+    "XRPUSDT": {
+      "half_life_hours": 94.06840020318698,
+      "adf_pvalue": 0.05443587881611451,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf"
+      ]
+    },
+    "LINKUSDT": {
+      "half_life_hours": 518.5020342023306,
+      "adf_pvalue": 0.7219696848353985,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_means",
+        "stable_half_variances"
+      ]
+    },
+    "ADAUSDT": {
+      "half_life_hours": 783.4214268064894,
+      "adf_pvalue": 0.7640856649513982,
+      "failed_checks": [
+        "intraday_half_life",
+        "conditional_adf",
+        "stable_half_means",
+        "stable_half_variances"
+      ]
+    }
+  },
+  "limitations": "One fixed no-admissible exploratory family; no trading evidence or new successful strategy.",
+  "auditor_sha256": "00032c8312a9704aa3c685ea2eb7a3351eb770f30cf4027a586f9c48cca45faf",
+  "summary_sha256": "bf14342c459272b6c7dc4b31bca1c295824f412c32ab8f22e993d150e8816e94",
+  "trajectory_reconstruction_passed": true,
+  "summary_reconstruction_passed": true,
+  "independent_gates_reconstruction_passed": true,
+  "passes_hurdles": false,
+  "zero_width_interval_is_cash_only": true,
+  "receipt_sha256": "97de722ed4141be0d7290fb4c89a357c6529e06af46b0f811da716c37a1c1b66",
+  "sealed_export_files": 100,
+  "trials": {
+    "validation1": {
+      "equity_snapshots": 43250,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0,
+      "output_manifest_sha256": "ac3d53a82048096ab00a24a1f63029a7d626b199cd3f25880c4ab2e0c3d418da"
+    },
+    "validation2": {
+      "equity_snapshots": 44697,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0,
+      "output_manifest_sha256": "ef79df5f7506651615b3207f7ce4704da271938e9653adc6cfce3a7aa7865b8b"
+    },
+    "validation3": {
+      "equity_snapshots": 43244,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0,
+      "output_manifest_sha256": "0cee9c79a892fb9cf8970bcdcaa9478644afc98374842b29bc9bb30378e7a58d"
+    },
+    "evaluation": {
+      "equity_snapshots": 132609,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0,
+      "output_manifest_sha256": "64f652c2755b52a6078453f748fd04edfcdb60f63a8605ac9ec77067679c722d"
+    },
+    "evaluation_stress": {
+      "equity_snapshots": 132609,
+      "fills": 0,
+      "funding_payments": 0,
+      "terminal_positions": 0,
+      "liquidations": 0,
+      "output_manifest_sha256": "a389330b81dc23a921118398f9fcbc9a44dbb33bea9e9b7f1dd722bc9aa08bd5"
+    }
+  }
+}

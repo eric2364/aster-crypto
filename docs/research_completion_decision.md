@@ -1,5 +1,7 @@
 # Decision after the original twenty-four policies
 
+**Current research:** the subsequently preregistered residual-convergence family also failed: all six assets were inadmissible and five real-data simulations stayed in cash. The cumulative result is **0/25 historical hurdle passes**. [Audited residual results](residual_convergence_results/report.html).
+
 **Correction completed:** all 1,000 unchanged derivative trials passed independent ledger and source audits. The [current comparison](margin_correction_results/report.html) still has 0/24 historical hurdle passes, with actual liquidation fills reduced from 77 to 23. The decision below records the pre-rerun assessment and conditional replay; its original performance figures remain dated evidence. The requested four or five robust successes remain unestablished.
 
 **Correct the residual-margin model and rerun identical derivative hypotheses before adding candidates. The requested four or five robust successes have not been established.** The published original summaries contain zero passes, but the sixteen derivative policy labels are now provisional because a declared collateral-allocation convention affects their paths and liquidation gates. The eight spot policies are unaffected by this partial-derivative-reserve correction.

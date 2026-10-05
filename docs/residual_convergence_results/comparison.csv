@@ -1,0 +1,6 @@
+phase,total_return,return_after_indicative_exit_reserve,sharpe,max_drawdown,trade_count,fill_count,liquidation_event_count,open_position_count,trading_fees,funding_pnl,indicative_exit_reserve_total,runtime_seconds
+validation1,0.0,0.0,,-0.0,0,0,0,0,0.0,0.0,0,9.199624863977078
+validation2,0.0,0.0,,-0.0,0,0,0,0,0.0,0.0,0,9.629310113028623
+validation3,0.0,0.0,,-0.0,0,0,0,0,0.0,0.0,0,9.179148474999238
+evaluation,0.0,0.0,,-0.0,0,0,0,0,0.0,0.0,0,28.10885897098342
+evaluation_stress,0.0,0.0,,-0.0,0,0,0,0,0.0,0.0,0,28.78583427402191

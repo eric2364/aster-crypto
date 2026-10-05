@@ -1,0 +1,16 @@
+{
+  "publisher_sha256": "dcb6e0e01067a6cf863f04a9ec221ba339419221c9d6979a371bd7d7e3acfd40",
+  "independent_audit_receipt_sha256": "97de722ed4141be0d7290fb4c89a357c6529e06af46b0f811da716c37a1c1b66",
+  "outputs_sha256": {
+    "README.md": "ef9a5767508595e1b6a6246a1d06390612cdb44f6d41156d8b6726b73f8676ca",
+    "comparison.csv": "9ce7745feb9d966699a5b1150f7fbad94f56021a61b3952db80d9ad5cc8df271",
+    "leg_contributions.csv": "f0df5883d185a9ab2b629c5d284d8b08717a69aa80688aa303b44eaffe657007",
+    "models.json": "a268562d6cc86de4fb4c84c2962f136bed3fbafa00ab394b96f35cbeba6647f0",
+    "proposed_protocol.md": "fd9c0d7ec98082f486ba8660ccf176a42a219a009202d03db784d2aec7ec4ff6",
+    "publication_verification.json": "97de722ed4141be0d7290fb4c89a357c6529e06af46b0f811da716c37a1c1b66",
+    "report.html": "c72bdf5aa418a231f307ce6add50936828c248a9909acf630b0ac14270bba1c9",
+    "source_lock.json": "91047c372be6d0970c68e8decf88fc649c2fd21e4d5f9a17fa56a309eca7b1f3",
+    "summary.json": "09b4cda51c2d695c8a30e0efc0a521674d393f83138ff00085af6217fc1b348e",
+    "training_diagnostics.csv": "d1d62b4e7e63f30560930c432eb15a47f17b3a761db093ba7011c3a6575e87d6"
+  }
+}
