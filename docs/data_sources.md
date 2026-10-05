@@ -160,3 +160,14 @@ not silently replace venue-specific executable prices, marks or funding.
 The execution limitations in `execution_model.md` still apply after data quality
 passes. Higher-resolution data enables a future matching model; it does not
 automatically make an OHLC backtest an HFT execution simulator.
+
+
+## Bounded second-venue verification
+
+The [cross-venue feasibility review](cross_venue_data_feasibility.md) preserves
+56 small public Bybit responses for the same eight perpetual assets, including
+native 1000PEPE. Trade and mark minute candles and actual funding histories
+were available at both ends of the fixed year. These boundary probes do not
+verify full-year completeness. The review describes request volume, native
+quantity grids, exact settlement-mark limitations and historical-quote gaps.
+It is a source assessment, not another completed backtest or winning strategy.

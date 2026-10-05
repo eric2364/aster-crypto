@@ -85,3 +85,38 @@ and [independent audit](external_factor_audit.md). QQQ daily risk transmission,
 CPI acceleration, funding crowding, trade/spot premium and taker-flow drift are
 candidate mechanisms; the papers motivate testing them and do not establish
 these exact rules as profitable on DOGE, PEPE or this historical year.
+
+
+## Subsequent factor-residual experiment
+
+[Avellaneda and Lee's original statistical-arbitrage paper](https://math.nyu.edu/inmemoriam/avellaneda/AvellanedaLeeStatArb20090616.pdf)
+motivates testing mean reversion of factor-adjusted price residuals. Its equity
+setting does not establish a crypto edge. Our separate fixed BTC/ETH experiment
+used disjoint return-beta and residual-calibration blocks, actual shared hedge
+legs and conditional stationarity checks. The protocol was committed before
+fitting this candidate, although the year had already been examined.
+
+All six targets failed its fixed admission rules. Five actual historical runs
+therefore produced no trades or returns. See the [full diagnostics and audit](residual_convergence_results/README.md).
+The cumulative result remains **0/25 historical hurdle passes**; neither a paper
+nor observed correlation supplies proof of a tradeable leading factor.
+
+
+## Next mechanism under feasibility review: cross-venue funding
+
+[BIS Working Paper 1087, Crypto carry](https://www.bis.org/publications/working-paper-1087-crypto-carry)
+connects large carry with investor demand and limited arbitrage capital, while
+explicitly describing margin and liquidation risks.
+[Fundamentals of Perpetual Futures](https://arxiv.org/abs/2212.06888) derives
+pricing bounds with trading costs; its current version was revised during this
+research year. Neither paper proves that our proposed Binance/Bybit rule works.
+This would be retrospective hypothesis development, not a pre-year strategy.
+
+A possible next test would hold opposite native perpetual exposures in separate
+exchange wallets, using only previously settled funding as a predictor.
+[Bybit's funding-history API](https://bybit-exchange.github.io/docs/v5/market/history-fund-rate)
+provides settled rates and timestamps, but does not supply historical receipt
+time or exact settlement mark in that response. Full-year coverage, historical
+schedule changes and valuation assumptions require verification before a
+backtest can be represented as faithful. This is feasibility work, not a tested
+26th candidate, successful example or executable quote-arbitrage result.
