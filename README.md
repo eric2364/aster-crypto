@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **1,024 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **1,210 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -244,3 +244,19 @@ All eight assets, including DOGE and PEPE, completed baseline participation.
 The positive baseline is not a qualified winner; cumulative research is
 **0/27 historical hurdle passes** on the same reused year.
 [Audited results](docs/funding_rank_results/report.html).
+
+
+### Next open-interest mechanism: source preparation
+
+The [positioning example](examples/positioning_research/README.md) now implements
+delayed native quantity-OI features and a long/cash rebound coordinator with
+minute execution and one active asset in a common wallet. Independent synthetic
+reviews check source timing, partial fills, native DOGE/1000PEPE quantities,
+order ownership, cooldowns and actual completion. Its separate runner requires
+published source/input locks and an independent historical feature certificate
+before simulation. [Primary scholarly evidence](docs/positioning_economic_research.md)
+explains both the mechanism and its competing continuation risks.
+
+No historical feature or study outcome has been generated. This unexecuted
+candidate adds no success: current cumulative evidence remains **0/27**.
+Historical delivery, archive vintage and OI unit definitions remain unverified.

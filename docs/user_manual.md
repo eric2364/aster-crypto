@@ -495,3 +495,22 @@ The completed [audited report](funding_rank_results/report.html) failed four of
 All eight assets completed baseline participation and all five endpoints were
 truly flat. The positive baseline is not a qualified robust strategy;
 cumulative research is0/27. [Audit scope and interpretation](funding_rank_output_audit.md).
+
+
+## Open-interest research source preparation
+
+The [new positioning example](../examples/positioning_research/README.md) combines
+reported native quantity-OI contraction, completed price decline/rebound and a
+nonnegative recent OI poll. It uses minute execution, five-minute source updates
+and one active asset in a common wallet; it does not identify forced liquidation.
+[Primary research](positioning_economic_research.md) and the
+[causal contract](positioning_feature_contract_review.md) explain the model.
+
+This example is **unexecuted source preparation**, so it adds no historical
+success and leaves the current result at **0/27**. Synthetic tests cover timing,
+native units and actual Engine order mechanics. The runner requires committed
+sources, published exact input locks and separate independent historical feature
+certification before actual simulation. Original delivery times and archive
+vintage remain unverified; the explicit 6/11-minute availability assumptions
+cannot establish a historical point-in-time feed. Full reconstruction and
+financial/policy verification are still required before reporting results.

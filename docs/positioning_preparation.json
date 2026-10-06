@@ -1,0 +1,41 @@
+{
+  "scope": "Synthetic source preparation, no historical study result",
+  "historical_tested_family_count": 27,
+  "qualified_historical_strategy_count": 0,
+  "proposed_candidate": 28,
+  "historical_features_generated_by_preparation": false,
+  "historical_outcomes_generated_by_preparation": false,
+  "source_hashes": {
+    "examples/positioning_research/signals.py": "9ad4502e81141c2752d5ceb937e735aa740f9e6ddb3bfcc6b5131e6359b69078",
+    "examples/positioning_research/strategy.py": "9b0426cde18dd621873831d74dcc2de52195b6ec194441ce810ed12ec7f208f1",
+    "examples/positioning_research/run.py": "2f78f2a1ec54534693e1260a7b4d80d64a9bfac2a2cd373fff78b412296d738b",
+    "examples/positioning_research/proposed_protocol.md": "3ad632e82ef9c9d5d123edb20b3600b87031e7a8dc6f98da8fa7de8c0c1da76b",
+    "examples/funding_rank/strategy.py": "64cce7c8c7ca4275acb420690eeb51e00455161f8694963d13e86ca857e2ce7f"
+  },
+  "tests": {
+    "full_suite_passed": 1210,
+    "full_suite_seconds": 64.92,
+    "new_affected_cases_passed": 186,
+    "feature_cases": 42,
+    "coordinator_cases": 54,
+    "runner_cases": 90,
+    "independent_cases": {
+      "feature": 24,
+      "coordinator": 24,
+      "runner": 26
+    }
+  },
+  "remaining_prerequisites": [
+    "Implement and independently review complete historical feature reconstruction",
+    "Freeze and privately publish exact reviewed source/input packet before features",
+    "Construct and independently certify both fixed-delay historical feature packets",
+    "Execute five fixed financial trajectories",
+    "Independently reconstruct financial, recorded-policy and summary evidence",
+    "Publish a fresh audited result"
+  ],
+  "limitations": [
+    "Historical archive delivery/content clocks and unit definitions unverified",
+    "Current vendor vintage is not verified original point-in-time delivery",
+    "Year reused after 27 unsuccessful candidates; no untouched validation or no-overfitting proof"
+  ]
+}

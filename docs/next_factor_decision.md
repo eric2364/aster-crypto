@@ -107,3 +107,42 @@ preceding checkpoint. [Results and audit](funding_rank_output_audit.md) ·
 No coefficients, thresholds or costs were retuned after this outcome. The new
 positioning archive remains an unused candidate input. The next mechanism needs
 its own fixed hypothesis and causal availability review before outcome testing.
+
+
+## Next distinct source preparation — 6 October 2026
+
+The unused OI archive now has a pure, independently tested minute-feature
+implementation in [positioning research](../examples/positioning_research/README.md).
+Forty-two synthetic cases check strict assumed availability, source identity,
+finite arithmetic, exact coverage, unit scaling and future/prefix invariance.
+No historical feature, event count or trading outcome was computed.
+
+One [draft mechanism](../examples/positioning_research/proposed_protocol.md)
+uses a completed price decline with native quantity-OI contraction, followed
+by price rebound and a nonnegative OI poll. Five primary papers and independent
+[causal](positioning_feature_contract_review.md) and
+[execution](positioning_execution_assessment.md) reviews document competing
+continuation mechanisms and data limits. This is a position-unwind proxy, not
+identified liquidation. Candidate 28 remains unexecuted; **0/27** stays current.
+
+The next evidence required is execution source review, a complete frozen runner
+and input/source packet, independent historical feature reconstruction, then
+five fixed financial trajectories and independent ledger/policy verification.
+Historical receipts, archive vintage and unit semantics remain unverified, so
+any subsequent result is conditional exploratory evidence on a reused year.
+
+
+The coordinator and runner source reviews have now passed as well: 54
+coordinator cases and 90 runner cases, in addition to the 42 feature cases.
+An independent adversary reproduced an already-filled foreign-order gap; the
+coordinator now latches those events and verifies the held target vector. A
+second adversary reproduced publication-receipt mutation during execution; the
+runner now pins all common receipt bytes and phase packets across execution and
+summary reads. Both repairs passed the reproduced cases. No economic threshold,
+cost assumption, earlier study or historical input changed.
+
+The next unfinished prerequisite is the separate full historical feature auditor
+and its source review, followed by the privately published exact source/input
+lock and controlled feature construction. Only that complete independent
+certificate can admit the five fixed Engine trajectories. Source preparation
+has not incremented the historical tested-family count.
