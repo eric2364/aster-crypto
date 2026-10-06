@@ -1,6 +1,6 @@
 # Decision after the original twenty-four policies
 
-**Current research:** the subsequently preregistered residual-convergence family also failed: all six assets were inadmissible and five real-data simulations stayed in cash. The cumulative result is **0/25 historical hurdle passes**. [Audited residual results](residual_convergence_results/report.html).
+**Current research:** the residual-convergence and subsequently frozen cross-venue funding families both failed. The latter's seven real-data simulations stayed in cash, and independent checks found zero qualifying entries across 78,720 pair decisions. The cumulative result is **0/26 historical hurdle passes**. [Audited residual results](residual_convergence_results/report.html) · [Audited cross-venue results](cross_venue_results/report.html). The requested four or five robust successes remain unestablished; no cost gates or economic definitions were relaxed to meet a count.
 
 **Correction completed:** all 1,000 unchanged derivative trials passed independent ledger and source audits. The [current comparison](margin_correction_results/report.html) still has 0/24 historical hurdle passes, with actual liquidation fills reduced from 77 to 23. The decision below records the pre-rerun assessment and conditional replay; its original performance figures remain dated evidence. The requested four or five robust successes remain unestablished.
 

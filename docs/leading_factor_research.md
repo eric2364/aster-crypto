@@ -120,3 +120,46 @@ time or exact settlement mark in that response. Full-year coverage, historical
 schedule changes and valuation assumptions require verification before a
 backtest can be represented as faithful. This is feasibility work, not a tested
 26th candidate, successful example or executable quote-arbitrage result.
+
+
+## Counter-evidence checked during frozen cross-venue execution
+
+The following additional primary-source abstracts were checked on 6 October
+2026 after cross-venue source/input freezing and before inspecting that
+candidate's outcomes. They do not amend its economic rules.
+
+[Jia, Wu, Yan and Liu, *A seesaw effect in the cryptocurrency market*](https://www.sciencedirect.com/science/article/pii/S0927539823000956)
+(Journal of Empirical Finance, December 2023) reports negative intraday
+cross-prediction from larger to other coins, using LASSO. Only the publisher's
+abstract/highlights were accessible; the full method was not reviewed. This
+provides counter-evidence to a universal same-direction BTC-leading rule, not
+proof that a reverse DOGE/PEPE strategy works at our execution latency/costs.
+
+[Benigno and Rosa, *The Bitcoin–Macro Disconnect*](https://www.newyorkfed.org/research/staff_reports/sr1052.html)
+(New York Fed Staff Report 1052, February 2023) reports little Bitcoin response
+to monetary and macro news in its intraday study. That differs from
+[Pinchuk's inflation-surprise manuscript](https://arxiv.org/abs/2301.10117),
+which reports a negative inflation-surprise response. Both statements here are
+abstract-level findings. Their differing results justify testing precise event
+surprises, samples and data availability rather than treating inflation levels
+or QQQ correlation as a fixed profitable signal. The existing CPI experiment
+uses original releases without contemporaneous consensus, and consequently is
+not an inflation-surprise replication.
+
+No new cross-prediction model, sign flip, lag search or macro threshold was
+selected from these sources. Historical X sentiment still requires a verified
+point-in-time archive; present-day search cannot reconstruct an unbiased past
+year of first-observed posts or engagement counts.
+
+
+## Completed cross-venue experiment
+
+The subsequent one-family packet was frozen at `98fe45a`, with verified inputs
+recorded and uploaded at `1820b82` before its historical features and outcomes.
+All seven actual runs stayed in cash. Separate independent source, causal-feature,
+financial/gate and cohort-specific entry checks passed; every tested entry was
+below the fixed cost filter. The best predicted carry covered 25.3% of modeled
+stress roundtrip costs, while the packet required 150%. This rejects this fixed
+slow-carry hypothesis under its stated model; it does not establish that all
+funding or cross-venue strategies fail. The cumulative result is **0/26**.
+[Full report and limits](cross_venue_results/report.html).

@@ -8,7 +8,7 @@ Both spot and perpetual datasets contain **8,760 one-hour bars**, with no duplic
 
 The monthly mark archive omitted 24 observations for 29 June 2026. The ingestion process recovered the exact recorded observations from the official daily mark archive, verified its checksum, selected only missing timestamps and rechecked full coverage. No prices were interpolated. This repair is recorded explicitly in the perpetual manifest.
 
-Fixed demonstration parameters were chosen for API illustration rather than optimized against this year: hourly MA fast 24/slow 168, spot allocation50%, perpetual allocation10% with 3× isolated leverage. The funding strategy follows the last published settlement sign for subsequent exposure. Initial capital is 100,000 USDT. All examples use illustrative flat maker 2 bps/taker 5 bps, adverse 2 bps slippage, 10% participation, tick 0.01 and lot 0.001. These historical prices do not validate historical fee tiers or exact venue risk mechanics.
+Fixed demonstration parameters were chosen for API illustration rather than optimized against this year: hourly MA fast 24/slow 168, spot allocation50%, perpetual allocation10% with 3× isolated leverage. The funding strategy follows the prior settled rate sign for subsequent exposure. Availability at the settlement callback is an illustrative assumption; the archive does not supply original historical receipt times. Initial capital is 100,000 USDT. All examples use illustrative flat maker 2 bps/taker 5 bps, adverse 2 bps slippage, 10% participation, tick 0.01 and lot 0.001. These historical prices do not validate historical fee tiers or exact venue risk mechanics.
 
 | Example | Net return | Net P&L (USDT) | Funding P&L | Trading fees | Max drawdown |
 |---|---:|---:|---:|---:|---:|
@@ -32,3 +32,28 @@ Trading P&L includes execution slippage. Diagnostic slippage is shown in the sav
 Local dashboards are results/real-btc-1y/dashboard.html, results/real-btc-perpetual-1y/dashboard.html and results/real-btc-funding-1y/dashboard.html. Downloaded archives and full ledgers are ignored in Git; compact manifests and summary metrics are versioned here. Binance can revise archive data later, so source checksums identify this exact snapshot.
 
 The candle model cannot observe true queue priority or intrabar mark liquidation. A positive example result is not evidence of a deployable strategy. No parameter search or profit-based cherry-picking was used for this demonstration.
+
+
+## Current-engine verification
+
+All three fixed examples were rerun in fresh folders on 6 October 2026 after
+the margin correction. Their total returns are unchanged from the table above.
+Export reconciliation passed, the datasets reported no quality warnings, and
+all current core source hashes match the reviewed source at `98fe45a`. Original
+results remain preserved. [Compact current metrics and sealed output receipt](real_demo_current/rerun_receipt.json)
+record 2,241 spot fills, 5,369 perpetual-MA fills and 985 funding-example fills;
+the latter two recorded 1,074 and 1,094 actual nonzero-position funding events.
+These are cash-payment counts, distinct from 1,095 source settlement records.
+
+```sh
+.venv/bin/python main.py backtest --config config/real-btc-1y.yaml --out results/real-demo-current-v1/spot
+.venv/bin/python main.py backtest --config config/real-btc-perpetual-1y.yaml --out results/real-demo-current-v1/perpetual
+.venv/bin/python main.py backtest --config config/real-btc-funding-1y.yaml --out results/real-demo-current-v1/funding
+```
+
+The refreshed dashboards are [spot](../results/real-demo-current-v1/spot/dashboard.html),
+[perpetual MA](../results/real-demo-current-v1/perpetual/dashboard.html) and
+[funding](../results/real-demo-current-v1/funding/dashboard.html) in the local
+workspace. Full result folders stay outside Git. The positive funding-demo
+return has not passed the multiasset validation/stress hurdles and does not
+establish one of the requested four or five robust strategies.

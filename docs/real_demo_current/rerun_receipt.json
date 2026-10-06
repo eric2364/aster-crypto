@@ -1,0 +1,103 @@
+{
+  "examples": {
+    "funding": {
+      "current_core_matches_cross_venue_source_lock": true,
+      "fill_count": 985,
+      "final_equity": 105137.97034557717,
+      "funding_cash_events": 1094,
+      "original_config": "config/real-btc-funding-1y.yaml",
+      "output_files_sha256": {
+        "benchmark.csv": "d371ccdf189f8ce3f337170b136e442161fc5c32171de8858b026f60c7a1103a",
+        "config.yaml": "a40612c5e69367f1adceef69c06064e53b086754db0d3fa1065c0aaecdbbb764",
+        "dashboard.html": "36143413347763caf1c49fd026d3394f7d2f82833ee6e4b811f2ee35da9c22d7",
+        "equity.csv": "bb723b03c74624ed15cd71e161449091f32007a4dcc7525b0f2e4ed0bc3b468b",
+        "equity.parquet": "f715a9cd6284dacbc11262ae685ddf824df3ccff8a2389597deae1e88aee1be3",
+        "events.csv": "d5070dc3952650a3f7b5a4a9d5aa28ba69abc5cd7cb33e263f502907ce051044",
+        "events.parquet": "40c4500cfcc0b8fc7bf05a92f4bfb2688d87c4cc6a8259d783f8988c7129353b",
+        "fills.csv": "9f932780109e42b39bb2b5cf6e29948314d07bb6f994d5e8993914be80e56db2",
+        "fills.parquet": "2b392d9a33d31feac6d0c301bd500cff4407a8d15f5a71084299c76fd8ecf702",
+        "funding.csv": "c866714f0aa3af638f2ef055b6801d825652fbcf369cdad9843938f9ceed17d3",
+        "funding.parquet": "2701aa28b61203d31b8b6c3c13d384739fdfacee05d2df9e51223db8ded3c92c",
+        "metadata.json": "26bee665514293e2442f7fe29536da860d82736ffb7db3c39d3673d10ecd365f",
+        "metrics.json": "05f05fc0a7127853db188916bfc83dc03f1e95eb209866233a0675f4cf017895",
+        "positions.csv": "4d6580e3a307ec9281332034340eb960a7d325bbec319c5f1037af333ed976ac",
+        "positions.parquet": "2202405a9b10c8a19fa464041577b4cd2da34910e905f5328db46e087be2fe1a",
+        "quality.json": "d0d914ebcaa47679efb43ce25ad03700a47c711aa0d9064f1e48b34b8edfa5a3",
+        "source_manifest.json": "232684e529cc808ed09898fa4706e973fbee3b1f103850523fe93ebe18287f8b",
+        "trades.csv": "2a6a76e36b02b7bf8d619de252e8ba65544b2b030a7c3f166fb75f3f02e1ffe4",
+        "trades.parquet": "613f49009afc809f1a036c501e3b16625103380764c6645041dc7a23c601af19"
+      },
+      "same_return_as_original_demo": true,
+      "total_return": 0.0513797034557717
+    },
+    "perpetual": {
+      "current_core_matches_cross_venue_source_lock": true,
+      "fill_count": 5369,
+      "final_equity": 88535.97626242437,
+      "funding_cash_events": 1074,
+      "original_config": "config/real-btc-perpetual-1y.yaml",
+      "output_files_sha256": {
+        "benchmark.csv": "d371ccdf189f8ce3f337170b136e442161fc5c32171de8858b026f60c7a1103a",
+        "config.yaml": "5e1644b14ca562b4c572426902e49496472cb4d24385076ed1cb1936b5df2fb2",
+        "dashboard.html": "b8a42ce45f72312b090d6beea0d51bde7743d9692faf1960186588a047d54dac",
+        "equity.csv": "1a3961d54b9104bdd1446886f2aeaa3aa1723c529682e96ec86434e19d096137",
+        "equity.parquet": "2f669d43437640b2cad5c7d42ca171fc462ec1da0bda68a430c982dd9157a5f9",
+        "events.csv": "98b7308729617117ba097c0e6411e0734da8dfeed5e6a5eb06c78b37597734d9",
+        "events.parquet": "c0f899e3f418628c86f5e5364b34fcb6f97d171de4aaecd4c7d657f37020c970",
+        "fills.csv": "f0fb559e984398f1e150b754a3e1439152fc847cf219151584f95dd0b35f1f10",
+        "fills.parquet": "52f096e9ab7a867d461e42e3015238663a3198508a76647a99a7ee79598a5bfb",
+        "funding.csv": "6d9b6b84b668e85de2f0d822375373ba33555c320684139ccbe662637e49db9e",
+        "funding.parquet": "5d5565549045d9efedbc894bc316a0934ad677c2f7890b8376431daea234241f",
+        "metadata.json": "3d82d277f84cebb19a754f5f722b7d3cadab28ca0e6f243d24400e3852a509ab",
+        "metrics.json": "b685401a864cb504a36acf2ff3b3fada9afc16c34b46461371c40ac35b32f0e2",
+        "positions.csv": "6cd214095ade3024ad10bc8cc6a49d565b6fffe2ae9d8b4895b6c7404e4b1ec9",
+        "positions.parquet": "6f3781096be6500e71d59efc29b2731369d5a114e9f9103cd10f411c38dd7bb1",
+        "quality.json": "d0d914ebcaa47679efb43ce25ad03700a47c711aa0d9064f1e48b34b8edfa5a3",
+        "source_manifest.json": "232684e529cc808ed09898fa4706e973fbee3b1f103850523fe93ebe18287f8b",
+        "trades.csv": "f9ef8dcad03828a41533bdbfff1dc70d8b7e97d0393c56d0c0a8b2dc54f9cb9b",
+        "trades.parquet": "c6c7e276d3e0412348ebd45105471bb55957735fe4f8ca6e1954b07ba74bb5d5"
+      },
+      "same_return_as_original_demo": true,
+      "total_return": -0.11464023737575624
+    },
+    "spot": {
+      "current_core_matches_cross_venue_source_lock": true,
+      "fill_count": 2241,
+      "final_equity": 87829.08924933488,
+      "funding_cash_events": 0,
+      "original_config": "config/real-btc-1y.yaml",
+      "output_files_sha256": {
+        "benchmark.csv": "b9682ef4abeeb1243a2b77f7d56dea1a112f9dcdd9e2a99520bdb81df39d97d5",
+        "config.yaml": "c4cb1c781654a118104f0b8fcd68cfe1431fbc66cdebe7f64e65c97cb5c1e95f",
+        "dashboard.html": "4309c15b06be290f3cb41b6ec77cf6d6fcec0801d64e60b83cd326b41f3ed50b",
+        "equity.csv": "2895831166c9870751a33dba04a44683d54eb9d1dc7d1c359458cab07536b9cd",
+        "equity.parquet": "a0c4e3206a97473b2bc659c6aafe851c37600ccc54be93d04b90c633cebb0f30",
+        "events.csv": "240f8e4cf89d3692a6a8afee72633c2ed45095e15c27803fbecadc0f0a502088",
+        "events.parquet": "3a973e4ce4148255bf9ba048c6536bc641a81efd7151695eab8474abadf80541",
+        "fills.csv": "23a40d8acf70b605a88eebc52d025e8d3065b4a33be526879e74027f55b6c8c4",
+        "fills.parquet": "94ff07412ef77c5be93086c24375ac0938d09efc3e2106f597da5683312998af",
+        "funding.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "funding.parquet": "74c2ffa7bea3077c928dc76c593eef3efb6c933da14a442e2432fb8276e30b24",
+        "metadata.json": "d76ed71b94a76a52bfdeccf6ed668eb98993460af320a532cc39ffddb4ad5e26",
+        "metrics.json": "5e75a3a0d70fe2ca1e9958032b585c292b10779de4de23ffb95723a077b51210",
+        "positions.csv": "3d4e8b1f4af14b21ecbee3f698a9355dff7597a1ed4fb88963f0a8380aff1e02",
+        "positions.parquet": "04313e6bfd0f72e2ec905358065141d3ea083cb433ee081449f25f91dee2bcb0",
+        "quality.json": "d0d914ebcaa47679efb43ce25ad03700a47c711aa0d9064f1e48b34b8edfa5a3",
+        "source_manifest.json": "085b9cce62d053ef2d9e341f07dd7d4821bcb013bec302c6c538c1a8249766ea",
+        "trades.csv": "221fb73cb5a245e1b6022febbf11c6721ce235812b7d20b878a40960ce138392",
+        "trades.parquet": "767cec32e6dbd6578b8443df2c8324a221ff258a216bcad066ee8ec83fc5ad69"
+      },
+      "same_return_as_original_demo": true,
+      "total_return": -0.1217091075066512
+    }
+  },
+  "new_result_root": "results/real-demo-current-v1",
+  "original_results_preserved": true,
+  "run_date_utc": "2026-10-06",
+  "scope": "Engineering demonstrations, not additional strategy families or robustness certification.",
+  "status": "Three fixed full-year examples rerun with corrected current engine; built-in export ledger reconciliation passed",
+  "year": [
+    "2025-10-05T00:00Z",
+    "2026-10-05T00:00Z"
+  ]
+}

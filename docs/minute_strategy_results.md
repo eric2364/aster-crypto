@@ -1,8 +1,8 @@
 # Last-year minute strategy results
 
-> **Current cumulative results: 0/25 historical hurdle passes.** The 25th fixed residual-convergence family failed admission for every target; all five actual runs stayed in cash. See its [audited results](residual_convergence_results/report.html) and [independent certificate](residual_execution_audit.md). The corrected earlier 24 candidates also had zero passes. All 1,000 derivative trials were rerun with proportional isolated reserve release and independently audited, with unchanged economic protocols and model sources. Actual liquidation fills across all derivative phases fell from 77 to 23: carry 35→23, signed 17→0, external 25→0. The eight spot outcomes are retained unchanged. Read the [complete original/corrected comparison](margin_correction_results/report.html), [audit provenance](margin_correction_results/publication_verification.json) and [reproduction workflow](../examples/research_review/README.md). The numerical tables below preserve the original engine's dated results; use the corrected comparison for current conclusions. These reused-year experiments do not establish freedom from overfitting.
+> **Current cumulative results: 0/26 historical hurdle passes.** The 26th fixed cross-venue funding family also failed: seven real-data runs remained in cash, and separate independent source, causal-feature, financial and no-entry checks passed. See its [audited report](cross_venue_results/report.html). The 25th fixed residual-convergence family failed admission for every target; all five actual runs stayed in cash. See its [audited results](residual_convergence_results/report.html) and [independent certificate](residual_execution_audit.md). The corrected earlier 24 candidates also had zero passes. All 1,000 derivative trials were rerun with proportional isolated reserve release and independently audited, with unchanged economic protocols and model sources. Actual liquidation fills across all derivative phases fell from 77 to 23: carry 35→23, signed 17→0, external 25→0. The eight spot outcomes are retained unchanged. Read the [complete original/corrected comparison](margin_correction_results/report.html), [audit provenance](margin_correction_results/publication_verification.json) and [reproduction workflow](../examples/research_review/README.md). The numerical tables below preserve the original engine's dated results; use the corrected comparison for current conclusions. These reused-year experiments do not establish freedom from overfitting.
 
-Actual source period: **5 October 2025–5 October 2026 UTC**, end exclusive. The final three months, **5 July–5 October 2026**, are the historical holdout. All trading, warmup and selection data is confined to this year.
+Actual source period: **5 October 2025–5 October 2026 UTC**, end exclusive. The final three months, **5 July–5 October 2026**, were designated as the historical holdout for the original cohort. Subsequent candidates reuse that evaluated period and have no fresh holdout. All trading, warmup and selection data is confined to this year.
 
 Eight underlyings: BTC, ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Exact coverage: 4,204,800 spot minute candles, 4,204,800 perpetual trade candles and matching mark candles, plus 8,760 settled funding observations. Official archives were checksum-verified; no candles or funding values were interpolated.
 
@@ -145,3 +145,36 @@ exploratory and does not establish absence of overfitting.
 [Report and complete diagnostics](residual_convergence_results/report.html) ·
 [Reproduction](../examples/residual_convergence/README.md) ·
 [Independent audit](residual_execution_audit.md).
+
+
+## Exploratory extension: fixed cross-venue funding differential
+
+One additional family holds equal opposite native perpetual quantities on
+Binance and Bybit, with two separate 50,000-USDT cash-only wallets. Its fixed
+seven-run packet was committed at `98fe45a`, with the verified 40-source/8,814-input
+lock committed and uploaded at `1820b82` before historical features or outcomes.
+Both markets have full last-year minute trade/mark coverage; actual funding and
+Bybit's explicitly approximate settlement marks remain separate inputs.
+
+All seven simulations stayed at 100,000 USDT: no orders, fills, closed trades,
+funding cash payments, terminal inventory or liquidation. Thirteen of fifteen
+fixed hurdles fail. A third independent, cohort-specific entry check evaluated
+78,720 pair decisions across all phases, including 29,760 across distinct time
+folds. Every decision failed the stress roundtrip cost filter. The largest
+seven-day predicted-carry/cost ratio was 0.253, versus 1.5 required; evaluation
+maximum was 0.179. This checks the inactive cohort's admission failure, not
+full strategy-policy reproduction for future trading cohorts.
+
+The source audit reconstructed all 8,480 Bybit responses; the feature audit
+checked 8,409,568 prior-price values and 140,160 hourly intensities; the financial
+audit reconstructed 661,627 snapshots, every wallet/quantity/mark field, all
+175 exports, all metrics, gates and the conditional bootstrap. All eight pairs
+and sixteen venue legs remain disclosed. Native 1000PEPE units are unchanged.
+Constant equity and a zero-width interval do not demonstrate profitability.
+The cumulative result is **0/26 historical hurdle passes**; the requested four
+or five robust successes remain unestablished.
+
+[Audited report](cross_venue_results/report.html) ·
+[Source audit](cross_venue_data_audit.md) · [Feature audit](cross_venue_feature_audit.md) ·
+[Financial audit](cross_venue_output_audit.md) ·
+[Reproduction and scope](../examples/cross_venue/README.md).

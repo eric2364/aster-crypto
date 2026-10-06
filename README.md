@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **552 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **696 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -138,7 +138,7 @@ ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Official trade/mark archives and actual
 funding are verified; raw datasets stay outside Git. The first thirteen policies
 did not pass all historical hurdles. Six subsequent long/short perpetual
 hypotheses and five external-factor hypotheses are explicitly exploratory because
-they reuse this evaluated year. The completed studies disclose **0/25 historical
+they reuse this evaluated year. The completed studies disclose **0/26 historical
 hurdle passes**. Every candidate, cost stress and failed gate is retained; no
 strategy is presented as proven non-overfit or as demonstrated one-minute scalping.
 
@@ -153,16 +153,18 @@ A [fixed residual-convergence experiment](examples/residual_convergence/README.m
 was frozen at commit `ae9fbd4` before fitting, then independently audited. All six
 altcoins failed its fixed mean-reversion admission checks; all five actual runs
 stayed in cash with zero trades and zero returns. It adds one failed exploratory
-family, bringing the disclosed total to **0/25 historical hurdle passes**.
+family, bringing the then-disclosed total to **0/25 historical hurdle passes**.
 [Audited residual results](docs/residual_convergence_results/report.html) ·
 [Independent certificate](docs/residual_execution_audit.md).
 
-A separate [cross-venue funding packet](examples/cross_venue/README.md) has
-passed synthetic source, timing and paired-execution review. The full Bybit year
-contains 8,480 preserved responses and complete trade/mark minute grids for all
-eight assets. Its fixed seven-run protocol is awaiting source/input freezing
-and actual numerical research; it does not yet add a historical result or a
-winning strategy. [Independent raw-source audit](docs/cross_venue_data_audit.md).
+The [cross-venue funding experiment](docs/cross_venue_results/report.html) is
+complete: all seven actual runs stayed in cash. Independent audits checked
+8,480 raw Bybit responses, 16 causal feature streams, 661,627 account snapshots,
+175 exports and 78,720 entry decisions. Every eligible entry failed the fixed
+cost filter; the highest predicted carry/cost ratio was 0.253 versus 1.5 required.
+Source `98fe45a` and input lock `1820b82` were uploaded before numerical research.
+This adds one failed exploratory family: **0/26 historical hurdle passes**.
+[Reproduction and audit guide](examples/cross_venue/README.md).
 
 ```bash
 .venv/bin/python examples/minute_research/download.py --workers 2

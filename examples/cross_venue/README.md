@@ -81,3 +81,39 @@ for explicit diagnosis; do not erase it or run a neighboring parameter grid.
 Its numerical summary remains **unpublished** until separate independent
 financial, causal-feature and gate reconstruction succeeds. No strategy from
 this packet has yet been certified as a historical hurdle pass.
+
+
+## Completed historical result and audit scope
+
+All seven actual runs stayed in cash, with zero orders, fills, funding cashflows,
+positions and returns. Thirteen of fifteen declared hurdles fail. A separate
+entry proof checked all 78,720 pair decisions: none met the fixed cost filter.
+The best forecast/cost ratio was 0.253, below the required 1.5. The full financial
+audit checked 661,627 snapshots and all 175 execution outputs; the causal audit
+checked all 16 feature streams. [Audited report](../../docs/cross_venue_results/report.html).
+This adds one failed family; the cumulative result is **0/26**.
+
+Audits and guarded publication for the preserved original cache:
+
+```sh
+.venv/bin/python audit/verify_cross_venue_features.py --certificate audit/cross_venue_feature_evidence.json
+.venv/bin/python audit/verify_cross_venue_outputs.py --certificate audit/cross_venue_output_evidence.json
+.venv/bin/python audit/verify_cross_venue_no_admission.py --feature-audit audit/cross_venue_feature_evidence.json --certificate audit/cross_venue_no_admission_evidence.json
+.venv/bin/python examples/cross_venue/publish.py --financial-audit audit/cross_venue_output_evidence.json --feature-audit audit/cross_venue_feature_evidence.json --no-admission-audit audit/cross_venue_no_admission_evidence.json --destination docs/cross_venue_results-reproduction
+```
+
+The no-admission proof is specific to this zero-activity cohort. The financial
+verifier reconstructs recorded executable fills and account trajectories; it
+does not prove generic policy decisions or detect every omitted eligible fill.
+A future trading cohort needs a corresponding independent intent/execution
+completeness audit. Do not reuse the inactive certificate to publish a winner.
+
+The verifiers require the original pre-outcome source/input/runtime lock at
+`1820b82`, including recorded input paths. Reacquired REST responses or moved
+paths can have different hashes: a relocated/new replication requires an
+explicit mapping/new provenance receipt, not edits to the original frozen lock.
+Runtime measurements for these real simulations were approximately 19.5–20.3
+seconds per month and 61.3–62.5 seconds per quarter for `Engine.run`; these exclude
+feature generation, source hashing and export. Sequential process peak RSS was
+about 8,193 MiB. These are measured inactive-path workloads, not throughput
+benchmarks for active orders or high-frequency execution.

@@ -1,0 +1,13 @@
+# Independent publication review
+
+This review covers `examples/cross_venue/publish.py`, outside the frozen execution packet. It does not rerun features or Engine simulations and does not change economic rules, recorded outputs or earlier reports.
+
+The final publisher requires three separate, complete audit receipts: causal feature reconstruction, financial and summary reconstruction, and cohort-specific zero-admission reconstruction. It checks the full source anchor `98fe45a55866ccfd1fa5a4e68deb52a127ff7ff2`, input freeze anchor `1820b8278bfae8a3775fce3b0ee15be8ac2a5448`, current auditor source hashes, unchanged-source flags, common immutable feature hashes, and all 175 sealed output files across exactly seven phases. The zero-admission receipt binds its feature certificate and the same phase output hashes; it is a proof for this idle cohort, not a generic coordinator-policy certificate.
+
+Independent adversarial review identified and verified three fixes before publication: the publisher captures its own source bytes before report generation and refuses promotion if they change; it requires exactly the 15 declared Boolean gates rather than accepting incomplete or redefined summaries; and it rejects destinations anywhere inside the sealed experiment namespace. Valid triple-receipt fixtures exercise malformed summaries even after both summary audit hashes are updated. Additional tests mutate publisher source during report construction and attempt destinations inside the trial and executed-source directories. Rejected publication preserves original files and removes staging.
+
+The staging path rechecks source, input, metadata, all phase seals, all receipt bytes, summary bytes and captured publisher bytes before promotion. The final bundle archives the actual publisher source and exact receipt copies with hashes. Existing publication destinations are preserved.
+
+Report wording distinguishes assumed historical receipt clocks, actual settled funding and mark/fill approximations. It retains all seven results, eight pairs, sixteen native venue legs, full-clock metrics, unchanged failed hurdles, and the reused-year/26-comparison limitation. A constant cash account and zero-width conditional interval are explicitly not profitable-edge evidence. The omitted-admission conclusion is restricted to the zero-activity cohort.
+
+Validation: the author's 57 publication tests and seven independently added adversarial tests passed together: 64 passed in 8.38 seconds. No actual publication was invoked by this reviewer. Publication is ready only when all three final actual receipts match current immutable output and auditor hashes.

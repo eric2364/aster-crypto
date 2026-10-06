@@ -1,0 +1,453 @@
+{
+  "software": "aster",
+  "version": "0.1.0",
+  "run_timestamp": "2026-10-06T00:40:35.569399+00:00",
+  "strategy": "FundingCarry",
+  "strategy_version": "1",
+  "parameters": {
+    "allocation": 0.1,
+    "fast": 24,
+    "slow": 168,
+    "lookback": 168
+  },
+  "git_commit": "1820b8278bfae8a3775fce3b0ee15be8ac2a5448",
+  "source_sha256": {
+    "__init__.py": "55fb11c5cdddf3cc237c3333872c757df18086702869319de084c333e1399ff5",
+    "analytics/__init__.py": "1b8035c8986c7503a17c62501ba125abb11c470f4376d7e4039355bf022e9013",
+    "analytics/benchmarks.py": "7e7f757c4952374ae3b53f4b418c64e3f9085a5fa740c87af384a2df36746f93",
+    "analytics/metrics.py": "a68526dd0baa23259c2f55050498e4eec8ac778e0bf1cc0cdda5199cb620f532",
+    "backtest/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backtest/engine.py": "dfbade58ca9a8f4ee46ad0172111277adf96c0be97ed3fc095867732f6de8d08",
+    "backtest/execution.py": "e2d87bfe7ff4228301924608d89c3eb4852bdeb35c3f13138a850b3d60123c4e",
+    "backtest/models.py": "0b7a89a577e4e901b4eb5461eb761e55f70c525d08e6edea008fd4f973c6f167",
+    "backtest/portfolio.py": "6324fc75bb21da9b08c99113dac407318187f0a9ad6c365d86883451c1bd3ed9",
+    "cli.py": "a080397653db6545420511222b243904c76846b8ffdeca2112e6c9c08cc8776f",
+    "data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/binance_public.py": "82ec85965df04bce4ea45e5ec875534fa3a309feac80462eeffa7d5f68752b1f",
+    "data/loader.py": "c2895fae7cea20151cf0d76f24724d38a6473782662c8b9403a13a7d67de39ae",
+    "data/schemas.py": "9a80861c077410faa5414a316273e7003aa80578798a2156ec01d09728d4889b",
+    "data/synthetic.py": "748220cd5585a6dc5cbbcf7b8620d494c0bde7cc91013399a06f9390c9296be7",
+    "data/validation.py": "6d4592df8335202a6d720f2721e1c735132808ccad7e9f1f813b703fb2711651",
+    "exchanges/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exchanges/adapters.py": "d0aae567997b2bae5c024783b9c6836fcac503e377bcf7b343e5c5faa21f52c7",
+    "optimization/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "optimization/search.py": "55a3113bd74f1ad2919a92a74c983a85036ba14f81257dfa020659dc6eefdbdf",
+    "reports/__init__.py": "5c585d93171b686e8c4c566bc40124d98887890efb1325c91869a8e29d307a25",
+    "reports/dashboard.py": "06332931152fad98b5b7f4c0d6be1c47af0ddbb19a90c486820b330b978e54d6",
+    "reproducibility.py": "5f54f5ada6ef90846f2d93b727d91092e2dccbd5d745b322c917805e9eee67e3",
+    "strategies/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "strategies/base.py": "e6ef790a9e23bb39816ccd096f0a4f9c65b06cb22ee474953d808951980f68d1",
+    "strategies/examples.py": "fecd265dcf40f4aceb5361e5b841933dc4c9f32e23a1d606cad44b30f14015c6",
+    "strategies/leading_factors.py": "8a42a4ae5c7532d0639e9644f913b366024f27e93b84ab38bb4aa9a0936c8a4f",
+    "strategies/minute_research.py": "b7b78a879a07a3b7f067116fea0e7ca253335331a171e67feca6360244b3eb25",
+    "strategies/vectorized.py": "8903325afb42bb6a2b2d33b2a37de223c77f85bff6f1353f7c295fe946517b91"
+  },
+  "engine": {
+    "initial_balances": {
+      "binance": 100000
+    },
+    "leverage": 3,
+    "margin_mode": "isolated",
+    "max_gross_leverage": 3,
+    "max_position_pct": 0.5,
+    "fill_model": "conservative",
+    "participation": 0.1,
+    "slippage_bps": 2,
+    "slippage_model": "fixed",
+    "spread_bps": 2.0,
+    "impact_bps": 10.0,
+    "latency_ms": 0,
+    "execution_delay_bars": 0,
+    "seed": 42,
+    "funding_enabled": true,
+    "record_every": 1
+  },
+  "instruments": [
+    {
+      "id": "binance:perpetual:BTCUSDT",
+      "exchange": "binance",
+      "symbol": "BTCUSDT",
+      "market_type": "perpetual",
+      "base": "BTC",
+      "quote": "USDT",
+      "tick_size": 0.01,
+      "lot_size": 0.001,
+      "min_quantity": 0.001,
+      "min_notional": 5,
+      "maker_bps": 2,
+      "taker_bps": 5,
+      "max_leverage": 20.0,
+      "maintenance_rate": 0.005,
+      "liquidation_bps": 50,
+      "funding_interval_hours": 8,
+      "contract_type": "linear",
+      "multiplier": 1.0,
+      "listed_at": null,
+      "delisted_at": null
+    }
+  ],
+  "source_manifest": {
+    "source": "Binance official historical archives + public funding API",
+    "downloaded_at": "2026-10-05T20:02:43.207993+00:00",
+    "market": "perpetual",
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "requested_start": "2025-10-05T00:00:00+00:00",
+    "requested_end_exclusive": "2026-10-05T00:00:00+00:00",
+    "first_bar": "2025-10-05 00:00:00+00:00",
+    "last_bar_end": "2026-10-05 00:00:00+00:00",
+    "rows": 8760,
+    "expected_rows": 8760,
+    "quality": {
+      "rows": 8760,
+      "instruments": 1,
+      "errors": [],
+      "warnings": [],
+      "gaps": []
+    },
+    "archives": [
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip.CHECKSUM",
+        "sha256": "b173469216acad36058ecfb0a5432471ec58b3c49032246d4d687dd3af8ae34a",
+        "checksum_verified": true,
+        "bytes": 38885,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2025-10.zip.b173469216acad36058ecfb0a5432471ec58b3c49032246d4d687dd3af8ae34a"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip.CHECKSUM",
+        "sha256": "75c4069b8ff93aa5e4064e885077426fd60f1cf6239a728b2d4ca543c0210d5a",
+        "checksum_verified": true,
+        "bytes": 37564,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2025-11.zip.75c4069b8ff93aa5e4064e885077426fd60f1cf6239a728b2d4ca543c0210d5a"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip.CHECKSUM",
+        "sha256": "41e977a06b7806ce1398aca5f9075befffd1e6303db891795f3b179c762709ec",
+        "checksum_verified": true,
+        "bytes": 38148,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2025-12.zip.41e977a06b7806ce1398aca5f9075befffd1e6303db891795f3b179c762709ec"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip.CHECKSUM",
+        "sha256": "6c15ac5fd895f26bf8e12b99df6ab9aff637dc94b37128e92c75c19887d0e3b3",
+        "checksum_verified": true,
+        "bytes": 38152,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-01.zip.6c15ac5fd895f26bf8e12b99df6ab9aff637dc94b37128e92c75c19887d0e3b3"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip.CHECKSUM",
+        "sha256": "886fca9764139a1d71d97ca28e0a2cb30fe7d6f44df9be2539452c02e3c4e775",
+        "checksum_verified": true,
+        "bytes": 35154,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-02.zip.886fca9764139a1d71d97ca28e0a2cb30fe7d6f44df9be2539452c02e3c4e775"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip.CHECKSUM",
+        "sha256": "41199df2dd62c333ea306d28de331bfffbbfed03609d100c63b2de1d173f7414",
+        "checksum_verified": true,
+        "bytes": 38671,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-03.zip.41199df2dd62c333ea306d28de331bfffbbfed03609d100c63b2de1d173f7414"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip.CHECKSUM",
+        "sha256": "c822801b16eb317f4672e376a73664f2e5f9180409c57b6c7517707f4f873e8c",
+        "checksum_verified": true,
+        "bytes": 36965,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-04.zip.c822801b16eb317f4672e376a73664f2e5f9180409c57b6c7517707f4f873e8c"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip.CHECKSUM",
+        "sha256": "9a367708c90de999a7a9d3114fd111ff28203b13c8daef77d154b5216fb571f7",
+        "checksum_verified": true,
+        "bytes": 37968,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-05.zip.9a367708c90de999a7a9d3114fd111ff28203b13c8daef77d154b5216fb571f7"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip.CHECKSUM",
+        "sha256": "30bba473837a672a6a00a181a447446852414e6927bbda6684f873571788e9aa",
+        "checksum_verified": true,
+        "bytes": 37239,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-06.zip.30bba473837a672a6a00a181a447446852414e6927bbda6684f873571788e9aa"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip.CHECKSUM",
+        "sha256": "a09f135066ace6925ce051ddbbdd4345c103423fbe35d32b568942de978dcc7c",
+        "checksum_verified": true,
+        "bytes": 37864,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-07.zip.a09f135066ace6925ce051ddbbdd4345c103423fbe35d32b568942de978dcc7c"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip.CHECKSUM",
+        "sha256": "b594301740cbb39818ba60f2835e4636aa06ad53308e25b1b312f1443fe0ccfe",
+        "checksum_verified": true,
+        "bytes": 37864,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-08.zip.b594301740cbb39818ba60f2835e4636aa06ad53308e25b1b312f1443fe0ccfe"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-09.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2026-09.zip.CHECKSUM",
+        "sha256": "07ab960882feb6d3120673a851f2a654c4c3f31f3a74d1f3fc4b0351a8ee1483",
+        "checksum_verified": true,
+        "bytes": 36887,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-09.zip.07ab960882feb6d3120673a851f2a654c4c3f31f3a74d1f3fc4b0351a8ee1483"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-01.zip.CHECKSUM",
+        "sha256": "5634ccacd24313f214a8cf4b4a44da573d022241b0e051ca3b61c23e8c4eb635",
+        "checksum_verified": true,
+        "bytes": 1570,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-01.zip.5634ccacd24313f214a8cf4b4a44da573d022241b0e051ca3b61c23e8c4eb635"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-02.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-02.zip.CHECKSUM",
+        "sha256": "eecba72424982fde9db2d92d91623cb65e6f16a5d9652b6c6992887515bfb897",
+        "checksum_verified": true,
+        "bytes": 1594,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-02.zip.eecba72424982fde9db2d92d91623cb65e6f16a5d9652b6c6992887515bfb897"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-03.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-03.zip.CHECKSUM",
+        "sha256": "ff58f33349f1d30921f6f1061f5d03b4e71d6fa329c6ceeafb1a6bbd8da71f39",
+        "checksum_verified": true,
+        "bytes": 1501,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-03.zip.ff58f33349f1d30921f6f1061f5d03b4e71d6fa329c6ceeafb1a6bbd8da71f39"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-04.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2026-10-04.zip.CHECKSUM",
+        "sha256": "db9bfd586812334c54ea96be65640ae93938ae4ea266ce90a0b223047354b430",
+        "checksum_verified": true,
+        "bytes": 1509,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-04.zip.db9bfd586812334c54ea96be65640ae93938ae4ea266ce90a0b223047354b430"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip.CHECKSUM",
+        "sha256": "ace54498f3731143c4a7dd334c808c311c08557521625156c090c3690c4ef8ba",
+        "checksum_verified": true,
+        "bytes": 21702,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2025-10.zip.ace54498f3731143c4a7dd334c808c311c08557521625156c090c3690c4ef8ba"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip.CHECKSUM",
+        "sha256": "d67edc34a7bc7169b65027ad7846d4d7c108681aa84b31d8ddba2d27f28d86ea",
+        "checksum_verified": true,
+        "bytes": 21070,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2025-11.zip.d67edc34a7bc7169b65027ad7846d4d7c108681aa84b31d8ddba2d27f28d86ea"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip.CHECKSUM",
+        "sha256": "15b9d96a269cbcc35ec444d092f7317d4b940fc9e135ed17a682ebfad602bc29",
+        "checksum_verified": true,
+        "bytes": 21053,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2025-12.zip.15b9d96a269cbcc35ec444d092f7317d4b940fc9e135ed17a682ebfad602bc29"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip.CHECKSUM",
+        "sha256": "996a9448726db911eac8db4fcddd6412c3c81ad1dad1f8b1dee7e7f5e1e1eb58",
+        "checksum_verified": true,
+        "bytes": 21215,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-01.zip.996a9448726db911eac8db4fcddd6412c3c81ad1dad1f8b1dee7e7f5e1e1eb58"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip.CHECKSUM",
+        "sha256": "a8a6bad5c733f23da93166abec33a19a226b90c47078828d89b414e18bd2092e",
+        "checksum_verified": true,
+        "bytes": 19770,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-02.zip.a8a6bad5c733f23da93166abec33a19a226b90c47078828d89b414e18bd2092e"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip.CHECKSUM",
+        "sha256": "f5f15aedeece7ff54412e83def94c9788fbb184ad9b707af0f89bc9a50df918f",
+        "checksum_verified": true,
+        "bytes": 22245,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-03.zip.f5f15aedeece7ff54412e83def94c9788fbb184ad9b707af0f89bc9a50df918f"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip.CHECKSUM",
+        "sha256": "bf1abad992eb1107ee5f3a05003e3a806ed06e22385ea3e594857fe7c9a40716",
+        "checksum_verified": true,
+        "bytes": 20641,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-04.zip.bf1abad992eb1107ee5f3a05003e3a806ed06e22385ea3e594857fe7c9a40716"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip.CHECKSUM",
+        "sha256": "4930e4401f6d663cf9fe2fb082738b011e619e77972bfe764b2600f05fc91b72",
+        "checksum_verified": true,
+        "bytes": 21149,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-05.zip.4930e4401f6d663cf9fe2fb082738b011e619e77972bfe764b2600f05fc91b72"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip.CHECKSUM",
+        "sha256": "7d1d36168726c482372301b51ac2b035a974a82b6ece309c3dbcd196b872edba",
+        "checksum_verified": true,
+        "bytes": 20367,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-06.zip.7d1d36168726c482372301b51ac2b035a974a82b6ece309c3dbcd196b872edba"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip.CHECKSUM",
+        "sha256": "1b9a914bf005f439cc83d953ab65cd098703aba1436914bddd0ffd5638e17212",
+        "checksum_verified": true,
+        "bytes": 21070,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-07.zip.1b9a914bf005f439cc83d953ab65cd098703aba1436914bddd0ffd5638e17212"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip.CHECKSUM",
+        "sha256": "b51fcdc17ed10a3f91a0711944eae97978c0b9c57999a0dfce65ce64e1259540",
+        "checksum_verified": true,
+        "bytes": 21194,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-08.zip.b51fcdc17ed10a3f91a0711944eae97978c0b9c57999a0dfce65ce64e1259540"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-09.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-09.zip.CHECKSUM",
+        "sha256": "bd300f5ec76b11de2c7c3779bcf85d6c1178e29f703b0b150ced75b0e754d29f",
+        "checksum_verified": true,
+        "bytes": 20638,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-09.zip.bd300f5ec76b11de2c7c3779bcf85d6c1178e29f703b0b150ced75b0e754d29f"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-01.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-01.zip.CHECKSUM",
+        "sha256": "14d58d098c470fa6853cacc9cad4c2c7fef4021afbe348103319397cb9367d05",
+        "checksum_verified": true,
+        "bytes": 989,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-01.zip.14d58d098c470fa6853cacc9cad4c2c7fef4021afbe348103319397cb9367d05"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-02.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-02.zip.CHECKSUM",
+        "sha256": "587fa82f87cf421f2f752e784feddbad82dcc6cd1aedcb3eac993aa5c9b735b7",
+        "checksum_verified": true,
+        "bytes": 1020,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-02.zip.587fa82f87cf421f2f752e784feddbad82dcc6cd1aedcb3eac993aa5c9b735b7"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-03.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-03.zip.CHECKSUM",
+        "sha256": "3ebf19fd6e1d4ca842691a5d3ef0d80aaacafb00143b5628556a0e9fd92c4a4e",
+        "checksum_verified": true,
+        "bytes": 980,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-03.zip.3ebf19fd6e1d4ca842691a5d3ef0d80aaacafb00143b5628556a0e9fd92c4a4e"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-04.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-10-04.zip.CHECKSUM",
+        "sha256": "fc959dc54c7041a159d85a57206eaea1682218730b0330508b8759b4b33ba391",
+        "checksum_verified": true,
+        "bytes": 987,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-10-04.zip.fc959dc54c7041a159d85a57206eaea1682218730b0330508b8759b4b33ba391"
+      },
+      {
+        "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06-29.zip",
+        "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06-29.zip.CHECKSUM",
+        "sha256": "122fd96f8693a9794e2dbdb4491858078676045170acce68046e32f32f7b4068",
+        "checksum_verified": true,
+        "bytes": 997,
+        "cache_file": "data_cache/btc-perpetual-1y/raw/BTCUSDT-1h-2026-06-29.zip.122fd96f8693a9794e2dbdb4491858078676045170acce68046e32f32f7b4068",
+        "purpose": "repair observed monthly omissions from official daily archive"
+      }
+    ],
+    "funding_pages": [
+      {
+        "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1759622400000&endTime=1791158400000&limit=1000",
+        "sha256": "ca156d1594d32ebf318f8488e936aab46556629973b6748c2f07c5453ed9fd75",
+        "cache_file": "data_cache/btc-perpetual-1y/raw/funding-BTCUSDT-1759622400000-ca156d1594d32ebf318f8488e936aab46556629973b6748c2f07c5453ed9fd75.json",
+        "rows": 1000
+      },
+      {
+        "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1788393600001&endTime=1791158400000&limit=1000",
+        "sha256": "c2bf7d603106f44221cab0aabd572f7111ca4cac1bed920dbb8b133641353b8e",
+        "cache_file": "data_cache/btc-perpetual-1y/raw/funding-BTCUSDT-1788393600001-c2bf7d603106f44221cab0aabd572f7111ca4cac1bed920dbb8b133641353b8e.json",
+        "rows": 95
+      }
+    ],
+    "funding_rows": 1095,
+    "funding_interval_observed_hours": [
+      7.999992777777777,
+      7.999995833333333,
+      7.999996111111112,
+      7.999996388888889,
+      7.999996666666667,
+      7.999996944444445,
+      7.999997222222222,
+      7.9999975,
+      7.999997777777778,
+      7.999998055555555,
+      7.999998333333333,
+      7.999998611111111,
+      7.999998888888888,
+      7.999999166666666,
+      7.999999444444445,
+      7.999999722222222,
+      8.0,
+      8.000000277777778,
+      8.000000555555555,
+      8.000000833333333,
+      8.00000111111111,
+      8.000001388888888,
+      8.000001666666668,
+      8.000001944444445,
+      8.000002222222223,
+      8.000002499999999,
+      8.000002777777777,
+      8.000003055555554,
+      8.000003333333334,
+      8.000003611111111,
+      8.00000388888889,
+      8.000004444444444
+    ],
+    "bars_sha256": "68bda702e1d9b0c4a3722c6acc32edba65baba643a4847940b4b6f36ba8cc371",
+    "funding_coverage_note": "Historical API returned events; no fixed cadence synthesized. Review gaps for dynamic intervals."
+  },
+  "data_source": "Binance official historical archives + public funding API",
+  "data_sha256": "8e5eb7088e5e6f9bb6033c775f2f2056a02b64a3f27d36231fb02f36e0a64266",
+  "funding_sha256": "12e449f96ba0783ffb0d2371bfeaf4d05ab9b4c07921787629e9c1fac5a9958e",
+  "start": "2025-10-05 00:00:00+00:00",
+  "end": "2026-10-05 00:00:00+00:00",
+  "timeframes_seconds": [
+    3600
+  ],
+  "data_quality": {
+    "rows": 8760,
+    "instruments": 1,
+    "errors": [],
+    "warnings": [],
+    "gaps": []
+  },
+  "timestamp_semantics": "UTC interval start; complete bar available at end",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "plotly": "7.1.0"
+  },
+  "open_positions_marked": true,
+  "terminal_forced_close": false,
+  "slippage_accounting": "embedded in fill-price P&L; diagnostic, never subtracted twice"
+}

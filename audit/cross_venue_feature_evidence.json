@@ -1,0 +1,215 @@
+{
+  "complete": true,
+  "errors": [],
+  "source_anchor": "98fe45a55866ccfd1fa5a4e68deb52a127ff7ff2",
+  "input_freeze_anchor": "1820b8278bfae8a3775fce3b0ee15be8ac2a5448",
+  "auditor_sha256": "98db1328a5d1fcf6bccb154223608e7a4f25be43e92fec6e67187505d9b2bd4f",
+  "source_unchanged_during_audit": true,
+  "auditor_source_unchanged": true,
+  "source_lock_sha256": "a2e3a341a84e49fd2a4b1a09533dbd3b69e65aca0e8b9cc783879ccbad6b6919",
+  "features_sha256": "04500be0fa13f39e401e519978123fa81d60b3592ea6f6a61ccb287d2e9d1c74",
+  "feature_receipt_sha256": "78e15478a4a1ea78e0f782ec011daae634b3cb6ff19f3567d190362d243936eb",
+  "reference_reconstruction_passed": true,
+  "feature_rows": 525598,
+  "feature_columns": 48,
+  "checks": [
+    {
+      "native_id": "binance:perpetual:BTCUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 5.082197683525802e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:ETHUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 5.082197683525802e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:DOGEUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 5.082197683525802e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:1000PEPEUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 2.710505431213761e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:SOLUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 2.710505431213761e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:XRPUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 4.235164736271502e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:LINKUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 5.082197683525802e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "binance:perpetual:ADAUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 6.776263578034403e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:BTCUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 4.235164736271502e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:ETHUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 3.3881317890172014e-21,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:DOGEUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 1.3552527156068805e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:1000PEPEUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 1.3552527156068805e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:SOLUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 2.710505431213761e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:XRPUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 2.0328790734103208e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:LINKUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 1.3552527156068805e-20,
+      "historical_receipt_assumed": true
+    },
+    {
+      "native_id": "bybit:perpetual:ADAUSDT",
+      "source_rows": 525600,
+      "decision_count": 8760,
+      "decision_status_counts": {
+        "insufficient_history": 8,
+        "insufficient_coverage": 144,
+        "valid": 8608
+      },
+      "maximum_intensity_absolute_error": 1.6940658945086007e-20,
+      "historical_receipt_assumed": true
+    }
+  ],
+  "scope": "Independent known-settlement sequence and synchronized prior-close reconstruction; no Engine/model imports",
+  "limits": [
+    "Settlement+1minute availability is an assumption without historical receipts.",
+    "Consistent observed cadence and coverage cannot prove missing-payment absence.",
+    "Realized intensity does not establish contractual earning periods or future funding."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "publisher_sha256": "42d559146e90b8a31cbeafeeacb18fd1b508b338bd1104535ab75024a7724a70",
+  "financial_audit_sha256": "c9c27f43c19ad322a3a1ee1c39b7c4429fd9bb3364ad0e0ee0dfedc0a9152c71",
+  "feature_audit_sha256": "81178bc381a7990eac188f8f3a465bff1bc7d3f01e147d26843c7be58f3559ee",
+  "no_admission_audit_sha256": "6ea1666409f1bf2e4e60eaaf1b69cf7b9517154d354c6cad40f4d5d201860d9b",
+  "source_lock_sha256": "a2e3a341a84e49fd2a4b1a09533dbd3b69e65aca0e8b9cc783879ccbad6b6919",
+  "features_sha256": "04500be0fa13f39e401e519978123fa81d60b3592ea6f6a61ccb287d2e9d1c74",
+  "summary_sha256": "ffd040f412d4f16441f1f1cd05198bada0d0da7eaa3d967c90803032c11b4302",
+  "source_anchor": "98fe45a55866ccfd1fa5a4e68deb52a127ff7ff2",
+  "auditor_sha256": {
+    "financial": "be674335c6921d1fbfd7ddb422e206f88cf6844766a04af71ff691419eb1c244",
+    "feature": "98db1328a5d1fcf6bccb154223608e7a4f25be43e92fec6e67187505d9b2bd4f",
+    "no_admission": "dd1304b126b8cb4533526e8cf3ad79ecf5e4f6abe18a067f405e88ff3a27cd3f"
+  },
+  "financial_output_count": 175,
+  "outputs_sha256": {
+    "README.md": "a18400384aa3ea6fda498a3f6061cbf24983bacd4125f508256a24cd3681af90",
+    "all_leg_contributions.csv": "f5613de8ee8e94252e82da52170f38297ac3775a8059c609ad739bffa7650c90",
+    "all_pair_contributions.csv": "211214135ab8eb72fe84ae7409273c12a2ac64a51ee9cfcb4391955e52e8c402",
+    "all_unmatched_exposure.csv": "8efbcbbf60375e3e1b9baec4a689ccec1664493dbb5ad5586e3e12db045b185a",
+    "comparison.csv": "c6ca3e13340ba97be82474d295cd2683d9f01223a7a9edc4ff6a4bdbb6b2378a",
+    "executed_publisher.py": "42d559146e90b8a31cbeafeeacb18fd1b508b338bd1104535ab75024a7724a70",
+    "feature_audit.json": "81178bc381a7990eac188f8f3a465bff1bc7d3f01e147d26843c7be58f3559ee",
+    "feature_receipt.json": "78e15478a4a1ea78e0f782ec011daae634b3cb6ff19f3567d190362d243936eb",
+    "financial_audit.json": "c9c27f43c19ad322a3a1ee1c39b7c4429fd9bb3364ad0e0ee0dfedc0a9152c71",
+    "input_verification.json": "9ebf7cd4ad816539e333077e37dbcb8c9ef67b0a5132ac91d51f7515487e09ef",
+    "no_admission_audit.json": "6ea1666409f1bf2e4e60eaaf1b69cf7b9517154d354c6cad40f4d5d201860d9b",
+    "proposed_protocol.md": "38e16507220bceabf76a4be60f9b501ed15ba7f162b0ada5d5ac3bc0efeec111",
+    "report.html": "44128f0da7310b791f5be224c1286e93a72c3ae27fcceaa26cd24d81a0284845",
+    "source_lock.json": "a2e3a341a84e49fd2a4b1a09533dbd3b69e65aca0e8b9cc783879ccbad6b6919",
+    "summary.json": "ffd040f412d4f16441f1f1cd05198bada0d0da7eaa3d967c90803032c11b4302"
+  }
+}

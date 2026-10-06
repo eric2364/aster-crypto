@@ -376,7 +376,7 @@ year. The protocol was committed at `ae9fbd4` before fitting. All six altcoins
 failed its fixed admission rules: residual half-lives were 93–783 hours, above
 the declared 1–24 hours, and all conditional ADF p-values exceeded 0.01.
 All five actual simulations stayed in cash: zero trades and zero returns.
-The cumulative research result is **0/25 historical hurdle passes**.
+The cumulative research result at that stage was **0/25 historical hurdle passes**.
 Read the [audited report](residual_convergence_results/report.html) and
 [independent certificate](residual_execution_audit.md).
 
@@ -400,6 +400,22 @@ Read the [protocol](../examples/cross_venue/proposed_protocol.md) and
 Freeze source/input/runtime in an empty output folder and retain its Git evidence
 before creating historical features. Exact source and input mismatches stop a
 resume. The seven fixed simulations are one candidate, not seven strategies.
-Numerical results require an additional independent trajectory/feature/gate audit
-before publication. This prospective preparation does not change the existing
-**0/25 historical hurdle passes**, and the reused year provides no fresh holdout.
+The actual seven-run experiment and independent source, feature, financial and
+cohort-specific entry checks are complete. All runs stayed in cash because none
+of 78,720 pair decisions met the fixed cost filter. Read the
+[audited report](cross_venue_results/report.html); cumulative research is
+**0/26 historical hurdle passes**, with no fresh holdout on the reused year.
+
+The publisher requires three separate receipts: causal features, financial/gates,
+and zero-admission proof. The latter applies only to this inactive cohort and
+must fail if an economic entry is eligible. It does not certify generic
+admission/exit/cleanup or omitted-fill logic for a future trading study. A new
+trading cohort requires a corresponding independent policy/execution audit.
+The original audit commands pin the preserved input paths and exact pre-outcome
+Git lock; relocated/reacquired inputs need explicit new provenance rather than
+silently rewriting that receipt. See the [publication workflow](cross_venue_publication_preparation.md).
+
+The full-year BTC spot/perpetual/funding examples were also rerun in fresh
+folders with the corrected current engine. Returns remain −12.17%, −11.46%
+and +5.14%; the positive single example is not a qualified robust strategy.
+[Current outputs, source hashes and commands](real_data_demo.md#current-engine-verification).

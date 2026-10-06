@@ -1,0 +1,111 @@
+{
+  "binance": [
+    {
+      "spot_symbol": "BTCUSDT",
+      "futures_symbol": "BTCUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "fe088b5dec03360a17733d6c6a6dd95ebb69b55ca73543452c8a144c59d70069",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    },
+    {
+      "spot_symbol": "ETHUSDT",
+      "futures_symbol": "ETHUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "a3ba3d44516aaaadf897943a3e5409b7f7b6d8a65b29aa0b1395d55cda13c7a1",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    },
+    {
+      "spot_symbol": "DOGEUSDT",
+      "futures_symbol": "DOGEUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "4f98db2eb06a37ed0aaafc56798a80515c6378e73f319a11cb5a8d89d48e8bce",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    },
+    {
+      "spot_symbol": "PEPEUSDT",
+      "futures_symbol": "1000PEPEUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "174c16b089df983c121f175607e36f40cce82c8ec1baa5fe5f1427647ae5adcf",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1000
+    },
+    {
+      "spot_symbol": "SOLUSDT",
+      "futures_symbol": "SOLUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "5b72056a43d67ae31315401cbd7a6e50added868df76d78f76df9de6e8c08c9d",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    },
+    {
+      "spot_symbol": "XRPUSDT",
+      "futures_symbol": "XRPUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "4396c8f2d366efaf8be353dc50e3005e13d03b30fbb1bb74049c3075f29381ee",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    },
+    {
+      "spot_symbol": "LINKUSDT",
+      "futures_symbol": "LINKUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "eb9f3fc5eaadb8d66a1dc858e5cca92285dbad02eba306651fe0efe412978015",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    },
+    {
+      "spot_symbol": "ADAUSDT",
+      "futures_symbol": "ADAUSDT",
+      "rows": 525600,
+      "funding_rows": 1095,
+      "minute_grid_exact": true,
+      "independent_marks_present": true,
+      "official_checksums_verified": true,
+      "funding_parquet_sha256": "d91d99aca102fe340420de8d1f61f9c68115340101c8fb3c4d459a1754aa9c0f",
+      "first_bar": "2025-10-05 00:00:00+00:00",
+      "last_bar_end": "2026-10-05 00:00:00+00:00",
+      "spot_base_units_per_perpetual_quantity_unit": 1
+    }
+  ],
+  "bybit_dataset_seal_sha256": "298565174c6d9bc580d93a24412b285c80e526578ca7502c284ce45a6fee534c",
+  "bybit_raw_reparse_verified": true,
+  "scope": "source completeness checks; no features or outcomes"
+}
