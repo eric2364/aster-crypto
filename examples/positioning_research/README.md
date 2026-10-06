@@ -1,9 +1,19 @@
 # Confirmed position-unwind rebound: historical research
 
-This is a new exploratory family with independently certified historical
-features. The five fixed simulations are in progress and have no published
-result. Current audited research remains **0/27 hurdle passes**; the requested
-four or five robust strategies remain unestablished.
+This fixed exploratory family has completed five historical simulations and
+separate independent feature, financial and scoped recorded-policy audits.
+**It fails five of fifteen hurdles; qualified historical families remain 0/28.**
+The requested four or five robust strategies remain unestablished.
+
+[Audited report](../../docs/positioning_results/report.html) ·
+[Financial scope](../../docs/positioning_financial_reconstruction.md) ·
+[Recorded-policy scope](../../docs/positioning_policy_review.md).
+
+The fixed source window is 2025-10-05 to 2026-10-05 UTC, exclusive at the end.
+Compounded validation is +0.2145%, baseline final quarter −0.1801%, and joint
+cost/delay stress −0.8612%. Baseline has 16 actually completed closed episodes
+across ADA, DOGE, LINK and native 1000PEPE; all five accounts end truly flat.
+Neither positive asset attribution nor activity makes this a qualified strategy.
 
 [Historical feature evidence](../../docs/positioning_historical_features.md)
 certifies all 16 streams and 8,409,568 minute rows exactly, after the privately
@@ -60,9 +70,9 @@ adversaries. No historical outcomes were inspected. The draft runner has separat
 commands. It rejects historical execution without an independent feature
 certificate and binds cached phases to that certificate and publication receipt.
 The exact source/input freeze was privately published before computation;
-independent full historical feature reconstruction passed. Five financial
-trajectories and independent financial/policy verification remain required
-before result publication. Feature certification does not establish profitability.
+independent full historical feature reconstruction passed. Five financial trajectories and separate financial/scoped recorded-policy
+verification have completed; the audit-gated presentation is published.
+Feature certification does not establish profitability.
 
 
 ## Runner interface and outstanding evidence
@@ -85,15 +95,15 @@ Execution uses three fresh validation months and separate baseline/stress
 final-quarter accounts under the fixed fifteen hurdles. Fully entered but open
 episodes do not count toward completed-asset participation. The runner records
 all eight native quantities and live orders before automatic final cancellation;
-sub-epsilon dust still fails actual endpoint flatness. Independent financial
-and recorded-policy replay remain necessary before publishing any result.
+sub-epsilon dust still fails actual endpoint flatness. Independent financial and scoped recorded-policy replay have now completed;
+the published report preserves their separate boundaries and limitations.
 
-Full-year features are certified. Actual economic outcomes and bootstrap
-statistics remain unpublished until their separate financial and recorded-policy
-reconstruction passes.
+Full-year features, account arithmetic and recorded policy are separately
+certified. The published report retains all negative outcomes and the bounded
+policy scope; it does not prove every cleanup transition or omitted abort.
 
 
-Final source preparation checks: **42 feature cases, 54 coordinator cases and
+Original source preparation checkpoint: **42 feature cases, 54 coordinator cases and
 90 runner cases**, 186 total, passed together. The independent reviews include
 24 feature, 24 coordinator and 26 runner adversaries. All use synthetic inputs.
 Source preparation, exact input/source freeze and full independent historical
@@ -118,3 +128,26 @@ These default cache/output paths refer to the original preserved one-year study.
 The audited experiment itself remains bound to its original certificate bytes.
 Current archive integrity and exact calculations do not verify original delivery
 or revisions; all results remain conditional exploratory research.
+
+
+## Reproduce the preserved study
+
+```sh
+.venv/bin/python examples/positioning_research/run.py \
+  --perp-cache data_cache/minute-perpetual-1y \
+  --metrics-cache data_cache/positioning-metrics-1y \
+  --out results/positioning-rebound-1y-v1 \
+  --execute --feature-audit audit/positioning_feature_evidence.json
+```
+
+Complete cached phases are verified rather than silently replaced. Preserve all
+original sources, data and certificates; incomplete or changed packets fail.
+For independent fresh audits, follow the linked feature, financial and policy
+guides with new certificate destinations. Do not replace the original study's
+certificate bytes with newly dated copies. The [publication guide](../../docs/positioning_publication.md)
+explains how to generate a separate fresh report from the preserved packet.
+The original receipts remain unchanged and their publication flags retain their
+individual audit scope. The composed report does not broaden either audit.
+
+Final repository verification: **1,521 tests passed in 90.24 seconds** after the
+feature, financial, recorded-policy and publication review additions.

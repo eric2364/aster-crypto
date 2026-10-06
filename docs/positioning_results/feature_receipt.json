@@ -1,0 +1,67 @@
+{
+  "source_lock_sha256": "1658cbf3fd7a1c2a9ec95c000e6dcad3ce842afb25eb9b456175c9d95bcc62dd",
+  "features_sha256": {
+    "baseline": {
+      "binance:perpetual:BTCUSDT": "39123698cf0c91f6e3449188e22ac8b4b63b01a4a91c1c41453ae1c9609d5bf2",
+      "binance:perpetual:ETHUSDT": "ee226dea63d5b07c73ee2114c3788190ace0054b859e50b401406fde9e92d4d3",
+      "binance:perpetual:DOGEUSDT": "895b3f076667777cb1dea32ece9299a70fa11f84c4cdbab9b2595f3b5571d631",
+      "binance:perpetual:1000PEPEUSDT": "68278ac5c1e3defd60d0191401d12467ffeb252b2407c59ffbdff8205e87a570",
+      "binance:perpetual:SOLUSDT": "ac5e41d6413f90223695ee0b558ee59a7b7ac1ab15e62b73c908022bc2610b98",
+      "binance:perpetual:XRPUSDT": "62afab88e254331763b48f7bf028e80723684ba924883444902f7658ecfdea1f",
+      "binance:perpetual:LINKUSDT": "44ed02fdab0570d8a9ef28b8d08c6967a0edb94545574e361d3a7ded13e7259f",
+      "binance:perpetual:ADAUSDT": "31ec498783358bbd376611f747c1cf9a06772c2368ba4609b7be4a512c0b16a2"
+    },
+    "delayed": {
+      "binance:perpetual:BTCUSDT": "795266c9babb3e78c0d082732793123251d87969b8c453bc9225de2eacc84270",
+      "binance:perpetual:ETHUSDT": "0279b6cbfa0173ca0d982cfaaf51a7fb5d075d8a4b06b50a9cdf01b1db67b8a3",
+      "binance:perpetual:DOGEUSDT": "016c4117b681fe3c0d972f033a64fe98e823773878186d567da9c2de2ab6fab3",
+      "binance:perpetual:1000PEPEUSDT": "eb996e3706521a4d62857117e5cb749cb0ab4f9f24d9fa00a496a3881f6e133d",
+      "binance:perpetual:SOLUSDT": "4bfb186a29c6da1297c83f36831816798f02f3a7648b3e5d130e88867b314ccc",
+      "binance:perpetual:XRPUSDT": "e234fdf4fc5fc9ca34e565b7922136259505a639d1e7a1785303b6f20f39fc30",
+      "binance:perpetual:LINKUSDT": "38b4e5f0632d1808bf133db061a2f6a49cd177ddf772b43bade508a8c8bff654",
+      "binance:perpetual:ADAUSDT": "00e375d05f096839431d8a62638a369b0a1cbc4e0586153d16b5039239499882"
+    }
+  },
+  "rows_per_stream": 525598,
+  "columns": [
+    "price_source_label",
+    "price_available_at",
+    "price",
+    "price_return_1h",
+    "price_return_15m",
+    "metric_source_label",
+    "metric_available_at",
+    "native_open_interest",
+    "quantity_change_1h",
+    "quantity_change_5m",
+    "metric_age_seconds",
+    "valid",
+    "instrument_id"
+  ],
+  "availability_assumptions": {
+    "baseline": {
+      "metric_label_timezone": "UTC interpretation of offset-free archive labels",
+      "metric_information_period": "unverified; assume label plus a full five-minute interval",
+      "metric_availability": "label + fixed delay, strictly before decision; delay is an assumption",
+      "price_availability": "minute start + two minutes, at or before decision",
+      "quantity_units": "within-native dimensionless change; constant unit scaling cancels",
+      "vintage": "current downloaded archives, not verified historical delivery or original vintage",
+      "economic_claim": "position-unwind proxy; no observed liquidation or return guarantee",
+      "metric_delay_minutes": 6,
+      "start": "2025-10-05T00:00:00+00:00",
+      "end": "2026-10-05T00:00:00+00:00"
+    },
+    "delayed": {
+      "metric_label_timezone": "UTC interpretation of offset-free archive labels",
+      "metric_information_period": "unverified; assume label plus a full five-minute interval",
+      "metric_availability": "label + fixed delay, strictly before decision; delay is an assumption",
+      "price_availability": "minute start + two minutes, at or before decision",
+      "quantity_units": "within-native dimensionless change; constant unit scaling cancels",
+      "vintage": "current downloaded archives, not verified historical delivery or original vintage",
+      "economic_claim": "position-unwind proxy; no observed liquidation or return guarantee",
+      "metric_delay_minutes": 11,
+      "start": "2025-10-05T00:00:00+00:00",
+      "end": "2026-10-05T00:00:00+00:00"
+    }
+  }
+}

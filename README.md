@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **1,210 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **1,521 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -246,7 +246,7 @@ The positive baseline is not a qualified winner; cumulative research is
 [Audited results](docs/funding_rank_results/report.html).
 
 
-### Next open-interest mechanism: certified historical features
+### Audited open-interest rebound experiment
 
 The [positioning example](examples/positioning_research/README.md) now implements
 delayed native quantity-OI features and a long/cash rebound coordinator with
@@ -260,6 +260,10 @@ explains both the mechanism and its competing continuation risks.
 The privately published source/input freeze preceded feature construction.
 [Independent historical reconstruction](docs/positioning_historical_features.md)
 passed all 16 streams and 8,409,568 minute rows with exact numerical agreement.
-No strategy outcome has been generated; this candidate adds no success and
-current cumulative evidence remains **0/27**.
+Five fixed simulations and separate financial/scoped recorded-policy audits
+are complete. [Audited report](docs/positioning_results/report.html): validation
++0.2145%, baseline −0.1801%, joint stress −0.8612%; five of fifteen gates fail.
+Baseline includes 16 closed episodes across four assets, including DOGE and
+native 1000PEPE. All actual endpoints are flat. This is not a qualified strategy;
+current cumulative evidence is **0/28 hurdle passes**.
 Historical delivery, archive vintage and OI unit definitions remain unverified.

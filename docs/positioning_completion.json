@@ -1,0 +1,45 @@
+{
+  "source_anchor": "290c9b755290a382d696ac86f83a1fbec7ee1fe5",
+  "input_anchor": "7aa7830878821ed4819f2b2feac51cbd9fe1e82c",
+  "publisher_source_commit": "21628c8180a0317ac7bdfda70209cc1cfca08e7d",
+  "window": {
+    "begin": "2025-10-05T00:00:00+00:00",
+    "end_exclusive": "2026-10-05T00:00:00+00:00"
+  },
+  "full_suite_passed": 1521,
+  "full_suite_seconds": 90.24,
+  "candidate_count_cumulative": 28,
+  "qualified_count_cumulative": 0,
+  "objective_four_or_five_robust_strategies_met": false,
+  "passes_hurdles": false,
+  "failed_gates": [
+    "positive_evaluation",
+    "positive_evaluation_after_exit_reserve",
+    "positive_stress",
+    "positive_stress_after_exit_reserve",
+    "daily_sharpe_at_least_half"
+  ],
+  "validation_compounded_return": 0.002145383749598384,
+  "evaluation_return": -0.001800633695525078,
+  "stress_return": -0.008612348832747085,
+  "counts": {
+    "equity_snapshots": 396409,
+    "fills": 195,
+    "funding_cash_events": 21,
+    "closed_trades": 122,
+    "completed_episodes": 44
+  },
+  "policy_callback_count": 395995,
+  "raw_archives_reparsed": 2920,
+  "certified_feature_rows": 8409568,
+  "evidence_sha256": {
+    "audit/positioning_feature_evidence.json": "5ef918dd207c49d1ee37b614e48a402cc36185a0bc896a955b0a645b1a5b37a4",
+    "audit/positioning_output_evidence.json": "533e5d8e78ed29a35f2bee536cc8bc878e9b657169e10d7e4938ecc1866bc97b",
+    "audit/positioning_policy_evidence.json": "175a57d81b2b3cfa06b0a7363108dba1a94aff4ea093a589151b62b8869e7b55",
+    "docs/positioning_results/publication_manifest.json": "f55df06ae28591ebd2c469022548e85a8c240b20dbf2ad471cba9638a74684de"
+  },
+  "historical_delivery_verified": false,
+  "historical_units_verified": false,
+  "full_cleanup_state_reconstruction_passed": false,
+  "research_status": "exploratory reused year; no untouched holdout"
+}

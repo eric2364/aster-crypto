@@ -1,0 +1,6 @@
+phase,completed_closed_episodes,completed_assets,completed_DOGE,completed_PEPE,actual_funding_payments,terminal_flat_resolved
+validation1,5,"DOGEUSDT, PEPEUSDT, SOLUSDT",True,True,1,True
+validation2,8,"ADAUSDT, DOGEUSDT, ETHUSDT, PEPEUSDT, SOLUSDT",True,True,5,True
+validation3,1,ADAUSDT,False,False,0,True
+evaluation,16,"ADAUSDT, DOGEUSDT, LINKUSDT, PEPEUSDT",True,True,7,True
+evaluation_stress,14,"ADAUSDT, DOGEUSDT, PEPEUSDT, XRPUSDT",True,True,8,True

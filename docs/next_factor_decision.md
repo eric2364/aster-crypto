@@ -1,4 +1,9 @@
-# Next factor decision after 26 unsuccessful policies and hypotheses
+# Research decision and evidence journal
+
+Current checkpoint: **0/28 qualified historical families**. The latest
+[OI rebound report](positioning_results/report.html) failed five of fifteen
+gates after separate feature, financial and recorded-policy audits. The notes
+below preserve the preceding research decisions and source checkpoints.
 
 6 October 2026. The previous goal turn made concrete progress: seven fixed
 cross-venue simulations, three scoped independent audits and refreshed
@@ -155,3 +160,25 @@ all 16 streams and 8,409,568 minute rows exactly, including a fresh reparse of
 all 2,920 metrics archives. Five financial trajectories and independent
 accounting/policy certification remain; no Engine outcome has been generated,
 so the historical tested-family count remains 27 and qualified winners remain zero.
+
+
+Candidate 28 now has all five preserved financial trajectories and separate
+independent scoped audits. Validation compounded +0.2145%, baseline evaluation
+−0.1801%, joint stress −0.8612%: no qualified winner and **0/28** cumulative.
+The baseline closed16episodes across ADA/DOGE/LINK/1000PEPE; stress closed14
+and native PEPE changed from positive attribution to a substantial loss.
+Exclude no asset and change no threshold or economic direction after this
+outcome. Price P&L, actual funding and fees remain separate. All actual
+endpoints are flat; the full published report includes every gate and all
+eight legs in all five phases. Accounting and recorded-policy consistency
+cannot validate a predictive mechanism or undo the reused-year search.
+
+The latest goal turn made concrete progress: the exact pre-feature input
+packet, 16 historical feature streams, full numerical/source certification,
+five fixed simulations, independent account and recorded-policy reconstruction,
+and a reviewed audit-gated presentation are complete. The objective of four
+or five robust strategies remains unmet. No original protocol, prior result,
+source timing assumption, fees or tested-family count was rewritten to claim
+success. Any next family requires distinct economic justification and a new
+pre-outcome rule/source/input freeze; this failed operational version is
+evidence against claiming the OI proxy as an established tradable edge.

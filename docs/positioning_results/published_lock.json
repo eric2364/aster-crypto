@@ -1,0 +1,8 @@
+{
+  "remote_commit": "7aa7830878821ed4819f2b2feac51cbd9fe1e82c",
+  "commit_path": "docs/positioning_preregistration",
+  "source_lock_sha256": "1658cbf3fd7a1c2a9ec95c000e6dcad3ce842afb25eb9b456175c9d95bcc62dd",
+  "input_verification_sha256": "b2f5b2c3f97399ca63180e39ee527578958b161af7e0eec56fd97171c65cee42",
+  "historical_features_exist": false,
+  "trials_exist": false
+}

@@ -497,7 +497,7 @@ truly flat. The positive baseline is not a qualified robust strategy;
 cumulative research is0/27. [Audit scope and interpretation](funding_rank_output_audit.md).
 
 
-## Open-interest research source preparation
+## Audited open-interest rebound example
 
 The [new positioning example](../examples/positioning_research/README.md) combines
 reported native quantity-OI contraction, completed price decline/rebound and a
@@ -506,13 +506,31 @@ and one active asset in a common wallet; it does not identify forced liquidation
 [Primary research](positioning_economic_research.md) and the
 [causal contract](positioning_feature_contract_review.md) explain the model.
 
-This example has **certified historical features but no executed strategy result**,
-so it adds no historical success and leaves the current result at **0/27**.
-[The historical feature audit](positioning_historical_features.md) independently
-reconstructed 16 streams and 8,409,568 minute rows exactly. Synthetic tests cover timing,
-native units and actual Engine order mechanics. The runner requires committed
-sources, published exact input locks and separate independent historical feature
-certification before actual simulation. Original delivery times and archive
-vintage remain unverified; the explicit 6/11-minute availability assumptions
-cannot establish a historical point-in-time feed. Five fixed Engine trajectories
-and financial/policy verification are still required before reporting results.
+This example has completed five fixed simulations and independent feature,
+financial and scoped recorded-policy verification. [The report](positioning_results/report.html)
+shows +0.2145% compounded validation, −0.1801% baseline final-quarter return,
+and −0.8612% joint cost/delay stress. Five of fifteen hurdles fail; cumulative
+research remains **0/28 qualified families**. Sixteen baseline closed episodes
+include DOGE and native 1000PEPE, alongside LINK and ADA. All five accounts end
+flat; activity and accounting correctness do not compensate for failed returns.
+
+The [historical feature audit](positioning_historical_features.md) reconstructs
+16 streams and 8,409,568 minute rows exactly. [The financial audit](positioning_financial_reconstruction.md)
+reconstructs 396,409 equity snapshots, 195 fills, 21 funding cash events, 122
+closed average-cost lots and 44 completed episodes across five accounts.
+[The policy audit](positioning_policy_review.md) checks 395,995 in-phase decision
+callbacks and all 49 proposals. Its omission checks apply to independently
+resolved idle windows; exhaustive cleanup/BLOCKED transitions and all unlogged
+aborts are not proved. Original delivery, historical OI units and archive
+vintage remain unverified. The 6/11-minute assumptions cannot establish original
+point-in-time receipt. The reused year is exploratory, not a fresh holdout.
+
+For the exact cache and command sequence, see the
+[example README](../examples/positioning_research/README.md),
+[collector](../examples/positioning/README.md) and
+[publication guide](positioning_publication.md). The observation window remains
+2025-10-05 inclusive to 2026-10-05 exclusive UTC. No earlier warmup is imported.
+The first six months provide history only; three separate validation months
+precede the fixed final-quarter baseline and stress accounts. Certificates,
+raw checksums, cached phases and reports are preserved; modified or partial
+packets fail validation rather than being silently overwritten.
