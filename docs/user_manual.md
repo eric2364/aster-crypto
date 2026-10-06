@@ -433,3 +433,65 @@ A one-minute strategy must define causal availability and staleness explicitly
 before using them; normalized clock labels and current archive receipts do
 not prove original delivery. Native `1000PEPEUSDT` remains bundled.
 [Data audit and limitations](positioning_dataset_audit.md).
+
+## Joint funding-ranked portfolio example
+
+The [funding-rank guide](../examples/funding_rank/README.md) defines one wallet
+holding four different native perpetuals: long the two lowest trailing funding
+intensities and short the two highest. Weekly Sunday 00:05 UTC proposals use
+only past available settlements. Daily reviews can close the retained basket;
+minute callbacks handle actual partial fills and account risk. This is a
+strategy executed on minute data, with holdings up to seven days. Equal entry
+dollars leave market-beta and individual coin-price risk.
+
+Read the [fixed packet](../examples/funding_rank/proposed_protocol.md) and
+[source review](funding_rank_protocol_review.md) before running. There is no
+parameter grid or fitted beta. The same year supplies six months of history,
+three fresh validation accounts and a final quarter under baseline and stress
+costs. All eight native instruments share one 100,000-USDT cross-margin wallet,
+leverage one; four legs initially allocate 25% gross. `1000PEPEUSDT` prices and
+quantities remain bundle units. Uniform baseline slippage is8bps and taker fee5bps;
+stress doubles both, delays execution one minute and halves participation.
+
+```bash
+.venv/bin/python examples/funding_rank/run.py --freeze-only
+# Preserve and privately publish the source/input record before new features.
+.venv/bin/python examples/funding_rank/run.py --execute
+.venv/bin/python examples/funding_rank/run.py --analysis-only
+```
+
+The original source anchor is `ffa52d6b44bfed3f589389dd374719129b671771`, and
+the pre-feature input anchor is `22b21f12054dbde0895c94d1299a81025156ba92`.
+Exact receipts are in [the preregistration folder](funding_rank_preregistration/preregistration.json).
+For the original unchanged inputs and outputs, independent verification is:
+
+```bash
+.venv/bin/python audit/verify_funding_rank_features.py \
+  --source-anchor ffa52d6b44bfed3f589389dd374719129b671771 \
+  --input-anchor 22b21f12054dbde0895c94d1299a81025156ba92
+.venv/bin/python audit/verify_funding_rank_outputs.py \
+  --source-anchor ffa52d6b44bfed3f589389dd374719129b671771 \
+  --input-anchor 22b21f12054dbde0895c94d1299a81025156ba92
+```
+
+Existing certificates are deliberately preserved. To verify again, give the
+feature command a fresh `--output` certificate path, and the financial command
+a fresh `--receipt` path plus `--feature-audit` pointing to that certificate.
+Moving or reacquiring inputs changes the original absolute-path/raw-byte
+provenance: create a separate output packet and record new source/input anchors;
+do not rewrite the published original receipts to make a new dataset match.
+
+The financial verifier reconstructs actual fills, native funding cash,
+cross-margin collateral, all eight leg contributions, completed baskets and15
+gates. It also checks recorded proposal/admission/exit intents against causal
+features and independently reconstructed inventory. Its scope does not prove
+completeness of omitted, unlogged decisions or every abort-state transition.
+Terminal success requires all eight observed quantities exactly zero and no
+live orders **before** the engine's automatic end-of-data cancellation; tiny
+dust and cleanup failures remain visible.
+
+The completed [audited report](funding_rank_results/report.html) failed four of
+15 gates: validation−0.488%, baseline evaluation+0.884%, stress−0.955%.
+All eight assets completed baseline participation and all five endpoints were
+truly flat. The positive baseline is not a qualified robust strategy;
+cumulative research is0/27. [Audit scope and interpretation](funding_rank_output_audit.md).

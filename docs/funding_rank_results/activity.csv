@@ -1,0 +1,6 @@
+phase,weekly_proposals,rejected_weekly_proposals,refusals,completed_generations,entry_transactions,abort_events,blocked_cleanup_events,actual_funding_payments,terminal_flat_resolved
+validation1,4,0,0,4,4,0,0,288,True
+validation2,3,0,0,3,3,0,0,240,True
+validation3,3,0,0,2,3,2,0,168,True
+evaluation,13,0,0,9,12,4,1,756,True
+evaluation_stress,13,0,0,6,11,8,6,504,True

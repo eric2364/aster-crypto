@@ -44,3 +44,20 @@ imports. Policy-intent coverage is separately disclosed; a financial certificate
 alone does not prove that every strategy decision was correct. A conditional
 27-comparison bootstrap cannot turn this repeatedly examined year into a fresh
 holdout or establish non-overfitting.
+
+
+## Executed result — 6 October 2026
+
+All five fixed simulations and independent audits completed. Validation
+compounded to −0.488%, baseline evaluation +0.884%, and stress −0.955%.
+Four of fifteen declared gates failed; this is one unsuccessful exploratory
+family, bringing the cumulative count to **0/27 historical hurdle passes**.
+
+[Published report](../../docs/funding_rank_results/report.html) ·
+[Independent reconstruction](../../docs/funding_rank_output_audit.md) ·
+[User manual and exact audit commands](../../docs/user_manual.md).
+
+The source packet was privately published at
+`ffa52d6b44bfed3f589389dd374719129b671771` and the pre-computation input lock
+at `22b21f12054dbde0895c94d1299a81025156ba92`. Preserve the original receipts
+and outputs; use a fresh location and evidence packet for another execution.

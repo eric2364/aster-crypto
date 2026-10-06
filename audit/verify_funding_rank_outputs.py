@@ -452,6 +452,7 @@ def verify_completed_baskets(completed,diagnostics,preopen,tables,begin,stop):
 def verify_phase(cache,out,phase,lock,input_anchor,policy_features=None):
     name,begin,stop,stress=phase;path=out/'trials'/name
     sealed={n:sha(path/n) for n in OUTPUTS}
+    completion_sha=sha(path/'completion.json')
     parameters=dict(family=FAMILY,phase=name,begin=str(begin),stop=str(stop),stress=stress,
         source_lock_sha256=sha(out/'source_lock.json'),features_sha256=sha(out/'features.parquet'),
         feature_receipt_sha256=sha(out/'feature_receipt.json'),research_status='exploratory reused year; candidate27')
@@ -527,8 +528,8 @@ def verify_phase(cache,out,phase,lock,input_anchor,policy_features=None):
         terminal_flat_resolved=terminal_flat,completed_participants=participants,completed_basket_count=count,joint_account=True)
     for k,v in extra.items():compare(score[k],v,'Additional metric '+k)
     check(set(score)==set(base)|set(extra)|{'runtime_seconds','peak_rss_mib_process'},'Unverified metric fields')
-    check({n:sha(path/n) for n in OUTPUTS}==sealed,'Evidence changed during replay')
-    return dict(outputs_sha256=sealed,equity_snapshots=len(exposure),fills=len(tables['fills']),
+    check({n:sha(path/n) for n in OUTPUTS}==sealed and sha(path/'completion.json')==completion_sha,'Evidence changed during replay')
+    return dict(outputs_sha256=sealed,completion_sha256=completion_sha,equity_snapshots=len(exposure),fills=len(tables['fills']),
         funding_cash_events=len(tables['funding']),closed_trades=len(tables['trades']),completed_baskets=count,
         participants=participants,liquidation_events=liq,terminal_flat_resolved=terminal_flat,
         trajectory_reconstruction_passed=True,recorded_policy_intents=policy_record),score,tables['equity']
@@ -554,6 +555,7 @@ def summary_gates(records):
 
 def verify(cache,out,source_anchor,input_anchor,feature_audit='audit/funding_rank_feature_evidence.json'):
     cache,out=Path(cache),Path(out);own_sha=sha(__file__);lock=packet_guard(out,source_anchor,input_anchor)
+    common_before={name:sha(out/name) for name in ('source_lock.json','input_verification.json','features.parquet','feature_receipt.json','summary.json')}
     check({p.name for p in (out/'trials').iterdir()}=={p[0] for p in PHASES},'Unexpected/missing historical phases')
     feature_receipt=read(out/'feature_receipt.json')
     check(feature_receipt['source_lock_sha256']==sha(out/'source_lock.json') and feature_receipt['features_sha256']==sha(out/'features.parquet'),'Feature seal drift')
@@ -583,8 +585,14 @@ def verify(cache,out,source_anchor,input_anchor,feature_audit='audit/funding_ran
     close(interval['return_interval_bonferroni27'],np.quantile(draws,[.05/54,1-.05/54]),'Conditional 27-comparison interval')
     packet_guard(out,source_anchor,input_anchor);check(own_sha==sha(__file__),'Auditor changed during execution')
     check(policy_sha==sha(policy_path) and feature_certificate_sha==sha(feature_audit),'Policy auditor/causal certificate drift during replay')
+    check(all(sha(out/name)==digest for name,digest in common_before.items()),'Common research evidence changed during replay')
+    for name,record in records.items():
+        path=out/'trials'/name
+        check({n:sha(path/n) for n in OUTPUTS}==record[0]['outputs_sha256'] and sha(path/'completion.json')==record[0]['completion_sha256'],'Previously audited phase changed during later reconstruction')
     return dict(complete=True,errors=[],source_anchor=source_anchor,input_anchor=input_anchor,auditor_sha256=own_sha,
         policy_auditor_sha256=policy_sha,feature_audit_sha256=feature_certificate_sha,
+        source_unchanged_during_audit=True,auditor_source_unchanged=True,policy_source_unchanged=True,
+        feature_receipt_sha256=sha(out/'feature_receipt.json'),
         source_lock_sha256=sha(out/'source_lock.json'),features_sha256=sha(out/'features.parquet'),summary_sha256=sha(out/'summary.json'),
         phases={n:r[0] for n,r in records.items()},gates_reconstructed=True,
         scope='Independent native source minute/settlement cash, cross-margin trajectory, fills, collateral, ledgers, completed quantities, costs, fifteen gates and recorded proposals/admission/exit intents, composed with a separately certified causal feature reconstruction.',

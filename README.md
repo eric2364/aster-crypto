@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **779 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **1,024 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -138,7 +138,7 @@ ETH, DOGE, PEPE, SOL, XRP, LINK and ADA. Official trade/mark archives and actual
 funding are verified; raw datasets stay outside Git. The first thirteen policies
 did not pass all historical hurdles. Six subsequent long/short perpetual
 hypotheses and five external-factor hypotheses are explicitly exploratory because
-they reuse this evaluated year. The completed studies disclose **0/26 historical
+they reuse this evaluated year. The completed studies disclose **0/27 historical
 hurdle passes**. Every candidate, cost stress and failed gate is retained; no
 strategy is presented as proven non-overfit or as demonstrated one-minute scalping.
 
@@ -230,4 +230,17 @@ GitHub maintenance uses push/PR test workflows and monthly dependency-update pro
 
 ### Positioning observations
 
-A separately frozen collector and independent source audit verified **2,920 official archives and 840,960 five-minute open-interest/positioning observations** across the eight native contracts. [Full-year evidence](docs/positioning_data/summary.json) · [Data audit](docs/positioning_dataset_audit.md) · [Collection commands and limits](examples/positioning/README.md). This is a new possible factor input; historical delivery and unit semantics remain unverified, and it establishes no successful strategy. [Next economic decision](docs/next_factor_decision.md) · [Untested cross-sectional funding assessment](docs/cross_sectional_funding_assessment.md). No previous model, costs or outcome was retuned.
+A separately frozen collector and independent source audit verified **2,920 official archives and 840,960 five-minute open-interest/positioning observations** across the eight native contracts. [Full-year evidence](docs/positioning_data/summary.json) · [Data audit](docs/positioning_dataset_audit.md) · [Collection commands and limits](examples/positioning/README.md). This is a new possible factor input; historical delivery and unit semantics remain unverified, and it establishes no successful strategy. [Next economic decision](docs/next_factor_decision.md) · [Original cross-sectional funding assessment](docs/cross_sectional_funding_assessment.md). No previous model, costs or outcome was retuned.
+
+
+### Joint cross-sectional funding rank
+
+The [fixed funding-rank experiment](examples/funding_rank/README.md) ranks
+past funding across eight different native perpetuals in one actual cash
+wallet. Independent causal, financial and recorded-policy checks passed; all
+five phases ended genuinely flat. It failed four of15 gates: validation
+−0.488%, baseline evaluation +0.884%, joint stress −0.955%.
+All eight assets, including DOGE and PEPE, completed baseline participation.
+The positive baseline is not a qualified winner; cumulative research is
+**0/27 historical hurdle passes** on the same reused year.
+[Audited results](docs/funding_rank_results/report.html).

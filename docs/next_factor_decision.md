@@ -92,3 +92,18 @@ price-risk controls, native quantities, collateral policy and actual partial
 fills before simulation. Positioning data can support a separately declared
 state test, once availability assumptions are frozen; it must not silently add
 filters chosen from this already examined year. The result count remains 0/26.
+
+
+## Executed funding-rank checkpoint — 6 October 2026
+
+The previously untested joint funding-ranked basket has now completed five
+fixed account simulations with independent feature and financial reconstruction.
+Compounded validation was −0.488%, final-quarter baseline +0.884%, and stress
+−0.955%. Four of the original fifteen gates failed. Current cumulative research
+is **0/27 historical hurdle passes**; the earlier 0/26 statements describe the
+preceding checkpoint. [Results and audit](funding_rank_output_audit.md) ·
+[Interactive report](funding_rank_results/report.html).
+
+No coefficients, thresholds or costs were retuned after this outcome. The new
+positioning archive remains an unused candidate input. The next mechanism needs
+its own fixed hypothesis and causal availability review before outcome testing.

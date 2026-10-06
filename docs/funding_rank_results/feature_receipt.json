@@ -1,0 +1,40 @@
+{
+  "source_lock_sha256": "fb7f20f2d419f613171df4b19a85e4403c43c9eb449de0f266a75e7187905401",
+  "features_sha256": "d9123658130fdd22c9b04aaf52d61f69ded4089d7785a55f17780f42b3479c75",
+  "rows": 525598,
+  "columns": [
+    "price_BTCUSDT",
+    "yield_BTCUSDT",
+    "valid_BTCUSDT",
+    "price_ETHUSDT",
+    "yield_ETHUSDT",
+    "valid_ETHUSDT",
+    "price_DOGEUSDT",
+    "yield_DOGEUSDT",
+    "valid_DOGEUSDT",
+    "price_PEPEUSDT",
+    "yield_PEPEUSDT",
+    "valid_PEPEUSDT",
+    "price_SOLUSDT",
+    "yield_SOLUSDT",
+    "valid_SOLUSDT",
+    "price_XRPUSDT",
+    "yield_XRPUSDT",
+    "valid_XRPUSDT",
+    "price_LINKUSDT",
+    "yield_LINKUSDT",
+    "valid_LINKUSDT",
+    "price_ADAUSDT",
+    "yield_ADAUSDT",
+    "valid_ADAUSDT"
+  ],
+  "availability_assumptions": {
+    "availability": "trade minute start + two minutes; settlement receipt + one minute strictly before decision",
+    "funding_receipts_assumed": "settlement + one minute unless original historical receipt supplied",
+    "decision_clock": "daily 00:05 UTC; proposals Sunday only",
+    "historical_schedule": "past realized duration-weighted funding proxy, not recovered scheduled accrual",
+    "boundary": "exclusive fixed year; terminal funding cash handled separately",
+    "economic_search": false
+  },
+  "predictor_boundary": "START<=settlement<END; raw source remains preserved"
+}
