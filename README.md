@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **429 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **552 tests passed, including independent margin, execution, publication and prospective residual-model regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -156,6 +156,13 @@ stayed in cash with zero trades and zero returns. It adds one failed exploratory
 family, bringing the disclosed total to **0/25 historical hurdle passes**.
 [Audited residual results](docs/residual_convergence_results/report.html) ·
 [Independent certificate](docs/residual_execution_audit.md).
+
+A separate [cross-venue funding packet](examples/cross_venue/README.md) has
+passed synthetic source, timing and paired-execution review. The full Bybit year
+contains 8,480 preserved responses and complete trade/mark minute grids for all
+eight assets. Its fixed seven-run protocol is awaiting source/input freezing
+and actual numerical research; it does not yet add a historical result or a
+winning strategy. [Independent raw-source audit](docs/cross_venue_data_audit.md).
 
 ```bash
 .venv/bin/python examples/minute_research/download.py --workers 2

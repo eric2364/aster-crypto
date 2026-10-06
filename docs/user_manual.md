@@ -383,3 +383,23 @@ Read the [audited report](residual_convergence_results/report.html) and
 Install the pinned statistical research extra with `uv sync --locked --extra dev --extra research`, or install `.[dev,research]` using pip. Read the
 [example guide](../examples/residual_convergence/README.md) for source freezing,
 execution and independent audit requirements. Original24 results stay preserved.
+
+
+## Cross-venue funding study
+
+The [cross-venue guide](../examples/cross_venue/README.md) gives collector,
+independent source-verification, freeze and execution commands for the same fixed
+year and eight native pairs. This additional family has two separate venue cash
+wallets; hedge gains cannot replenish the other wallet. Equal 1000PEPE quantities
+remain bundle units. The funding predictor uses past available settlements and
+actual observed interval lengths. Bybit funding cash uses an explicitly labeled
+minute-mark proxy, with a predetermined alternative valuation replay.
+
+Read the [protocol](../examples/cross_venue/proposed_protocol.md) and
+[source integration review](cross_venue_preregistration_review.md) before running.
+Freeze source/input/runtime in an empty output folder and retain its Git evidence
+before creating historical features. Exact source and input mismatches stop a
+resume. The seven fixed simulations are one candidate, not seven strategies.
+Numerical results require an additional independent trajectory/feature/gate audit
+before publication. This prospective preparation does not change the existing
+**0/25 historical hurdle passes**, and the reused year provides no fresh holdout.

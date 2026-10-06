@@ -1,0 +1,227 @@
+{
+  "auditor_sha256": "5a9d04b7d3f2a4bd83bcb2cff3b35b9318d8ce2b265a1dce1223028bffef7edd",
+  "complete": true,
+  "dataset_root": "/home/ericwu/Documents/Codex_Backtesting/data_cache/minute-bybit-1y",
+  "dataset_seal_sha256": "298565174c6d9bc580d93a24412b285c80e526578ca7502c284ce45a6fee534c",
+  "end_exclusive": "2026-10-05T00:00:00+00:00",
+  "errors": [],
+  "normalized_files_sha256": {
+    "ADAUSDT/bars.parquet": "793edd822c94de74eccc4536d434567878a6af2368f048028c177c5da8bbd649",
+    "ADAUSDT/funding.parquet": "f539a927e5dee71acf832b5d1857f5a79a55ba90ba74253fc9a5e3939a1da00e",
+    "ADAUSDT/source_manifest.json": "51d0416d7df3d4925b4e4e2044e5acbd6b794322494a6026e7cbc962273e23e5",
+    "BTCUSDT/bars.parquet": "34a03392ba0312ea4e4b99ebf73b635684c32e298756e938d013efd7c56cfed0",
+    "BTCUSDT/funding.parquet": "035ffdfed40a754369285de70f6578847ef6ffc74ff1cf21af70eb7fbd32571d",
+    "BTCUSDT/source_manifest.json": "2220b8dfc2ba2033998e305ad2a0f340dd04a354b5a6e13601b2b1e36c21743e",
+    "DOGEUSDT/bars.parquet": "e5d43e327181b2fe0e266dddf443a6249ae31390ead466b2169c6a7df44d557a",
+    "DOGEUSDT/funding.parquet": "01e7f6fe0aa4fa0bcd91b7979e16efa33973c62918e43c7d0eed5ce894ddd23d",
+    "DOGEUSDT/source_manifest.json": "1bd63a83733fd677a10b00066abc4f9086449888ae15f0019b17be794009951a",
+    "ETHUSDT/bars.parquet": "9af0973754237eb1827b9b5687992fbb228d1f30994591ee497208075c10a40c",
+    "ETHUSDT/funding.parquet": "f839273fbd87930c9e36befe0f6d1760f2e738427e8c3f1e38693968b4e7a973",
+    "ETHUSDT/source_manifest.json": "113eaa89d0628d0bd55a6a36641825756782661c4f11d9b5cedd805bcd432580",
+    "LINKUSDT/bars.parquet": "46cdd6afebabc1c0bfbcc3f5ecd626d94ca150c776689bde853f4d8f5ff9e452",
+    "LINKUSDT/funding.parquet": "bd8e27244fb43e1c4c7c1f9deb307eebc1bde576f0937d4aa7e92be53059ade9",
+    "LINKUSDT/source_manifest.json": "17d002798b2c3e5dd1e9b0a379de751759a672ec212c6a80dfe7f87518ebb138",
+    "PEPEUSDT/bars.parquet": "edf63cdfd8329e14421685b0457172717c65ddc2ee125f93315c9d5463a5578b",
+    "PEPEUSDT/funding.parquet": "3e615450eb1e854e1aadf20ae20547439e56ec1bac2c376fe8fc664eea9fad5f",
+    "PEPEUSDT/source_manifest.json": "9d484e13500aa36edd948025f39cfa346acf99f950fce26de73548d8abc918ca",
+    "SOLUSDT/bars.parquet": "b653711bc37657ce1ef64445dd0813f3b18837806fc27cf3f9cbb96c2829bf01",
+    "SOLUSDT/funding.parquet": "3577f594859a38784ab9f8f5b6247e77c568dc5b154f78f05fbf246d7c7c80e3",
+    "SOLUSDT/source_manifest.json": "fffb281c976fb374604c40028cc4d0f2b0de5f8422c258b00c1912efe4309323",
+    "XRPUSDT/bars.parquet": "638e2e0e428d6f46767fe030569b5a25f7708a792d8d49e86eeb9e5d513e8adc",
+    "XRPUSDT/funding.parquet": "bdc260453d704f20c6eb3912731b10d277a8f6f77b302dc332bf7c42f9a2dfc0",
+    "XRPUSDT/source_manifest.json": "b61a4ac3607be0169d09fec41fab274de69d325a958d3c0710d0bb65e1066c56",
+    "instruments.json": "d28f8fc8cc4df2c1f148730e6458f73fb176da689daf048570c5b6e4bdd8dcf2"
+  },
+  "raw_envelope_identity_digest": "b0b8f9f7194736bd94c86f85455b73db18d6ba087f931ffa872198c5360035d1",
+  "raw_pages": 8480,
+  "scope": "Exact cached source reconstruction; funding cadence completeness and historical metadata are not established. No yield or performance calculation.",
+  "source_commit": "7d01b3e",
+  "source_provenance": {
+    "collector_sha256": "8bae3a5842c8093ef232d773abe5bc69236876c041c13c664592c6f673880999",
+    "instrument_model_sha256": "0b7a89a577e4e901b4eb5461eb761e55f70c525d08e6edea008fd4f973c6f167",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "purpose": "Data reconstruction provenance, not strategy preregistration",
+    "pyarrow": "25.0.1",
+    "python": "3.12.3"
+  },
+  "start": "2025-10-05T00:00:00+00:00",
+  "symbols": [
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "BTCUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "BTCUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "ETHUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "ETHUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "DOGEUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "DOGEUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "1000PEPEUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "PEPEUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "SOLUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "SOLUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "XRPUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "XRPUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "LINKUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "LINKUSDT",
+      "trade_rows": 525600
+    },
+    {
+      "first_funding_timestamp": "2025-10-05T00:00:00+00:00",
+      "funding_rows": 1096,
+      "last_funding_timestamp": "2026-10-05T00:00:00+00:00",
+      "mark_rows": 525600,
+      "native_symbol": "ADAUSDT",
+      "proxy_counts": {
+        "END_last_completed_mark_close_proxy": 1,
+        "settlement_minute_mark_open_proxy": 1095
+      },
+      "raw_pages": {
+        "funding/history": 7,
+        "instruments-info": 1,
+        "kline": 526,
+        "mark-price-kline": 526
+      },
+      "source_interval_minutes_histogram": {
+        "480.0": 1095
+      },
+      "spot_label": "ADAUSDT",
+      "trade_rows": 525600
+    }
+  ]
+}

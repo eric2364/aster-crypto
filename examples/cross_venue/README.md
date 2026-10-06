@@ -1,4 +1,4 @@
-# Bybit fixed-year collector
+# Cross-venue funding experiment and Bybit collector
 
 The collector passed independent preparation review before acquisition. See the [51-case source audit](../../docs/cross_venue_collector_review.md). This collector performs no orders, fitting or profitability calculations. It adds a separate directory and never changes existing Binance data or earlier research sources.
 
@@ -28,10 +28,56 @@ Each `SYMBOL/funding.parquet` contains `timestamp`, `instrument_id`, `funding_ra
 
 Funding interval diagnostics report actual consecutive elapsed times, without interpreting differences as proven missing events or reconstructing schedules. Full history gaps require independent corroboration before a strategy claims complete settlement accounting. No quotes, historical BBO, maker queues, exact settlement tick marks or historical dynamic risk tiers are reconstructed.
 
-Baseline acquisition is about 8,416 candle requests plus eight metadata requests. If actual funding is eight-hourly, approximately 48 history-page requests plus eight END-point requests are needed; hourly settlement would require approximately 352 plus eight. Actual cadence determines the count; no schedule is imposed. The candle total is 8,409,600 rows. Progress per instrument/stream is printed every 50 candle pages and every ten funding pages, with flushed output. At most two symbol jobs are retained at a time. Two workers share a global gate spaced at least 0.11 seconds apart (below ten requests/second), 30-second HTTP timeouts and bounded exponential retries. Endpoint first/last samples are not full-year coverage evidence; the exact grid checks occur only after a completed collection. Disk requirements remain unmeasured until actual pages arrive.
+Baseline acquisition is about 8,416 candle requests plus eight metadata requests. If actual funding is eight-hourly, approximately 48 history-page requests plus eight END-point requests are needed; hourly settlement would require approximately 352 plus eight. Actual cadence determines the count; no schedule is imposed. The candle total is 8,409,600 rows. Progress per instrument/stream is printed every 50 candle pages and every ten funding pages, with flushed output. At most two symbol jobs are retained at a time. Two workers share a global gate spaced at least 0.11 seconds apart (below ten requests/second), 30-second HTTP timeouts and bounded exponential retries. Endpoint first/last samples are not full-year coverage evidence; the exact grid checks occur only after a completed collection. The completed local corpus occupies about 934 MiB, including raw envelopes and normalized files; filesystem allocation can differ.
 
 Synthetic checks:
 
 ```sh
 .venv/bin/python -m pytest tests/test_bybit_collector.py tests/test_bybit_collector_audit.py -q
 ```
+
+
+## Source review and reproduction
+
+The completed year contains 525,600 trade and 525,600 mark rows for each asset,
+8,480 cached responses and 1,096 sourced funding events per asset, including one
+actual event exactly at END. The [independent dataset audit](../../docs/cross_venue_data_audit.md)
+reconstructs the raw source without importing the collector. Verify it with:
+
+```sh
+.venv/bin/python audit/verify_bybit_dataset.py --root data_cache/minute-bybit-1y --out audit/bybit_dataset_evidence.json
+```
+
+The [fixed prospective packet](proposed_protocol.md) defines one additional
+family: equal native quantities long on one venue and short on the other,
+admitted by previous realized funding intensity after conservative roundtrip
+costs. It uses two independent 50,000-USDT wallets and all eight pairs, including
+DOGE and native 1000PEPE. This is slow carry evaluated with minute execution;
+it does not establish a minute scalping edge. See the independent reviews of
+[signals](../../docs/cross_venue_signal_review.md),
+[execution](../../docs/cross_venue_execution_review.md) and
+[assembled runner](../../docs/cross_venue_preregistration_review.md).
+The reused year has already supported 25 unsuccessful candidates.
+
+Install the pinned research environment as described in the root README. From
+an empty result directory, source reconstruction precedes any features or outcomes:
+
+```sh
+.venv/bin/python examples/cross_venue/run.py --freeze-only --out results/cross-venue-funding-1y-v1
+```
+
+Retain the reviewed source commit and publish the generated source/input/runtime
+lock and verification receipt to the private repository before execution:
+
+```sh
+.venv/bin/python examples/cross_venue/run.py --execute --out results/cross-venue-funding-1y-v1
+```
+
+The runner permits exactly seven sequential joint simulations: three validation
+months, primary evaluation baseline/stress, and alternative funding-mark
+evaluation baseline/stress. It preserves all 25 outputs per phase and rejects
+source/input/runtime drift or altered cached outputs. A partial run is preserved
+for explicit diagnosis; do not erase it or run a neighboring parameter grid.
+Its numerical summary remains **unpublished** until separate independent
+financial, causal-feature and gate reconstruction succeeds. No strategy from
+this packet has yet been certified as a historical hurdle pass.

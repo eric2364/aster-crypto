@@ -1,9 +1,11 @@
 # Proposed packet: cross-venue realized-funding differential
 
-Status: prospective design awaiting review and implementation. This is **not yet
-a preregistered, frozen or tested 26th candidate**. No full Bybit acquisition,
-historical feature fitting, strategy signals or Engine results have been
-inspected for this definition. The same year has already been examined through
+Status: prospective implemented packet reviewed with synthetic tests. This is
+**not yet a source/input-frozen or historically tested 26th candidate**. The full
+Bybit year has been acquired and checked for source reconstruction only. No
+historical strategy features, fitting, signals or Engine outcomes have been
+calculated or inspected for this definition. Source/input/runtime freezing and
+its dated Git evidence must precede that work. The same year has already been examined through
 25 unsuccessful candidates; this remains exploratory even after a code freeze.
 There is one economic family, not several independent edges. Earlier packets,
 execution code and results are not amended.
@@ -29,11 +31,11 @@ parameter selection or ineligible-budget redistribution is permitted.
 ## Previous-only predictor: exact definition
 
 At decision time `t`, construct each venue's funding sequence **only from records
-already available at t**, ordered by actual settlement time. Availability is
+with availability strictly before t**, ordered by actual settlement time. Availability is
 `max(settlement_time, explicit_historical_receipt_if_present) + 1 minute`.
 Reject a receipt before settlement. An archive downloaded today is not an
 original historical receipt. Without such receipts, the one-minute lag is an
-explicit modeling assumption. Future/unpublished rows must not change the
+explicit modeling assumption. Records whose availability equals t are deferred; future/unpublished rows must not change the
 sequence, predecessor choice, invalidity flags or feature at t.
 
 For adjacent known settlements `s_prev, s_j`, observed elapsed hours are
@@ -181,6 +183,10 @@ venue mark candle's **open** for the minute containing the actual settlement.
 Label it a minute-mark approximation, not exchange-exact cash. At the exclusive
 END, where no new within-year mark-open exists, use the last completed within-
 year mark close. Never download/use a post-year candle to fill that boundary.
+The first START event has no preceding within-year completed mark for the
+alternative. Keep its raw rate in causal history without inventing a cash mark;
+no Engine fold begins before April, and phase clipping precedes required-mark
+validation for that alternative cash replay.
 Duplicate/missing mark coverage fails quality, not interpolation.
 
 Predetermine an alternative valuation using the latest completed same-venue

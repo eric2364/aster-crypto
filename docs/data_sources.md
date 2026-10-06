@@ -175,5 +175,10 @@ It is a source assessment, not another completed backtest or winning strategy.
 The additive [Bybit collector](../examples/cross_venue/README.md) now preserves
 raw response bytes and reconstructs all normalized fields offline. Its
 [independent source audit](cross_venue_collector_review.md) passed 51 synthetic
-cases. That preparation audit does not certify a downloaded full year; run the
-collector and its separate `--verify-only` command to establish that evidence.
+cases. The full year has since been acquired: each of eight assets has
+525,600 trade and mark minutes, with 8,480 cached responses across the corpus.
+A separate [full-source reconstruction audit](cross_venue_data_audit.md) verifies
+every normalized value independently. Funding has 1,096 actual events per asset,
+including an event at END valued with the last within-year mark close. These
+checks establish consistency with the returned source, not historical receipt
+times, exact settlement marks, historical fee tiers or an unbiased survivor universe.
