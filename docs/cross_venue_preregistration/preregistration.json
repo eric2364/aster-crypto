@@ -1,0 +1,16 @@
+{
+  "economic_family": "cross_venue_realized_funding_differential",
+  "existing_completed_candidate_count": 25,
+  "frozen_at_utc": "2026-10-06T00:17:38Z",
+  "historical_features_exist": false,
+  "independent_bybit_certificate_sha256": "e62cd5a9ca3222fa1dbdac7467f9b45051495415d60d3a98c0c124deae2c8d45",
+  "input_files": 8814,
+  "input_verification_sha256": "9ebf7cd4ad816539e333077e37dbcb8c9ef67b0a5132ac91d51f7515487e09ef",
+  "limitations": "Prospective relative to this candidate only; same fixed year reused after 25 failures, not an untouched holdout.",
+  "proposed_candidate_number": 26,
+  "source_commit": "98fe45a55866ccfd1fa5a4e68deb52a127ff7ff2",
+  "source_files": 40,
+  "source_lock_sha256": "a2e3a341a84e49fd2a4b1a09533dbd3b69e65aca0e8b9cc783879ccbad6b6919",
+  "status": "source/input/runtime frozen before historical feature construction or outcomes",
+  "trial_directory_exists": false
+}
