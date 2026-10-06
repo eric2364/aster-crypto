@@ -182,3 +182,16 @@ every normalized value independently. Funding has 1,096 actual events per asset,
 including an event at END valued with the last within-year mark close. These
 checks establish consistency with the returned source, not historical receipt
 times, exact settlement marks, historical fee tiers or an unbiased survivor universe.
+
+## Positioning input reconnaissance (not yet a strategy dataset)
+
+Official Binance daily USD-M `metrics` archives provide reported open interest
+and several trader/position ratios at observed five-minute clocks. The fixed-year
+[24-file first/middle/last-day sample](positioning_archive_probe.json) and
+[24-file transition sample](positioning_transition_probe.json) verify archive checksums,
+native identities and sampled schema/clock coverage only. They do not establish
+a complete year, historic receipt timing, unrevised vintages or liquidation
+identification. Some files are physically unordered. Native `1000PEPEUSDT` is
+retained. See the [next-factor decision](next_factor_decision.md) and
+[source feasibility review](next_positioning_feasibility.md) before using this
+as predictive data. The existing minute price/mark/funding datasets are unchanged.

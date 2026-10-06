@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **696 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **747 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -227,3 +227,7 @@ These are actual measured workloads, not projections. Data construction time is 
 Next priorities are streaming Arrow event/ledger storage, historical mark/funding/listing coverage, exact venue margin tiers, and quote/trade/L2 execution. Full constraints and future directions are in [limitations](docs/limitations.md); [architecture](docs/architecture.md) and [decision log](docs/decisions.md) explain the choices.
 
 GitHub maintenance uses push/PR test workflows and monthly dependency-update proposals. See [maintenance guide](docs/github_maintenance.md). No automatic live trading or deployment is configured.
+
+### Positioning input preparation
+
+A separately reviewed collector adds native five-minute open-interest and trader-ratio observations as a possible new factor input. [48 checksum-verified samples](docs/positioning_probe_review.json) cover all eight native contracts; this preparation does not yet establish complete-year coverage or a successful strategy. [Evidence and next decision](docs/next_factor_decision.md) · [Collection commands and limits](examples/positioning/README.md) · [Independent collector review](docs/positioning_collector_review.md). No previous model, costs or outcome was retuned.
