@@ -20,6 +20,7 @@ import numpy as np
 import pandas as pd
 
 REPO=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(REPO))
 SYMBOLS=('BTCUSDT','ETHUSDT','DOGEUSDT','PEPEUSDT','SOLUSDT','XRPUSDT','LINKUSDT','ADAUSDT')
 VENUES=('binance',)
 FAMILY='joint_cross_sectional_funding_rank'
@@ -448,7 +449,7 @@ def verify_completed_baskets(completed,diagnostics,preopen,tables,begin,stop):
     return sorted(participants),len(generations)
 
 
-def verify_phase(cache,out,phase,lock,input_anchor):
+def verify_phase(cache,out,phase,lock,input_anchor,policy_features=None):
     name,begin,stop,stress=phase;path=out/'trials'/name
     sealed={n:sha(path/n) for n in OUTPUTS}
     parameters=dict(family=FAMILY,phase=name,begin=str(begin),stop=str(stop),stress=stress,
@@ -485,6 +486,11 @@ def verify_phase(cache,out,phase,lock,input_anchor):
     state,preopen=reconstruct(tables,exposure,bars,funding,specs,cfg,begin,stop)
     diagnostics=read(path/'strategy_diagnostics.json');completed=read(path/'completed_baskets.json')
     participants,count=verify_completed_baskets(completed,diagnostics,preopen,tables,begin,stop)
+    policy_record=None
+    if policy_features is not None:
+        from audit.verify_funding_rank_policy import verify_intents
+        policy_record=verify_intents(policy_features,diagnostics,preopen,state.preopen_account,
+            specs,tables['events'],begin,stop,cfg,completed=completed)
     legs=[]
     for symbol in SYMBOLS:
         i=iid('binance',symbol)
@@ -525,7 +531,7 @@ def verify_phase(cache,out,phase,lock,input_anchor):
     return dict(outputs_sha256=sealed,equity_snapshots=len(exposure),fills=len(tables['fills']),
         funding_cash_events=len(tables['funding']),closed_trades=len(tables['trades']),completed_baskets=count,
         participants=participants,liquidation_events=liq,terminal_flat_resolved=terminal_flat,
-        trajectory_reconstruction_passed=True),score,tables['equity']
+        trajectory_reconstruction_passed=True,recorded_policy_intents=policy_record),score,tables['equity']
 
 
 def summary_gates(records):
@@ -546,12 +552,18 @@ def summary_gates(records):
     return gates,validation,reserve,months
 
 
-def verify(cache,out,source_anchor,input_anchor):
+def verify(cache,out,source_anchor,input_anchor,feature_audit='audit/funding_rank_feature_evidence.json'):
     cache,out=Path(cache),Path(out);own_sha=sha(__file__);lock=packet_guard(out,source_anchor,input_anchor)
     check({p.name for p in (out/'trials').iterdir()}=={p[0] for p in PHASES},'Unexpected/missing historical phases')
     feature_receipt=read(out/'feature_receipt.json')
     check(feature_receipt['source_lock_sha256']==sha(out/'source_lock.json') and feature_receipt['features_sha256']==sha(out/'features.parquet'),'Feature seal drift')
-    records={p[0]:verify_phase(cache,out,p,lock,input_anchor) for p in PHASES}
+    feature_certificate=read(feature_audit);feature_certificate_sha=sha(feature_audit)
+    check(feature_certificate['complete'] is True and feature_certificate['errors']==[] and feature_certificate['features_sha256']==sha(out/'features.parquet') and feature_certificate['source_lock_sha256']==sha(out/'source_lock.json'),'Require exact independently certified causal features')
+    check(feature_certificate['source_anchor']==source_anchor and feature_certificate['input_freeze_anchor']==input_anchor,'Feature audit anchors differ')
+    check(feature_certificate['auditor_sha256']==sha(REPO/'audit/verify_funding_rank_features.py') and feature_certificate['reference_helper_sha256']==sha(REPO/'audit/verify_cross_venue_features.py'),'Feature reference auditor source drift')
+    policy_path=REPO/'audit/verify_funding_rank_policy.py';policy_sha=sha(policy_path)
+    features=pd.read_parquet(out/'features.parquet')
+    records={p[0]:verify_phase(cache,out,p,lock,input_anchor,policy_features=features) for p in PHASES}
     gates,validation,reserve,months=summary_gates(records);summary=read(out/'summary.json')
     check(summary['gates']==gates and summary['passes_hurdles']==all(gates.values()) and summary['failed_gates']==[k for k,v in gates.items() if not v],'Fifteen summary gates differ')
     close(summary['validation_compounded_return'],validation,'Validation compound');close(summary['validation_after_exit_reserve'],reserve,'Validation after reserve')
@@ -570,19 +582,23 @@ def verify(cache,out,source_anchor,input_anchor):
     close(interval['return_interval95'],np.quantile(draws,[.025,.975]),'Conditional 95 interval')
     close(interval['return_interval_bonferroni27'],np.quantile(draws,[.05/54,1-.05/54]),'Conditional 27-comparison interval')
     packet_guard(out,source_anchor,input_anchor);check(own_sha==sha(__file__),'Auditor changed during execution')
+    check(policy_sha==sha(policy_path) and feature_certificate_sha==sha(feature_audit),'Policy auditor/causal certificate drift during replay')
     return dict(complete=True,errors=[],source_anchor=source_anchor,input_anchor=input_anchor,auditor_sha256=own_sha,
+        policy_auditor_sha256=policy_sha,feature_audit_sha256=feature_certificate_sha,
         source_lock_sha256=sha(out/'source_lock.json'),features_sha256=sha(out/'features.parquet'),summary_sha256=sha(out/'summary.json'),
         phases={n:r[0] for n,r in records.items()},gates_reconstructed=True,
-        scope='Independent native source minute/settlement cash, cross-margin trajectory, fills, collateral, ledgers, completed quantities, costs and fifteen gates. Full omitted policy intent/causal feature reconstruction are separate certificates.')
+        scope='Independent native source minute/settlement cash, cross-margin trajectory, fills, collateral, ledgers, completed quantities, costs, fifteen gates and recorded proposals/admission/exit intents, composed with a separately certified causal feature reconstruction.',
+        limitations=['Recorded-policy verification does not reconstruct omitted unlogged decisions or prove completeness of every abort-state transition.','Causal feature availability includes declared assumptions; this reused year is not a fresh holdout.'])
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--cache',default='data_cache/minute-perpetual-1y');parser.add_argument('--out',default='results/funding-rank-1y-v1')
     parser.add_argument('--source-anchor',required=True);parser.add_argument('--input-anchor',required=True)
+    parser.add_argument('--feature-audit',default='audit/funding_rank_feature_evidence.json')
     parser.add_argument('--receipt',default='audit/funding_rank_output_evidence.json')
     args=parser.parse_args();check(not Path(args.receipt).exists(),'Preserve existing independent certificate')
-    receipt=verify(args.cache,args.out,args.source_anchor,args.input_anchor)
+    receipt=verify(args.cache,args.out,args.source_anchor,args.input_anchor,args.feature_audit)
     Path(args.receipt).parent.mkdir(parents=True,exist_ok=True)
     with Path(args.receipt).open('x') as stream:stream.write(json.dumps(receipt,indent=2,allow_nan=False)+'\n')
     print('Independent five-phase trajectory and fifteen-gate reconstruction passed.')
