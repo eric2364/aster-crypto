@@ -1,0 +1,14 @@
+{
+  "source_commit": "290c9b755290a382d696ac86f83a1fbec7ee1fe5",
+  "proposed_candidate_number": 28,
+  "historical_features_exist": false,
+  "trial_directory_exists": false,
+  "source_lock_sha256": "1658cbf3fd7a1c2a9ec95c000e6dcad3ce842afb25eb9b456175c9d95bcc62dd",
+  "input_verification_sha256": "b2f5b2c3f97399ca63180e39ee527578958b161af7e0eec56fd97171c65cee42",
+  "source_files": 43,
+  "perpetual_input_files": 308,
+  "metrics_input_files": 8779,
+  "published_at_utc": "2026-10-06T02:12:24.986731+00:00",
+  "data_window": "2025-10-05T00:00Z <= source minute start < 2026-10-05T00:00Z",
+  "scope": "Pre-feature/pre-execution freeze on a reused historical year; no fitted parameters or selection; assumptions do not establish original delivery/vintage"
+}
