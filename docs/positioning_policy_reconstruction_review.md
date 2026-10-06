@@ -1,0 +1,23 @@
+# Independent positioning recorded-policy source review
+
+Reviewed `audit/verify_positioning_policy.py` SHA-256 `4ad49511b6c6cdc16409aee90d6cccff90bb2a308924e5960f19ecf53743b332` for source anchor `290c9b755290a382d696ac86f83a1fbec7ee1fe5` and input anchor `7aa7830878821ed4819f2b2feac51cbd9fe1e82c`. This review uses manufactured data only. No actual strategy outcomes were read, historical features produced, historical strategy run, or frozen economics changed by the reviewer.
+
+The module independently checks recorded current eligibility and deterministic native priority, ten-percent fresh-account admission and quantity floors, immutable order targets/deadlines, actual full-entry completion clocks and VWAP, mandatory held and partial-entry exits, actual successful closed episodes and eligible omissions in independently resolved idle windows. It consumes pre-callback quantity, mark, average-entry and account evidence reconstructed by the separate financial auditor; it does not import the production strategy, runner or feature builder.
+
+Independent adversaries reproduced three scoped false certificates in the draft. A successful entry could also claim admission rejection; a premature executable exit could be labeled a four-hour hold; and a real completed entry followed by a normal flat exit could omit its closed-episode diagnostic and export. The author repaired all three. Admission now has one mutually exclusive genuine outcome, recorded exits validate the current source condition and precedence, and successful normal-flat completion requires the actual closed-episode record before clearing held state. Required exit diagnostics also link to an actual immutable same-callback close target, and pending opening transactions must be canceled on the checked abort path.
+
+The cohort wrapper requires a separately passing complete financial certificate, its explicit financial-scope and gate checks, the exact candidate count and five phase seals, independently certified feature hashes, anchors, common receipts and current auditor/helper identities. The review also found a final-boundary stability gap: a final provenance guard followed the last hash comparison. The author added comparison after that final guard. Independent tests reject mutation during it and mutation of the executing policy auditor, and reject relabeled source/summary/features or altered completion/output seals. CLI certificates use fresh paths.
+
+The final source also checks foreign accepted/live-order abort requirements before diagnostic state changes can hide them, and dormant unexpected native inventory. Recorded flat/cooldown transitions also require a preceding actual exit transaction or recorded abort state, preventing fabricated idle cooldowns from masking eligible reviews. A mechanical CLI bootstrap fix ensures direct script execution can import independent auditors outside the repository directory; the subprocess regression uses nonexistent inputs only and writes no certificate.
+
+The pending-cancellation flatness rule was checked against the actual frozen coordinator rather than generalized from its parent class. `PositioningPortfolio._flat` requires empty tracked live IDs; those IDs update at the start of the next callback, so a callback-local cancellation does not immediately establish resolved flatness for this source. The verifier retains the corresponding pre-callback live-order check. This is a source-specific decision, not a general claim about all cancellation APIs.
+
+Verification:
+
+```sh
+.venv/bin/python -m pytest tests/test_positioning_policy.py tests/test_positioning_policy_reconstruction_review.py -q
+```
+
+Result: **50 passed in 8.22 seconds**, comprising 25 independent-review cases and 25 author cases. Positive tests include a complete manufactured multi-hour Engine/export lifecycle and a valid cohort provenance envelope before negative tampering. Cohort guard tests stub the policy semantic function to isolate receipt binding; separate positive/negative tests exercise the real semantic verifier. No remaining material blocker was identified for the stated scope of these reviewed bytes.
+
+The certificate must retain `policy_reconstruction_complete`, `full_cleanup_state_reconstruction_passed`, `all_unlogged_abort_transitions_proved` and `publication_ready` as false. Its positive recorded-policy flag does not establish exhaustive ABORTING/BLOCKED cleanup-state equivalence or omissions outside resolved audited idle windows. Actual cohort execution of this audit remains separate from source signoff. Source-availability assumptions, historical native-OI units/vintage and the already examined research year remain limitations; financial or scoped policy consistency establishes no profitability claim.
