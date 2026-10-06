@@ -246,7 +246,7 @@ The positive baseline is not a qualified winner; cumulative research is
 [Audited results](docs/funding_rank_results/report.html).
 
 
-### Next open-interest mechanism: source preparation
+### Next open-interest mechanism: certified historical features
 
 The [positioning example](examples/positioning_research/README.md) now implements
 delayed native quantity-OI features and a long/cash rebound coordinator with
@@ -257,6 +257,9 @@ published source/input locks and an independent historical feature certificate
 before simulation. [Primary scholarly evidence](docs/positioning_economic_research.md)
 explains both the mechanism and its competing continuation risks.
 
-No historical feature or study outcome has been generated. This unexecuted
-candidate adds no success: current cumulative evidence remains **0/27**.
+The privately published source/input freeze preceded feature construction.
+[Independent historical reconstruction](docs/positioning_historical_features.md)
+passed all 16 streams and 8,409,568 minute rows with exact numerical agreement.
+No strategy outcome has been generated; this candidate adds no success and
+current cumulative evidence remains **0/27**.
 Historical delivery, archive vintage and OI unit definitions remain unverified.

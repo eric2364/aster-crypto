@@ -146,3 +146,12 @@ and its source review, followed by the privately published exact source/input
 lock and controlled feature construction. Only that complete independent
 certificate can admit the five fixed Engine trajectories. Source preparation
 has not incremented the historical tested-family count.
+
+The actual pre-feature source/input packet was subsequently published privately
+at `7aa7830`, with source anchor `290c9b7`. The reviewed independent feature
+auditor was published at `dabe3a1` before controlled feature generation.
+[Full historical reconstruction](positioning_historical_features.md) now passes
+all 16 streams and 8,409,568 minute rows exactly, including a fresh reparse of
+all 2,920 metrics archives. Five financial trajectories and independent
+accounting/policy certification remain; no Engine outcome has been generated,
+so the historical tested-family count remains 27 and qualified winners remain zero.

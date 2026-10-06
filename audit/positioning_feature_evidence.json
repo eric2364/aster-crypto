@@ -1,0 +1,238 @@
+{
+  "complete": true,
+  "errors": [],
+  "source_anchor": "290c9b755290a382d696ac86f83a1fbec7ee1fe5",
+  "input_anchor": "7aa7830878821ed4819f2b2feac51cbd9fe1e82c",
+  "source_lock_sha256": "1658cbf3fd7a1c2a9ec95c000e6dcad3ce842afb25eb9b456175c9d95bcc62dd",
+  "feature_receipt_sha256": "faa897a7e5c783de7ac2dbb60364b1b03324a20caa57dfa35291c4481ff5437f",
+  "features_sha256": {
+    "baseline": {
+      "binance:perpetual:BTCUSDT": "39123698cf0c91f6e3449188e22ac8b4b63b01a4a91c1c41453ae1c9609d5bf2",
+      "binance:perpetual:ETHUSDT": "ee226dea63d5b07c73ee2114c3788190ace0054b859e50b401406fde9e92d4d3",
+      "binance:perpetual:DOGEUSDT": "895b3f076667777cb1dea32ece9299a70fa11f84c4cdbab9b2595f3b5571d631",
+      "binance:perpetual:1000PEPEUSDT": "68278ac5c1e3defd60d0191401d12467ffeb252b2407c59ffbdff8205e87a570",
+      "binance:perpetual:SOLUSDT": "ac5e41d6413f90223695ee0b558ee59a7b7ac1ab15e62b73c908022bc2610b98",
+      "binance:perpetual:XRPUSDT": "62afab88e254331763b48f7bf028e80723684ba924883444902f7658ecfdea1f",
+      "binance:perpetual:LINKUSDT": "44ed02fdab0570d8a9ef28b8d08c6967a0edb94545574e361d3a7ded13e7259f",
+      "binance:perpetual:ADAUSDT": "31ec498783358bbd376611f747c1cf9a06772c2368ba4609b7be4a512c0b16a2"
+    },
+    "delayed": {
+      "binance:perpetual:BTCUSDT": "795266c9babb3e78c0d082732793123251d87969b8c453bc9225de2eacc84270",
+      "binance:perpetual:ETHUSDT": "0279b6cbfa0173ca0d982cfaaf51a7fb5d075d8a4b06b50a9cdf01b1db67b8a3",
+      "binance:perpetual:DOGEUSDT": "016c4117b681fe3c0d972f033a64fe98e823773878186d567da9c2de2ab6fab3",
+      "binance:perpetual:1000PEPEUSDT": "eb996e3706521a4d62857117e5cb749cb0ab4f9f24d9fa00a496a3881f6e133d",
+      "binance:perpetual:SOLUSDT": "4bfb186a29c6da1297c83f36831816798f02f3a7648b3e5d130e88867b314ccc",
+      "binance:perpetual:XRPUSDT": "e234fdf4fc5fc9ca34e565b7922136259505a639d1e7a1785303b6f20f39fc30",
+      "binance:perpetual:LINKUSDT": "38b4e5f0632d1808bf133db061a2f6a49cd177ddf772b43bade508a8c8bff654",
+      "binance:perpetual:ADAUSDT": "00e375d05f096839431d8a62638a369b0a1cbc4e0586153d16b5039239499882"
+    }
+  },
+  "published_lock_sha256": "bb94b28cfd2b557e5b23b2e5f38d370c94f44787ae7a4039bf28be3c8405005f",
+  "input_verification_sha256": "b2f5b2c3f97399ca63180e39ee527578958b161af7e0eec56fd97171c65cee42",
+  "source_unchanged_during_audit": true,
+  "input_unchanged_during_audit": true,
+  "features_unchanged_during_audit": true,
+  "auditor_source_unchanged": true,
+  "scope": {
+    "native_stream_count": 8,
+    "delays_minutes": [
+      6,
+      11
+    ],
+    "begin": "2025-10-05T00:00:00+00:00",
+    "end": "2026-10-05T00:00:00+00:00",
+    "full_reconstruction": true
+  },
+  "auditor_path": "audit/verify_positioning_features.py",
+  "auditor_sha256": "0c0384b73c7ae92b542753f989cef50c5bca0e4a9dcf0a5a771d647f6c69af4a",
+  "raw_dataset_helper_sha256": "12749f9fe814909e8cd356404c0729eb18705488bb072321a93ae7dfd3e76df2",
+  "completed_at_utc": "2026-10-06T02:20:09.361023+00:00",
+  "checks": [
+    {
+      "native_id": "binance:perpetual:BTCUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:BTCUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:ETHUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:ETHUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:DOGEUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:DOGEUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:1000PEPEUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:1000PEPEUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:SOLUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:SOLUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:XRPUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:XRPUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:LINKUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:LINKUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:ADAUSDT",
+      "delay_minutes": 6,
+      "rows": 525598,
+      "valid_rows": 525533,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    },
+    {
+      "native_id": "binance:perpetual:ADAUSDT",
+      "delay_minutes": 11,
+      "rows": 525598,
+      "valid_rows": 525528,
+      "source_price_rows": 525600,
+      "source_metric_rows": 105120,
+      "numeric_fields_checked": 3679186,
+      "maximum_absolute_error": 0.0,
+      "full_reconstruction": true
+    }
+  ],
+  "raw_archives_reparsed": 2920,
+  "raw_source_files_checked": 8760,
+  "dataset_certificate_sha256": "39430e318124c1f0954886ef086405ebfe02d2d28e408332b0b95ff538120798",
+  "historical_delivery_verified": false,
+  "historical_units_verified": false,
+  "limitations": [
+    "Exact reproduction is conditional on fixed assumed availability, not original historical receipts/vintages.",
+    "Constant native scaling cancels; historical unit-definition breaks remain unverified.",
+    "No strategy, economic forecast, profitability, liquidation attribution or untouched validation is certified."
+  ]
+}
