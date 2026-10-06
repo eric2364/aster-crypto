@@ -2,6 +2,18 @@
 
 `audit/verify_positioning_policy.py` is separate from the frozen candidate 28 model and financial auditor. It imports no production strategy, signals, runner or Engine. Its reference uses already independently reconstructed pre-callback quantities, venue accounts, source marks and actual average entry prices. This matters because callbacks occur after completed-price marks and funding settlement, before the current minute's open fills. A same-clock future open fill cannot justify an earlier completed entry.
 
+The actual preserved [scoped certificate](../audit/positioning_policy_evidence.json)
+now passes all five fixed phases. It examines **395,995 actionable in-phase
+minute callback clocks**, 76,344 resolved idle review clocks, and all 49 recorded
+proposals. Those produced 48 completed entries and 44 successfully closed
+episodes across the five separate accounts. Opening a complete entry alone
+does not establish a completed successful episode. The callback domain is
+`phase_begin < clock < phase_stop`: no prior close triggers a start callback,
+and the coordinator returns at the stop boundary. The financial certificate
+separately covers all 396,409 minute/settlement equity snapshots and actual
+terminal inventory/orders. The original economic and execution sources remain
+unchanged; no strategy simulation was rerun to alter these checks.
+
 The pure `verify_policy` helper examines every actual minute callback in each phase. At five-minute review clocks, it recomputes eligibility from certified quantity and price features and the fixed native priority. In independently accounted, resolved, non-cooldown idle windows it rejects omitted eligible proposals. Every recorded proposal must have exactly one genuine admission outcome: either a correctly reasoned rejection and no entry, or a correctly sized entry and no rejection. Native quantity uses exact decimal fractions and the fresh 10% equity budget; current-mark cross-margin, tick-rounded adverse execution, fees, minima and reserve checks are recalculated. The submitted actual order IDs, native target vector, market GTC/reduce-only status, direction, activation and immutable five-minute deadline must agree.
 
 Recorded entry completion requires actual fully filled order evidence visible before that callback, the immutable target quantities, actual last-fill completion time and actual fill VWAP. Four-hour holding uses the last actual entry fill, rather than intent or callback observation. Validity, stale age, adverse known closed price and mandatory holding exits are checked every minute while the recorded position is active. An exit diagnostic must link to actual same-callback immutable reduce-only targets; early or invented exit reasons fail. Actual resolved flat plus a full one-hour cooldown is required. A normal-flat declaration requires an actual exit transaction, and abort-flat requires a recorded abort/blocked state; invented cooldowns cannot mask idle eligibility. A normal successful closure must export its completed episode, and an opening completion cannot substitute for a fully closed successful episode. Terminal request timing is checked at exactly stop minus ten minutes.
