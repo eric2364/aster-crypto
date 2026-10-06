@@ -1,0 +1,25 @@
+{
+  "archives": 2920,
+  "availability_verified": false,
+  "economic_features_or_outcomes": false,
+  "end_exclusive": "2026-10-05",
+  "native_symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "DOGEUSDT",
+    "1000PEPEUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "ADAUSDT"
+  ],
+  "rows_per_symbol": 105120,
+  "runtime": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1",
+    "python": "3.12.3"
+  },
+  "source_sha256": "4c1696fd8d0685f1dcc3222aa0b27d0c87ee1f728718c29f02b4ef067c246749",
+  "start": "2025-10-05"
+}

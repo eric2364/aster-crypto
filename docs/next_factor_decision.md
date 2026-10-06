@@ -71,3 +71,24 @@ The 51 targeted collector tests include 29 independent adversarial cases.
 The recorded search count includes correlated policy variants; it is not a count
 of 26 independent economic edges. Full real acquisition has not been run by
 this preparation.
+
+## Actual acquisition and next untested mechanism
+
+After source preparation was committed and privately uploaded at `241a650`,
+all 2,920 archives passed full collection and offline verification. The separate
+source auditor reconstructed all 840,960 observations and 5,045,760 numeric
+values exactly, with source and input hashes unchanged.
+[Compact actual evidence](positioning_data/summary.json) ·
+[Independent audit](positioning_dataset_audit.md). No forecast or economic
+outcome was generated, and historical delivery/unit semantics remain unverified.
+
+An independent inspection also confirms the existing studies did not test a
+joint, different-underlying portfolio long low-funding perpetuals and short
+high-funding perpetuals. That is a meaningful untested funding-relative-value
+hypothesis, related to earlier funding fades; it is not four independent edges
+or a successful result. [Assessment](cross_sectional_funding_assessment.md).
+The next economic work must specify and review one such joint portfolio, its
+price-risk controls, native quantities, collateral policy and actual partial
+fills before simulation. Positioning data can support a separately declared
+state test, once availability assumptions are frozen; it must not silently add
+filters chosen from this already examined year. The result count remains 0/26.

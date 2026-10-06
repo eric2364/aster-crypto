@@ -1,0 +1,126 @@
+{
+  "complete": true,
+  "errors": [],
+  "source_anchor": "241a6502a939a4bfe27dea938bdb5ef151808f46",
+  "collector_sha256": "4c1696fd8d0685f1dcc3222aa0b27d0c87ee1f728718c29f02b4ef067c246749",
+  "auditor_sha256": "12749f9fe814909e8cd356404c0729eb18705488bb072321a93ae7dfd3e76df2",
+  "source_unchanged_during_audit": true,
+  "auditor_source_unchanged": true,
+  "completed_at_utc": "2026-10-06T01:04:23.474798+00:00",
+  "complete_seal_sha256": "3dea755f9910994311026ad8eeb9ca865af45c89cd39781bfca8242fae02fa61",
+  "exact_normalization_reconstruction_passed": true,
+  "source_and_runtime_reconstruction_passed": true,
+  "evidence_unchanged_during_audit": true,
+  "normalized_source_file_count": 18,
+  "raw_archive_count": 2920,
+  "raw_source_files_checked": 8760,
+  "numeric_values_checked": 5045760,
+  "original_delivery_availability_verified": false,
+  "historical_units_verified": false,
+  "utc_and_five_minute_grid_are_explicit_assumptions": true,
+  "economic_features_or_outcomes_inspected": false,
+  "checks": [
+    {
+      "native_symbol": "BTCUSDT",
+      "instrument_id": "binance:perpetual:BTCUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 104,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "ETHUSDT",
+      "instrument_id": "binance:perpetual:ETHUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 105,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "DOGEUSDT",
+      "instrument_id": "binance:perpetual:DOGEUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 105,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "1000PEPEUSDT",
+      "instrument_id": "binance:perpetual:1000PEPEUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 105,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "SOLUSDT",
+      "instrument_id": "binance:perpetual:SOLUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 104,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "XRPUSDT",
+      "instrument_id": "binance:perpetual:XRPUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 105,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "LINKUSDT",
+      "instrument_id": "binance:perpetual:LINKUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 105,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    },
+    {
+      "native_symbol": "ADAUSDT",
+      "instrument_id": "binance:perpetual:ADAUSDT",
+      "archives": 365,
+      "rows": 105120,
+      "numeric_values_checked": 630720,
+      "unordered_source_archives": 104,
+      "observed_label_grid_counts": {
+        "file-day-start-grid": 365
+      },
+      "exact_normalization_reconstruction_passed": true
+    }
+  ],
+  "runtime": {
+    "python": "3.12.3",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pyarrow": "25.0.1"
+  }
+}

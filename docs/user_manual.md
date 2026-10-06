@@ -419,3 +419,17 @@ The full-year BTC spot/perpetual/funding examples were also rerun in fresh
 folders with the corrected current engine. Returns remain −12.17%, −11.46%
 and +5.14%; the positive single example is not a qualified robust strategy.
 [Current outputs, source hashes and commands](real_data_demo.md#current-engine-verification).
+
+## Optional open-interest and positioning observations
+
+The [positioning collector](../examples/positioning/README.md) now supplies a
+separately audited full fixed year for the same eight native perpetuals. Run
+its download and `--verify-only` commands to reproduce source observations.
+Each asset has 105,120 five-minute rows under
+`data_cache/positioning-metrics-1y/<native-symbol>/observations.parquet`.
+These are auxiliary observations, not OHLC bars accepted as an execution feed
+by `main.py backtest`, and no positioning strategy has yet been implemented.
+A one-minute strategy must define causal availability and staleness explicitly
+before using them; normalized clock labels and current archive receipts do
+not prove original delivery. Native `1000PEPEUSDT` remains bundled.
+[Data audit and limitations](positioning_dataset_audit.md).

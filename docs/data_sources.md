@@ -183,7 +183,7 @@ including an event at END valued with the last within-year mark close. These
 checks establish consistency with the returned source, not historical receipt
 times, exact settlement marks, historical fee tiers or an unbiased survivor universe.
 
-## Positioning input reconnaissance (not yet a strategy dataset)
+## Positioning observations (historical availability unverified)
 
 Official Binance daily USD-M `metrics` archives provide reported open interest
 and several trader/position ratios at observed five-minute clocks. The fixed-year
@@ -195,3 +195,13 @@ identification. Some files are physically unordered. Native `1000PEPEUSDT` is
 retained. See the [next-factor decision](next_factor_decision.md) and
 [source feasibility review](next_positioning_feasibility.md) before using this
 as predictive data. The existing minute price/mark/funding datasets are unchanged.
+
+The subsequently frozen collector completed the full fixed year: **2,920 official
+archives, 840,960 five-minute observations and eight native contracts**. Offline
+collector verification and a separate independent raw reconstruction passed.
+[Full-year compact evidence](positioning_data/summary.json) and
+[actual source audit](positioning_dataset_audit.md) document the distinction
+between exact vendor-data reconstruction and unverified historical availability.
+[Download and verify commands](../examples/positioning/README.md) regenerate
+these observations without account credentials; a new vendor retrieval has new
+provenance and must not overwrite the frozen original corpus.

@@ -4,7 +4,7 @@ A Python crypto backtesting platform with causal event simulation, vectorized re
 
 ![Dashboard preview](docs/dashboard-preview.jpg)
 
-The implementation prioritizes accounting and timing correctness. **747 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
+The implementation prioritizes accounting and timing correctness. **779 tests passed, including independent margin, execution, causal feature, financial replay and publication regressions.** Independent agents researched 12 frameworks, challenged the design, verified formulas, wrote adversarial tests, audited the finished engine and profiled workloads. Built-in fixtures are synthetic; separately labelled historical examples use verified real data. This is an independently tested research MVP; execution and exchange approximations are explicit.
 
 [User manual](docs/user_manual.md) · [Historical data sources](docs/data_sources.md) · [Real one-year demonstration](docs/real_data_demo.md) · [Private GitHub project](https://github.com/eric2364/aster-crypto)
 
@@ -228,6 +228,6 @@ Next priorities are streaming Arrow event/ledger storage, historical mark/fundin
 
 GitHub maintenance uses push/PR test workflows and monthly dependency-update proposals. See [maintenance guide](docs/github_maintenance.md). No automatic live trading or deployment is configured.
 
-### Positioning input preparation
+### Positioning observations
 
-A separately reviewed collector adds native five-minute open-interest and trader-ratio observations as a possible new factor input. [48 checksum-verified samples](docs/positioning_probe_review.json) cover all eight native contracts; this preparation does not yet establish complete-year coverage or a successful strategy. [Evidence and next decision](docs/next_factor_decision.md) · [Collection commands and limits](examples/positioning/README.md) · [Independent collector review](docs/positioning_collector_review.md). No previous model, costs or outcome was retuned.
+A separately frozen collector and independent source audit verified **2,920 official archives and 840,960 five-minute open-interest/positioning observations** across the eight native contracts. [Full-year evidence](docs/positioning_data/summary.json) · [Data audit](docs/positioning_dataset_audit.md) · [Collection commands and limits](examples/positioning/README.md). This is a new possible factor input; historical delivery and unit semantics remain unverified, and it establishes no successful strategy. [Next economic decision](docs/next_factor_decision.md) · [Untested cross-sectional funding assessment](docs/cross_sectional_funding_assessment.md). No previous model, costs or outcome was retuned.
