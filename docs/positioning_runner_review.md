@@ -23,3 +23,7 @@ Finalize the repaired strategy and runner source tests; commit and privately pub
 **26 independent cases passed in 5.14 seconds; combined author and independent runner suite: 90 passed in 12.19 seconds.** No remaining material runner-preparation blocker was found. This signoff authorizes only the reviewed engineering procedure, not numerical feature correctness, an actual executed cohort, financial-policy completeness or publication. The separate feature and financial auditors remain mandatory. No historical computation or source freeze was run by this reviewer.
 
 Reviewed runner SHA256: `2f78f2a1ec54534693e1260a7b4d80d64a9bfac2a2cd373fff78b412296d738b`.
+
+## CLI preparation repair
+
+The first real freeze-only attempt failed before any lock or historical features because CLI strings reached a verifier requiring `Path`. Root added only `Path` conversion for both input roots at the `freeze` boundary. Independent `test_freeze_cli_strings_are_normalized_before_native_verification` passes all eight symbols as strings through the public entry point and requires actual `Path` objects at the verification call. The new independent target suite is **27 passed in 5.38 seconds**. This repairs API/CLI compatibility; economic rules, costs, phase dates and hurdles are unchanged. The earlier reviewed hash remains historical preparation evidence; renewed runner SHA256 is `5356527d3f826727b74046ee813e343de26c4871634114abc66a5270af9529ac`.

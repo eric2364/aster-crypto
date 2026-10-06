@@ -391,3 +391,16 @@ def test_summary_rejects_packet_drift_during_verification_bootstrap_and_dump(fro
     with pytest.raises(RuntimeError,match='artifacts changed'):
         r.summarize(perp,metrics,out,feature_audit=cert)
     assert mutated
+
+
+def test_freeze_string_paths_are_normalized_before_native_verification(frozen,monkeypatch):
+    _,perp,metrics,out=frozen
+    import shutil
+    shutil.rmtree(out)  # This fixture is entirely synthetic.
+    class VerifiedPaths(Exception): pass
+    def native_verify(root,symbol,specs):
+        assert isinstance(root,Path) and root==perp
+        raise VerifiedPaths
+    monkeypatch.setattr(r,'verify',native_verify)
+    with pytest.raises(VerifiedPaths):r.freeze(str(perp),str(metrics),str(out))
+    assert not out.exists()

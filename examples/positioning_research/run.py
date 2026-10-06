@@ -151,6 +151,7 @@ def identity(perp_cache,metrics_cache):
 
 
 def freeze(perp_cache,metrics_cache,out):
+    perp_cache=Path(perp_cache);metrics_cache=Path(metrics_cache)
     require_reviewed_sources();out=Path(out);lock=identity(perp_cache,metrics_cache)
     specs={spec.id:spec for spec in catalog(perp_cache)}
     verification={'perpetual':[verify(perp_cache,s,specs) for s in SYMBOLS],

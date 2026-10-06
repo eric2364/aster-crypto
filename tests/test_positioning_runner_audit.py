@@ -142,3 +142,16 @@ def test_cached_ledgers_cannot_change_after_initial_seal_verification(executed,m
     monkeypatch.setattr(r,'verify_completed',alter)
     with pytest.raises(RuntimeError,match='Cached phase packet changed'):
         r.run_phase(cache,metrics,out,phase,feature_audit=fp)
+
+
+def test_freeze_cli_strings_are_normalized_before_native_verification(frozen,monkeypatch,tmp_path):
+    from pathlib import Path
+    _,perp,metrics,_=frozen;calls=[]
+    def strict_native_verification(cache,symbol,specs):
+        assert isinstance(cache,Path)
+        assert cache/symbol==perp/symbol
+        calls.append(symbol)
+        return {'spot_symbol':symbol,'minute_grid_exact':True}
+    monkeypatch.setattr(r,'verify',strict_native_verification)
+    lock=r.freeze(str(perp),str(metrics),str(tmp_path/'cli-freeze'))
+    assert calls==list(r.SYMBOLS) and lock['input_verification']['perpetual']
