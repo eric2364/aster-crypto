@@ -54,3 +54,22 @@ The CLI refuses to overwrite an existing certificate; a subsequent verification 
 The author suite has 64 passing cases covering native wallet/funding reconstruction, DOGE/1000PEPE and partial failures, a real tiny Engine/export packet, forged cash/margin/fees/volume/activation/native identities, false or omitted completed episodes, terminal order classification, stale or substituted feature certificates, symlinks, and initial/later-phase evidence mutation. Independently authored source/differential/adversarial review is recorded separately in [the financial review](positioning_financial_review.md). Synthetic financial correctness is not historical profitability evidence.
 
 Original OI delivery/vintage and historical unit continuity remain unverified. Current native instrument rules approximate historical rules. Candle-based modeled execution cannot establish stressed market depth or deployable capacity. The already examined year remains exploratory; bootstrap confidence diagnostics cannot undo adaptive research. A complete financial certificate therefore certifies a specified reconstruction, not liquidation identification, predictive profitability, independent durable edges or absence of overfitting.
+
+## Actual financial checkpoint
+
+The root ran all five fixed trajectories under the original frozen economic
+source and then this reviewed independent verifier. The preserved
+[financial certificate](../audit/positioning_output_evidence.json) passed every
+financial reconstruction check, including all source/feature/phase/summary
+stability checks. It still correctly withholds recorded-policy certification
+and publication readiness; the separate policy audit remains unfinished.
+
+The financially reconstructed rule fails five of fifteen economic gates.
+Compounded validation return is +0.2145%, baseline final-quarter return
+−0.1801%, and joint cost/lag stress return −0.8612%. Baseline has 16 completed
+episodes across ADA, DOGE, LINK and native 1000PEPE. All five actual endpoints
+are flat with resolved orders; no liquidation occurred. A four-asset activity
+pass does not compensate for negative returns and the failed Sharpe hurdle.
+This executed candidate supplies no qualified winner. Its final composed
+research report remains unpublished pending the independent recorded-policy
+checks; previous audited families remain preserved.
